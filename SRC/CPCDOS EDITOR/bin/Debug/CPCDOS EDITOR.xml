@@ -1,0 +1,276 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CPCDOS EDITOR
+</name>
+</assembly>
+<members>
+<member name="T:CPCDOS_EDITOR.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.ResourceManager">
+<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Culture">
+<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources._568502">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Arc_en_ciel">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.arrire_plan_win_7_fond_daposcran_pc_gratuit_new_wallpapers_desktop__b_o_ibackgroundz_com">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Colors_Within_by_giannisgx89__1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.FleurOrange">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.fond_ecran_hd_gratuit_19">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.fonds_ecran_hd_gratuits_11">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.fonds_ecran_hd_gratuits_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Galaxi">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Goutte">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Goutte1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Goutte2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Herbe">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.nebulax">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Orange_flower_petals_water_drops_1920x1080">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.OSM_1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.OSM_ICON_128">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.Planet_space_stars_wind_blue_1920x1080">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.ReflectionImage">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.ReflectionImage1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.scroll_opened_red">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.space_planet_digital_art_atmosphere_stars_1920x1080">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:CPCDOS_EDITOR.My.Resources.Resources.strawberry">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:CPCDOS_EDITOR.AjouterUneFenetre.DeclarationSnippet">
+ <summary>
+ This item appears when any part of snippet text is typed
+ </summary>
+</member>
+<member name="T:CPCDOS_EDITOR.AjouterUneFenetre.InsertSpaceSnippet">
+ <summary>
+ Divides numbers and words: "123AND456" -> "123 AND 456"
+ Or "i=2" -> "i = 2"
+ </summary>
+</member>
+<member name="T:CPCDOS_EDITOR.AjouterUneFenetre.InsertEnterSnippet">
+ <summary>
+ Inerts line break after '}'
+ </summary>
+</member>
+<member name="F:CPCDOS_EDITOR.VisualStudio2012Style.AjoutFN.components">
+ <summary>
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:CPCDOS_EDITOR.VisualStudio2012Style.AjoutFN.Dispose(System.Boolean)">
+ <summary>
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:CPCDOS_EDITOR.VisualStudio2012Style.AjoutFN.InitializeComponent">
+ <summary>
+ Required method for Designer support - do not modify
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:CPCDOS_EDITOR.VisualStudio2012Style.VisualStudio2012Style3.components">
+ <summary>
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:CPCDOS_EDITOR.VisualStudio2012Style.VisualStudio2012Style3.Dispose(System.Boolean)">
+ <summary>
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:CPCDOS_EDITOR.VisualStudio2012Style.VisualStudio2012Style3.InitializeComponent">
+ <summary>
+ Required method for Designer support - do not modify
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="T:CPCDOS_EDITOR.Creation_Fenetre.DeclarationSnippet">
+ <summary>
+ This item appears when any part of snippet text is typed
+ </summary>
+</member>
+<member name="T:CPCDOS_EDITOR.Creation_Fenetre.InsertSpaceSnippet">
+ <summary>
+ Divides numbers and words: "123AND456" -> "123 AND 456"
+ Or "i=2" -> "i = 2"
+ </summary>
+</member>
+<member name="T:CPCDOS_EDITOR.Creation_Fenetre.InsertEnterSnippet">
+ <summary>
+ Inerts line break after '}'
+ </summary>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.#ctor(System.Windows.Forms.RichTextBox@,System.Drawing.Color,System.Drawing.Color)">
+ <summary>
+ Initialise une instance qui permet d'utiliser d'enrichir un RichTextBox en RichScript.
+ </summary>
+ <param name="LinkedRichText">Objet RichTextBox à prendre le contrôle</param>
+ <param name="BackColor">Couleur d'arrière plan</param>
+ <param name="ForeColor">Couleur du texte</param>
+ <remarks></remarks>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.Disposed">
+ <summary>
+ Ferme l'instance du RichScript.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.RefreshWords">
+ <summary>
+ Force le RichScript à repeindre les mots.
+ </summary>
+ <returns>Retourne le nombre d'élements contenus dans la liste des mots</returns>
+ <remarks></remarks>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.AddWords(System.Drawing.Color,System.String[])">
+ <summary>
+ Ajouter un ou plusieurs mots colorés au contrôle RichScript.
+ </summary>
+ <param name="WordsColor">Couleur qui sera utilisé pour peindre le mot</param>
+ <param name="WordsToFind">Tableau des mots à peindre</param>
+ <returns>Retourne le nombre d'élements contenus dans la liste des mots</returns>
+ <remarks>Exemple: AddWords(Color.Green, "Pomme", "Herbe", "Arbre")</remarks>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.SetComments(System.Drawing.Color,System.String[])">
+ <summary>
+ Colore une ligne entière selon les premiers caractères. 
+ </summary>
+ <param name="CommentsColor">Couleur qui sera utilisé pour peindre la ligne</param>
+ <param name="CommentsToFind">Tableau des premiers caractères de la ligne à peindre</param>
+ <remarks>Exemple: SetComments(Color.Green, "''' ", ";")</remarks>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.RichScriptColors">
+ <summary>
+ Fonction qui regroupe les procédures à éffectuer sur les mots sans scintillement.
+ </summary>
+ <remarks>Pour tester le problème de scintillement, mettez en commentaire les lignes executant LockWindowUpdate</remarks>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.PaintWords(System.Drawing.Color,System.String[])">
+ <summary>
+ Fonction principale qui selectionne un mot et le paint.
+ </summary>
+ <param name="WordsColor">Couleur qui sera utilisé pour peindre le mot</param>
+ <param name="WordsToFind">Tableau des mots à peindre</param>
+ <remarks></remarks>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.RichScript_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Handle KeyPress: pour remettre la couleur de l'écriture à l'origine.
+ </summary>
+ <param name="sender">Object</param>
+ <param name="e">KeyPressEventArgs</param>
+ <remarks></remarks>
+</member>
+<member name="M:CPCDOS_EDITOR.RichScript.RichScript_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Handle TextChanged: pour appliquer la couleur à chaque changements.
+ </summary>
+ <param name="sender">Object</param>
+ <param name="e">EventArgs</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,400 @@
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojResolveAssemblyReference.cache
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.Cache
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+D:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojResolveAssemblyReference.cache
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.Cache
+C:\Users\Maxime\Desktop\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Logiciel.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojResolveAssemblyReference.cache
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Logiciel.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.Cache
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Couleurs.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.EvFenetrevb.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ListeFORM.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Principale.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\fr\CPCDOS EDITOR.resources.dll
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.fr.resources
+C:\Users\Maxime\Documents\Visual Studio 2015\Projects\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\fr\CPCDOS EDITOR.resources.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\fr\CPCDOS EDITOR.resources.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+F:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojResolveAssemblyReference.cache
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Alors.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ChangeBouton.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Changerpropri.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Couleurs.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.EvFenetrevb.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.fr.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.Cache
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\fr\CPCDOS EDITOR.resources.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\fr\CPCDOS EDITOR.resources.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+G:\CPCDOS EDITOR\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojResolveAssemblyReference.cache
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Alors.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ChangeBouton.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Changerpropri.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Couleurs.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.EvFenetrevb.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ListeFORM.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Logiciel.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Principale.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.fr.resources
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.Cache
+G:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\fr\CPCDOS EDITOR.resources.dll
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AjouterUneFenetre.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Fenetre.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.DESIGN.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Acceuil.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Taille.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Objets.resources
+F:\CPCDOS EDITOR\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.CouleursDesign.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\fr\CPCDOS EDITOR.resources.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojResolveAssemblyReference.cache
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AjouterUneFenetre.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Alors.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ChangeBouton.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Changerpropri.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Couleurs.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.DESIGN.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.EvFenetrevb.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Fenetre.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Acceuil.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.CouleursDesign.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Taille.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Objets.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.fr.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.Cache
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\fr\CPCDOS EDITOR.resources.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.pdb
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.xml
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\MetroFramework.Design.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\MetroFramework.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.VisualStudio2012Style.AjoutFN.resources
+C:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.VisualStudio2012Style.VisualStudio2012Style3.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\fr\CPCDOS EDITOR.resources.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.pdb
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.xml
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojResolveAssemblyReference.cache
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AjouterUneFenetre.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.VisualStudio2012Style.AjoutFN.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Alors.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ChangeBouton.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Changerpropri.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Couleurs.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Creation_Fenetre.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.DESIGN.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.EvFenetrevb.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Fenetre.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Acceuil.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.CouleursDesign.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Taille.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Objets.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.VisualStudio2012Style.VisualStudio2012Style3.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.fr.resources
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.Cache
+G:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\fr\CPCDOS EDITOR.resources.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\fr\CPCDOS EDITOR.resources.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.pdb
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.xml
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojResolveAssemblyReference.cache
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AjouterUneFenetre.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.VisualStudio2012Style.AjoutFN.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Alors.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ChangeBouton.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Changerpropri.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Couleurs.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Creation_Fenetre.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.EvFenetrevb.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Fenetre.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Acceuil.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.CouleursDesign.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.FormDesigner.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Taille.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Objets.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.VisualStudio2012Style.VisualStudio2012Style3.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.fr.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.Cache
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\fr\CPCDOS EDITOR.resources.dll
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.SplashScreen1.resources
+D:\Users\Maxime\Desktop\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.MyDesignerSurface.DESIGN.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe.config
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.exe
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.pdb
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\CPCDOS EDITOR.xml
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\fr\CPCDOS EDITOR.resources.dll
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.pdb
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.xml
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojAssemblyReference.cache
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AjouterUneFenetre.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.VisualStudio2012Style.AjoutFN.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Alors.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ChangeBouton.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Changerpropri.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Couleurs.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Creation_Fenetre.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.MyDesignerSurface.DESIGN.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.EvFenetrevb.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Fenetre.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Form1.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Acceuil.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.CouleursDesign.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.FormDesigner.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.SplashScreen1.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Taille.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Objets.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.Resources.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.VisualStudio2012Style.VisualStudio2012Style3.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.AJfenetre.fr.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.cache
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.CoreCompileInputs.cache
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\fr\CPCDOS EDITOR.resources.dll
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.CopyComplete
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.exe
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.xml
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.pdb
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ApercuFenetre.resources
+E:\CPCDOS EDITOR 31 dec 00h\CPCDOS EDITOR\obj\Debug\CPCDOS_EDITOR.ChoixCouleur.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbprojAssemblyReference.cache
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.AJfenetre.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.AjouterUneFenetre.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.VisualStudio2012Style.AjoutFN.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Alors.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.ApercuFenetre.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.ChangeBouton.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Changerpropri.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.ChoixCouleur.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Couleurs.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Creation_Fenetre.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.MyDesignerSurface.DESIGN.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.EvFenetrevb.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Fenetre.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Form1.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Acceuil.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.CouleursDesign.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.FormDesigner.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.SplashScreen1.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Taille.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Objets.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Resources.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.VisualStudio2012Style.VisualStudio2012Style3.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.AJfenetre.fr.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.GenerateResource.cache
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.CoreCompileInputs.cache
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\OSMaker.exe.config
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\OSMaker.exe
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\OSMaker.pdb
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\OSMaker.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\fr\OSMaker.resources.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.pdb
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\fr\OSMaker.resources.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\CPCDOS EDITOR.vbproj.CopyComplete
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.exe
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.pdb

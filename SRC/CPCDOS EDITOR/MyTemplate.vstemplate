@@ -1,0 +1,16 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>VisualStudio2012Style.vb</DefaultName>
+    <Name>VisualStudio2012Style</Name>
+    <Description>&lt;Aucune description disponible&gt;</Description>
+    <ProjectType>VisualBasic</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="Form" TargetFileName="$fileinputname$.vb" ReplaceParameters="true">DarkThemeForm.vb</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.Designer.vb" ReplaceParameters="true">DarkThemeForm.Designer.vb</ProjectItem>
+    <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.resx" ReplaceParameters="true">DarkThemeForm.resx</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

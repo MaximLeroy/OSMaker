@@ -1,0 +1,157 @@
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\OSMaker.exe.config
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\OSMaker.exe
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\OSMaker.pdb
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\OSMaker.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.pdb
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.vbprojAssemblyReference.cache
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.ApercuFenetre.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.ChoixCouleur.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Creation_Fenetre.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.MyDesignerSurface.DESIGN.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.EvFenetrevb.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Form1.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Acceuil.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.SplashScreen1.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Objets.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Resources.resources
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.GenerateResource.cache
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.CoreCompileInputs.cache
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.CopyComplete
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.exe
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.xml
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.pdb
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+E:\OSMaker Refonte\CPCDOS EDITOR\obj\Debug\OSMaker.Home.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\OSMaker.exe.config
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\OSMaker.exe
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\OSMaker.pdb
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\OSMaker.xml
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.xml
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.xml
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.xml
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.xml
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.pdb
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.xml
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.vbprojAssemblyReference.cache
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.ApercuFenetre.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.ChoixCouleur.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.Creation_Fenetre.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.MyDesignerSurface.DESIGN.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.EvFenetrevb.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.Form1.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.Acceuil.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.Home.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.SplashScreen1.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.Objets.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.Resources.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.GenerateResource.cache
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.CoreCompileInputs.cache
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.CopyComplete
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.exe
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.xml
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.pdb
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.OSMaker.PowerfulCSharpEditor.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\TabStrip.dll
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.bookmark.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.OSMaker.PowerfulCSharpEditor2.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.pF.DesignSurfaceExt.MainForm.resources
+C:\Users\Maxime\Desktop\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\obj\Debug\OSMaker.pDesignervb.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\OSMaker.exe.config
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\OSMaker.exe
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\OSMaker.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\OSMaker.xml
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Keyboard.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.Design.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Layout.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Schedule.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.SuperGrid.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.SuperGrid.Design.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.TreeGX.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\NgenInstaller.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Design.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Docking.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Navigator.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Ribbon.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Toolkit.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Workspace.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Plugins3.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.SZC.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.SZC35.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Design.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Docking.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Navigator.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Ribbon.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Toolkit.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Design.Workspace.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.Plugins3.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.SZC.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\VelerSoftware.SZC35.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\en\VelerSoftware.Plugins3.resources.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\fr\VelerSoftware.Plugins3.resources.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.vbprojAssemblyReference.cache
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.MyDesignerSurface.DESIGN.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.SplashScreen1.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.Objets.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.Resources.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.GenerateResource.cache
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.exe.licenses
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.CoreCompileInputs.cache
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.CopyComplete
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.exe
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.xml
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.EditeurCCplus.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\AIMS.Docking.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\Toolbox.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\ToolWindows.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\GraphLibrary.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\Toolbox.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\ToolWindows.pdb
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\ToolBox.dll.config
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.ToolWindows.OutputWindow.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.OSMaker.HostControl.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.Form2.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.Charts.Design.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Charts.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.DotNetBar.Design.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\bin\Debug\DevComponents.Instrumentation.Design.dll
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.Parametres.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.OSMCodeBox.resources
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.TestDesignervb.resources
+C:\Users\Maxime\Documents\OSMaker\OSMaker.exe.config
+C:\Users\Maxime\Documents\OSMaker\OSMaker.exe
+C:\Users\Maxime\Documents\OSMaker\OSMaker.pdb
+C:\Users\Maxime\Documents\OSMaker\OSMaker.xml
+C:\Users\Maxime\Documents\OSMaker\OSMaker.exe.manifest
+C:\Users\Maxime\Documents\OSMaker\OSMaker.application
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.exe.manifest
+C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.application

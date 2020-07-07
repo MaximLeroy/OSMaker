@@ -1,0 +1,1111 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OSMaker
+</name>
+</assembly>
+<members>
+<member name="T:OSMaker.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.ResourceManager">
+<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Culture">
+<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources._62872bookmarktabs_109236">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources._62872bookmarktabs_109236__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources._62872bookmarktabs_109236add__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources._62872bookmarktabs_109236remove__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources._property">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources._property1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.actualiser">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.add_icon_icons_com_74429__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.add_objet">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.add_objet2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.ajouter_marquepage">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.arrow_left_15601">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.arrow_left_15601_1___Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.arrow_right_15600">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.arrow_right_15600__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.arrows">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.arrows___Copie">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.arrows_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.backward0_16x16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.backward0_16x161">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.bar">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.bookmark__plus">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.bookmark__plus1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Bouton">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Bouton2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.box">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.box1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.button">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.button_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.bye">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.bye1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.calculator">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.checkbox">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.class_libraries">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.class_libraries1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.clipboard">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.code_cpc_file">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.code_cpc_file__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.code_cpc_file1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.code_cpc_file2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.codingbrowser_102152">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.codingbrowser_102152__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.codingbrowser_1021521">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.codingbrowser_1021522">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Comment">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.copy_paste_document_file_1557">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.copy_paste_document_file_1557__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.copy_paste_documents_1580">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.copy_paste_documents_1580__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.creer">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.cross">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.cross1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Cut_icon_icons_com_73697">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Cut_icon_icons_com_73697__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.diamond">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.diamond16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.diamond161">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.dna">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.dna1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.document">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.edit_padding_top">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.edit_padding_top1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.emblemsynchronizing_93485">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.eye">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.fin">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.flat_style_circle_redo_icon_icons_com_66947_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.flat_style_circle_redo_icon_icons_com_66947_1___Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.flat_style_circle_undo_icon_icons_com_66949_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.flat_style_circle_undo_icon_icons_com_66949_1___Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.folder_2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.format_textbox_icon_137574">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.forward_16x16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.forward_16x161">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.gear">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.gear_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.gear_2_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.idea">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.imagebox">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.imagebox1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.imagebox2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.IUG">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.layer__minus">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.layer__minus1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.layer__plus">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.layer__plus1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.light16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.lightning">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.lightning1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.line_dotted_icon_125232">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.line_dotted_icon_125232__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.line_dotted_icon_1252321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.line_dotted_icon_1252322">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.line_dotted_icon_1252323">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.lol">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.lol1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.marquepage">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.marquepage2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.openfolderpng">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.openfolderpng1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.OSM_NEW_Project6868">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.OSM_OS">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.OSM_OS3232">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.OSM_OS32321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.OSMakerIcon">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.ousuisje">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.pen">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.pencil">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.printer_text_10868">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.printer_text_10868__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.redo">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.redo_16x16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.redo_16x161">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Reduire_Projet">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.rolleyes">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.rolleyes1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.sad_16x16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.sad_16x161">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Save_37110">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Save_37110__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Save_371101">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Save_371102">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.Save6868">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.scissors">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.search">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.smile_16x16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.smile_16x161">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.supprimer_mpage">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.tabulation">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.tabulation__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.tabulation1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.tabulation2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.tabulation3">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.tabulation4">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.textebloc">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.textebox">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.trash">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.trash1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.undo">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.undo_16x16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.undo_16x161">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.unsure">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.unsure1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:OSMaker.My.Resources.Resources.where_to_vote_117295__Copier_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:OSMaker.Loader.CodeGen">
+ <summary>
+ This is used by the CodeDomHostLoader to generate the CodeCompleUnit
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.CodeGen.GetCodeCompileUnit(System.ComponentModel.Design.IDesignerHost)">
+ <summary>
+ This function generates the default CodeCompileUnit template
+ </summary>
+</member>
+<member name="T:OSMaker.Loader.BasicHostLoader">
+ <summary>
+ Inherits from BasicDesignerLoader. It can persist the HostSurface
+ to an Xml file and can also parse the Xml file to re-create the
+ RootComponent and all the components that it hosts.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.#ctor(System.Type)">
+ Empty constructor simply creates a new form.
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.#ctor(System.String)">
+ <summary>
+ This constructor takes a file name.  This file
+ should exist on disk and consist of XML that
+ can be read by a data set.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)">
+ <summary>
+ This method is called by the designer host whenever it wants the
+ designer loader to flush any pending changes.  Flushing changes
+ does not mean the same thing as saving to disk.  For example,
+ In Visual Studio, flushing changes causes new code to be generated
+ and inserted into the text editing window.  The user can edit
+ the new code in the editing window, but nothing has been saved
+ to disk.  This sample adheres to this separation between flushing
+ and saving, since a flush occurs whenever the code windows are
+ displayed or there is a build. Neither of those items demands a save.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.GetConversionSupported(System.ComponentModel.TypeConverter,System.Type)">
+ <summary>
+ Simple helper method that returns true if the given type converter supports
+ two-way conversion of the given type.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)">
+ <summary>
+ As soon as things change, we're dirty, so Flush()ing will give us a new
+ xmlDocument and codeCompileUnit.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.PromptDispose">
+ <summary>
+ This method prompts the user to see if it is OK to dispose this document.  
+ The prompt only happens if the user has made changes.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.PerformFlushWorker">
+ <summary>
+ This will recussively go through all the objects in the tree and
+ serialize them to Xml
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.ReadFile(System.String,System.Collections.ArrayList,System.Xml.XmlDocument@)">
+ <summary>
+ This method is used to parse the given file.  Before calling this 
+ method the host member variable must be setup.  This method will
+ create a data set, read the data set from the XML stored in the
+ file, and then walk through the data set and create components
+ stored within it.  The data set is stored in the persistedData
+ member variable upon return.
+ 
+ This method never throws exceptions.  It will set the successful
+ ref parameter to false when there are catastrophic errors it can't
+ resolve (like being unable to parse the XML).  All error exceptions
+ are added to the errors array list, including minor errors.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.ReadObject(System.Xml.XmlNode,System.Collections.ArrayList)">
+ Reads the "Object" tags. This returns an instance of the
+ newly created object. Returns null if there was an error.
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.ReadProperty(System.Xml.XmlNode,System.Object,System.Collections.ArrayList)">
+ Parses the given XML node and sets the resulting property value.
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.ReadValue(System.Xml.XmlNode,System.ComponentModel.TypeConverter,System.Collections.ArrayList,System.Object@)">
+ Generic function to read an object value.  Returns true if the read
+ succeeded.
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.GetCode">
+ This method writes out the contents of our designer in XML.
+ It writes out the contents of xmlDocument.
+</member>
+<member name="M:OSMaker.Loader.BasicHostLoader.Save(System.Boolean)">
+ <summary>
+ Save the current state of the loader. If the user loaded the file
+ or saved once before, then he doesn't need to select a file again.
+ Unless this is being called as a result of "Save As..." being clicked,
+ in which case forceFilePrompt will be true.
+ </summary>
+</member>
+<member name="T:OSMaker.Loader.CodeDomHostLoader">
+ <summary>
+ Inherits from CodeDomDesignerLoader. It can generate C# or VB code
+ for a HostSurface. This loader does not support parsing a 
+ C# or VB file.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.CodeDomHostLoader.Parse">
+ <summary>
+ Bootstrap method - loads a blank Form
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:OSMaker.Loader.CodeDomHostLoader.Write(System.CodeDom.CodeCompileUnit)">
+ <summary>
+ When the Loader is Flushed this method is called. The base class
+ (CodeDomDesignerLoader) creates the CodeCompileUnit. We
+ simply cache it and use this when we need to generate code from it.
+ To generate the code we use CodeProvider.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.CodeDomHostLoader.GetCodeCompileUnit">
+ <summary>
+ Flushes the host and returns the updated CodeCompileUnit
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:OSMaker.Loader.CodeDomHostLoader.GetCode(System.String)">
+ <summary>
+ This method writes out the contents of our designer in C# and VB.
+ It generates code from our codeCompileUnit using CodeRpovider
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.CodeDomHostLoader.Build">
+ <summary>
+ Called when we want to build an executable. Returns true if we succeeded.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.CodeDomHostLoader.Run">
+ <summary>
+ Here we build the executable and then run it. We make sure to not start
+ two of the same process.
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.CodeDomHostLoader.Stop">
+ <summary>
+ Just in case the red X in the upper right isn't good enough,
+ we can kill our process here.
+ </summary>
+</member>
+<member name="T:OSMaker.Loader.TypeResolutionService">
+ <summary>
+ This service resolved the types and is required when using the
+ CodeDomHostLoader
+ </summary>
+</member>
+<member name="M:OSMaker.Loader.TypeResolutionService.GetType(System.String,System.Boolean,System.Boolean)">
+ <summary>
+ This method is called when dropping controls from the toolbox
+ to the host that is loaded using CodeDomHostLoader. For
+ simplicity we just go through System.Windows.Forms assembly
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.HostControl">
+ <summary>
+ Hosts the HostSurface which inherits from DesignSurface.
+ </summary>
+</member>
+<member name="F:OSMaker.OSMaker.HostControl.components">
+ <summary>
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.HostControl.Dispose(System.Boolean)">
+ <summary>
+ Clean up any resources being used.
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.HostControl.InitializeComponent">
+ <summary>
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.HostSurface">
+ <summary>
+ Inherits from DesignSurface and hosts the RootComponent and 
+ all other designers. It also uses loaders (BasicDesignerLoader
+ or CodeDomDesignerLoader) when required. It also provides various
+ services to the designers. Adds MenuCommandService which is used
+ for Cut, Copy, Paste, etc.
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.HostSurface.selectionService_SelectionChanged(System.Object,System.EventArgs)">
+ <summary>
+ When the selection changes this sets the PropertyGrid's selected component 
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.HostSurfaceManager">
+ <summary>
+ Manages numerous HostSurfaces. Any services added to HostSurfaceManager
+ will be accessible to all HostSurfaces
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.HostSurfaceManager.GetNewHost(System.Type)">
+ <summary>
+ Gets a new HostSurface and loads it with the appropriate type of
+ root component. 
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.HostSurfaceManager.GetNewHost(System.Type,OSMaker.OSMaker.LoaderType)">
+ <summary>
+ Gets a new HostSurface and loads it with the appropriate type of
+ root component. Uses the appropriate Loader to load the HostSurface.
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.HostSurfaceManager.GetNewHost(System.String)">
+ <summary>
+ Opens an Xml file and loads it up using BasicHostLoader (inherits from
+ BasicDesignerLoader)
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.HostSurfaceManager.HostSurfaceManager_ActiveDesignSurfaceChanged(System.Object,System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs)">
+ <summary>
+ Uses the OutputWindow service and writes out to it.
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.MyRootDesigner">
+ <summary>
+ Demonstrates how to write a custom RootDesigner. This designer has a View
+ of a Graph - it shows the number of components added to the designer
+ in a pie/bar chart.
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.MyRootDesigner.MyRootControl">
+ <summary>
+ This is the View of the RootDesigner.
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.MyTopLevelComponent">
+ <summary>
+ Uses the custom RootDesigner (MyRootDesigner)
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.NameCreationService">
+ <summary>
+ This is responsible for naming the components as they are created.
+ This is added as a servide by the HostSurfaceManager
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.RandomUtil">
+ <summary>
+ Generated random color. It is used by MyRootDesigner
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.TypeResolutionService">
+ <summary>
+ This service resolved the types and is required when using the
+ CodeDomHostLoader
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.TypeResolutionService.GetType(System.String,System.Boolean,System.Boolean)">
+ <summary>
+ This method is called when dropping controls from the toolbox
+ to the host that is loaded using CodeDomHostLoader. For
+ simplicity we just go through System.Windows.Forms assembly
+ </summary>
+</member>
+<member name="T:OSMaker.OSMaker.CodeGen">
+ <summary>
+ This is used by the CodeDomHostLoader to generate the CodeCompleUnit
+ </summary>
+</member>
+<member name="M:OSMaker.OSMaker.CodeGen.GetCodeCompileUnit(System.ComponentModel.Design.IDesignerHost)">
+ <summary>
+ This function generates the default CodeCompileUnit template
+ </summary>
+</member>
+<member name="T:OSMaker.ToolWindows.OutputWindow">
+ <summary>
+ OutputWindow.
+ </summary>
+</member>
+<member name="F:OSMaker.ToolWindows.OutputWindow.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:OSMaker.ToolWindows.OutputWindow.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+</member>
+<member name="M:OSMaker.ToolWindows.OutputWindow.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="M:OSMaker.RichScript.#ctor(System.Windows.Forms.RichTextBox@,System.Drawing.Color,System.Drawing.Color)">
+ <summary>
+ Initialise une instance qui permet d'utiliser d'enrichir un RichTextBox en RichScript.
+ </summary>
+ <param name="LinkedRichText">Objet RichTextBox à prendre le contrôle</param>
+ <param name="BackColor">Couleur d'arrière plan</param>
+ <param name="ForeColor">Couleur du texte</param>
+ <remarks></remarks>
+</member>
+<member name="M:OSMaker.RichScript.Disposed">
+ <summary>
+ Ferme l'instance du RichScript.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:OSMaker.RichScript.RefreshWords">
+ <summary>
+ Force le RichScript à repeindre les mots.
+ </summary>
+ <returns>Retourne le nombre d'élements contenus dans la liste des mots</returns>
+ <remarks></remarks>
+</member>
+<member name="M:OSMaker.RichScript.AddWords(System.Drawing.Color,System.String[])">
+ <summary>
+ Ajouter un ou plusieurs mots colorés au contrôle RichScript.
+ </summary>
+ <param name="WordsColor">Couleur qui sera utilisé pour peindre le mot</param>
+ <param name="WordsToFind">Tableau des mots à peindre</param>
+ <returns>Retourne le nombre d'élements contenus dans la liste des mots</returns>
+ <remarks>Exemple: AddWords(Color.Green, "Pomme", "Herbe", "Arbre")</remarks>
+</member>
+<member name="M:OSMaker.RichScript.SetComments(System.Drawing.Color,System.String[])">
+ <summary>
+ Colore une ligne entière selon les premiers caractères. 
+ </summary>
+ <param name="CommentsColor">Couleur qui sera utilisé pour peindre la ligne</param>
+ <param name="CommentsToFind">Tableau des premiers caractères de la ligne à peindre</param>
+ <remarks>Exemple: SetComments(Color.Green, "''' ", ";")</remarks>
+</member>
+<member name="M:OSMaker.RichScript.RichScriptColors">
+ <summary>
+ Fonction qui regroupe les procédures à éffectuer sur les mots sans scintillement.
+ </summary>
+ <remarks>Pour tester le problème de scintillement, mettez en commentaire les lignes executant LockWindowUpdate</remarks>
+</member>
+<member name="M:OSMaker.RichScript.PaintWords(System.Drawing.Color,System.String[])">
+ <summary>
+ Fonction principale qui selectionne un mot et le paint.
+ </summary>
+ <param name="WordsColor">Couleur qui sera utilisé pour peindre le mot</param>
+ <param name="WordsToFind">Tableau des mots à peindre</param>
+ <remarks></remarks>
+</member>
+<member name="M:OSMaker.RichScript.RichScript_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ Handle KeyPress: pour remettre la couleur de l'écriture à l'origine.
+ </summary>
+ <param name="sender">Object</param>
+ <param name="e">KeyPressEventArgs</param>
+ <remarks></remarks>
+</member>
+<member name="M:OSMaker.RichScript.RichScript_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ Handle TextChanged: pour appliquer la couleur à chaque changements.
+ </summary>
+ <param name="sender">Object</param>
+ <param name="e">EventArgs</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
