@@ -155,3 +155,30 @@ C:\Users\Maxime\Documents\OSMaker\OSMaker.exe.manifest
 C:\Users\Maxime\Documents\OSMaker\OSMaker.application
 C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.exe.manifest
 C:\Users\Maxime\Desktop\Version fonctionelle - Copie\CPCDOS EDITOR\obj\Debug\OSMaker.application
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe.config
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe.manifest
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.application
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.xml
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.vbprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Form2.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.OSMaker.HostControl.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.ToolWindows.OutputWindow.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.TestDesignervb.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.OSMCodeBox.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Parametres.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.MyDesignerSurface.DESIGN.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.SplashScreen1.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Objets.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Resources.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.EditeurCCplus.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.GenerateResource.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe.licenses
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe.manifest
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.application
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.vbproj.CopyComplete
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.xml
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.pdb

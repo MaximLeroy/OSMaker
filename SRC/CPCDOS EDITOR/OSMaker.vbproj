@@ -109,59 +109,47 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Script Control\Executables\AIMS.Docking.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SoftwareZator-2012-master\bin\Sources\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Charts.Design">
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.Charts.Design.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.Charts.Design.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar.Charts">
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.DotNetBar.Charts.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Charts.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar.Design, Version=12.1.0.0, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.DotNetBar.Design.dll</HintPath>
+    <Reference Include="DevComponents.DotNetBar.Design">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Design.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    <Reference Include="DevComponents.DotNetBar.Keyboard">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Keyboard.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.DotNetBar.Layout.dll</HintPath>
+    <Reference Include="DevComponents.DotNetBar.Layout">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Layout.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar.Layout.Design, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
+    <Reference Include="DevComponents.DotNetBar.Layout.Design">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar.Schedule, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    <Reference Include="DevComponents.DotNetBar.Schedule">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Schedule.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar2, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.DotNetBar2.dll</HintPath>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.Instrumentation, Version=12.1.0.0, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.Instrumentation.dll</HintPath>
+    <Reference Include="DevComponents.Instrumentation">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.Instrumentation.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.Instrumentation.Design, Version=12.1.0.0, Culture=neutral, PublicKeyToken=30cefae8f341f577, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.Instrumentation.Design.dll</HintPath>
+    <Reference Include="DevComponents.Instrumentation.Design">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.Instrumentation.Design.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.SuperGrid.Design, Version=12.1.0.0, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.SuperGrid.Design.dll</HintPath>
+    <Reference Include="DevComponents.SuperGrid.Design">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.SuperGrid.Design.dll</HintPath>
     </Reference>
-    <Reference Include="DevComponents.TreeGX, Version=12.1.0.0, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DevComponents DotNetBar 14.1.0.36\Crack\DevComponents.TreeGX.dll</HintPath>
+    <Reference Include="DevComponents.TreeGX">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.TreeGX.dll</HintPath>
     </Reference>
     <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
@@ -169,15 +157,13 @@
       <HintPath>..\..\..\..\..\Program Files\DotNetBar for Windows Forms\envdte.dll</HintPath>
     </Reference>
     <Reference Include="FastColoredTextBox">
-      <HintPath>..\..\OSMaker projet\Version fonctionelle\CPCDOS EDITOR\bin\Debug\FastColoredTextBox.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\FastColoredTextBox.dll</HintPath>
     </Reference>
-    <Reference Include="GraphLibrary, Version=1.0.1389.18615, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\designer2006\DesignerHosting\Host\bin\Debug\GraphLibrary.dll</HintPath>
+    <Reference Include="GraphLibrary">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\GraphLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="NgenInstaller, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files\DotNetBar for Windows Forms\NgenInstaller.dll</HintPath>
+    <Reference Include="NgenInstaller">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\NgenInstaller.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -199,44 +185,35 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="ToolWindows">
-      <HintPath>..\..\..\Documents\designer2006\DesignerHosting\Host\bin\Debug\ToolWindows.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\ToolWindows.dll</HintPath>
     </Reference>
     <Reference Include="UIAutomationProvider" />
-    <Reference Include="VelerSoftware.Design.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.Design.Design.dll</HintPath>
+    <Reference Include="VelerSoftware.Design.Design">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Design.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Docking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.Design.Docking.dll</HintPath>
+    <Reference Include="VelerSoftware.Design.Docking">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Docking.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Navigator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.Design.Navigator.dll</HintPath>
+    <Reference Include="VelerSoftware.Design.Navigator">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Navigator.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Ribbon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.Design.Ribbon.dll</HintPath>
+    <Reference Include="VelerSoftware.Design.Ribbon">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Ribbon.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.Design.Toolkit.dll</HintPath>
+    <Reference Include="VelerSoftware.Design.Toolkit">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Workspace, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.Design.Workspace.dll</HintPath>
+    <Reference Include="VelerSoftware.Design.Workspace">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Workspace.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Plugins3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.Plugins3.dll</HintPath>
+    <Reference Include="VelerSoftware.Plugins3">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Plugins3.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.SZC, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.SZC.dll</HintPath>
+    <Reference Include="VelerSoftware.SZC">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.SZC.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.SZC35, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0a7b25493f100a50, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Documents\OSMaker\VelerSoftware.SZC35.dll</HintPath>
+    <Reference Include="VelerSoftware.SZC35">
+      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.SZC35.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />

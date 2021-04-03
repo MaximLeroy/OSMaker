@@ -10,3 +10,15 @@ C:\Users\Maxime\Desktop\Version fonctionelle - Copie\ToolBox\obj\Debug\ToolBox.p
 C:\Users\Maxime\Desktop\Version fonctionelle - Copie\ToolBox\bin\Debug\DevComponents.DotNetBar2.dll
 C:\Users\Maxime\Desktop\Version fonctionelle - Copie\ToolBox\obj\Debug\ToolBox.vbproj.CopyComplete
 C:\Users\Maxime\Desktop\Version fonctionelle - Copie\ToolBox\obj\Debug\ToolBox.CpcForm.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\bin\Debug\ToolBox.dll.config
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\bin\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\bin\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.CpcForm.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.ToolboxLibrary.Toolbox.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbproj.GenerateResource.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbproj.CopyComplete
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.pdb

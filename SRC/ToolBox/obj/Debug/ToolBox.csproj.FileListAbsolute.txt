@@ -1,0 +1,16 @@
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker - Copy\SRC\ToolBox\bin\Debug\
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker - Copy\SRC\ToolBox\obj\Debug\ToolBox.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker - Copy\SRC\ToolBox\obj\Debug\ToolBox.CpcForm.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker - Copy\SRC\ToolBox\obj\Debug\ToolBox.ToolboxLibrary.Toolbox.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker - Copy\SRC\ToolBox\obj\Debug\ToolBox.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker - Copy\SRC\ToolBox\obj\Debug\ToolBox.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker - Copy\SRC\ToolBox\obj\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker - Copy\SRC\ToolBox\obj\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\bin\Debug\
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.CpcForm.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.ToolboxLibrary.Toolbox.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.pdb
