@@ -1,0 +1,7 @@
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\WinToCpcDosCplus\bin\Debug\WinToCpcDosCplus.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\WinToCpcDosCplus\bin\Debug\WinToCpcDosCplus.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\WinToCpcDosCplus\bin\Debug\WinToCpcDosCplus.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.vbproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.vbprojAssemblyReference.cache

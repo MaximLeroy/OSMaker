@@ -118,113 +118,149 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="line_dotted_icon_1252322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\line_dotted_icon_1252322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codingbrowser_1021522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\codingbrowser_1021522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ousuisje" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\where-to-vote_117295.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OSM_OS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\OSM_OS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="smile_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\smile_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_62872bookmarktabs_109236remove__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\62872bookmarktabs_109236remove (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backward0_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\backward0_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="forward_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\forward_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sad_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\sad_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="diamond161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\diamond161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dna" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\dna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Save_371101" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Save_371101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="redo_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\redo_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="line_dotted_icon_1252323" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\line_dotted_icon_1252323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_property" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\property.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flat_style_circle_undo_icon_icons_com_66949_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\flat-style-circle-undo_icon-icons.com_66949(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save6868" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Save6868.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="copy_paste_document_file_1557__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\copy_paste_document_file_1557 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OSM_OS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OSM_OS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="textebloc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\textebloc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save_371101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Save_371101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="class_libraries1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\class_libraries1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lol1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\lol1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="code_cpc_file2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\code_cpc_file2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="codingbrowser_102152" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\codingbrowser_102152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="where_to_vote_117295__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\where-to-vote_117295 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow_right_15600__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow_right_15600 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="backward0_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\backward0_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="folder-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\folder-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_icon_icons_com_74429__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\add_icon-icons.com_74429 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bouton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Bouton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="62872bookmarktabs_109236" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\62872bookmarktabs_1092362.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backward0_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\backward0_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="printer_text_10868__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\printer_text_10868 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="format_textbox_icon_137574" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\format_textbox_icon_137574.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\trash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_objet2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\add_icon-icons.com_74429.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bookmark__plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\bookmark--plus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_property" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\property.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrow_right_15600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow_right_15600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="line_dotted_icon_1252321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\line_dotted_icon_1252321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="undo_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\undo_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OSM_OS3232" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OSM_OS3232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-categorize-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\icons8-categorize-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="code_cpc_file1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\code_cpc_file1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="textebloc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\textebloc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smile_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\smile_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabulation4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\tabulation4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gear_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\gear(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left_15601_1___Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow_left_15601(1) (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="layer__minus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer--minus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codingbrowser_102152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\codingbrowser_102152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OSM_LOGO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OSM_LOGO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bouton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Bouton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marquepage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\62872bookmarktabs_1092361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy_paste_documents_1580__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy_paste_documents_1580 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flat_style_circle_redo_icon_icons_com_66947_1___Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flat-style-circle-redo_icon-icons.com_66947(1) (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_37110__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Save_37110 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightning1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\lightning1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redo_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\redo_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_371102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Save_371102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forward_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\forward_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tabulation2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tabulation2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="arrows___Copie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\arrows - Copie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reduire_Projet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Reduire_Projet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Label.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cross1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\cross1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_objet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\add_icon-icons.com_744291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flat_style_circle_redo_icon_icons_com_66947_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\flat-style-circle-redo_icon-icons.com_66947(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imagebox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\imagebox1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bookmark__plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\bookmark--plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,26 +268,38 @@
   <data name="layer__minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\layer--minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cut_icon_icons_com_73697" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cut_icon-icons.com_73697.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="code_cpc_file2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\code_cpc_file2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="box" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_62872bookmarktabs_109236__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\62872bookmarktabs_109236 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="62872bookmarktabs_109236" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\62872bookmarktabs_1092362.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="emblemsynchronizing_93485" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\emblemsynchronizing_93485.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flat_style_circle_undo_icon_icons_com_66949_1___Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\flat-style-circle-undo_icon-icons.com_66949(1) (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="unsure" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\unsure.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diamond161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\diamond161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="copy_paste_documents_1580" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\copy_paste_documents_1580.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_padding_top1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\edit-padding-top1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="line_dotted_icon_125232__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\line_dotted_icon_125232 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="folder-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\folder-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\fin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,80 +307,86 @@
   <data name="lol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\lol.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Save_37110" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Save_37110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imagebox2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\imagebox2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reduire_Projet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Reduire_Projet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="printer_text_10868" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\printer_text_10868.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabulation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\tabulation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_62872bookmarktabs_109236add__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\62872bookmarktabs_109236add (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="marquepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\62872bookmarktabs_109236.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="codingbrowser_1021522" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\codingbrowser_1021522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="copy_paste_document_file_1557" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy_paste_document_file_1557.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sad_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\sad_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="box1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\box1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="flat_style_circle_redo_icon_icons_com_66947_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\flat-style-circle-redo_icon-icons.com_66947(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="supprimer_mpage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\62872bookmarktabs_109236remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="printer_text_10868" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\printer_text_10868.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="class_libraries1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\class_libraries1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OSM_OS3232" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\OSM_OS3232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\WIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unsure1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\unsure1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IUG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\IUG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="redo_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\redo_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Save6868" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Save6868.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="undo_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\undo_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\bye.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OSMaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OSMaker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabulation3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\tabulation3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="layer__plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\layer--plus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IUG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IUG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smile_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\smile_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bye.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagebox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\imagebox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_objet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\add_icon-icons.com_744291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left_15601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrow_left_15601(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rolleyes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\rolleyes1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="copy_paste_documents_1580__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\copy_paste_documents_1580 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tabulation2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\tabulation2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tabulation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tabulation1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="layer__minus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\layer--minus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sad_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sad_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy_paste_documents_1580" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy_paste_documents_1580.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forward_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\forward_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tabulation__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\tabulation (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bye1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\bye1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="redo_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\redo_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\lightning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -340,14 +394,8 @@
   <data name="trash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\trash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_62872bookmarktabs_109236__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\62872bookmarktabs_109236 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_left_15601_1___Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\arrow_left_15601(1) (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="line_dotted_icon_1252322" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\line_dotted_icon_1252322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dna1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\dna1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="class_libraries" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\class_libraries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -355,65 +403,71 @@
   <data name="arrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\arrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undo_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\undo_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gear_2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\gear(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gear_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\gear(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lightning1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\lightning1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\dna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undo_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\undo_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_property1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\property1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_padding_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\edit-padding-top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="codingbrowser_102152__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\codingbrowser_102152 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="flat_style_circle_redo_icon_icons_com_66947_1___Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\flat-style-circle-redo_icon-icons.com_66947(1) (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OSMakerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\cblmk-px9wh-002.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bouton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Bouton2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_right_15600__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\arrow_right_15600 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="edit_padding_top1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\edit-padding-top1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="diamond16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\diamond16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="openfolderpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\openfolderpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="copy_paste_document_file_1557" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\copy_paste_document_file_1557.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="copy_paste_document_file_1557__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy_paste_document_file_1557 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="line_dotted_icon_125232" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\line_dotted_icon_125232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forward_16x161" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\forward_16x161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit_padding_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\edit-padding-top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gear_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\gear(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imagebox2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\imagebox2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file-explorer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\file-explorer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\button(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diamond16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\diamond16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrows_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\arrows(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OSMakerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cblmk-px9wh-002.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OSM_NEW_Project6868" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OSM_NEW_Project6868.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="line_dotted_icon_125232__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\line_dotted_icon_125232 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="openfolderpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\openfolderpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codingbrowser_1021521" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\codingbrowser_1021521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Comment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Comment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -421,65 +475,59 @@
   <data name="idea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\idea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="codingbrowser_1021521" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\codingbrowser_1021521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="textebox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\textebox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unsure" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\unsure.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="box1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\box1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="actualiser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\actualiser1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagebox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\imagebox1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="line_dotted_icon_1252321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\line_dotted_icon_1252321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OSM_OS32321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\OSM_OS32321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="where_to_vote_117295__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\where-to-vote_117295 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OSM_NEW_Project6868" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\OSM_NEW_Project6868.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bye1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bye1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="code_cpc_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\code_cpc_file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_objet2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\add_icon-icons.com_74429.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sad_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sad_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Save_37110__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Save_37110 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unsure1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\unsure1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cut_icon_icons_com_73697" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Cut_icon-icons.com_73697.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_62872bookmarktabs_109236remove__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\62872bookmarktabs_109236remove (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="smile_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\smile_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\pen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lol1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\lol1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cut_icon_icons_com_73697__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Cut_icon-icons.com_73697 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tabulation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\tabulation1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\pen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrows_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\arrows(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Save_37110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Save_37110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_62872bookmarktabs_109236add__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\62872bookmarktabs_109236add (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="line_dotted_icon_1252323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\line_dotted_icon_1252323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="layer__plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\layer--plus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="openfolderpng1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\openfolderpng1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="codingbrowser_102152__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\codingbrowser_102152 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="code_cpc_file__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\code_cpc_file (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="code_cpc_file1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\code_cpc_file1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="scissors" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\scissors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -487,11 +535,11 @@
   <data name="checkbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\checkbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="light16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\light16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dna1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\dna1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OSM_OS32321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OSM_OS32321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="document" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -499,52 +547,34 @@
   <data name="creer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\creer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="emblemsynchronizing_93485" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\emblemsynchronizing_93485.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_left_15601" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\arrow_left_15601(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_right_15600" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\arrow_right_15600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="imagebox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\imagebox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\trash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add_icon_icons_com_74429__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\add_icon-icons.com_74429 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bookmark__plus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bookmark--plus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ajouter_marquepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\62872bookmarktabs_109236add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Save_371102" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Save_371102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="format_textbox_icon_137574" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\format_textbox_icon_137574.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="marquepage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\62872bookmarktabs_1092361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bouton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Bouton2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="light16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\light16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="layer__plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\layer--plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer_text_10868__Copier_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\printer_text_10868 (Copier).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rolleyes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\rolleyes.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="openfolderpng1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\openfolderpng1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="repair-tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\repair-tools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

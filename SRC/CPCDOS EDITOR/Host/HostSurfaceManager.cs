@@ -84,6 +84,7 @@ namespace OSMaker.Host
                         var basicHostLoader = new Loader.BasicHostLoader(rootComponentType);
                         hostSurface.BeginLoad(basicHostLoader);
                         hostSurface.Loader = basicHostLoader;
+                      
                         break;
                     }
 
@@ -116,7 +117,7 @@ namespace OSMaker.Host
             if (Equals(fileName, null) || !File.Exists(fileName))
                 MessageBox.Show("FileName is incorrect: " + fileName);
             var loaderType = LoaderType.NoLoader;
-            if (fileName.EndsWith("xml"))
+            if (fileName.EndsWith("osm"))
                 loaderType = LoaderType.BasicDesignerLoader;
             if (loaderType == LoaderType.NoLoader || loaderType == LoaderType.CodeDomDesignerLoader)
             {
@@ -128,6 +129,7 @@ namespace OSMaker.Host
             var basicHostLoader = new Loader.BasicHostLoader(fileName);
             hostSurface.BeginLoad(basicHostLoader);
             hostSurface.Loader = basicHostLoader;
+        
             hostSurface.Initialize();
             return new HostControl(hostSurface);
         }

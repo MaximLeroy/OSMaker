@@ -29,11 +29,7 @@ namespace OSMaker.My
             ShutdownStyle = Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterAllFormsClose;
         }
 
-        [DebuggerStepThrough()]
-        protected override void OnCreateMainForm()
-        {
-            MainForm = MyProject.Forms.Form2;
-        }
+     
 
         [DebuggerStepThrough()]
         protected override void OnCreateSplashScreen()

@@ -1,0 +1,148 @@
+﻿Window/ Form1
+   .SX            = "489"
+   .SY            = "261"
+   .TitleColor    = "000,000,000"
+   .BackColor     = "255,255,255"
+   .Titre         = "fenetre"
+Create/ @#MonHandle
+End/ Window
+
+TextBox/ TextBox2
+   .Parameters    = "False"
+   .Handle        = "%MonHandle%"
+   .BackColor     = "200,255,240"
+   .TextColor     = "250,100,100"
+   .PX            = "343"
+   .PY            = "85"
+   .SX            = "100"
+   .SY            = "73"
+Create/
+End/ TextBox
+
+TextBox/ TextBox1
+   .Parameters    = "False"
+   .Handle        = "%MonHandle%"
+   .BackColor     = "200,255,240"
+   .TextColor     = "250,100,100"
+   .PX            = "290"
+   .PY            = "41"
+   .SX            = "100"
+   .SY            = "18"
+Create/
+End/ TextBox
+
+ProgressBar/ ProgressBar2
+   .Handle        = "%MonHandle%"
+   .BackColor     = "200,255,240"
+   .TextColor     = "250,100,100"
+   .PX            = "162"
+   .PY            = "201"
+   .SX            = "100"
+   .SY            = "48"
+Create/
+End/ ProgressBar
+
+ProgressBar/ ProgressBar1
+   .Handle        = "%MonHandle%"
+   .BackColor     = "200,255,240"
+   .TextColor     = "250,100,100"
+   .PX            = "26"
+   .PY            = "202"
+   .SX            = "100"
+   .SY            = "23"
+Create/
+End/ ProgressBar
+
+PictureBox/ PictureBox2
+
+   .Handle        = "%MonHandle%"
+   .PX            = "26"
+   .PY            = "136"
+   .SX            = "100"
+   .SY            = "50"
+Create/
+End/ PictureBox
+
+PictureBox/ PictureBox1
+
+   .Handle        = "%MonHandle%"
+   .PX            = "146"
+   .PY            = "120"
+   .SX            = "100"
+   .SY            = "50"
+Create/
+End/ PictureBox
+
+CheckBox/ CheckBox2
+   .Handle        = "%MonHandle%"
+   .BackColor     = "255,255,240"
+   .TextColor     = "000,000,000"
+   .Text          = "CheckBox2"
+   .PX            = "12"
+   .PY            = "96"
+   .SX            = "104"
+   .SY            = "24"
+Create/
+End/ CheckBox
+
+CheckBox/ CheckBox1
+   .Handle        = "%MonHandle%"
+   .BackColor     = "255,255,240"
+   .TextColor     = "000,000,000"
+   .Text          = "CheckBox1"
+   .PX            = "13"
+   .PY            = "66"
+   .SX            = "104"
+   .SY            = "24"
+Create/
+End/ CheckBox
+
+Button/ Button2
+   .Handle        = "%MonHandle%"
+   .Text          = "Button2"
+   .PX            = "133"
+   .PY            = "39"
+   .SX            = "75"
+   .SY            = "52"
+Create/
+End/ Button
+
+TextBlock/ TextBlock2
+   .Handle        = "%MonHandle%"
+   .BackColor     = "200,255,240"
+   .TextColor     = "250,100,100"
+   .Text          = "TextBlock2"
+   .PX            = "96"
+   .PY            = "13"
+   .SX            = "100"
+   .SY            = "23"
+Create/
+End/ TextBlock
+
+Button/ Button1
+   .Handle        = "%MonHandle%"
+   .Text          = "Button1"
+   .PX            = "26"
+   .PY            = "39"
+   .SX            = "75"
+   .SY            = "23"
+Create/
+End/ Button
+
+TextBlock/ TextBlock1
+   .Handle        = "%MonHandle%"
+   .BackColor     = "200,255,240"
+   .TextColor     = "250,100,100"
+   .Text          = "TextBlock1"
+   .PX            = "26"
+   .PY            = "13"
+   .SX            = "100"
+   .SY            = "23"
+Create/
+End/ TextBlock
+
+
+
+
+
+

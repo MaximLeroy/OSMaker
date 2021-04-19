@@ -5,7 +5,6 @@ using System.ComponentModel.Design.Serialization;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-using DevComponents.DotNetBar;
 using Microsoft.VisualBasic.CompilerServices;
 
 namespace OSMaker.Host
@@ -22,10 +21,13 @@ namespace OSMaker.Host
         private BasicDesignerLoader _loader;
         private ISelectionService _selectionService;
         public System.Windows.Forms.Design.WindowsFormsDesignerOptionService designerOptionService = new System.Windows.Forms.Design.WindowsFormsDesignerOptionService();
-
+        public event EventHandler DoubleClick;
         // Menu
         public MenuCommandServiceImpl Menu;
-
+        private void doublbcli(object sender, EventArgs e)
+        {
+            MessageBox.Show("double click");
+        }
         public HostSurface() : base()
         {
             AddService(typeof(IMenuCommandService), new MenuCommandService(this));
@@ -38,6 +40,7 @@ namespace OSMaker.Host
         }
 
         internal void Initialize()
+
         {
             Control control = null;
             IDesignerHost host = (IDesignerHost)GetService(typeof(IDesignerHost));
@@ -52,6 +55,8 @@ namespace OSMaker.Host
                     control = View as Control;
                     control.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(30)), Conversions.ToInteger(Conversions.ToByte(30)), Conversions.ToInteger(Conversions.ToByte(30)));
                     control.Dock = DockStyle.Fill;
+                    ;
+                    
                 }
                 else if (ReferenceEquals(hostType, typeof(UserControl)))
                 {
@@ -72,6 +77,7 @@ namespace OSMaker.Host
                 // Set SelectionService - SelectionChanged event handler
                 _selectionService = (ISelectionService)ServiceContainer.GetService(typeof(ISelectionService));
                 _selectionService.SelectionChanged += new EventHandler(selectionService_SelectionChanged);
+               
             }
             catch (Exception ex)
             {
@@ -101,7 +107,8 @@ namespace OSMaker.Host
             if (_selectionService is object)
             {
                 var selectedComponents = _selectionService.GetSelectedComponents();
-                AdvPropertyGrid propertyGrid = (AdvPropertyGrid)GetService(typeof(AdvPropertyGrid));
+               
+               PropertyGrid propertyGrid = (PropertyGrid)GetService(typeof(PropertyGrid));
                 var comps = new object[selectedComponents.Count];
                 int i = 0;
                 foreach (var o in selectedComponents)
@@ -111,6 +118,7 @@ namespace OSMaker.Host
                 }
 
                 propertyGrid.SelectedObjects = comps;
+                
             }
         }
 

@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BEBFA983-A7CA-0976-3410-EECB70232D22}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>OSMaker.My.MyApplication</StartupObject>
+    <StartupObject>OSMaker.Program</StartupObject>
     <RootNamespace>OSMaker</RootNamespace>
     <AssemblyName>OSMaker</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -15,6 +15,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
+    <LangVersion>latest</LangVersion>
     <PublishUrl>C:\Users\Maxime\Documents\OSMPUB0.1\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -30,8 +32,6 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
-    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -107,52 +107,19 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="AIMS.Docking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Script Control\Executables\AIMS.Docking.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\ComponentFactory.Krypton.Toolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.Charts.Design">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.Charts.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.DotNetBar.Charts">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Charts.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.DotNetBar.Design">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.DotNetBar.Keyboard">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Keyboard.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.DotNetBar.Layout">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Layout.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.DotNetBar.Layout.Design">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.DotNetBar.Schedule">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.Schedule.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.DotNetBar.SuperGrid">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.DotNetBar2.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.Instrumentation">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.Instrumentation.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.Instrumentation.Design">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.Instrumentation.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.SuperGrid.Design">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.SuperGrid.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.TreeGX">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\DevComponents.TreeGX.dll</HintPath>
     </Reference>
     <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
@@ -191,35 +158,30 @@
       <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\ToolWindows.dll</HintPath>
     </Reference>
     <Reference Include="UIAutomationProvider" />
-    <Reference Include="VelerSoftware.Design.Design">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Design.dll</HintPath>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2003">
+      <HintPath>..\..\..\..\..\..\..\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Docking">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Docking.dll</HintPath>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2005">
+      <HintPath>..\..\..\..\..\..\..\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Navigator">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Navigator.dll</HintPath>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading">
+      <HintPath>..\..\..\..\..\..\..\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Ribbon">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Ribbon.dll</HintPath>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2012">
+      <HintPath>..\..\..\..\..\..\..\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Toolkit">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Toolkit.dll</HintPath>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2013">
+      <HintPath>..\..\..\..\..\..\..\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll</HintPath>
     </Reference>
-    <Reference Include="VelerSoftware.Design.Workspace">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Design.Workspace.dll</HintPath>
-    </Reference>
-    <Reference Include="VelerSoftware.Plugins3">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.Plugins3.dll</HintPath>
-    </Reference>
-    <Reference Include="VelerSoftware.SZC">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.SZC.dll</HintPath>
-    </Reference>
-    <Reference Include="VelerSoftware.SZC35">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\VelerSoftware.SZC35.dll</HintPath>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015">
+      <HintPath>..\..\..\..\..\..\..\dockpanelsuite-master\dockpanelsuite-master\DockSample\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WinFormsUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\dockpanelsuite-master\dockpanelsuite-master\WinFormsUI\obj\Debug\net40\WinFormsUI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -235,16 +197,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\MenuCommandService.cs" />
     <Compile Include="My Project\MyNamespace.Dynamic.Designer.cs" />
     <Compile Include="My Project\MyNamespace.Static.1.Designer.cs" />
     <Compile Include="My Project\MyNamespace.Static.2.Designer.cs" />
     <Compile Include="My Project\MyNamespace.Static.3.Designer.cs" />
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Host\Designer.cs" />
     <Compile Include="Host\HostControl.Designer.cs">
       <DependentUpon>HostControl.cs</DependentUpon>
@@ -273,44 +236,95 @@
     <Compile Include="Loader\CodeDomHostLoader.cs" />
     <Compile Include="Loader\CodeGen.cs" />
     <Compile Include="Loader\TypeResolutionService.cs" />
-    <Compile Include="OSMCodeBox.Designer.cs">
-      <DependentUpon>OSMCodeBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OSMCodeBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Parametres.Designer.cs">
-      <DependentUpon>Parametres.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parametres.cs">
+    <Compile Include="Formulaires\Nouveau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DESIGN.Designer.cs">
-      <DependentUpon>DESIGN.cs</DependentUpon>
+    <Compile Include="Formulaires\Nouveau.Designer.cs">
+      <DependentUpon>Nouveau.cs</DependentUpon>
     </Compile>
-    <Compile Include="DESIGN.cs" />
-    <Compile Include="Fenetre.Designer.cs">
-      <DependentUpon>Fenetre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Fenetre.cs">
+    <Compile Include="Panneaux\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InvisibleCharsRenderer.cs" />
+    <Compile Include="Panneaux\Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\Doc.Designer.cs">
+      <DependentUpon>Doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\DocumentC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\DocumentC.Designer.cs">
+      <DependentUpon>DocumentC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\EditeurCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\EditeurCode.Designer.cs">
+      <DependentUpon>EditeurCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\ExporterEnOsm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\ExporterEnOsm.Designer.cs">
+      <DependentUpon>ExporterEnOsm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\OutputWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\OutputWindow.Designer.cs">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\OuvrirConcepteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\OuvrirConcepteur.Designer.cs">
+      <DependentUpon>OuvrirConcepteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\PropertyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\PropertyWindow.Designer.cs">
+      <DependentUpon>PropertyWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\SolutionExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\SolutionExplorer.Designer.cs">
+      <DependentUpon>SolutionExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\Toolbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\Toolbox.Designer.cs">
+      <DependentUpon>Toolbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\ToolWindow.Designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\InvisibleCharsRenderer.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreen1.Designer.cs">
+    <Compile Include="Formulaires\SplashScreen1.Designer.cs">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreen1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Objets.Designer.cs">
-      <DependentUpon>Objets.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Objets.cs">
+    <Compile Include="Formulaires\SplashScreen1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.cs" />
@@ -324,24 +338,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RichScript.cs" />
-    <Compile Include="TabOrderHooker.cs" />
-    <Compile Include="TabPage\EditeurCCplus.Designer.cs">
+    <Compile Include="Classes\RichScript.cs" />
+    <Compile Include="Syntaxe\SyntaxeCCPlus.cs" />
+    <Compile Include="Classes\TabOrderHooker.cs" />
+    <Compile Include="Panneaux\EditeurCCplus.Designer.cs">
       <DependentUpon>EditeurCCplus.cs</DependentUpon>
     </Compile>
-    <Compile Include="TabPage\EditeurCCplus.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Panneaux\EditeurCCplus.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="TabPage\UndoEngineImpl.cs" />
     <Compile Include="TabPage\WindowsDesigner.cs" />
-    <Compile Include="TbInfo.cs" />
-    <Compile Include="TbInfo2.cs" />
-    <Compile Include="Variables.cs" />
+    <Compile Include="Classes\TbInfo.cs" />
+    <Compile Include="Classes\TbInfo2.cs" />
+    <Compile Include="Classes\Variables.cs" />
     <Compile Include="WinToCpc\ModuleCpc.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Host\HostControl.resx">
       <DependentUpon>HostControl.cs</DependentUpon>
@@ -349,21 +364,48 @@
     <EmbeddedResource Include="Host\TestDesignervb.resx">
       <DependentUpon>TestDesignervb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OSMCodeBox.resx">
-      <DependentUpon>OSMCodeBox.cs</DependentUpon>
+    <EmbeddedResource Include="Formulaires\Nouveau.resx">
+      <DependentUpon>Nouveau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Parametres.resx">
-      <DependentUpon>Parametres.cs</DependentUpon>
+    <EmbeddedResource Include="Panneaux\Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DESIGN.resx">
-      <DependentUpon>DESIGN.cs</DependentUpon>
+    <EmbeddedResource Include="Panneaux\Doc.resx">
+      <DependentUpon>Doc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\DocumentC.resx">
+      <DependentUpon>DocumentC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\EditeurCode.resx">
+      <DependentUpon>EditeurCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\ExporterEnOsm.resx">
+      <DependentUpon>ExporterEnOsm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\OutputWindow.resx">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\OuvrirConcepteur.resx">
+      <DependentUpon>OuvrirConcepteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\PropertyWindow.resx">
+      <DependentUpon>PropertyWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\SolutionExplorer.resx">
+      <DependentUpon>SolutionExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\Toolbox.resx">
+      <DependentUpon>Toolbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\ToolWindow.resx">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\View.resx">
+      <DependentUpon>View.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
-    <EmbeddedResource Include="SplashScreen1.resx">
+    <EmbeddedResource Include="Formulaires\SplashScreen1.resx">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Objets.resx">
-      <DependentUpon>Objets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -371,11 +413,12 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="TabPage\EditeurCCplus.resx">
+    <EmbeddedResource Include="Panneaux\EditeurCCplus.resx">
       <DependentUpon>EditeurCCplus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="fichier1.cpc" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -757,6 +800,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AIMS.Docking.dll" />
+    <Content Include="Classes\OSMAKERR.xml" />
+    <Content Include="Resources\DockPanel.xml" />
+    <Content Include="Resources\OSMaker.xml" />
+    <None Include="Resources\repair-tools.png" />
+    <None Include="Resources\file-explorer.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\import.png" />
+    <None Include="Resources\OSM_LOGO.png" />
+    <None Include="Resources\OSMaker.png" />
+    <None Include="Resources\WIN.png" />
+    <None Include="Resources\icons8-categorize-48.png" />
+    <None Include="Resources\Label.PNG" />
     <None Include="Resources\openfolderpng1.png" />
     <None Include="Resources\diamond161.png" />
     <None Include="Resources\light16.png" />
@@ -812,13 +868,27 @@
     <None Include="Resources\copy_paste_documents_1580 %28Copier%29.png" />
     <None Include="Resources\copy_paste_document_file_1557 %28Copier%29.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Panneau\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\DesignerHosting\Host\Host.csproj">
+      <Project>{0b007b04-eaa6-419c-bda0-6c394d0dc485}</Project>
+      <Name>Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\DesignerHosting\Loader\Loader.csproj">
+      <Project>{35446b57-9ac5-4ddb-9d65-16d6dff39c04}</Project>
+      <Name>Loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CpcDosCPlusTools\CpcDosCPlus\Exporter.csproj">
+      <Project>{7eb4f52f-e4bd-450a-833a-5cf3a42f7fb3}</Project>
+      <Name>Exporter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\OSMaker\SRC\ToolBox\ToolBox.vbproj">
       <Project>{18fe5640-9031-469a-be67-9039735d500a}</Project>
       <Name>ToolBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinToCpcDosCplus\WinToCpcDosCplus.vbproj">
+      <Project>{bca0393d-06c8-4959-8bf5-bf066cad56a6}</Project>
+      <Name>WinToCpcDosCplus</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

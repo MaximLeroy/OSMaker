@@ -13,6 +13,7 @@
 	using System.Text;
 	using System.Windows.Forms;
 	using System.Xml;
+	using ToolBox;
 
 	/// <summary>
 	/// Inherits from BasicDesignerLoader. It can persist the HostSurface
@@ -1001,8 +1002,8 @@
 				{
 					SaveFileDialog dlg = new SaveFileDialog();
 
-					dlg.DefaultExt = "xml";
-					dlg.Filter = "XML Files|*.xml";
+					dlg.DefaultExt = "osm";
+					dlg.Filter = "OSM Files|*.osm";
 					if (dlg.ShowDialog() == DialogResult.OK)
 					{
 						fileName = dlg.FileName;

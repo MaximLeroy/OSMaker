@@ -10,7 +10,10 @@ namespace OSMaker.Host
     public class MenuCommandServiceImpl : MenuCommandService
     {
         private DesignerVerbCollection m_globalVerbs = new DesignerVerbCollection();
+        public interface IDesignerSerializationService
+        {
 
+        }
         public MenuCommandServiceImpl(IServiceProvider serviceProvider) : base(serviceProvider)
         {
             m_globalVerbs.Add(StandartVerb("Cut", StandardCommands.Cut));
@@ -18,6 +21,7 @@ namespace OSMaker.Host
             m_globalVerbs.Add(StandartVerb("Paste", StandardCommands.Paste));
             m_globalVerbs.Add(StandartVerb("Delete", StandardCommands.Delete));
             m_globalVerbs.Add(StandartVerb("Select All", StandardCommands.SelectAll));
+
         }
 
         private DesignerVerb StandartVerb(string text, CommandID commandID)
@@ -73,5 +77,6 @@ namespace OSMaker.Host
             var s = ps.PointToScreen(new Point(0, 0));
             cm.Show(ps, new Point(x - s.X, y - s.Y));
         }
+
     }
 }

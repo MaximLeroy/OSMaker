@@ -1,0 +1,44 @@
+﻿'OSMaker.exe' (CLR v4.0.30319: DefaultDomain) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: DefaultDomain) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe'. Les symboles ont été chargés.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\WinFormsUI.dll'. Les symboles ont été chargés.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll'. Les symboles ont été chargés.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll'. Les symboles ont été chargés.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll'. Les symboles ont été chargés.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll'. Les symboles ont été chargés.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll'. Les symboles ont été chargés.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\MetroFramework.dll'. Le module a été généré sans symboles.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\MetroFramework.Fonts.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+'OSMaker.exe' (CLR v4.0.30319: OSMaker.exe) : Chargé 'C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\Documents\OSMaker\ToolBox.dll'. Les symboles ont été chargés.
+Objets Cpcdos
+	ToolBox.Button
+	ToolBox.CheckBox
+	ToolBox.TextBlock
+	ToolBox.TextBox
+	ToolBox.PictureBox
+	ToolBox.ProgressBar
+	ToolBox.Window
+ 
+Objets Cpcdos
+	ToolBox.Button
+	ToolBox.CheckBox
+	ToolBox.TextBlock
+	ToolBox.TextBox
+	ToolBox.PictureBox
+	ToolBox.ProgressBar
+	ToolBox.Window
+ 
+Exception levée : 'System.UnauthorizedAccessException' dans mscorlib.dll
+Exception levée : 'System.UnauthorizedAccessException' dans mscorlib.dll
+Exception levée : 'System.UnauthorizedAccessException' dans mscorlib.dll
+Exception levée : 'System.UnauthorizedAccessException' dans mscorlib.dll
+Exception levée : 'System.UnauthorizedAccessException' dans mscorlib.dll
+Exception levée : 'System.UnauthorizedAccessException' dans mscorlib.dll
+Le programme '[19656] OSMaker.exe' s'est arrêté avec le code -1 (0xffffffff).

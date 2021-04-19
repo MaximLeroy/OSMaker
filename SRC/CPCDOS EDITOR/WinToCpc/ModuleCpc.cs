@@ -76,60 +76,60 @@ namespace OSMaker.WinToCpc
                 var childrops = currentNode.SelectNodes("Property");
                 foreach (XmlNode item in childrops)
                     WriteNodeProperty(item, sbuilder);
-                if (editeurC.parametrescheck.Checked)
-                {
-                    sbuilder.AppendLine(".Parameters" + "   " + " = \"" + editeurC.bordtext.Text + editeurC.ctntext.Text + editeurC.typetext.Text + "OMBRE:" + editeurC.ombretext.Text + "\"");
-                }
+                //if (editeurC.metroParametres.Checked)
+                //{
+                //    sbuilder.AppendLine(".Parameters" + "   " + " = \"" + editeurC.metroBORD.Text + editeurC.metroCTN.Text + editeurC.metroType.Text + "OMBRE:" + editeurC.metroOmbre.Text + "\"");
+                //}
 
-                if (string.IsNullOrEmpty(editeurC.Opacitetext.Text))
-                {
-                }
-                else
-                {
-                    sbuilder.AppendLine(".Opacite" + "      " + " = \"" + editeurC.Opacitetext.Text + "\"");
-                }
+                //if (string.IsNullOrEmpty(editeurC.metroOpacite.Text))
+                //{
+                //}
+                //else
+                //{
+                //    sbuilder.AppendLine(".Opacite" + "      " + " = \"" + editeurC.metroOpacite.Text + "\"");
+                //}
 
-                if (string.IsNullOrEmpty(editeurC.Couleurfenetretext.Text))
-                {
-                }
-                else
-                {
-                    sbuilder.AppendLine(".WindowColor" + "  " + " = \"" + editeurC.Couleurfenetretext.Text + "\"");
-                }
+                //if (string.IsNullOrEmpty(editeurC.metroCFR.Text))
+                //{
+                //}
+                //else
+                //{
+                //    sbuilder.AppendLine(".WindowColor" + "  " + " = \"" + editeurC.metroCFR.Text + "\"");
+                //}
 
-                if (string.IsNullOrEmpty(editeurC.couleurtitretext.Text))
-                {
-                }
-                else
-                {
-                    sbuilder.AppendLine(".TitleColor" + "   " + " = \"" + editeurC.couleurtitretext.Text + "\"");
-                }
+                //if (string.IsNullOrEmpty(editeurC.metroCTR.Text))
+                //{
+                //}
+                //else
+                //{
+                //    sbuilder.AppendLine(".TitleColor" + "   " + " = \"" + editeurC.metroCTR.Text + "\"");
+                //}
 
-                if (string.IsNullOrEmpty(editeurC.couleurfondtext.Text))
-                {
-                }
-                else
-                {
-                    sbuilder.AppendLine(".BackColor" + "    " + " = \"" + editeurC.couleurfondtext.Text + "\"");
-                }
+                //if (string.IsNullOrEmpty(editeurC.metroCFOR.Text))
+                //{
+                //}
+                //else
+                //{
+                //    sbuilder.AppendLine(".BackColor" + "    " + " = \"" + editeurC.metroCFOR.Text + "\"");
+                //}
 
-                if (string.IsNullOrEmpty(editeurC.iconetext.Text))
-                {
-                }
-                else
-                {
-                    sbuilder.AppendLine(".Icone" + "        " + " = \"" + editeurC.iconetext.Text + "\"");
-                }
+                //if (string.IsNullOrEmpty(editeurC.metroIcone.Text))
+                //{
+                //}
+                //else
+                //{
+                //    sbuilder.AppendLine(".Icone" + "        " + " = \"" + editeurC.metroIcone.Text + "\"");
+                //}
 
-                if (string.IsNullOrEmpty(editeurC.imgtitretext.Text))
-                {
-                }
-                else
-                {
-                    sbuilder.AppendLine(".ImgTitre" + "     " + " = \"" + editeurC.imgtitretext.Text + "\"");
-                }
+                //if (string.IsNullOrEmpty(editeurC.metroIcone.Text))
+                //{
+                //}
+                //else
+                //{
+                //    sbuilder.AppendLine(".ImgTitre" + "     " + " = \"" + editeurC.metroIcone.Text + "\"");
+                //}
 
-                sbuilder.AppendLine("Create/ @#" + editeurC.Handletext.Text);
+                //sbuilder.AppendLine("Create/ @#" + editeurC.metroHandle.Text);
                 sbuilder.AppendLine(CpcDebutToFins.Values.ElementAtOrDefault(0));
                
             }
@@ -291,14 +291,14 @@ namespace OSMaker.WinToCpc
             EditeurCCplus  editeurC;
             editeurC = new EditeurCCplus();
             string fileName = null;
-            if (string.IsNullOrEmpty(editeurC.TextBoxX1.Text))
+            if (string.IsNullOrEmpty(editeurC.metroFichierCCPlus.Text))
             {
                 var dlgSaveFile = new SaveFileDialog();
                 dlgSaveFile.Filter = "Files(.*cpc)|*.cpc";
                 if (dlgSaveFile.ShowDialog() == DialogResult.OK)
                 {
                     fileName = dlgSaveFile.FileName;
-                    editeurC.TextBoxX1.Text = fileName;
+                    editeurC.metroFichierCCPlus.Text = fileName;
                     if (fileName.Length != 0)
                     {
                         return fileName;
@@ -307,7 +307,7 @@ namespace OSMaker.WinToCpc
             }
             else
             {
-                fileName = editeurC.TextBoxX1.Text;
+                fileName = editeurC.metroFichierCCPlus.Text;
             }
 
             return fileName;

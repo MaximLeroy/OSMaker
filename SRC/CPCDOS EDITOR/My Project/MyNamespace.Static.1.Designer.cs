@@ -27,6 +27,9 @@ namespace OSMaker.My
         [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static void Main(string[] Args)
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Home());
             try
             {
                 Application.SetCompatibleTextRenderingDefault(UseCompatibleTextRendering);

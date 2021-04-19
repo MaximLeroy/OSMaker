@@ -54,170 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ComponentFactory.Krypton.Toolkit.dll" size="2859008">
-      <assemblyIdentity name="ComponentFactory.Krypton.Toolkit" version="4.4.0.0" publicKeyToken="A87E673E9ECB6E8E" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Exporter.exe" size="55296">
+      <assemblyIdentity name="Exporter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>d2t50yUFEx84c4gC/c3xC7tL+pyMid0LsN3CFqlrA3c=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.Charts.Design.dll" size="414208">
-      <assemblyIdentity name="DevComponents.Charts.Design" version="14.1.0.36" publicKeyToken="90F470F34C89CCAF" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PWhBFCuQZS4ycaI+Oc1C7MgSSa/o2eS7ieV3DISqX9o=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.DotNetBar.Charts.dll" size="1005568">
-      <assemblyIdentity name="DevComponents.DotNetBar.Charts" version="14.1.0.36" publicKeyToken="7EB7C3A35B91DE04" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>XFaKBCtPSAyp29dOhfrNN4qZbfz/sZNRQJsbsl7/lIM=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.DotNetBar.Design.dll" size="458752">
-      <assemblyIdentity name="DevComponents.DotNetBar.Design" version="14.1.0.36" publicKeyToken="90F470F34C89CCAF" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Xc8qvsZJfSqSetmn/2kXJovdEH7WtEL9pSEg6C/LIww=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.DotNetBar.Keyboard.dll" size="71680">
-      <assemblyIdentity name="DevComponents.DotNetBar.Keyboard" version="14.1.0.36" publicKeyToken="7EB7C3A35B91DE04" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aYayn8dg5qwZ+uTTmjdmhCrKAc1b+J5wo8n2C9TuEsI=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.DotNetBar.Layout.dll" size="234496">
-      <assemblyIdentity name="DevComponents.DotNetBar.Layout" version="14.1.0.36" publicKeyToken="7EB7C3A35B91DE04" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>g4vQSumK+036gwxHQcTD9K71r3j1vx06DBZcYfDoV1Y=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.DotNetBar.Layout.Design.dll" size="43520">
-      <assemblyIdentity name="DevComponents.DotNetBar.Layout.Design" version="14.1.0.36" publicKeyToken="7EB7C3A35B91DE04" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uNjKce6HgzLUanQfBgZiTUyzZsxKAdOStoetdiI6UrY=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.DotNetBar.Schedule.dll" size="559616">
-      <assemblyIdentity name="DevComponents.DotNetBar.Schedule" version="14.1.0.36" publicKeyToken="7EB7C3A35B91DE04" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>twVLm029uEPYhGKz6jhxvsCQd7954mcOVu5UafX5tsY=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.DotNetBar.SuperGrid.dll" size="1315328">
-      <assemblyIdentity name="DevComponents.DotNetBar.SuperGrid" version="14.1.0.36" publicKeyToken="7EB7C3A35B91DE04" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>F9mC3iKdcWIv2hjlrZg4DKBc2SVIkGD+zbQqLFZpZ7s=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.DotNetBar2.dll" size="5552640">
-      <assemblyIdentity name="DevComponents.DotNetBar2" version="14.1.0.36" publicKeyToken="7EB7C3A35B91DE04" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GG+qT6m083U4yte1kUWliDProrYFJ2XMPkq+QQLOino=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.Instrumentation.dll" size="324096">
-      <assemblyIdentity name="DevComponents.Instrumentation" version="14.1.0.36" publicKeyToken="F90DC37C26666A67" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6mt0/8IUBUmo8pX54ZdzXh7/BtT51Hik3J4+eRisnpc=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.Instrumentation.Design.dll" size="192512">
-      <assemblyIdentity name="DevComponents.Instrumentation.Design" version="14.1.0.36" publicKeyToken="76CB4C6EB576BCA5" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1X8A0CrUImJziDaCuJqA1oG+296lkPSc7oCYd/+ewos=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.SuperGrid.Design.dll" size="35840">
-      <assemblyIdentity name="DevComponents.SuperGrid.Design" version="14.1.0.36" publicKeyToken="26D81176CFA2B486" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0cNs/nqJUL5NwcM4pQAikVkQ5Paur8uT8lZW9nrRh6g=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DevComponents.TreeGX.dll" size="430592">
-      <assemblyIdentity name="DevComponents.TreeGX" version="14.1.0.36" publicKeyToken="055DB68F670CFEAB" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wJcW99p5PR2rCOncpCTbCSAFFkuvyMHXTMWGvMT31oI=</dsig:DigestValue>
+        <dsig:DigestValue>9LPiWQAiNocWkN95KjFZGXU4W+u1nsjhHDWvtQZOV/4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -246,6 +90,66 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Host.dll" size="20480">
+      <assemblyIdentity name="Host" version="1.0.7779.41874" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zd2xsoqmifsQtflIMpG30MjDNzRcgAiQW9JI2z4g8E8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Loader.dll" size="27136">
+      <assemblyIdentity name="Loader" version="1.0.7779.41874" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WR8ma83zkPu9PxsN+i9F8tvpRNLFOl4xRcTB4wSz2oo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.dll" size="353280">
+      <assemblyIdentity name="MetroFramework" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wsEtMbSETineMVlPyWMqNypVNjHeCgoEyK+RZo43z0k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.Design.dll" size="16896">
+      <assemblyIdentity name="MetroFramework.Design" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CkqWCC4ldn5GlwM2SbFsdqZS4SB1eizsq4CSrQ1xa2U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MetroFramework.Fonts.dll" size="672256">
+      <assemblyIdentity name="MetroFramework.Fonts" version="1.4.0.0" publicKeyToken="5F91A84759BF584A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yEOGmqylE1wtRylphfNcccqK9EMSiNBNSBxORsyT7iY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NgenInstaller.dll" size="16384">
       <assemblyIdentity name="NgenInstaller" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -258,26 +162,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="2947008">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="6044608">
       <assemblyIdentity name="OSMaker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gw2HhFEA32N20G4DDo/VNBHLW8bUfCMY1m78lL0xn+c=</dsig:DigestValue>
+        <dsig:DigestValue>E8QbxAnH9/LQfvGsBOlxvpAK1jeYN3jwrY0TabH69Nw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToolBox.dll" size="32256">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToolBox.dll" size="43008">
       <assemblyIdentity name="ToolBox" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LyNzVF/dQRK/C5XEMZ3HcbOto1Po07Kc4A3U+6bZcMQ=</dsig:DigestValue>
+        <dsig:DigestValue>ocdBWLYT9NH6NWZPPSMp0xjSROp22aBNRRyRQDLTLik=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -294,134 +198,98 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.Design.Design.dll" size="435712">
-      <assemblyIdentity name="VelerSoftware.Design.Design" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll" size="96256">
+      <assemblyIdentity name="WeifenLuo.WinFormsUI.Docking.ThemeVS2003" version="1.0.0.0" publicKeyToken="5CDED1A1A0A7B481" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>YxSP6LVcdvc+03NXeXuBhcvNwvA0q+/iWzEYKIpylio=</dsig:DigestValue>
+        <dsig:DigestValue>JJORVCpTHqZW5ZZC6n1FDWMAQ+gKiQUijEQA+mOTOp0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.Design.Docking.dll" size="241664">
-      <assemblyIdentity name="VelerSoftware.Design.Docking" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll" size="96256">
+      <assemblyIdentity name="WeifenLuo.WinFormsUI.Docking.ThemeVS2005" version="1.0.0.0" publicKeyToken="5CDED1A1A0A7B481" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kM4KzeJKp6RQD+0KTNkGjkCtQPucPhfabp6Rm9N2Uwk=</dsig:DigestValue>
+        <dsig:DigestValue>sTOvXD6F2p0wuXsSmQoyIyHAdnMNMg79S/BB+XvQH2s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.Design.Navigator.dll" size="419328">
-      <assemblyIdentity name="VelerSoftware.Design.Navigator" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll" size="96768">
+      <assemblyIdentity name="WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading" version="1.0.0.0" publicKeyToken="5CDED1A1A0A7B481" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jZPmbwgDpsBeBKErk7XXXIzuF6Aik5bmhXxn+ocEZgo=</dsig:DigestValue>
+        <dsig:DigestValue>sVV/no8RDY9A3O7kVUEcfaJ87aLZi+hHGTMdITMVRQw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.Design.Ribbon.dll" size="955392">
-      <assemblyIdentity name="VelerSoftware.Design.Ribbon" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll" size="158208">
+      <assemblyIdentity name="WeifenLuo.WinFormsUI.Docking.ThemeVS2012" version="1.0.0.0" publicKeyToken="5CDED1A1A0A7B481" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>K5dGP3yflT8U4RKCZtIbb/MM8tnKWha0+nefG64u9CU=</dsig:DigestValue>
+        <dsig:DigestValue>EO7aOHKSodskDmkFZzhySdPaTyHqwaWYjTXclvEyin8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.Design.Toolkit.dll" size="2682368">
-      <assemblyIdentity name="VelerSoftware.Design.Toolkit" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll" size="207360">
+      <assemblyIdentity name="WeifenLuo.WinFormsUI.Docking.ThemeVS2013" version="1.0.0.0" publicKeyToken="5CDED1A1A0A7B481" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ClAMkTfMCqHGs+hqAQ4HlV1CMacj9/H4kYcJDAveAFY=</dsig:DigestValue>
+        <dsig:DigestValue>nKF6H5YS6LneA+PlPTbGZ0BK6Duv4sv1nSLf9I9bpFg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.Design.Workspace.dll" size="164352">
-      <assemblyIdentity name="VelerSoftware.Design.Workspace" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll" size="232448">
+      <assemblyIdentity name="WeifenLuo.WinFormsUI.Docking.ThemeVS2015" version="1.0.0.0" publicKeyToken="5CDED1A1A0A7B481" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wtAYnGgCz6FhQigswGf/hu19fi9X7AYmPT/SZyP5qg4=</dsig:DigestValue>
+        <dsig:DigestValue>0PU6H7v0VugIyOUEors7CmY1sySi8RIRDm2riD42j3k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.Plugins3.dll" size="519680">
-      <assemblyIdentity name="VelerSoftware.Plugins3" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinFormsUI.dll" size="272896">
+      <assemblyIdentity name="WinFormsUI" version="1.0.0.0" publicKeyToken="5CDED1A1A0A7B481" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2loyz/ieEcBojd5DYv1JJjEdkRX4NfxeHnRufSwSRFg=</dsig:DigestValue>
+        <dsig:DigestValue>a3dYNjv0VFE28Fs0/YV/Nw6o1D/OwGryxSsIvq+ZRag=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\VelerSoftware.Plugins3.resources.dll" size="138240">
-      <assemblyIdentity name="VelerSoftware.Plugins3.resources" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="en" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinToCpcDosCplus.exe" size="17408">
+      <assemblyIdentity name="WinToCpcDosCplus" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yCDFYkixm7fS/8FgbOtitnWCVOTM9cTpsdx6lj6rzSc=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\VelerSoftware.Plugins3.resources.dll" size="123904">
-      <assemblyIdentity name="VelerSoftware.Plugins3.resources" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="fr" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xa+HeODMvqeOPp+4Jh0eKVk0tnAeckV9p7NRMGYTpIg=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.SZC.dll" size="2121216">
-      <assemblyIdentity name="VelerSoftware.SZC" version="3.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8gDrx9iGTIRGpfkXdSzXdoEddEMlRRmc+nbTTAuOrP4=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VelerSoftware.SZC35.dll" size="427008">
-      <assemblyIdentity name="VelerSoftware.SZC35" version="1.0.0.0" publicKeyToken="0A7B25493F100A50" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>o1sX/6QuQ3pC83ylc2eviJ88iwYAgL010s1nLS2nrcQ=</dsig:DigestValue>
+        <dsig:DigestValue>ySF5zcQuoUXZzaKkg3mKnsLJ7BcE5pV+tYmMliQyfv0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -434,6 +302,15 @@
       <dsig:DigestValue>dAbkps+eU3H8ghVCSf653XUcUP8s/uY3VYkZK5QeBd8=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Classes\OSMAKERR.xml" size="3816" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O+8XyGS2VJsTHIgLfySQbuL4+4QwvsyDzZwXTtMM334=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="OSMaker.exe.config" size="2245">
     <hash>
       <dsig:Transforms>
@@ -441,6 +318,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>uVfm+zEp8SFEkRSpr66snQ0qTFLxlHVT7e/t9ePlWlo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\DockPanel.xml" size="9216" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sVHsQRPaQ99T2W1z3q0J0nfqhlJD0fpWxJN4MB/byo8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\OSMaker.xml" size="3816" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O+8XyGS2VJsTHIgLfySQbuL4+4QwvsyDzZwXTtMM334=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
