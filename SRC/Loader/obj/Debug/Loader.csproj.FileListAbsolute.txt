@@ -1,0 +1,8 @@
+C:\Users\btaco\Documents\DesignerHosting\Loader\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\DesignerHosting\Loader\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\DesignerHosting\Loader\bin\Debug\GraphLibrary.dll
+C:\Users\btaco\Documents\DesignerHosting\Loader\obj\Debug\Loader.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\DesignerHosting\Loader\obj\Debug\Loader.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\DesignerHosting\Loader\obj\Debug\Loader.csproj.CopyComplete
+C:\Users\btaco\Documents\DesignerHosting\Loader\obj\Debug\Loader.dll
+C:\Users\btaco\Documents\DesignerHosting\Loader\obj\Debug\Loader.pdb

@@ -1,0 +1,13 @@
+C:\Users\btaco\Documents\DesignerHosting\Host\bin\Debug\Host.dll
+C:\Users\btaco\Documents\DesignerHosting\Host\bin\Debug\Host.pdb
+C:\Users\btaco\Documents\DesignerHosting\Host\bin\Debug\GraphLibrary.dll
+C:\Users\btaco\Documents\DesignerHosting\Host\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\DesignerHosting\Host\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\DesignerHosting\Host\obj\Debug\Host.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\DesignerHosting\Host\obj\Debug\Host.HostControl.resources
+C:\Users\btaco\Documents\DesignerHosting\Host\obj\Debug\Host.MyTopLevelComponent.resources
+C:\Users\btaco\Documents\DesignerHosting\Host\obj\Debug\Host.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\DesignerHosting\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\DesignerHosting\Host\obj\Debug\Host.csproj.CopyComplete
+C:\Users\btaco\Documents\DesignerHosting\Host\obj\Debug\Host.dll
+C:\Users\btaco\Documents\DesignerHosting\Host\obj\Debug\Host.pdb
