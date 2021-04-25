@@ -1,0 +1,2 @@
+Ce projet est le plus fonctionnel à l'heure actuelle.
+Veuillez ajouter toutes les références (DLL) demandées par Visual Studio 2019 après génération des projets correspondants via le dossier SRC/DLL
