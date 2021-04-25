@@ -15,10 +15,15 @@ using Exporter.Controls;
 using Exporter;
 using System.Drawing.Design;
 using MetroFramework;
+
 namespace OSMaker
 {
     public partial class Home : MetroFramework.Forms.MetroForm
     {
+        bool moving;
+        Point offset;
+        Point original;
+
         private bool m_bSaveLayout = true;
         private DeserializeDockContent m_deserializeDockContent;
         public static SolutionExplorer m_solutionExplorer;
@@ -756,6 +761,56 @@ namespace OSMaker
         private void menuItemSolutionExplorer_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void mainMenu_MouseDown(object sender, MouseEventArgs e)
+        {
+            moving = true;
+            mainMenu.Capture = true;
+            offset = MousePosition;
+            original = this.Location;
+        }
+
+        private void mainMenu_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!moving)
+                return;
+
+            int x = original.X + MousePosition.X - offset.X;
+            int y = original.Y + MousePosition.Y - offset.Y;
+
+            this.Location = new Point(x, y);
+        }
+
+        private void mainMenu_MouseUp(object sender, MouseEventArgs e)
+        {
+            moving = false;
+            mainMenu.Capture = false;
+        }
+
+        private void panel3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!moving)
+                return;
+
+            int x = original.X + MousePosition.X - offset.X;
+            int y = original.Y + MousePosition.Y - offset.Y;
+
+            this.Location = new Point(x, y);
+        }
+
+        private void panel3_MouseUp(object sender, MouseEventArgs e)
+        {
+            moving = false;
+            panel3.Capture = false;
+        }
+
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            moving = true;
+            panel3.Capture = true;
+            offset = MousePosition;
+            original = this.Location;
         }
     }
 

@@ -36,9 +36,16 @@ namespace OSMaker
         [DebuggerStepThrough()]
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Label4
@@ -70,12 +77,48 @@ namespace OSMaker
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.Label2.Location = new System.Drawing.Point(576, 256);
+            this.Label2.Location = new System.Drawing.Point(576, 251);
             this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(163, 28);
             this.Label2.TabIndex = 10;
             this.Label2.Text = "For CPCDOS OSx";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::OSMaker.My.Resources.Resources.logocpcdos;
+            this.pictureBox2.Location = new System.Drawing.Point(641, 281);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(144, 125);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OSMaker.My.Resources.Resources.OSM_LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label3.Location = new System.Drawing.Point(8, 368);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(265, 38);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "GNU General Public License v3.0\r\nhttps://github.com/MaximLeroy/OSMaker";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SplashScreen1
             // 
@@ -85,17 +128,22 @@ namespace OSMaker
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(797, 412);
             this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.Label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SplashScreen1";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.SplashScreen1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +152,9 @@ namespace OSMaker
         internal Label Label4;
         internal Label Label1;
         internal Label Label2;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        internal Label label3;
+        private Timer timer1;
     }
 }

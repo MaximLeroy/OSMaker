@@ -39,21 +39,21 @@
             this.fichierTexteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dossierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ouvrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.renommerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this._tv = new System.Windows.Forms.TreeView();
             this.ImageList1 = new System.Windows.Forms.ImageList(this.components);
             this.txtDirectory = new MetroFramework.Controls.MetroTextBox();
-            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this._PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.renommerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.metroContextMenu1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroContextMenu1
@@ -66,7 +66,7 @@
             this.renommerToolStripMenuItem,
             this.supprimerToolStripMenuItem});
             this.metroContextMenu1.Name = "metroContextMenu1";
-            this.metroContextMenu1.Size = new System.Drawing.Size(211, 128);
+            this.metroContextMenu1.Size = new System.Drawing.Size(152, 100);
             this.metroContextMenu1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroContextMenu1.UseCustomBackColor = true;
             // 
@@ -80,40 +80,40 @@
             this.dossierToolStripMenuItem});
             this.nouveauToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.nouveauToolStripMenuItem.Name = "nouveauToolStripMenuItem";
-            this.nouveauToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.nouveauToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.nouveauToolStripMenuItem.Text = "Nouveau";
             this.nouveauToolStripMenuItem.Click += new System.EventHandler(this.nouveauToolStripMenuItem_Click);
             // 
             // iUGToolStripMenuItem
             // 
             this.iUGToolStripMenuItem.Name = "iUGToolStripMenuItem";
-            this.iUGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.iUGToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.iUGToolStripMenuItem.Text = "IUG";
             this.iUGToolStripMenuItem.Click += new System.EventHandler(this.iUGToolStripMenuItem_Click);
             // 
             // bureauToolStripMenuItem
             // 
             this.bureauToolStripMenuItem.Name = "bureauToolStripMenuItem";
-            this.bureauToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bureauToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.bureauToolStripMenuItem.Text = "Bureau";
             // 
             // fichierCCToolStripMenuItem
             // 
             this.fichierCCToolStripMenuItem.Name = "fichierCCToolStripMenuItem";
-            this.fichierCCToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fichierCCToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.fichierCCToolStripMenuItem.Text = "Fichier CC+";
             this.fichierCCToolStripMenuItem.Click += new System.EventHandler(this.fichierCCToolStripMenuItem_Click);
             // 
             // fichierTexteToolStripMenuItem
             // 
             this.fichierTexteToolStripMenuItem.Name = "fichierTexteToolStripMenuItem";
-            this.fichierTexteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fichierTexteToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.fichierTexteToolStripMenuItem.Text = "Fichier Texte";
             // 
             // dossierToolStripMenuItem
             // 
             this.dossierToolStripMenuItem.Name = "dossierToolStripMenuItem";
-            this.dossierToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dossierToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.dossierToolStripMenuItem.Text = "Dossier";
             this.dossierToolStripMenuItem.Click += new System.EventHandler(this.dossierToolStripMenuItem_Click);
             // 
@@ -121,9 +121,23 @@
             // 
             this.ouvrirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
             this.ouvrirToolStripMenuItem.Text = "Ouvrir";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
+            // 
+            // renommerToolStripMenuItem
+            // 
+            this.renommerToolStripMenuItem.Name = "renommerToolStripMenuItem";
+            this.renommerToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.renommerToolStripMenuItem.Text = "Renommer";
+            this.renommerToolStripMenuItem.Click += new System.EventHandler(this.renommerToolStripMenuItem_Click);
+            // 
+            // supprimerToolStripMenuItem
+            // 
+            this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.supprimerToolStripMenuItem.Text = "Supprimer";
+            this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click);
             // 
             // progressBar1
             // 
@@ -150,6 +164,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(261, 532);
             this.panel2.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.ForeColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = global::OSMaker.My.Resources.Resources.emblemsynchronizing_93485;
+            this.pictureBox1.Location = new System.Drawing.Point(231, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(27, 23);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // _tv
             // 
@@ -224,26 +254,6 @@
             this.txtDirectory.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtDirectory.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroStyleManager1
-            // 
-            this.metroStyleManager1.Owner = null;
-            this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.ForeColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = global::OSMaker.My.Resources.Resources.openfolderpng;
-            this.pictureBox1.Location = new System.Drawing.Point(231, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 23);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // _PictureBox1
             // 
             this._PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -259,19 +269,10 @@
             this._PictureBox1.TabStop = false;
             this._PictureBox1.Click += new System.EventHandler(this._PictureBox1_Click);
             // 
-            // renommerToolStripMenuItem
+            // metroStyleManager1
             // 
-            this.renommerToolStripMenuItem.Name = "renommerToolStripMenuItem";
-            this.renommerToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.renommerToolStripMenuItem.Text = "Renommer";
-            this.renommerToolStripMenuItem.Click += new System.EventHandler(this.renommerToolStripMenuItem_Click);
-            // 
-            // supprimerToolStripMenuItem
-            // 
-            this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
-            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.supprimerToolStripMenuItem.Text = "Supprimer";
-            this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click);
+            this.metroStyleManager1.Owner = null;
+            this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // SolutionExplorer
             // 
@@ -285,9 +286,9 @@
             this.Load += new System.EventHandler(this.SolutionExplorer_Load);
             this.metroContextMenu1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.ResumeLayout(false);
 
         }

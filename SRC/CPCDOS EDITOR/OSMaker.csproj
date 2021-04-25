@@ -455,9 +455,6 @@
     <None Include="Resources\strawberry.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\space-planet-digital-art-atmosphere-stars-1920x1080.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Colors_Within_by_giannisgx89 %281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -749,6 +746,7 @@
     <Content Include="AIMS.Docking.dll" />
     <Content Include="Classes\OSMAKERR.xml" />
     <Content Include="Resources\DockPanel.xml" />
+    <None Include="Resources\logocpcdos.png" />
     <Content Include="Resources\OSMaker.xml" />
     <None Include="Resources\repair-tools.png" />
     <None Include="Resources\file-explorer.png" />
@@ -817,7 +815,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\CpcDosCPlusTools\CpcDosCPlus\Exporter.csproj">
+    <ProjectReference Include="..\CpcDosCPlusTools\Exporter\Exporter.csproj">
       <Project>{7eb4f52f-e4bd-450a-833a-5cf3a42f7fb3}</Project>
       <Name>Exporter</Name>
     </ProjectReference>

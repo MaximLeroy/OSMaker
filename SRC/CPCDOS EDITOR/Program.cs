@@ -22,7 +22,7 @@ namespace OSMaker
         public static void Start()   // <-- must be marked public!
         {
             
-            Application.Run(new Home());
+            Application.Run(new SplashScreen1());
         }
     }
 }
