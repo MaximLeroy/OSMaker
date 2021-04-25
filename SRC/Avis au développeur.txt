@@ -1,1 +1,2 @@
-Ce projet est le plus fonctionnel.
+Ce projet est le plus fonctionnel à l'heure actuelle.
+Veuillez ajouter toutes les DLL demandées par Visual Studio après génération des projets correspondants via le dossier SRC/DLL
