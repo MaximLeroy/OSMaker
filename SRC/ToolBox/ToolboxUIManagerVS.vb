@@ -10,12 +10,16 @@ Namespace ToolboxLibrary
     Public Class ToolboxUIManagerVS
         Private m_toolbox As Toolbox
         Private pointer As Drawing.Design.ToolboxItem ' a "null" tool
+        Private bouton As Drawing.Design.ToolboxItem ' a "null" tool
         Public Sub New(ByVal toolbox As Toolbox)
             m_toolbox = toolbox
             pointer = New Design.ToolboxItem()
             pointer.DisplayName = "<Pointer>"
             pointer.Bitmap = New Bitmap(16, 16)
+
+
         End Sub
+
 
         Private ReadOnly Property Toolbox As Toolbox
             Get
@@ -90,6 +94,8 @@ Namespace ToolboxLibrary
             listBox.Size = New Size(Toolbox.Width, Toolbox.Height - (Toolbox.Tabs.Count + 1) * 20)
             listBox.TabIndex = Toolbox.Tabs.Count + 1
             listBox.ForeColor = Color.White
+
+
             Toolbox.Controls.Add(listBox)
             UpdateToolboxItems(Toolbox.Tabs.Count - 1)
             Toolbox.ResumeLayout()

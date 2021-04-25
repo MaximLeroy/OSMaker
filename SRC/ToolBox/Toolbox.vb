@@ -46,15 +46,23 @@ Namespace ToolboxLibrary
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
+            Me.components = New System.ComponentModel.Container()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Toolbox))
-            Me.ImageList1 = New System.Windows.Forms.ImageList()
+            Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
             Me.SuspendLayout()
             '
             'ImageList1
             '
             Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
             Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
-            Me.ImageList1.Images.SetKeyName(0, "cube(1).png")
+            Me.ImageList1.Images.SetKeyName(0, "pointeur.PNG")
+            Me.ImageList1.Images.SetKeyName(1, "butt.png")
+            Me.ImageList1.Images.SetKeyName(2, "check.png")
+            Me.ImageList1.Images.SetKeyName(3, "Label.PNG")
+            Me.ImageList1.Images.SetKeyName(4, "text.png")
+            Me.ImageList1.Images.SetKeyName(5, "PIC.png")
+            Me.ImageList1.Images.SetKeyName(6, "prog.png")
+            Me.ImageList1.Images.SetKeyName(7, "WIN.png")
             '
             'Toolbox
             '
@@ -172,8 +180,8 @@ Namespace ToolboxLibrary
                 format.LineAlignment = StringAlignment.Center
                 format.Alignment = StringAlignment.Near
 
-                e.Graphics.DrawImage(ImageList1.Images(0), BitmapBounds)
-
+                e.Graphics.DrawImage(ImageList1.Images(e.Index), BitmapBounds)
+                'attention connerie
 
                 e.Graphics.DrawString(tbi.DisplayName, New Font("Segoe UI", 11, FontStyle.Regular, GraphicsUnit.World), Brushes.White, StringBounds, format)
             Catch ex As Exception
@@ -199,12 +207,16 @@ Namespace ToolboxLibrary
                 If selectedIndex <> 0 Then
 
                     If e.Clicks = 2 Then
-                        Dim idh = CType(DesignerHost.GetService(GetType(IDesignerHost)), IDesignerHost)
-                        Dim tbu As IToolboxUser = TryCast(idh.GetDesigner(TryCast(idh.RootComponent, IComponent)), IToolboxUser)
+                        Try
+                        Catch ex As Exception
+                            Dim idh = CType(DesignerHost.GetService(GetType(IDesignerHost)), IDesignerHost)
+                            Dim tbu As IToolboxUser = TryCast(idh.GetDesigner(TryCast(idh.RootComponent, IComponent)), IToolboxUser)
 
-                        If tbu IsNot Nothing Then
-                            tbu.ToolPicked(CType(lbSender.Items(selectedIndex), Design.ToolboxItem))
-                        End If
+                            If tbu IsNot Nothing Then
+                                tbu.ToolPicked(CType(lbSender.Items(selectedIndex), Design.ToolboxItem))
+                            End If
+
+                        End Try
                     ElseIf e.Clicks < 2 Then
                         Dim tbi As Design.ToolboxItem = TryCast(lbSender.Items(selectedIndex), Design.ToolboxItem)
                         Dim tbs As IToolboxService = Me

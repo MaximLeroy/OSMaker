@@ -870,10 +870,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\OSMaker\SRC\ToolBox\ToolBox.vbproj">
-      <Project>{18fe5640-9031-469a-be67-9039735d500a}</Project>
-      <Name>ToolBox</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CpcDosCPlusTools\CpcDosCPlus\Exporter.csproj">
       <Project>{7eb4f52f-e4bd-450a-833a-5cf3a42f7fb3}</Project>
       <Name>Exporter</Name>
@@ -885,6 +881,10 @@
     <ProjectReference Include="..\Loader\Loader.csproj">
       <Project>{35446b57-9ac5-4ddb-9d65-16d6dff39c04}</Project>
       <Name>Loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolBox\ToolBox.vbproj">
+      <Project>{18fe5640-9031-469a-be67-9039735d500a}</Project>
+      <Name>ToolBox</Name>
     </ProjectReference>
     <ProjectReference Include="..\WinToCpcDosCplus\WinToCpcDosCplus.vbproj">
       <Project>{bca0393d-06c8-4959-8bf5-bf066cad56a6}</Project>

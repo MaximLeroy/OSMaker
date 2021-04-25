@@ -74,6 +74,12 @@
     <Compile Include="Cpcform.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fenetre.Designer.vb">
+      <DependentUpon>Fenetre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fenetre.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Toolbox.Designer.vb">
       <DependentUpon>Toolbox.vb</DependentUpon>
     </Compile>
@@ -91,12 +97,18 @@
     <EmbeddedResource Include="Cpcform.resx">
       <DependentUpon>Cpcform.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Fenetre.resx">
+      <DependentUpon>Fenetre.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Toolbox.resx">
       <DependentUpon>Toolbox.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DevComponents.DotNetBar2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

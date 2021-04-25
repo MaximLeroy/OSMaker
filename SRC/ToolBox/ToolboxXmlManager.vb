@@ -9,7 +9,7 @@ Namespace ToolboxLibrary
     ''' </summary>
     Public Class ToolboxXmlManager
         Private m_toolbox As Toolbox = Nothing
-        Private cpcdosFormsToolTypes As Type() = New Type() {GetType(Textblock), GetType(Button), GetType(Checkbox), GetType(PictureBox), GetType(ProgressBar), GetType(TextBox)}
+        Private cpcdosFormsToolTypes As Type() = New Type() {GetType(Button), GetType(CheckBox), GetType(TextBlock), GetType(TextBox), GetType(PictureBox), GetType(ProgressBar), GetType(Window)}
         'Private componentsToolTypes As Type() = New Type() {GetType(System.IO.FileSystemWatcher), GetType(System.Diagnostics.Process), GetType(Timers.Timer)}
         'Private dataToolTypes As Type() = New Type() {GetType(Data.OleDb.OleDbCommandBuilder), GetType(Data.OleDb.OleDbConnection), GetType(Data.SqlClient.SqlCommandBuilder), GetType(Data.SqlClient.SqlConnection)}
         'Private userControlsToolTypes As Type() = New Type() {GetType(UserControl)}
