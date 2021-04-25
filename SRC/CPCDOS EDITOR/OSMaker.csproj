@@ -449,79 +449,16 @@
     <None Include="Resources\ReflectionImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fonds-ecran-hd-gratuits_11.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fonds-ecran-hd-gratuits_16.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Arc-en-ciel.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\scroll_opened_red.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\strawberry.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\nebulax.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\568502.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\space-planet-digital-art-atmosphere-stars-1920x1080.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Planet-space-stars-wind-blue_1920x1080.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\3d-backgrounds-17298-17854-hd-wallpapers.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\20120731195207-730ca57d%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Colors_Within_by_giannisgx89 %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Galaxi.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\windows-wallpaper-6063-6248-hd-wallpapers.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Herbe.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fond-ecran-hd-gratuit_19.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Goutte.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Goutte1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Goutte2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Orange-flower-petals-water-drops_1920x1080.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2137__neige_ecran-arbres-sous-la-neige.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FleurOrange.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wall-1411987819_pink-flower-under-the-rain.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\arrire-plan-win-7-fond-daposcran-pc-gratuit-new-wallpapers-desktop--b-o-ibackgroundz.com.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\OSM-1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">
