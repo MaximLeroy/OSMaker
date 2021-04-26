@@ -29,6 +29,8 @@ namespace OSMaker.Panneaux
         }
         private Host.HostSurfaceManager _hostSurfaceManager;
         private Host.HostControl HostC;
+        public System.ComponentModel.Design.IMenuCommandService MenuCommandService;
+        public System.ComponentModel.Design.ISelectionService SelectionService;
         private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -192,6 +194,16 @@ namespace OSMaker.Panneaux
             {
                 File.WriteAllText(metroFichierCCPlus.Text, codeccplus);
             }
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Delete;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+
         }
     }
     }
