@@ -35,3 +35,16 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMaker
 C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.dll
 C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.pdb
 C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\bin\Debug\ToolBox.dll.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\bin\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\bin\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.CpcForm.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.Fenetre.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.ToolboxLibrary.Toolbox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.vbproj.GenerateResource.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.vbproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.vbproj.CopyComplete
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.vbprojAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\bin\Debug\MetroFramework.Fonts.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\bin\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\bin\Debug\MetroFramework.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csproj.CopyComplete
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework.Fonts\obj\Debug\MetroFramework.Fonts.pdb

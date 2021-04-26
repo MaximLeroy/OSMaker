@@ -1,0 +1,13 @@
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\bin\Debug\MetroFramework.Design.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\bin\Debug\MetroFramework.Design.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\bin\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\bin\Debug\MetroFramework.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\obj\Debug\MetroFramework.Design.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\obj\Debug\MetroFramework.Design.csproj.CopyComplete
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework.Design\obj\Debug\MetroFramework.Design.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework.Design\obj\Debug\MetroFramework.Design.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework.Design\obj\Debug\MetroFramework.Design.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework.Design\obj\Debug\MetroFramework.Design.pdb

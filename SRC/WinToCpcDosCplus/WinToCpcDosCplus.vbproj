@@ -51,12 +51,16 @@
   <PropertyGroup>
     <StartupObject>WinToCpcDosCplus.Form1</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.Designer.vb">
@@ -68,9 +72,7 @@
     <Compile Include="GestionCouleurs.vb" />
     <Compile Include="ModuleCpc.vb" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="My Project\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />

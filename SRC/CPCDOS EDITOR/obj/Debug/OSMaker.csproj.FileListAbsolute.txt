@@ -67,7 +67,13 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMaker
 C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.csproj.CopyComplete
 C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe
 C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.pdb
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\fichier1.cpc
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe.manifest
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.application
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.xml
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.pdb
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.csprojAssemblyReference.cache
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Home.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Host.HostControl.resources
@@ -91,14 +97,15 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.csproj.GenerateResource.cache
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe.licenses
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.csproj.CoreCompileInputs.cache
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\fichier1.cpc
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe.config
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe.manifest
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.application
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.xml
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.exe
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\Documents\OSMaker\OSMaker.pdb
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe.manifest
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.application
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.csproj.CopyComplete
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\fichier1.cpc
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.exe.manifest
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.application
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.xml

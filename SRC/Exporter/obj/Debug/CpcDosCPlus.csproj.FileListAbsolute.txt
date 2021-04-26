@@ -1,0 +1,44 @@
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCButton.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCFenetre.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Properties.Resources.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\CpcDosCPlus.exe.config
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\CpcDosCPlus.exe
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\CpcDosCPlus.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.xml
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Form1.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.csproj.CopyComplete
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.exe
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\fichier1.cpc
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Preview.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCTextBox.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Parametres.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCFonction.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCTextBlock.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\fichier1.cpc
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\CpcDosCPlus.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\CpcDosCPlus.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\CpcDosCPlus.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.xml
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCButton.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCFenetre.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCFonction.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCTextBlock.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Controls.UCTextBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Form1.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Parametres.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Preview.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.Properties.Resources.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.csproj.CopyComplete
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\CpcDosCPlus.pdb

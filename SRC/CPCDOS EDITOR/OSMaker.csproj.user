@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <EnableSecurityDebugging>false</EnableSecurityDebugging>
-    <PublishUrlHistory>C:\Users\Maxime\Documents\OSMPUB0.1\</PublishUrlHistory>
+    <PublishUrlHistory>C:\Users\btaco\Documents\OSM\|C:\Users\btaco\Downloads\|C:\Users\btaco\Documents\|C:\Users\Maxime\Documents\OSMPUB0.1\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory />
     <UpdateUrlHistory />

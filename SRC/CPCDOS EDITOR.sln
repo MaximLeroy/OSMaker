@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loader", "Loader\Loader.csp
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ToolBox", "ToolBox\ToolBox.vbproj", "{18FE5640-9031-469A-BE67-9039735D500A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exporter", "CpcDosCPlusTools\Exporter\Exporter.csproj", "{7EB4F52F-E4BD-450A-833A-5CF3A42F7FB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exporter", "Exporter\Exporter.csproj", "{7EB4F52F-E4BD-450A-833A-5CF3A42F7FB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,1 @@
+Merci de conserver tous les fichiers dans le même dossier que OSMaker.exe

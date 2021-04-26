@@ -1,0 +1,18 @@
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\bin\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\bin\Debug\MetroFramework.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\obj\Debug\MetroFramework.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\obj\Debug\MetroFramework.Controls.MetroGrid.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\obj\Debug\MetroFramework.MetroMessageBoxControl.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\obj\Debug\MetroFramework.Properties.Resources.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\obj\Debug\MetroFramework.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\obj\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\cecon\winforms-modernui\MetroFramework\obj\Debug\MetroFramework.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework\obj\Debug\MetroFramework.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework\obj\Debug\MetroFramework.Controls.MetroGrid.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework\obj\Debug\MetroFramework.MetroMessageBoxControl.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework\obj\Debug\MetroFramework.Properties.Resources.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework\obj\Debug\MetroFramework.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework\obj\Debug\MetroFramework.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework\obj\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\MetroFramework\obj\Debug\MetroFramework.pdb

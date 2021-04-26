@@ -1,0 +1,217 @@
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\fichier1.cpc
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Host.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.Design.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WinFormsUI.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\GraphLibrary.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Host.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.dll.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.xml
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WinFormsUI.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCButton.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCCheckBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCFenetre.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCFonction.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCPictureBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCProgressBar.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCTextBlock.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCTextBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.formulaire.Form1.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.DocumentC.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Parametres.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Preview.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Properties.Resources.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.CopyComplete
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\fichier1.cpc
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Host.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.Design.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WinFormsUI.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\GraphLibrary.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Host.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.dll.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.xml
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WinFormsUI.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCButton.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCCheckBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCFenetre.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCFonction.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCPictureBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCProgressBar.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCTextBlock.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCTextBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.formulaire.Form1.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.DocumentC.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Parametres.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Preview.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Properties.Resources.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.CopyComplete
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\fichier1.cpc
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Host.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\GraphLibrary.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Host.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\ToolBox.dll.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCButton.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCCheckBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCFenetre.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCFonction.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCPictureBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCProgressBar.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCTextBlock.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Controls.UCTextBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.formulaire.Form1.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.DocumentC.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Parametres.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Preview.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.Properties.Resources.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.csproj.CopyComplete
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\obj\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\FastColoredTextBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.Design.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\CpcDosCPlus\bin\Debug\WinFormsUI.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\fichier1.cpc
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\Exporter.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\FastColoredTextBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\Host.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\MetroFramework.Design.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\MetroFramework.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\WinFormsUI.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\GraphLibrary.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\Host.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\bin\Debug\ToolBox.dll.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Controls.UCButton.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Controls.UCCheckBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Controls.UCFenetre.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Controls.UCFonction.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Controls.UCPictureBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Controls.UCProgressBar.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Controls.UCTextBlock.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Controls.UCTextBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.formulaire.Form1.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.DocumentC.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Parametres.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Preview.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.Properties.Resources.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.csproj.CopyComplete
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CpcDosCPlusTools\Exporter\obj\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\fichier1.cpc
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\Exporter.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\Host.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\GraphLibrary.dll
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\Host.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\bin\Debug\ToolBox.dll.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Controls.UCButton.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Controls.UCCheckBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Controls.UCFenetre.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Controls.UCFonction.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Controls.UCPictureBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Controls.UCProgressBar.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Controls.UCTextBlock.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Controls.UCTextBox.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.formulaire.Form1.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.DocumentC.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Parametres.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Preview.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.Properties.Resources.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.csproj.CopyComplete
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.pdb

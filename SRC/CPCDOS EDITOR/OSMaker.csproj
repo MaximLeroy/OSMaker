@@ -17,7 +17,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
     <LangVersion>latest</LangVersion>
-    <PublishUrl>C:\Users\Maxime\Documents\OSMPUB0.1\</PublishUrl>
+    <PublishUrl>C:\Users\btaco\Documents\OSM\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -27,7 +27,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -39,7 +39,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>..\..\..\Documents\OSMaker\</OutputPath>
+    <OutputPath>..\OSMaker_Binary\</OutputPath>
     <DocumentationFile>..\..\..\Documents\OSMaker\OSMaker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
@@ -106,6 +106,9 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>OSM_LOGO.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FastColoredTextBox, Version=2.16.11.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -113,15 +116,15 @@
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\Theme_MetroUI1.4\MetroFramework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\Theme_MetroUI1.4\MetroFramework.Design.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\Theme_MetroUI1.4\MetroFramework.Fonts.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="AIMS.Docking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -445,7 +448,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="OSMaker_TemporaryKey.pfx" />
-    <None Include="packages.config" />
     <None Include="Resources\ReflectionImage.png" />
   </ItemGroup>
   <ItemGroup>
@@ -745,6 +747,7 @@
   <ItemGroup>
     <Content Include="AIMS.Docking.dll" />
     <Content Include="Classes\OSMAKERR.xml" />
+    <Content Include="OSM_LOGO.ico" />
     <Content Include="Resources\DockPanel.xml" />
     <None Include="Resources\logocpcdos.png" />
     <Content Include="Resources\OSMaker.xml" />
@@ -815,7 +818,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\CpcDosCPlusTools\Exporter\Exporter.csproj">
+    <ProjectReference Include="..\Exporter\Exporter.csproj">
       <Project>{7eb4f52f-e4bd-450a-833a-5cf3a42f7fb3}</Project>
       <Name>Exporter</Name>
     </ProjectReference>
