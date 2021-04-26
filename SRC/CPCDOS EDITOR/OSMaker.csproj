@@ -114,6 +114,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\FastColoredTextBox\FastColoredTextBox.dll</HintPath>
     </Reference>
+    <Reference Include="GraphLibrary, Version=1.0.1389.18615, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Autres\GraphLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
@@ -136,11 +140,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\..\..\..\..\Program Files\DotNetBar for Windows Forms\envdte.dll</HintPath>
     </Reference>
-    <Reference Include="GraphLibrary">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\GraphLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="NgenInstaller">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\NgenInstaller.dll</HintPath>
+    <Reference Include="NgenInstaller, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Autres\NgenInstaller.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -161,8 +163,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="ToolWindows">
-      <HintPath>..\..\..\..\..\..\..\..\Desktop\osm\Documents\OSMaker\ToolWindows.dll</HintPath>
+    <Reference Include="ToolWindows, Version=1.0.7445.1044, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Autres\ToolWindows.dll</HintPath>
     </Reference>
     <Reference Include="UIAutomationProvider" />
     <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2003, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
@@ -329,6 +332,7 @@
     </Compile>
     <Compile Include="Classes\InvisibleCharsRenderer.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
