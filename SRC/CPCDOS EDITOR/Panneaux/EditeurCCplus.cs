@@ -1039,16 +1039,15 @@ namespace OSMaker
         {
             MessageBox.Show("double click");
         }
-        //IMenuCommandService ims = HostC.HostSurface.GetService(typeof(IMenuCommandService)) as IMenuCommandService;
+        
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //ims.GlobalInvoke(StandardCommands.Delete);
-            }
-            catch
-            {
-            }
+
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+             System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Delete;
+              ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
         }
 
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
