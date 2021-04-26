@@ -94,7 +94,7 @@ Public Module ModuleCpcDosCplus
                     '    Else
                     '    sbuilder.AppendLine(".   ImgTitre" + "     " + " = """ + imgtitretextS + """")
                     'End If
-                    sbuilder.AppendLine("Create/ @#" & HandletextS)
+                    sbuilder.AppendLine("@#" & HandletextS & " Create/ ")
 
                     sbuilder.AppendLine(CpcDebutToFins.Values(0))
                     Case WinToCpcControls.Keys(1)
