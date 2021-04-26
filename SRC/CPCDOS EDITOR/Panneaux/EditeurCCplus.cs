@@ -1054,5 +1054,23 @@ namespace OSMaker
         {
 
         }
+
+        private void horizontalementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.CenterHorizontally;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void verticalementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.CenterHorizontally;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
     }
 }

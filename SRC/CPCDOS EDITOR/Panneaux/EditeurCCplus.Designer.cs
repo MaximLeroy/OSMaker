@@ -83,6 +83,9 @@ namespace OSMaker
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.centrerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.horizontalementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verticalementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this._tb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FastColoredTextBox1)).BeginInit();
@@ -112,7 +115,7 @@ namespace OSMaker
         '\"',
         '\'',
         '\''};
-            this._tb.AutoScrollMinSize = new System.Drawing.Size(52, 17);
+            this._tb.AutoScrollMinSize = new System.Drawing.Size(27, 17);
             this._tb.BackBrush = null;
             this._tb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this._tb.CharHeight = 17;
@@ -686,21 +689,21 @@ namespace OSMaker
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(128, 26);
             this.toolStripMenuItem9.Text = "Redo";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(128, 26);
             this.toolStripMenuItem10.Text = "Undo";
             // 
             // editToolStripMenuItem
@@ -709,7 +712,8 @@ namespace OSMaker
             this.toolStripMenuItem6,
             this.toolStripMenuItem7,
             this.toolStripMenuItem8,
-            this.deleteToolStripMenuItem});
+            this.deleteToolStripMenuItem,
+            this.centrerToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.editToolStripMenuItem.Text = "Edit";
@@ -741,6 +745,29 @@ namespace OSMaker
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // centrerToolStripMenuItem
+            // 
+            this.centrerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.horizontalementToolStripMenuItem,
+            this.verticalementToolStripMenuItem});
+            this.centrerToolStripMenuItem.Name = "centrerToolStripMenuItem";
+            this.centrerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.centrerToolStripMenuItem.Text = "Centrer";
+            // 
+            // horizontalementToolStripMenuItem
+            // 
+            this.horizontalementToolStripMenuItem.Name = "horizontalementToolStripMenuItem";
+            this.horizontalementToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.horizontalementToolStripMenuItem.Text = "Horizontalement";
+            this.horizontalementToolStripMenuItem.Click += new System.EventHandler(this.horizontalementToolStripMenuItem_Click);
+            // 
+            // verticalementToolStripMenuItem
+            // 
+            this.verticalementToolStripMenuItem.Name = "verticalementToolStripMenuItem";
+            this.verticalementToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.verticalementToolStripMenuItem.Text = "Verticalement";
+            this.verticalementToolStripMenuItem.Click += new System.EventHandler(this.verticalementToolStripMenuItem_Click);
             // 
             // metroStyleManager1
             // 
@@ -885,5 +912,8 @@ namespace OSMaker
         private ToolStripMenuItem toolStripMenuItem10;
         private ToolStripMenuItem deleteToolStripMenuItem;
         private MetroFramework.Components.MetroStyleManager metroStyleManager1;
+        private ToolStripMenuItem centrerToolStripMenuItem;
+        private ToolStripMenuItem horizontalementToolStripMenuItem;
+        private ToolStripMenuItem verticalementToolStripMenuItem;
     }
 }
