@@ -24,7 +24,7 @@
 	{
 		private IComponent root;
 		private bool dirty = true;
-		private bool unsaved;
+		public static bool unsaved;
 		private string fileName;
 		private IDesignerLoaderHost host;
 		private XmlDocument xmlDocument;

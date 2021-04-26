@@ -92,6 +92,7 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.virtualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -486,6 +487,8 @@
             // 
             // menuItemTools
             // 
+            this.menuItemTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.virtualisationToolStripMenuItem});
             this.menuItemTools.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemTools.MergeIndex = 2;
             this.menuItemTools.Name = "menuItemTools";
@@ -523,6 +526,7 @@
             this.menuItemAbout.Name = "menuItemAbout";
             this.menuItemAbout.Size = new System.Drawing.Size(230, 26);
             this.menuItemAbout.Text = "&About DockSample...";
+            this.menuItemAbout.Click += new System.EventHandler(this.menuItemAbout_Click);
             // 
             // panel3
             // 
@@ -601,6 +605,12 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // virtualisationToolStripMenuItem
+            // 
+            this.virtualisationToolStripMenuItem.Name = "virtualisationToolStripMenuItem";
+            this.virtualisationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.virtualisationToolStripMenuItem.Text = "Virtualisation";
             // 
             // Home
             // 
@@ -697,5 +707,6 @@
         private System.Windows.Forms.ToolStripMenuItem dossierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichierCCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem virtualisationToolStripMenuItem;
     }
 }

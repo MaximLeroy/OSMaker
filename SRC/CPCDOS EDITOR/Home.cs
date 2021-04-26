@@ -826,6 +826,11 @@ namespace OSMaker
             Toolbox toolbox = new Toolbox();
             toolbox.Show(dockPanel, DockState.DockLeft);
         }
+
+        private void menuItemAbout_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

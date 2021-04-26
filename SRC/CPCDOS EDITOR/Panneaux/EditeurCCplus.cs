@@ -430,8 +430,10 @@ namespace OSMaker
           
             _hostSurfaceManager = new Host.HostSurfaceManager();
             _hostSurfaceManager.AddService(typeof(IToolboxService), Home.m_toolbox.toolbox1);
+           
             _hostSurfaceManager.AddService(typeof(PropertyGrid), Home.m_propertyWindow.propertyGrid);
-          
+         //   _hostSurfaceManager.AddService(typeof(System.ComponentModel.Design.UndoEngine), undoEngine);
+
         }
 
         private void AddTabForNewHost(string tabText)
@@ -1069,6 +1071,15 @@ namespace OSMaker
             MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
             System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
             var a = System.ComponentModel.Design.StandardCommands.CenterVertically;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void sélectionnerToutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.SelectAll;
             ims.GlobalInvoke(a);
             MenuCommandService.GlobalInvoke(a);
         }

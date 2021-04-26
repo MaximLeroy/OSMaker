@@ -24,6 +24,7 @@ namespace OSMaker.Host
         public HostSurfaceManager() : base()
         {
             AddService(typeof(INameCreationService), new NameCreationService());
+            
             ActiveDesignSurfaceChanged += new ActiveDesignSurfaceChangedEventHandler(HostSurfaceManager_ActiveDesignSurfaceChanged);
         }
 
@@ -126,6 +127,8 @@ namespace OSMaker.Host
 
             HostSurface hostSurface = (HostSurface)CreateDesignSurface(ServiceContainer);
             IDesignerHost host = (IDesignerHost)hostSurface.GetService(typeof(IDesignerHost));
+           
+          //  
             var basicHostLoader = new Loader.BasicHostLoader(fileName);
             hostSurface.BeginLoad(basicHostLoader);
             hostSurface.Loader = basicHostLoader;
