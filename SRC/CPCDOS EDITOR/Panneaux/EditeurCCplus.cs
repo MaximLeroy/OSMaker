@@ -1068,7 +1068,7 @@ namespace OSMaker
         {
             MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
             System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.CenterHorizontally;
+            var a = System.ComponentModel.Design.StandardCommands.CenterVertically;
             ims.GlobalInvoke(a);
             MenuCommandService.GlobalInvoke(a);
         }
