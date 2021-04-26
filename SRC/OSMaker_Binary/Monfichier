@@ -1,0 +1,137 @@
+
+Window/ Window1
+   .PX            = "0"
+   .PY            = "0"
+   .SX            = "655"
+   .SY            = "391"
+Create/ @#MonHandle
+End/ Window
+
+Window/ Window4
+   .BackColor     = "105,105,105"
+   .PX            = "0"
+   .PY            = "0"
+   .SX            = "655"
+   .SY            = "24"
+Create/ @#MonHandle
+End/ Window
+
+Button/ Button6
+   .Handle        = "%MonHandle%"
+   .Text          = "Button6"
+   .PX            = "0"
+   .PY            = "0"
+   .SX            = "55"
+   .SY            = "23"
+Create/
+End/ Button
+
+TextBlock/ TextBlock1
+   .Handle        = "%MonHandle%"
+   .Text          = "18:15"
+   .TextColor     = "255,255,255"
+   .PX            = "609"
+   .PY            = "5"
+   .SX            = "51"
+   .SY            = "14"
+Create/
+End/ TextBlock
+
+Window/ Window2
+   .BackColor     = "160,160,160"
+   .PX            = "0"
+   .PY            = "24"
+   .SX            = "175"
+   .SY            = "149"
+Create/ @#MonHandle
+End/ Window
+
+Button/ Button5
+   .Handle        = "%MonHandle%"
+   .Text          = "Button5"
+   .PX            = "3"
+   .PY            = "119"
+   .SX            = "169"
+   .SY            = "23"
+Create/
+End/ Button
+
+Button/ Button4
+   .Handle        = "%MonHandle%"
+   .Text          = "Button4"
+   .PX            = "3"
+   .PY            = "90"
+   .SX            = "169"
+   .SY            = "23"
+Create/
+End/ Button
+
+Button/ Button3
+   .Handle        = "%MonHandle%"
+   .Text          = "Button3"
+   .PX            = "3"
+   .PY            = "61"
+   .SX            = "169"
+   .SY            = "23"
+Create/
+End/ Button
+
+Button/ Button2
+   .Handle        = "%MonHandle%"
+   .Text          = "Button2"
+   .PX            = "3"
+   .PY            = "32"
+   .SX            = "169"
+   .SY            = "23"
+Create/
+End/ Button
+
+Button/ Button1
+   .Handle        = "%MonHandle%"
+   .Text          = "Button1"
+   .PX            = "3"
+   .PY            = "3"
+   .SX            = "169"
+   .SY            = "23"
+Create/
+End/ Button
+
+Window/ Window3
+   .BackColor     = "160,160,160"
+   .PX            = "191"
+   .PY            = "313"
+   .SX            = "280"
+   .SY            = "78"
+Create/ @#MonHandle
+End/ Window
+
+PictureBox/ PictureBox3
+
+   .Handle        = "%MonHandle%"
+   .PX            = "188"
+   .PY            = "3"
+   .SX            = "88"
+   .SY            = "75"
+Create/
+End/ PictureBox
+
+PictureBox/ PictureBox2
+
+   .Handle        = "%MonHandle%"
+   .PX            = "94"
+   .PY            = "3"
+   .SX            = "88"
+   .SY            = "75"
+Create/
+End/ PictureBox
+
+PictureBox/ PictureBox1
+
+   .Handle        = "%MonHandle%"
+   .PX            = "0"
+   .PY            = "0"
+   .SX            = "88"
+   .SY            = "78"
+Create/
+End/ PictureBox
+

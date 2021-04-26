@@ -759,8 +759,10 @@ namespace OSMaker
         }
 
         private void menuItemSolutionExplorer_Click_1(object sender, EventArgs e)
+         
         {
-
+            SolutionExplorer solutionexplo = new SolutionExplorer();
+            solutionexplo.Show(dockPanel, DockState.DockRight);
         }
 
         private void mainMenu_MouseDown(object sender, MouseEventArgs e)
@@ -811,6 +813,18 @@ namespace OSMaker
             panel3.Capture = true;
             offset = MousePosition;
             original = this.Location;
+        }
+
+        private void menuItemPropertyWindow_Click_1(object sender, EventArgs e)
+        {
+            PropertyWindow propertyWindow = new PropertyWindow();
+            propertyWindow.Show(dockPanel, DockState.DockRight);
+        }
+
+        private void menuItemToolbox_Click_1(object sender, EventArgs e)
+        {
+            Toolbox toolbox = new Toolbox();
+            toolbox.Show(dockPanel, DockState.DockLeft);
         }
     }
 

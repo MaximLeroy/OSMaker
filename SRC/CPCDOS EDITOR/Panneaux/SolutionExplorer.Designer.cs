@@ -283,6 +283,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "SolutionExplorer";
             this.Text = "Explorateur de solutions";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.SolutionExplorer_Load);
             this.metroContextMenu1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
