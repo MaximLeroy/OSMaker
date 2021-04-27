@@ -45,6 +45,7 @@ namespace OSMaker.Host
         public override void ShowContextMenu(System.ComponentModel.Design.CommandID menuID, int x, int y)
         {
 
+
             // Création du contextMenu
             ContextMenuStrip contextMenu = new ContextMenuStrip();
             ToolStripMenuItem contextMenuitems = new ToolStripMenuItem();
@@ -211,10 +212,11 @@ namespace OSMaker.Host
             }
 
             // Affichage du contextMenu
-            
-         
-               // erreur sur Designer.View : conversion impossible de 'object' en system.windows.form.control
-               contextMenu.Show(EditeurCCplus.HostC, new Point(System.Windows.Forms.Control.MousePosition.X, System.Windows.Forms.Control.MousePosition.Y));
+
+
+            // erreur sur Designer.View : conversion impossible de 'object' en system.windows.form.control
+            EditeurCCplus _editeur = new EditeurCCplus();
+               _editeur.metroContextMenu1.Show(EditeurCCplus.HostC, new Point(System.Windows.Forms.Control.MousePosition.X, System.Windows.Forms.Control.MousePosition.Y));
             
         }
 

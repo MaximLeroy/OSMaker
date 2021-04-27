@@ -7,13 +7,3 @@ Window/ Window1
 @#MonHandle Create/ 
 End/ Window
 
-Button/ Button1
-   .Handle        = "%MonHandle%"
-   .Text          = "Button1"
-   .PX            = "185"
-   .PY            = "44"
-   .SX            = "75"
-   .SY            = "23"
-Create/
-End/ Button
-

@@ -40,28 +40,14 @@ namespace OSMaker
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditeurCCplus));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this._tb = new FastColoredTextBoxNS.FastColoredTextBox();
-            this.DocumentMap2 = new FastColoredTextBoxNS.DocumentMap();
-            this.FastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
-            this.DocumentMap1 = new FastColoredTextBoxNS.DocumentMap();
             this._Panel1 = new System.Windows.Forms.Panel();
             this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
-            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroFichierCCPlus = new MetroFramework.Controls.MetroTextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroFichierXml = new MetroFramework.Controls.MetroTextBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroFichierEvent = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
@@ -88,130 +74,36 @@ namespace OSMaker
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this._tb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FastColoredTextBox1)).BeginInit();
+            this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
+            this.afficherLeCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
+            this.mettreAuPremierPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mettreÀLarrièrePlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.vérouillerLesControlesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.sélectionnerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.testToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.testToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.annulerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rétablirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripSeparator();
+            this.propriétésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lierÀUnÉvènementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mouseClickToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabControl1.SuspendLayout();
-            this.metroTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.metroTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.metroTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGridEvent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
+            this.metroContextMenu1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // _tb
-            // 
-            this._tb.AutoCompleteBracketsList = new char[] {
-        '(',
-        ')',
-        '{',
-        '}',
-        '[',
-        ']',
-        '\"',
-        '\"',
-        '\'',
-        '\''};
-            this._tb.AutoScrollMinSize = new System.Drawing.Size(52, 17);
-            this._tb.BackBrush = null;
-            this._tb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this._tb.CharHeight = 17;
-            this._tb.CharWidth = 8;
-            this._tb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this._tb.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this._tb.Font = new System.Drawing.Font("Consolas", 9F);
-            this._tb.ForeColor = System.Drawing.Color.Gainsboro;
-            this._tb.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this._tb.IsReplaceMode = false;
-            this._tb.LeftPadding = 25;
-            this._tb.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(175)))));
-            this._tb.Location = new System.Drawing.Point(9, 83);
-            this._tb.Margin = new System.Windows.Forms.Padding(4);
-            this._tb.Name = "_tb";
-            this._tb.Paddings = new System.Windows.Forms.Padding(0);
-            this._tb.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this._tb.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("_tb.ServiceColors")));
-            this._tb.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this._tb.ShowScrollBars = false;
-            this._tb.Size = new System.Drawing.Size(478, 58);
-            this._tb.TabIndex = 7;
-            this._tb.Zoom = 100;
-            this._tb.TextChangedDelayed += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.tb_TextChangedDelayed);
-            // 
-            // DocumentMap2
-            // 
-            this.DocumentMap2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.DocumentMap2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocumentMap2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(175)))));
-            this.DocumentMap2.Location = new System.Drawing.Point(494, 10);
-            this.DocumentMap2.Margin = new System.Windows.Forms.Padding(4);
-            this.DocumentMap2.Name = "DocumentMap2";
-            this.DocumentMap2.Size = new System.Drawing.Size(542, 153);
-            this.DocumentMap2.TabIndex = 7;
-            this.DocumentMap2.Target = this._tb;
-            this.DocumentMap2.Text = "DocumentMap2";
-            // 
-            // FastColoredTextBox1
-            // 
-            this.FastColoredTextBox1.AutoCompleteBracketsList = new char[] {
-        '(',
-        ')',
-        '{',
-        '}',
-        '[',
-        ']',
-        '\"',
-        '\"',
-        '\'',
-        '\''};
-            this.FastColoredTextBox1.AutoIndentCharsPatterns = "";
-            this.FastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(27, 17);
-            this.FastColoredTextBox1.BackBrush = null;
-            this.FastColoredTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.FastColoredTextBox1.CharHeight = 17;
-            this.FastColoredTextBox1.CharWidth = 8;
-            this.FastColoredTextBox1.CommentPrefix = null;
-            this.FastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.FastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.FastColoredTextBox1.Font = new System.Drawing.Font("Consolas", 9F);
-            this.FastColoredTextBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.FastColoredTextBox1.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.FastColoredTextBox1.IsReplaceMode = false;
-            this.FastColoredTextBox1.Language = FastColoredTextBoxNS.Language.XML;
-            this.FastColoredTextBox1.LeftBracket = '<';
-            this.FastColoredTextBox1.LeftBracket2 = '(';
-            this.FastColoredTextBox1.LeftPadding = 25;
-            this.FastColoredTextBox1.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(175)))));
-            this.FastColoredTextBox1.Location = new System.Drawing.Point(-4, 84);
-            this.FastColoredTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.FastColoredTextBox1.Name = "FastColoredTextBox1";
-            this.FastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
-            this.FastColoredTextBox1.RightBracket = '>';
-            this.FastColoredTextBox1.RightBracket2 = ')';
-            this.FastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.FastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("FastColoredTextBox1.ServiceColors")));
-            this.FastColoredTextBox1.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.FastColoredTextBox1.Size = new System.Drawing.Size(488, 34);
-            this.FastColoredTextBox1.TabIndex = 13;
-            this.FastColoredTextBox1.Visible = false;
-            this.FastColoredTextBox1.Zoom = 100;
-            // 
-            // DocumentMap1
-            // 
-            this.DocumentMap1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.DocumentMap1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocumentMap1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(175)))));
-            this.DocumentMap1.Location = new System.Drawing.Point(496, 12);
-            this.DocumentMap1.Margin = new System.Windows.Forms.Padding(4);
-            this.DocumentMap1.Name = "DocumentMap1";
-            this.DocumentMap1.Size = new System.Drawing.Size(540, 151);
-            this.DocumentMap1.TabIndex = 6;
-            this.DocumentMap1.Target = this.FastColoredTextBox1;
-            this.DocumentMap1.Text = "DocumentMap1";
             // 
             // _Panel1
             // 
@@ -235,63 +127,16 @@ namespace OSMaker
             // metroTabControl1
             // 
             this.metroTabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.metroTabControl1.Controls.Add(this.metroTabPage1);
-            this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.metroTabControl1.Location = new System.Drawing.Point(0, 430);
+            this.metroTabControl1.Location = new System.Drawing.Point(0, 453);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(1053, 212);
+            this.metroTabControl1.Size = new System.Drawing.Size(1053, 189);
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroTabControl1.UseSelectable = true;
-            // 
-            // metroTabPage1
-            // 
-            this.metroTabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.metroTabPage1.Controls.Add(this.panel1);
-            this.metroTabPage1.Controls.Add(this.DocumentMap2);
-            this.metroTabPage1.Controls.Add(this.metroButton4);
-            this.metroTabPage1.Controls.Add(this.metroFichierCCPlus);
-            this.metroTabPage1.Controls.Add(this.pictureBox2);
-            this.metroTabPage1.Controls.Add(this.metroLabel1);
-            this.metroTabPage1.Controls.Add(this._tb);
-            this.metroTabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 10;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 41);
-            this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(1045, 167);
-            this.metroTabPage1.TabIndex = 0;
-            this.metroTabPage1.Text = "CC+";
-            this.metroTabPage1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroTabPage1.UseCustomBackColor = true;
-            this.metroTabPage1.VerticalScrollbarBarColor = true;
-            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(27, 81);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(460, 89);
-            this.panel1.TabIndex = 80;
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.metroButton4.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton4.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton4.Location = new System.Drawing.Point(69, 39);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(418, 37);
-            this.metroButton4.TabIndex = 79;
-            this.metroButton4.Text = "Voir le code";
-            this.metroButton4.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton4.UseSelectable = true;
-            this.metroButton4.UseStyleColors = true;
+            this.metroTabControl1.Visible = false;
             // 
             // metroFichierCCPlus
             // 
@@ -308,7 +153,7 @@ namespace OSMaker
             this.metroFichierCCPlus.CustomButton.UseSelectable = true;
             this.metroFichierCCPlus.CustomButton.Visible = false;
             this.metroFichierCCPlus.Lines = new string[0];
-            this.metroFichierCCPlus.Location = new System.Drawing.Point(69, 10);
+            this.metroFichierCCPlus.Location = new System.Drawing.Point(634, 0);
             this.metroFichierCCPlus.MaxLength = 32767;
             this.metroFichierCCPlus.Name = "metroFichierCCPlus";
             this.metroFichierCCPlus.PasswordChar = '\0';
@@ -326,65 +171,6 @@ namespace OSMaker
             this.metroFichierCCPlus.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroFichierCCPlus.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::OSMaker.My.Resources.Resources.openfolderpng1;
-            this.pictureBox2.Location = new System.Drawing.Point(322, 8);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 25);
-            this.pictureBox2.TabIndex = 78;
-            this.pictureBox2.TabStop = false;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(6, 11);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(57, 20);
-            this.metroLabel1.TabIndex = 76;
-            this.metroLabel1.Text = "Chemin";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroLabel1.UseCustomBackColor = true;
-            // 
-            // metroTabPage2
-            // 
-            this.metroTabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.metroTabPage2.Controls.Add(this.DocumentMap1);
-            this.metroTabPage2.Controls.Add(this.FastColoredTextBox1);
-            this.metroTabPage2.Controls.Add(this.metroButton1);
-            this.metroTabPage2.Controls.Add(this.metroFichierXml);
-            this.metroTabPage2.Controls.Add(this.pictureBox6);
-            this.metroTabPage2.Controls.Add(this.metroLabel2);
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 41);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(1045, 167);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = ".OSM";
-            this.metroTabPage2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroTabPage2.UseCustomBackColor = true;
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 10;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton1.Location = new System.Drawing.Point(71, 40);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(418, 37);
-            this.metroButton1.TabIndex = 75;
-            this.metroButton1.Text = "Voir le code";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.UseStyleColors = true;
-            // 
             // metroFichierXml
             // 
             // 
@@ -400,7 +186,7 @@ namespace OSMaker
             this.metroFichierXml.CustomButton.UseSelectable = true;
             this.metroFichierXml.CustomButton.Visible = false;
             this.metroFichierXml.Lines = new string[0];
-            this.metroFichierXml.Location = new System.Drawing.Point(71, 11);
+            this.metroFichierXml.Location = new System.Drawing.Point(211, 0);
             this.metroFichierXml.MaxLength = 32767;
             this.metroFichierXml.Name = "metroFichierXml";
             this.metroFichierXml.PasswordChar = '\0';
@@ -417,28 +203,6 @@ namespace OSMaker
             this.metroFichierXml.UseStyleColors = true;
             this.metroFichierXml.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroFichierXml.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox6.Image = global::OSMaker.My.Resources.Resources.openfolderpng1;
-            this.pictureBox6.Location = new System.Drawing.Point(324, 9);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(33, 25);
-            this.pictureBox6.TabIndex = 72;
-            this.pictureBox6.TabStop = false;
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(8, 12);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(57, 20);
-            this.metroLabel2.TabIndex = 70;
-            this.metroLabel2.Text = "Chemin";
-            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroLabel2.UseCustomBackColor = true;
             // 
             // metroTabPage3
             // 
@@ -458,7 +222,7 @@ namespace OSMaker
             this.metroTabPage3.HorizontalScrollbarSize = 10;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 41);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(1045, 167);
+            this.metroTabPage3.Size = new System.Drawing.Size(1045, 144);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Evènements";
             this.metroTabPage3.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -676,6 +440,7 @@ namespace OSMaker
             this.menuStrip1.Size = new System.Drawing.Size(1053, 28);
             this.menuStrip1.TabIndex = 14;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -710,28 +475,28 @@ namespace OSMaker
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(206, 26);
             this.toolStripMenuItem6.Text = "&Cut (non dispo)";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(206, 26);
             this.toolStripMenuItem7.Text = "C&opy (non dispo)";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(206, 26);
             this.toolStripMenuItem8.Text = "&Paste(non dispo)";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -741,7 +506,7 @@ namespace OSMaker
             this.horizontalementToolStripMenuItem,
             this.verticalementToolStripMenuItem});
             this.centrerToolStripMenuItem.Name = "centrerToolStripMenuItem";
-            this.centrerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.centrerToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.centrerToolStripMenuItem.Text = "Centrer";
             // 
             // horizontalementToolStripMenuItem
@@ -761,21 +526,21 @@ namespace OSMaker
             // sélectionnerToutToolStripMenuItem
             // 
             this.sélectionnerToutToolStripMenuItem.Name = "sélectionnerToutToolStripMenuItem";
-            this.sélectionnerToutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.sélectionnerToutToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
             this.sélectionnerToutToolStripMenuItem.Text = "Sélectionner tout";
             this.sélectionnerToutToolStripMenuItem.Click += new System.EventHandler(this.sélectionnerToutToolStripMenuItem_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(206, 26);
             this.toolStripMenuItem9.Text = "Undo";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click_1);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(206, 26);
             this.toolStripMenuItem10.Text = "Redo";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
@@ -784,11 +549,162 @@ namespace OSMaker
             this.metroStyleManager1.Owner = this;
             this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // metroContextMenu1
+            // 
+            this.metroContextMenu1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.metroContextMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.afficherLeCodeToolStripMenuItem,
+            this.lierÀUnÉvènementToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.mettreAuPremierPlanToolStripMenuItem,
+            this.mettreÀLarrièrePlanToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.vérouillerLesControlesToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.sélectionnerToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.testToolStripMenuItem,
+            this.testToolStripMenuItem1,
+            this.testToolStripMenuItem2,
+            this.testToolStripMenuItem3,
+            this.toolStripSeparator3,
+            this.annulerToolStripMenuItem,
+            this.rétablirToolStripMenuItem,
+            this.toolStripMenuItem12,
+            this.propriétésToolStripMenuItem});
+            this.metroContextMenu1.Name = "metroContextMenu1";
+            this.metroContextMenu1.Size = new System.Drawing.Size(236, 378);
+            this.metroContextMenu1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // afficherLeCodeToolStripMenuItem
+            // 
+            this.afficherLeCodeToolStripMenuItem.Name = "afficherLeCodeToolStripMenuItem";
+            this.afficherLeCodeToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.afficherLeCodeToolStripMenuItem.Text = "Afficher le code";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(232, 6);
+            // 
+            // mettreAuPremierPlanToolStripMenuItem
+            // 
+            this.mettreAuPremierPlanToolStripMenuItem.Name = "mettreAuPremierPlanToolStripMenuItem";
+            this.mettreAuPremierPlanToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.mettreAuPremierPlanToolStripMenuItem.Text = "Mettre au premier plan";
+            // 
+            // mettreÀLarrièrePlanToolStripMenuItem
+            // 
+            this.mettreÀLarrièrePlanToolStripMenuItem.Name = "mettreÀLarrièrePlanToolStripMenuItem";
+            this.mettreÀLarrièrePlanToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.mettreÀLarrièrePlanToolStripMenuItem.Text = "Mettre à l\'arrière plan";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(232, 6);
+            // 
+            // vérouillerLesControlesToolStripMenuItem
+            // 
+            this.vérouillerLesControlesToolStripMenuItem.Name = "vérouillerLesControlesToolStripMenuItem";
+            this.vérouillerLesControlesToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.vérouillerLesControlesToolStripMenuItem.Text = "Vérouiller les controles";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(232, 6);
+            // 
+            // sélectionnerToolStripMenuItem
+            // 
+            this.sélectionnerToolStripMenuItem.Name = "sélectionnerToolStripMenuItem";
+            this.sélectionnerToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.sélectionnerToolStripMenuItem.Text = "Sélectionner";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(232, 6);
+            // 
+            // testToolStripMenuItem
+            // 
+            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.testToolStripMenuItem.Text = "Couper";
+            this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
+            // 
+            // testToolStripMenuItem1
+            // 
+            this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
+            this.testToolStripMenuItem1.Size = new System.Drawing.Size(235, 26);
+            this.testToolStripMenuItem1.Text = "Copier";
+            this.testToolStripMenuItem1.Click += new System.EventHandler(this.testToolStripMenuItem1_Click);
+            // 
+            // testToolStripMenuItem2
+            // 
+            this.testToolStripMenuItem2.Name = "testToolStripMenuItem2";
+            this.testToolStripMenuItem2.Size = new System.Drawing.Size(235, 26);
+            this.testToolStripMenuItem2.Text = "Coller";
+            this.testToolStripMenuItem2.Click += new System.EventHandler(this.testToolStripMenuItem2_Click);
+            // 
+            // testToolStripMenuItem3
+            // 
+            this.testToolStripMenuItem3.Image = global::OSMaker.My.Resources.Resources.diamond16;
+            this.testToolStripMenuItem3.Name = "testToolStripMenuItem3";
+            this.testToolStripMenuItem3.Size = new System.Drawing.Size(235, 26);
+            this.testToolStripMenuItem3.Text = "Supprimer";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(232, 6);
+            // 
+            // annulerToolStripMenuItem
+            // 
+            this.annulerToolStripMenuItem.Name = "annulerToolStripMenuItem";
+            this.annulerToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.annulerToolStripMenuItem.Text = "Annuler";
+            this.annulerToolStripMenuItem.Click += new System.EventHandler(this.annulerToolStripMenuItem_Click);
+            // 
+            // rétablirToolStripMenuItem
+            // 
+            this.rétablirToolStripMenuItem.Name = "rétablirToolStripMenuItem";
+            this.rétablirToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.rétablirToolStripMenuItem.Text = "Rétablir";
+            this.rétablirToolStripMenuItem.Click += new System.EventHandler(this.rétablirToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(232, 6);
+            // 
+            // propriétésToolStripMenuItem
+            // 
+            this.propriétésToolStripMenuItem.Name = "propriétésToolStripMenuItem";
+            this.propriétésToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.propriétésToolStripMenuItem.Text = "Propriétés";
+            // 
+            // lierÀUnÉvènementToolStripMenuItem
+            // 
+            this.lierÀUnÉvènementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mouseClickToolStripMenuItem});
+            this.lierÀUnÉvènementToolStripMenuItem.Name = "lierÀUnÉvènementToolStripMenuItem";
+            this.lierÀUnÉvènementToolStripMenuItem.Size = new System.Drawing.Size(235, 26);
+            this.lierÀUnÉvènementToolStripMenuItem.Text = "Lier à un évènement";
+            // 
+            // mouseClickToolStripMenuItem
+            // 
+            this.mouseClickToolStripMenuItem.Name = "mouseClickToolStripMenuItem";
+            this.mouseClickToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mouseClickToolStripMenuItem.Text = "MouseClick";
+            // 
             // EditeurCCplus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 642);
+            this.Controls.Add(this.metroFichierXml);
+            this.Controls.Add(this.metroFichierCCPlus);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this._Panel1);
             this.Controls.Add(this.menuStrip1);
@@ -796,15 +712,7 @@ namespace OSMaker
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditeurCCplus";
             this.Load += new System.EventHandler(this.EditeurCCplus_Load);
-            ((System.ComponentModel.ISupportInitialize)(this._tb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FastColoredTextBox1)).EndInit();
             this.metroTabControl1.ResumeLayout(false);
-            this.metroTabPage1.ResumeLayout(false);
-            this.metroTabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.metroTabPage2.ResumeLayout(false);
-            this.metroTabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGridEvent)).EndInit();
@@ -813,6 +721,7 @@ namespace OSMaker
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
+            this.metroContextMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -849,29 +758,7 @@ namespace OSMaker
 
         internal Timer Timer1;
 
-        internal FastColoredTextBoxNS.FastColoredTextBox tb
-        {
-            [MethodImpl(MethodImplOptions.Synchronized)]
-            get
-            {
-                return _tb;
-            }
-
-            [MethodImpl(MethodImplOptions.Synchronized)]
-            set
-            {
-                if (_tb != null)
-                {
-                    _tb.TextChangedDelayed -= tb_TextChangedDelayed;
-                }
-
-                _tb = value;
-                if (_tb != null)
-                {
-                    _tb.TextChangedDelayed += tb_TextChangedDelayed;
-                }
-            }
-        }
+       
         internal ToolStripMenuItem ToolStripMenuItem1;
 
    
@@ -883,25 +770,12 @@ namespace OSMaker
        
 
         
-        
-        public FastColoredTextBoxNS.FastColoredTextBox _tb;
         public MetroFramework.Controls.MetroTabControl metroTabControl1;
-        private MetroFramework.Controls.MetroTabPage metroTabPage1;
-        private MetroFramework.Controls.MetroTabPage metroTabPage2;
         private MetroFramework.Controls.MetroTabPage metroTabPage3;
         public PictureBox pictureBox4;
         public PictureBox pictureBox5;
-        public FastColoredTextBoxNS.FastColoredTextBox FastColoredTextBox1;
-        public FastColoredTextBoxNS.DocumentMap DocumentMap2;
-        public FastColoredTextBoxNS.DocumentMap DocumentMap1;
-        public MetroFramework.Controls.MetroButton metroButton4;
         public MetroFramework.Controls.MetroTextBox metroFichierCCPlus;
-        public PictureBox pictureBox2;
-        public MetroFramework.Controls.MetroLabel metroLabel1;
-        public MetroFramework.Controls.MetroButton metroButton1;
         public MetroFramework.Controls.MetroTextBox metroFichierXml;
-        public PictureBox pictureBox6;
-        public MetroFramework.Controls.MetroLabel metroLabel2;
         public MetroFramework.Controls.MetroTextBox metroFichierEvent;
         public MetroFramework.Controls.MetroLabel metroLabel4;
         public MetroFramework.Controls.MetroGrid metroGridEvent;
@@ -910,7 +784,6 @@ namespace OSMaker
         public MetroFramework.Controls.MetroButton metroButton3;
         public MetroFramework.Controls.MetroTextBox txtboxselection;
         public MetroFramework.Controls.MetroLabel metroLabel3;
-        public Panel panel1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem editToolStripMenuItem;
@@ -926,5 +799,26 @@ namespace OSMaker
         private ToolStripMenuItem sélectionnerToutToolStripMenuItem;
         private ToolStripMenuItem toolStripMenuItem9;
         private ToolStripMenuItem toolStripMenuItem10;
+        public MetroFramework.Controls.MetroContextMenu metroContextMenu1;
+        private ToolStripMenuItem testToolStripMenuItem;
+        private ToolStripMenuItem testToolStripMenuItem1;
+        private ToolStripMenuItem testToolStripMenuItem2;
+        private ToolStripMenuItem testToolStripMenuItem3;
+        private ToolStripMenuItem afficherLeCodeToolStripMenuItem;
+        private ToolStripSeparator toolStripMenuItem5;
+        private ToolStripMenuItem mettreAuPremierPlanToolStripMenuItem;
+        private ToolStripMenuItem mettreÀLarrièrePlanToolStripMenuItem;
+        private ToolStripMenuItem vérouillerLesControlesToolStripMenuItem;
+        private ToolStripMenuItem sélectionnerToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripMenuItem annulerToolStripMenuItem;
+        private ToolStripMenuItem rétablirToolStripMenuItem;
+        private ToolStripSeparator toolStripMenuItem12;
+        private ToolStripMenuItem propriétésToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator5;
+        private ToolStripSeparator toolStripSeparator6;
+        private ToolStripSeparator toolStripSeparator4;
+        private ToolStripMenuItem lierÀUnÉvènementToolStripMenuItem;
+        private ToolStripMenuItem mouseClickToolStripMenuItem;
     }
 }

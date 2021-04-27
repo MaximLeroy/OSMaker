@@ -37,7 +37,6 @@ namespace OSMaker
             EqualStyle = new TextStyle(SolidEqual, null, FontStyle.Regular);
             InitializeComponent();
             CustomInitialize();
-            _tb.Name = "tb";
 
             
           
@@ -422,6 +421,7 @@ namespace OSMaker
                     // Create Form
                     _hostSurfaceManager = new Host.HostSurfaceManager();
                     HostC = _hostSurfaceManager.GetNewHost(Home.fileName);
+                   
                     //Toolbox.DesignerHost = hc.DesignerHost;
 
                     metroFichierXml.Text = Home.fileName;
@@ -438,7 +438,9 @@ namespace OSMaker
             {
                 MessageBox.Show("Error in creating new host", "Shell Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-      
+        
+
+
         }
 
         [CLSCompliant(false)]
@@ -515,7 +517,7 @@ namespace OSMaker
 
         private void ButtonItem1_Click(object sender, EventArgs e)
         {
-            FastColoredTextBox1.Text = ((Loader.BasicHostLoader)HostC.HostSurface.Loader).GetCode();
+            //FastColoredTextBox1.Text = ((Loader.BasicHostLoader)HostC.HostSurface.Loader).GetCode();
         }
 
         private void ButtonItem11_Click(object sender, EventArgs e)
@@ -648,19 +650,7 @@ namespace OSMaker
         private void tb_TextChangedDelayed(object sender, TextChangedEventArgs e)
         {
             CPCDOSSyntaxHighlight(e);
-            tb.AutoScroll = true;
-            tb.Font = new Font("Consolas", 9.75f);
-         //   tb.Dock = DockStyle.Fill;
-            tb.LeftBracket = '(';
-            tb.RightBracket = ')';
-            tb.LeftBracket2 = Conversions.ToChar(@"\x0");
-            tb.RightBracket2 = Conversions.ToChar(@"\x0");
-            tb.DoCaretVisible();
-            tb.IsChanged = false;
-            tb.ClearUndo();
-            tb.Focus();
-            tb.DelayedTextChangedInterval = 1000;
-            tb.DelayedEventsInterval = 1000;
+           
         }
 
         private void ButtonX1_Click(object sender, EventArgs e)
@@ -879,10 +869,10 @@ namespace OSMaker
             ModuleCpcDosCplus.GenTextCpc(stringXML);
             //GenTextCpc(stringXML);
             string code = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
-            FastColoredTextBox1.Text = code;
-            tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+            //FastColoredTextBox1.Text = code;
+          //  tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
             string fileName = metroFichierXml.Text;
-            string codeccplus = tb.Text;
+            string codeccplus = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
             string fileNameC = metroFichierCCPlus.Text;
             if (string.IsNullOrEmpty(metroFichierXml.Text))
             {
@@ -964,10 +954,10 @@ namespace OSMaker
             ModuleCpcDosCplus.GenTextCpc(stringXML);
             //GenTextCpc(stringXML);
             string code = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
-            FastColoredTextBox1.Text = code;
-            tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+            //FastColoredTextBox1.Text = code;
+            //tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
             string fileName = metroFichierXml.Text;
-            string codeccplus = tb.Text;
+            string codeccplus = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
             string fileNameC = metroFichierCCPlus.Text;
             if (string.IsNullOrEmpty(metroFichierXml.Text))
             {
@@ -1124,6 +1114,64 @@ namespace OSMaker
             OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
             if (undoEngine != null)
                 undoEngine.DoRedo();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Cut;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void testToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Copy;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void testToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Paste;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void annulerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
+            if (undoEngine != null)
+                undoEngine.DoUndo();
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Undo;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void rétablirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
+            if (undoEngine != null)
+                undoEngine.DoRedo();
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Redo;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
         }
     }
 }

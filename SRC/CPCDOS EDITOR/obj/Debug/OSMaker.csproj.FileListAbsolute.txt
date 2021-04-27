@@ -109,3 +109,4 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.exe
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.pdb
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OSMaker_Binary\OSMaker.xml
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Host.contextmenu.resources
