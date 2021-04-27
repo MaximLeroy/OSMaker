@@ -219,7 +219,9 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\MenuCommandService.cs" />
+    <Compile Include="Host\DesignerSerializationService.cs" />
+    <Compile Include="Host\MenuCommandServiceImpl.cs" />
+    <Compile Include="Host\UndoEngineImplcs.cs" />
     <Compile Include="My Project\MyNamespace.Dynamic.Designer.cs" />
     <Compile Include="My Project\MyNamespace.Static.1.Designer.cs" />
     <Compile Include="My Project\MyNamespace.Static.2.Designer.cs" />

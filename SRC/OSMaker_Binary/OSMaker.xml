@@ -21,6 +21,138 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:OSMaker.Host.MenuCommandServiceImpl.OnExecuteViewCodeEventHandler">
+            <summary>
+            Declare un delegate
+            </summary>
+        </member>
+        <member name="E:OSMaker.Host.MenuCommandServiceImpl.OnExecuteViewCode">
+            <summary>
+            Declare un evenement qui va contenir les informations que nous souhaitons envoyer
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.MenuCommandServiceImpl.OnExecuteViewPropertyEventHandler">
+            <summary>
+            Declare un delegate
+            </summary>
+        </member>
+        <member name="E:OSMaker.Host.MenuCommandServiceImpl.OnExecuteViewProperty">
+            <summary>
+            Declare un evenement qui va contenir les informations que nous souhaitons envoyer
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.MenuCommandServiceImpl.OnExecuteCreateEventEventHandler">
+            <summary>
+            Declare un delegate
+            </summary>
+        </member>
+        <member name="E:OSMaker.Host.MenuCommandServiceImpl.OnExecuteCreateEvent">
+            <summary>
+            Declare un evenement qui va contenir les informations que nous souhaitons envoyer
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.MenuCommandServiceImpl.OnSelectComponentEventEventHandler">
+            <summary>
+            Declare un delegate
+            </summary>
+        </member>
+        <member name="E:OSMaker.Host.MenuCommandServiceImpl.OnSelectComponentEvent">
+            <summary>
+            Declare un evenement qui va contenir les informations que nous souhaitons envoyer
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.HostControl">
+            <summary>
+            Hosts the HostSurface which inherits from DesignSurface.
+            </summary>
+        </member>
+        <member name="F:OSMaker.Host.HostControl.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Host.HostControl.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Host.HostControl.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.HostSurface">
+            <summary>
+            Inherits from DesignSurface and hosts the RootComponent and
+            all other designers. It also uses loaders (BasicDesignerLoader
+            or CodeDomDesignerLoader) when required. It also provides various
+            services to the designers. Adds MenuCommandService which is used
+            for Cut, Copy, Paste, etc.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Host.HostSurface.selectionService_SelectionChanged(System.Object,System.EventArgs)">
+            <summary>
+            When the selection changes this sets the PropertyGrid's selected component
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.HostSurfaceManager">
+            <summary>
+            Manages numerous HostSurfaces. Any services added to HostSurfaceManager
+            will be accessible to all HostSurfaces
+            </summary>
+        </member>
+        <member name="M:OSMaker.Host.HostSurfaceManager.GetNewHost(System.Type)">
+            <summary>
+            Gets a new HostSurface and loads it with the appropriate type of
+            root component.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Host.HostSurfaceManager.GetNewHost(System.Type,OSMaker.Host.LoaderType)">
+            <summary>
+            Gets a new HostSurface and loads it with the appropriate type of
+            root component. Uses the appropriate Loader to load the HostSurface.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Host.HostSurfaceManager.GetNewHost(System.String)">
+            <summary>
+            Opens an Xml file and loads it up using BasicHostLoader (inherits from
+            BasicDesignerLoader)
+            </summary>
+        </member>
+        <member name="M:OSMaker.Host.HostSurfaceManager.HostSurfaceManager_ActiveDesignSurfaceChanged(System.Object,System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs)">
+            <summary>
+            Uses the OutputWindow service and writes out to it.
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.MyRootDesigner">
+            <summary>
+            Demonstrates how to write a custom RootDesigner. This designer has a View
+            of a Graph - it shows the number of components added to the designer
+            in a pie/bar chart.
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.MyRootDesigner.MyRootControl">
+            <summary>
+            This is the View of the RootDesigner.
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.MyTopLevelComponent">
+            <summary>
+            Uses the custom RootDesigner (MyRootDesigner)
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.NameCreationService">
+            <summary>
+            This is responsible for naming the components as they are created.
+            This is added as a servide by the HostSurfaceManager
+            </summary>
+        </member>
+        <member name="T:OSMaker.Host.RandomUtil">
+            <summary>
+            Generated random color. It is used by MyRootDesigner
+            </summary>
+        </member>
         <member name="T:OSMaker.My.Resources.Resources">
             <summary>
               Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
@@ -805,98 +937,6 @@
         <member name="P:OSMaker.My.Resources.Resources.WIN">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
-            </summary>
-        </member>
-        <member name="T:OSMaker.Host.HostControl">
-            <summary>
-            Hosts the HostSurface which inherits from DesignSurface.
-            </summary>
-        </member>
-        <member name="F:OSMaker.Host.HostControl.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:OSMaker.Host.HostControl.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-        </member>
-        <member name="M:OSMaker.Host.HostControl.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="T:OSMaker.Host.HostSurface">
-            <summary>
-            Inherits from DesignSurface and hosts the RootComponent and
-            all other designers. It also uses loaders (BasicDesignerLoader
-            or CodeDomDesignerLoader) when required. It also provides various
-            services to the designers. Adds MenuCommandService which is used
-            for Cut, Copy, Paste, etc.
-            </summary>
-        </member>
-        <member name="M:OSMaker.Host.HostSurface.selectionService_SelectionChanged(System.Object,System.EventArgs)">
-            <summary>
-            When the selection changes this sets the PropertyGrid's selected component
-            </summary>
-        </member>
-        <member name="T:OSMaker.Host.HostSurfaceManager">
-            <summary>
-            Manages numerous HostSurfaces. Any services added to HostSurfaceManager
-            will be accessible to all HostSurfaces
-            </summary>
-        </member>
-        <member name="M:OSMaker.Host.HostSurfaceManager.GetNewHost(System.Type)">
-            <summary>
-            Gets a new HostSurface and loads it with the appropriate type of
-            root component.
-            </summary>
-        </member>
-        <member name="M:OSMaker.Host.HostSurfaceManager.GetNewHost(System.Type,OSMaker.Host.LoaderType)">
-            <summary>
-            Gets a new HostSurface and loads it with the appropriate type of
-            root component. Uses the appropriate Loader to load the HostSurface.
-            </summary>
-        </member>
-        <member name="M:OSMaker.Host.HostSurfaceManager.GetNewHost(System.String)">
-            <summary>
-            Opens an Xml file and loads it up using BasicHostLoader (inherits from
-            BasicDesignerLoader)
-            </summary>
-        </member>
-        <member name="M:OSMaker.Host.HostSurfaceManager.HostSurfaceManager_ActiveDesignSurfaceChanged(System.Object,System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs)">
-            <summary>
-            Uses the OutputWindow service and writes out to it.
-            </summary>
-        </member>
-        <member name="T:OSMaker.Host.MyRootDesigner">
-            <summary>
-            Demonstrates how to write a custom RootDesigner. This designer has a View
-            of a Graph - it shows the number of components added to the designer
-            in a pie/bar chart.
-            </summary>
-        </member>
-        <member name="T:OSMaker.Host.MyRootDesigner.MyRootControl">
-            <summary>
-            This is the View of the RootDesigner.
-            </summary>
-        </member>
-        <member name="T:OSMaker.Host.MyTopLevelComponent">
-            <summary>
-            Uses the custom RootDesigner (MyRootDesigner)
-            </summary>
-        </member>
-        <member name="T:OSMaker.Host.NameCreationService">
-            <summary>
-            This is responsible for naming the components as they are created.
-            This is added as a servide by the HostSurfaceManager
-            </summary>
-        </member>
-        <member name="T:OSMaker.Host.RandomUtil">
-            <summary>
-            Generated random color. It is used by MyRootDesigner
             </summary>
         </member>
         <member name="T:OSMaker.Loader.BasicHostLoader">

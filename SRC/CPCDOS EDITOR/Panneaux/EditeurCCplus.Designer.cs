@@ -84,8 +84,10 @@ namespace OSMaker
             this.centrerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horizontalementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.sélectionnerToutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this._tb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FastColoredTextBox1)).BeginInit();
             this.metroTabControl1.SuspendLayout();
@@ -698,7 +700,9 @@ namespace OSMaker
             this.toolStripMenuItem8,
             this.deleteToolStripMenuItem,
             this.centrerToolStripMenuItem,
-            this.sélectionnerToutToolStripMenuItem});
+            this.sélectionnerToutToolStripMenuItem,
+            this.toolStripMenuItem9,
+            this.toolStripMenuItem10});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.editToolStripMenuItem.Text = "Edition";
@@ -754,17 +758,31 @@ namespace OSMaker
             this.verticalementToolStripMenuItem.Text = "Verticalement";
             this.verticalementToolStripMenuItem.Click += new System.EventHandler(this.verticalementToolStripMenuItem_Click);
             // 
-            // metroStyleManager1
-            // 
-            this.metroStyleManager1.Owner = this;
-            this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
             // sélectionnerToutToolStripMenuItem
             // 
             this.sélectionnerToutToolStripMenuItem.Name = "sélectionnerToutToolStripMenuItem";
             this.sélectionnerToutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.sélectionnerToutToolStripMenuItem.Text = "Sélectionner tout";
             this.sélectionnerToutToolStripMenuItem.Click += new System.EventHandler(this.sélectionnerToutToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem9.Text = "Undo";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click_1);
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem10.Text = "Redo";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
+            // 
+            // metroStyleManager1
+            // 
+            this.metroStyleManager1.Owner = this;
+            this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // EditeurCCplus
             // 
@@ -906,5 +924,7 @@ namespace OSMaker
         private ToolStripMenuItem horizontalementToolStripMenuItem;
         private ToolStripMenuItem verticalementToolStripMenuItem;
         private ToolStripMenuItem sélectionnerToutToolStripMenuItem;
+        private ToolStripMenuItem toolStripMenuItem9;
+        private ToolStripMenuItem toolStripMenuItem10;
     }
 }

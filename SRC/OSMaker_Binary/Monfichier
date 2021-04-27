@@ -10,8 +10,8 @@ End/ Window
 Button/ Button1
    .Handle        = "%MonHandle%"
    .Text          = "Button1"
-   .PX            = "191"
-   .PY            = "46"
+   .PX            = "185"
+   .PY            = "44"
    .SX            = "75"
    .SY            = "23"
 Create/

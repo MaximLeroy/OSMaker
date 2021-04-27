@@ -24,25 +24,42 @@ namespace OSMaker.Host
         public event EventHandler DoubleClick;
         // Menu
         public MenuCommandServiceImpl Menu;
+        [CLSCompliant(false)]
+        public OSMaker.UndoEngineImpl undoEngine;
+
         private void doublbcli(object sender, EventArgs e)
         {
             MessageBox.Show("double click");
         }
         public HostSurface() : base()
         {
-            AddService(typeof(IMenuCommandService), new MenuCommandService(this));
-            ServiceContainer.AddService(typeof(IMenuCommandService), Menu);
+            this.AddService(typeof(IMenuCommandService), new MenuCommandService(this.ServiceContainer));
+            //You only need to do your own implementation if you want to do something special. 
+            this.AddService(typeof(IDesignerSerializationService),
+                new DesignerSerializationService(this.ServiceContainer));
+            this.AddService(typeof(ComponentSerializationService),
+                new CodeDomComponentSerializationService(this.ServiceContainer));
         }
 
         public HostSurface(IServiceProvider parentProvider) : base(parentProvider)
         {
-            AddService(typeof(IMenuCommandService), new MenuCommandService(this));
+            Menu = new MenuCommandServiceImpl(this.ServiceContainer);
+            Menu.Designer = this;
+            ServiceContainer.AddService(typeof(System.ComponentModel.Design.IMenuCommandService), Menu);
+            // idem  correction
+            //  this.AddService(typeof(IMenuCommandService), new MenuCommandService(this.ServiceContainer));
+            // Ajout : les 2 lignes de code suivantes. 
+            this.AddService(typeof(IDesignerSerializationService),
+                new DesignerSerializationService(this.ServiceContainer));
+            this.AddService(typeof(ComponentSerializationService),
+                new CodeDomComponentSerializationService(this.ServiceContainer));
         }
 
         internal void Initialize()
 
         {
             Control control = null;
+            
             IDesignerHost host = (IDesignerHost)GetService(typeof(IDesignerHost));
             if (host is null)
                 return;
@@ -118,7 +135,7 @@ namespace OSMaker.Host
                 }
 
                 propertyGrid.SelectedObjects = comps;
-                
+              
             }
         }
 

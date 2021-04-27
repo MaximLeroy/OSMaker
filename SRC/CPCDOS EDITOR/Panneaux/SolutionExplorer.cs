@@ -437,15 +437,18 @@ namespace OSMaker.Panneaux
 
 
 
-                OuvrirConcepteur concepteur = new OuvrirConcepteur();
-                concepteur.Text = Home.fileName;
+                
+                
 
                 Home.fileName = fi.FullName;
+                EditeurCCplus concepteur = new EditeurCCplus();
+                concepteur.Text = Home.fileName;
                 string nomfichier = fi.Name;
                 string text = fi.Name;
 
                 concepteur.Text = nomfichier + " [Design]";
                 concepteur.Font = new Font("Microsoft Sans Serif", 7);
+
                 if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
                 {
                     concepteur.MdiParent = this;
@@ -480,6 +483,7 @@ namespace OSMaker.Panneaux
         public static string pathXml;
         private void iUGToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Home.fileName = null;
             var node = _tv.SelectedNode;
             string oldPathDir = node.Text;
             if (oldPathDir.ToLower().Contains(".txt") || oldPathDir.ToLower().Contains(".osm") || oldPathDir.ToLower().Contains(".cpc"))
@@ -522,7 +526,7 @@ namespace OSMaker.Panneaux
 
                 }
                 else
-                    concepteur.metroFichierXml.Text = di.FullName + @"\\" + newFileName;
+                    concepteur.metroFichierXml.Text = di.FullName + @"\" + newFileName;
                     concepteur.Show(Home.dockPanel);
             }
         }

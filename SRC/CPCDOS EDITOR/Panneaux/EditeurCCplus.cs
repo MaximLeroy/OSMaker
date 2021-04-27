@@ -394,7 +394,7 @@ namespace OSMaker
         [CLSCompliant(false)]
         public Host.Designer Designer = new Host.Designer(My.MySettingsProperty.Settings.Afficher_La_Griller, true, My.MySettingsProperty.Settings.Aimentation_Intelligente, true, My.MySettingsProperty.Settings.Smart_Tags, true, My.MySettingsProperty.Settings.Afficher_La_Griller);
         public System.ComponentModel.Design.IComponentChangeService componentChangeService;
-
+     
         private void HostControl_MouseDoubleClick(object sender, EventArgs e)
         {
             MessageBox.Show("double click");
@@ -403,19 +403,42 @@ namespace OSMaker
         {
             try
             {
-                _formCount += 1;
-                HostC = _hostSurfaceManager.GetNewHost(typeof(Form), Host.LoaderType.BasicDesignerLoader);
-                // AddTabForNewHost("Form" & _formCount.ToString() & " - " & Strings.Design)
-                HostC.Parent = Panel1;
-                HostC.Dock = DockStyle.Fill;
-                
-                ToolBox.Window b1 = (ToolBox.Window)HostC.CreateControl(typeof(ToolBox.Window), new Size(50, 50), new Point(10, 10));
-                b1.Dock = DockStyle.Fill;
+
+                if (Home.fileName == null)
+                {
+                    _formCount += 1;
+                    HostC = _hostSurfaceManager.GetNewHost(typeof(Form), Host.LoaderType.BasicDesignerLoader);
+                    // AddTabForNewHost("Form" & _formCount.ToString() & " - " & Strings.Design)
+                    HostC.Parent = Panel1;
+                    HostC.Dock = DockStyle.Fill;
+
+
+                    ToolBox.Window b1 = (ToolBox.Window)HostC.CreateControl(typeof(ToolBox.Window), new Size(50, 50), new Point(10, 10));
+                    b1.Dock = DockStyle.Fill;
+                }
+                else
+                {
+
+                    // Create Form
+                    _hostSurfaceManager = new Host.HostSurfaceManager();
+                    HostC = _hostSurfaceManager.GetNewHost(Home.fileName);
+                    //Toolbox.DesignerHost = hc.DesignerHost;
+
+                    metroFichierXml.Text = Home.fileName;
+
+                    //  metroButton2.Visible = false;
+                    HostC.Parent = _Panel1;
+                    HostC.Dock = DockStyle.Fill;
+                    _hostSurfaceManager.AddService(typeof(IToolboxService), Home.m_toolbox.toolbox1);
+                    _hostSurfaceManager.AddService(typeof(PropertyGrid), Home.m_propertyWindow.propertyGrid);
+                }
+
             }
             catch
             {
                 MessageBox.Show("Error in creating new host", "Shell Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+      
         }
 
         [CLSCompliant(false)]
@@ -1019,17 +1042,22 @@ namespace OSMaker
         private void toolStripMenuItem7_Click(object sender, EventArgs e)
 
         {
-            object monobjet;
-            object monobjet2;
-          //  monobjet = Home.m_propertyWindow.propertyGrid.SelectedObject;
-          //  monobjet2 = (Home.propertyGrid.SelectedObject.GetType)HostC.CreateControl(typeof(ToolBox.TextBlock), new Size(200, 40), new Point(10, 10));
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Copy;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
 
         }
 
         private void toolStripMenuItem8_Click(object sender, EventArgs e)
         {
-        
-            Coller();
+
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Paste;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
         }
 
         private void _Panel1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -1082,6 +1110,20 @@ namespace OSMaker
             var a = System.ComponentModel.Design.StandardCommands.SelectAll;
             ims.GlobalInvoke(a);
             MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void toolStripMenuItem9_Click_1(object sender, EventArgs e)
+        {
+            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
+            if (undoEngine != null)
+                undoEngine.DoUndo();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
+            if (undoEngine != null)
+                undoEngine.DoRedo();
         }
     }
 }
