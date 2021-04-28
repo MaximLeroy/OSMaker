@@ -59,11 +59,11 @@ namespace OSMaker
             }
 
             if (s.PrimarySelection == null)
-              txtboxselection.Text = "";
+              _selection = "";
             else
             {
                 IComponent component = (IComponent)s.PrimarySelection;
-     txtboxselection.Text = component.Site.Name + " (" + component.GetType().Name + ")";
+    _selection = component.Site.Name + " (" + component.GetType().Name + ")";
             }
         }
         private Host.HostSurfaceManager _hostSurfaceManager;
@@ -662,16 +662,16 @@ namespace OSMaker
             string Nom_Ctrl_Actif;
             if (Home.m_propertyWindow.propertyGrid.SelectedObject.ToString().Contains("["))
             {
-                Nom_Ctrl_Actif = Home.m_propertyWindow.propertyGrid.SelectedObject.ToString().Split('[')[0].TrimEnd(' ');
+                _selection = Home.m_propertyWindow.propertyGrid.SelectedObject.ToString().Split('[')[0].TrimEnd(' ');
             }
             else
             {
-                Nom_Ctrl_Actif = Conversions.ToString(Home.m_propertyWindow.propertyGrid.SelectedObject.GetType().GetProperty("Name").GetValue(Home.m_propertyWindow.propertyGrid.SelectedObject, null));
+                _selection = Conversions.ToString(Home.m_propertyWindow.propertyGrid.SelectedObject.GetType().GetProperty("Name").GetValue(Home.m_propertyWindow.propertyGrid.SelectedObject, null));
             }
             // Else
             // Nom_Ctrl_Actif = SelectionService.PrimarySelection.ToString.Split("[")(0).TrimEnd(" ")
             // End If
-            txtboxselection.Text = Nom_Ctrl_Actif;
+         
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
@@ -814,33 +814,21 @@ namespace OSMaker
             //on pourra choisir sur quelle forme ajouter en modifiant avec un textbox
           //  nbforms["PropertyWindow"].pro;
            // PropertyWindow property;
-            string Nom_Ctrl_Actif;
-            
-            if (Home.m_propertyWindow.propertyGrid.SelectedObject.ToString().Contains("["))
-            {
-                Nom_Ctrl_Actif = Home.m_propertyWindow.propertyGrid.SelectedObject.ToString().Split('[')[0].TrimEnd(' ');
-            }
-            else
-            {
-               
-                Nom_Ctrl_Actif = Conversions.ToString(Home.m_propertyWindow.propertyGrid.SelectedObject.GetType().GetProperty("Name").GetValue(Home.m_propertyWindow.propertyGrid.SelectedObject, null));
-            }
-            // Else
-            // Nom_Ctrl_Actif = SelectionService.PrimarySelection.ToString.Split("[")(0).TrimEnd(" ")
-            // End If
-            txtboxselection.Text = Nom_Ctrl_Actif;
+       
         }
-
+        public static string metroFichierEvent = "";
+        public static string _selection = "";
         private void metroLier_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(metroFichierEvent.Text))
+            if (string.IsNullOrEmpty(metroFichierEvent))
             {
                 MessageBox.Show("Veuillez sélectionner un fichier évènement CC+");
             }
             else
             {
-                My.MyProject.Computer.FileSystem.WriteAllText(metroFichierEvent.Text, "Function/ " + txtboxselection.Text + ".MouseClick()" + Constants.vbCrLf + "" + Constants.vbCrLf + "End/ Function", true);
+                My.MyProject.Computer.FileSystem.WriteAllText(metroFichierEvent, "Function/ " + _selection + ".MouseClick()" + Constants.vbCrLf + "" + Constants.vbCrLf + "End/ Function", true);
             }
+           
         }
 
         private void saveMenuItem_Click(object sender, EventArgs e)
@@ -930,6 +918,154 @@ namespace OSMaker
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+         ToolBox.TextBlock b1 = (ToolBox.TextBlock)HostC.CreateControl(typeof(ToolBox.TextBlock), new Size(200, 40), new Point(10, 10));
+            
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+      
+
+        private void _Panel1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("double click");
+        }
+
+        private void _Panel1_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("double click");
+        }
+        
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+          
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void horizontalementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.CenterHorizontally;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void verticalementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.CenterVertically;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void sélectionnerToutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void toolStripMenuItem9_Click_1(object sender, EventArgs e)
+        {
+            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
+            if (undoEngine != null)
+                undoEngine.DoUndo();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
+            if (undoEngine != null)
+                undoEngine.DoRedo();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Cut;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void testToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Copy;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void testToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Paste;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void annulerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
+            if (undoEngine != null)
+                undoEngine.DoUndo();
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Undo;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void rétablirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
+            if (undoEngine != null)
+                undoEngine.DoRedo();
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.Redo;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void sélectionnerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
+            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
+            var a = System.ComponentModel.Design.StandardCommands.SelectAll;
+            ims.GlobalInvoke(a);
+            MenuCommandService.GlobalInvoke(a);
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
             // Assigner une valeur aux variables
             //WinToCpcDosCplus.ModuleCpcDosCplus.OpacitetextS = metroOpacite.Text;
             //WinToCpcDosCplus.ModuleCpcDosCplus.couleurfondtextS = metroCFR.Text;
@@ -1013,165 +1149,47 @@ namespace OSMaker
             }
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void mouseClickToolStripMenuItem_Click(object sender, EventArgs e)
         {
-         ToolBox.TextBlock b1 = (ToolBox.TextBlock)HostC.CreateControl(typeof(ToolBox.TextBlock), new Size(200, 40), new Point(10, 10));
             
-        }
 
-        private void toolStripMenuItem9_Click(object sender, EventArgs e)
-        {
-           
-        }
+            if (Home.m_propertyWindow.propertyGrid.SelectedObject.ToString().Contains("["))
+            {
+                _selection = Home.m_propertyWindow.propertyGrid.SelectedObject.ToString().Split('[')[0].TrimEnd(' ');
+            }
+            else
+            {
 
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-           
-        }
+                _selection = Conversions.ToString(Home.m_propertyWindow.propertyGrid.SelectedObject.GetType().GetProperty("Name").GetValue(Home.m_propertyWindow.propertyGrid.SelectedObject, null));
+            }
+          Doc doc = CreateNewDocument();
+            doc.Show(Home.dockPanel);
 
-        private void toolStripMenuItem7_Click(object sender, EventArgs e)
-
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Copy;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
+            // Else
+            // Nom_Ctrl_Actif = SelectionService.PrimarySelection.ToString.Split("[")(0).TrimEnd(" ")
+            // End If
 
         }
-
-        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        public Doc CreateNewDocument()
         {
+            Doc dummyDoc = new Doc();
 
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Paste;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
+            int count = 1;
+            string text = $"Document{count}";
+            //while (FindDocument(text) != null)
+            //{
+            //    count++;
+            //    text = $"Document{count}";
+            //}
+
+            dummyDoc.Text = text;
+            return dummyDoc;
         }
-
-        private void _Panel1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private Doc CreateNewDocument(string text)
         {
-            MessageBox.Show("double click");
-        }
-
-        private void _Panel1_DoubleClick(object sender, EventArgs e)
-        {
-            MessageBox.Show("double click");
-        }
-        
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-             System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Delete;
-              ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void toolStripMenuItem6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void horizontalementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.CenterHorizontally;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void verticalementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.CenterVertically;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void sélectionnerToutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.SelectAll;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void toolStripMenuItem9_Click_1(object sender, EventArgs e)
-        {
-            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
-            if (undoEngine != null)
-                undoEngine.DoUndo();
-        }
-
-        private void toolStripMenuItem10_Click(object sender, EventArgs e)
-        {
-            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
-            if (undoEngine != null)
-                undoEngine.DoRedo();
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Cut;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void testToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Copy;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void testToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Paste;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void annulerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
-            if (undoEngine != null)
-                undoEngine.DoUndo();
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Undo;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void rétablirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
-            if (undoEngine != null)
-                undoEngine.DoRedo();
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Redo;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
+            Doc dummyDoc = new Doc();
+            dummyDoc.Text = text;
+            return dummyDoc;
         }
     }
 }

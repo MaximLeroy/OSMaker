@@ -4,6 +4,23 @@
         <name>OSMaker</name>
     </assembly>
     <members>
+        <member name="F:OSMaker.Formulaires.EvenementsFenetre.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Formulaires.EvenementsFenetre.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OSMaker.Formulaires.EvenementsFenetre.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="F:OSMaker.Home.components">
             <summary>
             Required designer variable.
@@ -317,6 +334,16 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.box1">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.BringForward_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.BringtoFront_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -677,6 +704,16 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.line_dotted_icon_1252323">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Lock_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.LockCyan_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -1291,6 +1328,23 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:OSMaker.Panneaux.SolutionExplorer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:OSMaker.Panneaux.Sortie.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Panneaux.Sortie.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OSMaker.Panneaux.Sortie.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.

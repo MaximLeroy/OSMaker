@@ -2,8 +2,36 @@
 Window/ Window1
    .PX            = "0"
    .PY            = "0"
-   .SX            = "284"
-   .SY            = "261"
+   .SX            = "431"
+   .SY            = "283"
 @#MonHandle Create/ 
 End/ Window
+
+Window/ Window2
+   .PX            = "0"
+   .PY            = "0"
+   .SX            = "431"
+   .SY            = "283"
+@#MonHandle Create/ 
+End/ Window
+
+Button/ Button2
+   .Handle        = "%MonHandle%"
+   .Text          = "Button1"
+   .PX            = "186"
+   .PY            = "109"
+   .SX            = "75"
+   .SY            = "23"
+Create/
+End/ Button
+
+Button/ Button1
+   .Handle        = "%MonHandle%"
+   .Text          = "Button1"
+   .PX            = "186"
+   .PY            = "138"
+   .SX            = "75"
+   .SY            = "23"
+Create/
+End/ Button
 

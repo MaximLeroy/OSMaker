@@ -48,31 +48,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.menuItemFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemNew = new System.Windows.Forms.ToolStripMenuItem();
-            this.dossierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fenêtreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fenêtreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bureauToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichierCpcdosCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichierTexteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.autresLanguagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichierCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichierCToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichierJAVAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichierXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemOpen = new System.Windows.Forms.ToolStripMenuItem();
-            this.dossierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemClose = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemCloseAll = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemCloseAllButThisOne = new System.Windows.Forms.ToolStripMenuItem();
-            this.exporterCCAuFormatOSMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichierCCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemExit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemView = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemSolutionExplorer = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemPropertyWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemToolbox = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemOutputWindow = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemTaskList = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemToolBar = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,12 +69,32 @@
             this.menuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.virtualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.virtualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.dossierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fenêtreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fenêtreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bureauToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichierCpcdosCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichierTexteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autresLanguagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichierCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichierCToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichierJAVAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichierXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dossierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemClose = new System.Windows.Forms.ToolStripMenuItem();
+            this.exporterCCAuFormatOSMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichierCCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemSolutionExplorer = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemToolbox = new System.Windows.Forms.ToolStripMenuItem();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.panel2.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -175,8 +177,269 @@
             this.menuItemExit});
             this.menuItemFile.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemFile.Name = "menuItemFile";
-            this.menuItemFile.Size = new System.Drawing.Size(66, 24);
+            this.menuItemFile.Size = new System.Drawing.Size(66, 26);
             this.menuItemFile.Text = "Fichier";
+            // 
+            // menuItemOpen
+            // 
+            this.menuItemOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemOpen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dossierToolStripMenuItem,
+            this.fichierToolStripMenuItem});
+            this.menuItemOpen.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemOpen.Name = "menuItemOpen";
+            this.menuItemOpen.Size = new System.Drawing.Size(290, 26);
+            this.menuItemOpen.Text = "Ouvrir";
+            // 
+            // fichierToolStripMenuItem
+            // 
+            this.fichierToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.fichierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
+            this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.fichierToolStripMenuItem.Text = "Fichier";
+            this.fichierToolStripMenuItem.Click += new System.EventHandler(this.fichierToolStripMenuItem_Click);
+            // 
+            // menuItemCloseAll
+            // 
+            this.menuItemCloseAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemCloseAll.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemCloseAll.Name = "menuItemCloseAll";
+            this.menuItemCloseAll.Size = new System.Drawing.Size(290, 26);
+            this.menuItemCloseAll.Text = "Tout fermer";
+            // 
+            // menuItemCloseAllButThisOne
+            // 
+            this.menuItemCloseAllButThisOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemCloseAllButThisOne.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemCloseAllButThisOne.Name = "menuItemCloseAllButThisOne";
+            this.menuItemCloseAllButThisOne.Size = new System.Drawing.Size(290, 26);
+            this.menuItemCloseAllButThisOne.Text = "Tout fermer sauf ce document";
+            // 
+            // menuItemExit
+            // 
+            this.menuItemExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemExit.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemExit.Name = "menuItemExit";
+            this.menuItemExit.Size = new System.Drawing.Size(290, 26);
+            this.menuItemExit.Text = "Quitter";
+            // 
+            // menuItemView
+            // 
+            this.menuItemView.BackColor = System.Drawing.Color.Transparent;
+            this.menuItemView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemSolutionExplorer,
+            this.menuItemPropertyWindow,
+            this.menuItemToolbox,
+            this.menuItemOutputWindow,
+            this.menuItemTaskList,
+            this.menuItemToolBar,
+            this.menuItemStatusBar,
+            this.menuItemLayoutByCode,
+            this.menuItemLayoutByXml,
+            this.toolStripSeparator1});
+            this.menuItemView.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemView.MergeIndex = 1;
+            this.menuItemView.Name = "menuItemView";
+            this.menuItemView.Size = new System.Drawing.Size(87, 26);
+            this.menuItemView.Text = "Affichage";
+            // 
+            // menuItemPropertyWindow
+            // 
+            this.menuItemPropertyWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemPropertyWindow.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemPropertyWindow.Name = "menuItemPropertyWindow";
+            this.menuItemPropertyWindow.ShortcutKeys = System.Windows.Forms.Keys.F4;
+            this.menuItemPropertyWindow.Size = new System.Drawing.Size(264, 26);
+            this.menuItemPropertyWindow.Text = "&Fenêtre des propriétés";
+            this.menuItemPropertyWindow.Click += new System.EventHandler(this.menuItemPropertyWindow_Click_1);
+            // 
+            // menuItemOutputWindow
+            // 
+            this.menuItemOutputWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemOutputWindow.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemOutputWindow.Name = "menuItemOutputWindow";
+            this.menuItemOutputWindow.Size = new System.Drawing.Size(264, 26);
+            this.menuItemOutputWindow.Text = "&Output Window";
+            // 
+            // menuItemTaskList
+            // 
+            this.menuItemTaskList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemTaskList.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemTaskList.Name = "menuItemTaskList";
+            this.menuItemTaskList.Size = new System.Drawing.Size(264, 26);
+            this.menuItemTaskList.Text = "Task &List";
+            // 
+            // menuItemToolBar
+            // 
+            this.menuItemToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemToolBar.Checked = true;
+            this.menuItemToolBar.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.menuItemToolBar.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemToolBar.Name = "menuItemToolBar";
+            this.menuItemToolBar.Size = new System.Drawing.Size(264, 26);
+            this.menuItemToolBar.Text = "Tool &Bar";
+            // 
+            // menuItemStatusBar
+            // 
+            this.menuItemStatusBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemStatusBar.Checked = true;
+            this.menuItemStatusBar.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.menuItemStatusBar.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemStatusBar.Name = "menuItemStatusBar";
+            this.menuItemStatusBar.Size = new System.Drawing.Size(264, 26);
+            this.menuItemStatusBar.Text = "Status B&ar";
+            // 
+            // menuItemLayoutByCode
+            // 
+            this.menuItemLayoutByCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemLayoutByCode.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemLayoutByCode.Name = "menuItemLayoutByCode";
+            this.menuItemLayoutByCode.Size = new System.Drawing.Size(264, 26);
+            this.menuItemLayoutByCode.Text = "Layout By &Code";
+            // 
+            // menuItemLayoutByXml
+            // 
+            this.menuItemLayoutByXml.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.menuItemLayoutByXml.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemLayoutByXml.Name = "menuItemLayoutByXml";
+            this.menuItemLayoutByXml.Size = new System.Drawing.Size(264, 26);
+            this.menuItemLayoutByXml.Text = "Layout By &XML";
+            this.menuItemLayoutByXml.Click += new System.EventHandler(this.menuItemLayoutByXml_Click_1);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(261, 6);
+            // 
+            // menuItemTools
+            // 
+            this.menuItemTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.virtualisationToolStripMenuItem});
+            this.menuItemTools.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemTools.MergeIndex = 2;
+            this.menuItemTools.Name = "menuItemTools";
+            this.menuItemTools.Size = new System.Drawing.Size(58, 26);
+            this.menuItemTools.Text = "Tools";
+            // 
+            // menuItemWindow
+            // 
+            this.menuItemWindow.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemNewWindow});
+            this.menuItemWindow.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemWindow.MergeIndex = 2;
+            this.menuItemWindow.Name = "menuItemWindow";
+            this.menuItemWindow.Size = new System.Drawing.Size(78, 26);
+            this.menuItemWindow.Text = "Window";
+            // 
+            // menuItemNewWindow
+            // 
+            this.menuItemNewWindow.Name = "menuItemNewWindow";
+            this.menuItemNewWindow.Size = new System.Drawing.Size(181, 26);
+            this.menuItemNewWindow.Text = "&New Window";
+            // 
+            // menuItemHelp
+            // 
+            this.menuItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemAbout});
+            this.menuItemHelp.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemHelp.MergeIndex = 3;
+            this.menuItemHelp.Name = "menuItemHelp";
+            this.menuItemHelp.Size = new System.Drawing.Size(55, 26);
+            this.menuItemHelp.Text = "Help";
+            // 
+            // menuItemAbout
+            // 
+            this.menuItemAbout.Name = "menuItemAbout";
+            this.menuItemAbout.Size = new System.Drawing.Size(230, 26);
+            this.menuItemAbout.Text = "&About DockSample...";
+            this.menuItemAbout.Click += new System.EventHandler(this.menuItemAbout_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.panel3.Controls.Add(this.metroButton2);
+            this.panel3.Controls.Add(this.metroButton1);
+            this.panel3.Controls.Add(this.toolStrip1);
+            this.panel3.Location = new System.Drawing.Point(40, 30);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(791, 27);
+            this.panel3.TabIndex = 14;
+            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
+            this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseMove);
+            this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseUp);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3});
+            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(791, 27);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.Visible = false;
+            // 
+            // virtualisationToolStripMenuItem
+            // 
+            this.virtualisationToolStripMenuItem.Name = "virtualisationToolStripMenuItem";
+            this.virtualisationToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.virtualisationToolStripMenuItem.Text = "Virtualisation";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::OSMaker.My.Resources.Resources.openfolderpng;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::OSMaker.My.Resources.Resources.redo;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton2.Text = "toolStripButton2";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = global::OSMaker.My.Resources.Resources.sad_16x161;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton3.Text = "toolStripButton3";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.panel4.BackgroundImage = global::OSMaker.My.Resources.Resources.OSM_LOGO;
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Location = new System.Drawing.Point(2, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(32, 52);
+            this.panel4.TabIndex = 15;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OSMaker.My.Resources.Resources.OSM_LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // menuItemNew
             // 
@@ -292,17 +555,6 @@
             this.fichierXMLToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
             this.fichierXMLToolStripMenuItem.Text = "Fichier XML";
             // 
-            // menuItemOpen
-            // 
-            this.menuItemOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemOpen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dossierToolStripMenuItem,
-            this.fichierToolStripMenuItem});
-            this.menuItemOpen.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemOpen.Name = "menuItemOpen";
-            this.menuItemOpen.Size = new System.Drawing.Size(290, 26);
-            this.menuItemOpen.Text = "Ouvrir";
-            // 
             // dossierToolStripMenuItem
             // 
             this.dossierToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -311,15 +563,6 @@
             this.dossierToolStripMenuItem.Name = "dossierToolStripMenuItem";
             this.dossierToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
             this.dossierToolStripMenuItem.Text = "Dossier";
-            // 
-            // fichierToolStripMenuItem
-            // 
-            this.fichierToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.fichierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
-            this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
-            this.fichierToolStripMenuItem.Text = "Fichier";
-            this.fichierToolStripMenuItem.Click += new System.EventHandler(this.fichierToolStripMenuItem_Click);
             // 
             // menuItemClose
             // 
@@ -330,22 +573,6 @@
             this.menuItemClose.Size = new System.Drawing.Size(290, 26);
             this.menuItemClose.Text = "Fermer";
             this.menuItemClose.Click += new System.EventHandler(this.menuItemClose_Click);
-            // 
-            // menuItemCloseAll
-            // 
-            this.menuItemCloseAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemCloseAll.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemCloseAll.Name = "menuItemCloseAll";
-            this.menuItemCloseAll.Size = new System.Drawing.Size(290, 26);
-            this.menuItemCloseAll.Text = "Tout fermer";
-            // 
-            // menuItemCloseAllButThisOne
-            // 
-            this.menuItemCloseAllButThisOne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemCloseAllButThisOne.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemCloseAllButThisOne.Name = "menuItemCloseAllButThisOne";
-            this.menuItemCloseAllButThisOne.Size = new System.Drawing.Size(290, 26);
-            this.menuItemCloseAllButThisOne.Text = "Tout fermer sauf ce document";
             // 
             // exporterCCAuFormatOSMToolStripMenuItem
             // 
@@ -369,34 +596,6 @@
             this.fichierCCToolStripMenuItem.Text = "Fichier CC+ (IUG)";
             this.fichierCCToolStripMenuItem.Click += new System.EventHandler(this.fichierCCToolStripMenuItem_Click);
             // 
-            // menuItemExit
-            // 
-            this.menuItemExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemExit.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemExit.Name = "menuItemExit";
-            this.menuItemExit.Size = new System.Drawing.Size(290, 26);
-            this.menuItemExit.Text = "Quitter";
-            // 
-            // menuItemView
-            // 
-            this.menuItemView.BackColor = System.Drawing.Color.Transparent;
-            this.menuItemView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemSolutionExplorer,
-            this.menuItemPropertyWindow,
-            this.menuItemToolbox,
-            this.menuItemOutputWindow,
-            this.menuItemTaskList,
-            this.menuItemToolBar,
-            this.menuItemStatusBar,
-            this.menuItemLayoutByCode,
-            this.menuItemLayoutByXml,
-            this.toolStripSeparator1});
-            this.menuItemView.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemView.MergeIndex = 1;
-            this.menuItemView.Name = "menuItemView";
-            this.menuItemView.Size = new System.Drawing.Size(87, 24);
-            this.menuItemView.Text = "Affichage";
-            // 
             // menuItemSolutionExplorer
             // 
             this.menuItemSolutionExplorer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -406,16 +605,6 @@
             this.menuItemSolutionExplorer.Size = new System.Drawing.Size(264, 26);
             this.menuItemSolutionExplorer.Text = "&Explorateur de fichiers";
             this.menuItemSolutionExplorer.Click += new System.EventHandler(this.menuItemSolutionExplorer_Click_1);
-            // 
-            // menuItemPropertyWindow
-            // 
-            this.menuItemPropertyWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemPropertyWindow.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemPropertyWindow.Name = "menuItemPropertyWindow";
-            this.menuItemPropertyWindow.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.menuItemPropertyWindow.Size = new System.Drawing.Size(264, 26);
-            this.menuItemPropertyWindow.Text = "&Fenêtre des propriétés";
-            this.menuItemPropertyWindow.Click += new System.EventHandler(this.menuItemPropertyWindow_Click_1);
             // 
             // menuItemToolbox
             // 
@@ -427,190 +616,25 @@
             this.menuItemToolbox.Text = "Boite à outils";
             this.menuItemToolbox.Click += new System.EventHandler(this.menuItemToolbox_Click_1);
             // 
-            // menuItemOutputWindow
+            // metroButton1
             // 
-            this.menuItemOutputWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemOutputWindow.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemOutputWindow.Name = "menuItemOutputWindow";
-            this.menuItemOutputWindow.Size = new System.Drawing.Size(264, 26);
-            this.menuItemOutputWindow.Text = "&Output Window";
+            this.metroButton1.Location = new System.Drawing.Point(3, 3);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(35, 20);
+            this.metroButton1.TabIndex = 1;
+            this.metroButton1.Text = "metroButton1";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            // menuItemTaskList
+            // metroButton2
             // 
-            this.menuItemTaskList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemTaskList.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemTaskList.Name = "menuItemTaskList";
-            this.menuItemTaskList.Size = new System.Drawing.Size(264, 26);
-            this.menuItemTaskList.Text = "Task &List";
-            // 
-            // menuItemToolBar
-            // 
-            this.menuItemToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemToolBar.Checked = true;
-            this.menuItemToolBar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.menuItemToolBar.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemToolBar.Name = "menuItemToolBar";
-            this.menuItemToolBar.Size = new System.Drawing.Size(264, 26);
-            this.menuItemToolBar.Text = "Tool &Bar";
-            // 
-            // menuItemStatusBar
-            // 
-            this.menuItemStatusBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemStatusBar.Checked = true;
-            this.menuItemStatusBar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.menuItemStatusBar.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemStatusBar.Name = "menuItemStatusBar";
-            this.menuItemStatusBar.Size = new System.Drawing.Size(264, 26);
-            this.menuItemStatusBar.Text = "Status B&ar";
-            // 
-            // menuItemLayoutByCode
-            // 
-            this.menuItemLayoutByCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemLayoutByCode.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemLayoutByCode.Name = "menuItemLayoutByCode";
-            this.menuItemLayoutByCode.Size = new System.Drawing.Size(264, 26);
-            this.menuItemLayoutByCode.Text = "Layout By &Code";
-            // 
-            // menuItemLayoutByXml
-            // 
-            this.menuItemLayoutByXml.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.menuItemLayoutByXml.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemLayoutByXml.Name = "menuItemLayoutByXml";
-            this.menuItemLayoutByXml.Size = new System.Drawing.Size(264, 26);
-            this.menuItemLayoutByXml.Text = "Layout By &XML";
-            this.menuItemLayoutByXml.Click += new System.EventHandler(this.menuItemLayoutByXml_Click_1);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(261, 6);
-            // 
-            // menuItemTools
-            // 
-            this.menuItemTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.virtualisationToolStripMenuItem});
-            this.menuItemTools.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemTools.MergeIndex = 2;
-            this.menuItemTools.Name = "menuItemTools";
-            this.menuItemTools.Size = new System.Drawing.Size(58, 24);
-            this.menuItemTools.Text = "Tools";
-            // 
-            // menuItemWindow
-            // 
-            this.menuItemWindow.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemNewWindow});
-            this.menuItemWindow.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemWindow.MergeIndex = 2;
-            this.menuItemWindow.Name = "menuItemWindow";
-            this.menuItemWindow.Size = new System.Drawing.Size(78, 24);
-            this.menuItemWindow.Text = "Window";
-            // 
-            // menuItemNewWindow
-            // 
-            this.menuItemNewWindow.Name = "menuItemNewWindow";
-            this.menuItemNewWindow.Size = new System.Drawing.Size(181, 26);
-            this.menuItemNewWindow.Text = "&New Window";
-            // 
-            // menuItemHelp
-            // 
-            this.menuItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemAbout});
-            this.menuItemHelp.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemHelp.MergeIndex = 3;
-            this.menuItemHelp.Name = "menuItemHelp";
-            this.menuItemHelp.Size = new System.Drawing.Size(55, 24);
-            this.menuItemHelp.Text = "Help";
-            // 
-            // menuItemAbout
-            // 
-            this.menuItemAbout.Name = "menuItemAbout";
-            this.menuItemAbout.Size = new System.Drawing.Size(230, 26);
-            this.menuItemAbout.Text = "&About DockSample...";
-            this.menuItemAbout.Click += new System.EventHandler(this.menuItemAbout_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.panel3.Controls.Add(this.toolStrip1);
-            this.panel3.Location = new System.Drawing.Point(40, 30);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(791, 27);
-            this.panel3.TabIndex = 14;
-            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
-            this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseMove);
-            this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseUp);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3});
-            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(791, 27);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.Visible = false;
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::OSMaker.My.Resources.Resources.openfolderpng;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButton1.Text = "toolStripButton1";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::OSMaker.My.Resources.Resources.redo;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButton2.Text = "toolStripButton2";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::OSMaker.My.Resources.Resources.sad_16x161;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButton3.Text = "toolStripButton3";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.panel4.BackgroundImage = global::OSMaker.My.Resources.Resources.OSM_LOGO;
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Location = new System.Drawing.Point(2, 5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(32, 52);
-            this.panel4.TabIndex = 15;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::OSMaker.My.Resources.Resources.OSM_LOGO;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // virtualisationToolStripMenuItem
-            // 
-            this.virtualisationToolStripMenuItem.Name = "virtualisationToolStripMenuItem";
-            this.virtualisationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.virtualisationToolStripMenuItem.Text = "Virtualisation";
+            this.metroButton2.Location = new System.Drawing.Point(81, 0);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(75, 23);
+            this.metroButton2.TabIndex = 2;
+            this.metroButton2.Text = "metroButton2";
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // Home
             // 
@@ -708,5 +732,7 @@
         private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichierCCToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem virtualisationToolStripMenuItem;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton2;
     }
 }

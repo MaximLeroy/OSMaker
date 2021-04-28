@@ -15,6 +15,7 @@ using Exporter.Controls;
 using Exporter;
 using System.Drawing.Design;
 using MetroFramework;
+using VM_Viewer;
 
 namespace OSMaker
 {
@@ -30,7 +31,7 @@ namespace OSMaker
         public static PropertyWindow m_propertyWindow;
         public static DockPanel m_dockPanel;
         public static Toolbox m_toolbox;
-        private OutputWindow m_outputWindow;
+        public static Sortie m_sortie;
         
        // private DummyTaskList m_taskList;
         private bool _showSplash;
@@ -60,6 +61,7 @@ namespace OSMaker
             m_solutionExplorer = new SolutionExplorer();
             m_propertyWindow = new PropertyWindow();
             m_toolbox = new Toolbox();
+            m_sortie = new Sortie();
          
             //   m_outputWindow = new OutputWindow();
 
@@ -179,10 +181,12 @@ namespace OSMaker
 
             CreateStandardControls();
             m_propertyWindow.Show(dockPanel, DockState.DockRight);
-            m_solutionExplorer.Show(dockPanel, DockState.DockRight);
-     
+
+            m_solutionExplorer.Show(m_propertyWindow.Pane, DockAlignment.Top, 0.5) ;
+
+
             m_toolbox.Show(dockPanel, DockState.DockLeftAutoHide);
-           
+            m_sortie.Show(dockPanel, DockState.DockBottom);
 
 
            
@@ -218,7 +222,7 @@ namespace OSMaker
             }
         }
 
-        private Doc CreateNewDocument()
+        public  Doc CreateNewDocument()
         {
             Doc dummyDoc = new Doc();
 
@@ -336,8 +340,8 @@ namespace OSMaker
                 return m_propertyWindow;
             else if (persistString == typeof(Toolbox).ToString())
                 return m_toolbox;
-            else if (persistString == typeof(OutputWindow).ToString())
-                return m_outputWindow;
+            else if (persistString == typeof(Sortie).ToString())
+                return m_sortie;
             
             else
             {
@@ -523,7 +527,7 @@ namespace OSMaker
 
         private void menuItemOutputWindow_Click(object sender, EventArgs e)
         {
-            m_outputWindow.Show(dockPanel);
+            //m_outputWindow.Show(dockPanel);
         }
 
         private void menuItemOpen_Click(object sender, EventArgs e)
@@ -579,7 +583,7 @@ namespace OSMaker
             m_solutionExplorer.Show(dockPanel, DockState.DockRight);
             m_propertyWindow.Show(m_solutionExplorer.Pane, m_solutionExplorer);
             m_toolbox.Show(dockPanel, DockState.DockLeft);
-            m_outputWindow.Show(m_solutionExplorer.Pane, DockAlignment.Bottom, 0.35);
+            m_sortie.Show(dockPanel, DockState.DockBottom);
             
 
             Doc doc1 = CreateNewDocument("Document1");
@@ -830,6 +834,20 @@ namespace OSMaker
         private void menuItemAbout_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            VM_Viewer.VM_GUI machinevirtuelle = new VM_Viewer.VM_GUI();
+            machinevirtuelle.Show();
+
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            VM_GUI mv = new VM_GUI();
+           mv.Show(dockPanel);
+            
         }
     }
 

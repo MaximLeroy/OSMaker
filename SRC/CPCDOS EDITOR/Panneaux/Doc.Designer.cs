@@ -142,10 +142,10 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tabControl1.Location = new System.Drawing.Point(623, 28);
+            this.tabControl1.Location = new System.Drawing.Point(623, 30);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(177, 422);
+            this.tabControl1.Size = new System.Drawing.Size(177, 420);
             this.tabControl1.TabIndex = 7;
             // 
             // tabPage1
@@ -208,7 +208,7 @@
             this._tb.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("_tb.ServiceColors")));
             this._tb.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
             this._tb.ShowScrollBars = false;
-            this._tb.Size = new System.Drawing.Size(623, 422);
+            this._tb.Size = new System.Drawing.Size(623, 420);
             this._tb.TabIndex = 6;
             this._tb.Zoom = 100;
             this._tb.TextChangedDelayed += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this._tb_TextChangedDelayed);
@@ -219,7 +219,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(169, 393);
+            this.tabPage2.Size = new System.Drawing.Size(169, 391);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Classes";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -247,7 +247,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(163, 387);
+            this.dataGridView1.Size = new System.Drawing.Size(163, 385);
             this.dataGridView1.TabIndex = 6;
             this.dataGridView1.VirtualMode = true;
             this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
@@ -277,14 +277,14 @@
             this.undoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
             this.undoToolStripMenuItem.Text = "Undo";
             // 
             // contextMenuStrip1
@@ -297,9 +297,9 @@
             // 
             this.panel1.Controls.Add(this._tb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(623, 422);
+            this.panel1.Size = new System.Drawing.Size(623, 420);
             this.panel1.TabIndex = 10;
             // 
             // tmUpdateInterface2

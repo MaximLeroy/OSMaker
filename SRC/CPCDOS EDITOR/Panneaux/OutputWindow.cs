@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace OSMaker.Panneaux
 {
-    public partial class OutputWindow : ToolWindow
+    public partial class OutputWindow : DocumentC
     {
         public OutputWindow()
         {

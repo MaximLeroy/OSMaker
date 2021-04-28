@@ -40,7 +40,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(486, 195);
+            this.textBox1.Size = new System.Drawing.Size(1001, 364);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             this.textBox1.WordWrap = false;
@@ -53,14 +53,14 @@
             "Build"});
             this.comboBox.Location = new System.Drawing.Point(0, 0);
             this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(486, 24);
+            this.comboBox.Size = new System.Drawing.Size(1001, 24);
             this.comboBox.TabIndex = 3;
             // 
             // OutputWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 219);
+            this.ClientSize = new System.Drawing.Size(1001, 388);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox);
             this.Name = "OutputWindow";

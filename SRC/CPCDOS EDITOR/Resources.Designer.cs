@@ -333,6 +333,26 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BringForward_16x {
+            get {
+                object obj = ResourceManager.GetObject("BringForward_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BringtoFront_16x {
+            get {
+                object obj = ResourceManager.GetObject("BringtoFront_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button {
             get {
                 object obj = ResourceManager.GetObject("button", resourceCulture);
@@ -1046,6 +1066,26 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap line_dotted_icon_1252323 {
             get {
                 object obj = ResourceManager.GetObject("line_dotted_icon_1252323", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lock_16x {
+            get {
+                object obj = ResourceManager.GetObject("Lock_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LockCyan_16x {
+            get {
+                object obj = ResourceManager.GetObject("LockCyan_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
