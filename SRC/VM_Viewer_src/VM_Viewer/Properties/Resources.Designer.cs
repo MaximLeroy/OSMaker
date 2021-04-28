@@ -59,5 +59,15 @@ namespace VM_Viewer.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap openfolderpng {
+            get {
+                object obj = ResourceManager.GetObject("openfolderpng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

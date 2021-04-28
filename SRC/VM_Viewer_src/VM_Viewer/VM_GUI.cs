@@ -1429,5 +1429,10 @@ namespace VM_Viewer {
         {
             
         }
+
+        private void cbOpen_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

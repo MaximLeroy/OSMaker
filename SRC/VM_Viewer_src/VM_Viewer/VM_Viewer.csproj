@@ -171,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="game_monitor.ico" />
+    <None Include="Resources\openfolderpng.png" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="SHDocVw">

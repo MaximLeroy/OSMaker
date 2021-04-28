@@ -45,6 +45,8 @@
             this.tbFolder = new MetroFramework.Controls.MetroTabPage();
             this.cbDrive = new System.Windows.Forms.ComboBox();
             this.cbPath = new System.Windows.Forms.ComboBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.mnViewer.SuspendLayout();
             this.gbFullScreen.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -61,7 +63,7 @@
             this.exportToolStripMenuItem});
             this.mnViewer.Location = new System.Drawing.Point(0, 0);
             this.mnViewer.Name = "mnViewer";
-            this.mnViewer.Size = new System.Drawing.Size(147, 25);
+            this.mnViewer.Size = new System.Drawing.Size(149, 30);
             this.mnViewer.TabIndex = 16;
             this.mnViewer.Text = "menuStrip1";
             // 
@@ -70,13 +72,13 @@
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vmxSettingsToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(75, 21);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // vmxSettingsToolStripMenuItem
             // 
             this.vmxSettingsToolStripMenuItem.Name = "vmxSettingsToolStripMenuItem";
-            this.vmxSettingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.vmxSettingsToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.vmxSettingsToolStripMenuItem.Text = "Open Library";
             this.vmxSettingsToolStripMenuItem.Click += new System.EventHandler(this.vmxSettingsToolStripMenuItem_Click);
             // 
@@ -85,13 +87,13 @@
             this.exportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportToovaToolStripMenuItem});
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(64, 21);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
             this.exportToolStripMenuItem.Text = "Export";
             // 
             // exportToovaToolStripMenuItem
             // 
             this.exportToovaToolStripMenuItem.Name = "exportToovaToolStripMenuItem";
-            this.exportToovaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exportToovaToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.exportToovaToolStripMenuItem.Text = "Export to .ova";
             this.exportToovaToolStripMenuItem.Click += new System.EventHandler(this.exportToovaToolStripMenuItem_Click);
             // 
@@ -100,7 +102,7 @@
             this.ckbAdmin.AutoSize = true;
             this.ckbAdmin.Checked = true;
             this.ckbAdmin.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbAdmin.Location = new System.Drawing.Point(9, 38);
+            this.ckbAdmin.Location = new System.Drawing.Point(94, 47);
             this.ckbAdmin.Name = "ckbAdmin";
             this.ckbAdmin.Size = new System.Drawing.Size(145, 17);
             this.ckbAdmin.TabIndex = 19;
@@ -112,9 +114,11 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(653, 61);
+            this.metroButton1.BackgroundImage = global::VM_Viewer.Properties.Resources.openfolderpng;
+            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.metroButton1.Location = new System.Drawing.Point(785, 76);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(57, 24);
+            this.metroButton1.Size = new System.Drawing.Size(54, 25);
             this.metroButton1.TabIndex = 21;
             this.metroButton1.Text = "...";
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -125,9 +129,9 @@
             // 
             this.btnLauch.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnLauch.Highlight = true;
-            this.btnLauch.Location = new System.Drawing.Point(9, 183);
+            this.btnLauch.Location = new System.Drawing.Point(94, 198);
             this.btnLauch.Name = "btnLauch";
-            this.btnLauch.Size = new System.Drawing.Size(638, 53);
+            this.btnLauch.Size = new System.Drawing.Size(662, 53);
             this.btnLauch.Style = MetroFramework.MetroColorStyle.Green;
             this.btnLauch.TabIndex = 22;
             this.btnLauch.Text = "Launch";
@@ -138,7 +142,7 @@
             // cbFullScreen
             // 
             this.cbFullScreen.AutoSize = true;
-            this.cbFullScreen.Location = new System.Drawing.Point(9, 101);
+            this.cbFullScreen.Location = new System.Drawing.Point(260, 47);
             this.cbFullScreen.Name = "cbFullScreen";
             this.cbFullScreen.Size = new System.Drawing.Size(123, 17);
             this.cbFullScreen.TabIndex = 23;
@@ -153,7 +157,7 @@
             this.cbOpen.AutoSize = true;
             this.cbOpen.Checked = true;
             this.cbOpen.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbOpen.Location = new System.Drawing.Point(9, 160);
+            this.cbOpen.Location = new System.Drawing.Point(94, 166);
             this.cbOpen.Name = "cbOpen";
             this.cbOpen.Size = new System.Drawing.Size(116, 17);
             this.cbOpen.TabIndex = 26;
@@ -161,12 +165,13 @@
             this.cbOpen.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.cbOpen.UseCustomBackColor = true;
             this.cbOpen.UseSelectable = true;
+            this.cbOpen.CheckedChanged += new System.EventHandler(this.cbOpen_CheckedChanged);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(653, 183);
+            this.btnEdit.Location = new System.Drawing.Point(785, 123);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(90, 53);
+            this.btnEdit.Size = new System.Drawing.Size(90, 25);
             this.btnEdit.TabIndex = 27;
             this.btnEdit.Text = "Edit Drive";
             this.btnEdit.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -284,19 +289,49 @@
             // 
             // cbDrive
             // 
+            this.cbDrive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbDrive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbDrive.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDrive.ForeColor = System.Drawing.SystemColors.Control;
             this.cbDrive.FormattingEnabled = true;
-            this.cbDrive.Location = new System.Drawing.Point(9, 124);
+            this.cbDrive.Location = new System.Drawing.Point(94, 123);
             this.cbDrive.Name = "cbDrive";
-            this.cbDrive.Size = new System.Drawing.Size(638, 24);
+            this.cbDrive.Size = new System.Drawing.Size(662, 25);
             this.cbDrive.TabIndex = 34;
             // 
             // cbPath
             // 
+            this.cbPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cbPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbPath.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPath.ForeColor = System.Drawing.SystemColors.Control;
             this.cbPath.FormattingEnabled = true;
-            this.cbPath.Location = new System.Drawing.Point(9, 61);
+            this.cbPath.Location = new System.Drawing.Point(94, 76);
             this.cbPath.Name = "cbPath";
-            this.cbPath.Size = new System.Drawing.Size(638, 24);
+            this.cbPath.Size = new System.Drawing.Size(662, 25);
             this.cbPath.TabIndex = 35;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(13, 76);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(62, 20);
+            this.metroLabel1.TabIndex = 36;
+            this.metroLabel1.Text = "VM File :";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.UseCustomBackColor = true;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(26, 128);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(49, 20);
+            this.metroLabel2.TabIndex = 37;
+            this.metroLabel2.Text = "Drive :";
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.UseCustomBackColor = true;
             // 
             // VM_GUI
             // 
@@ -304,6 +339,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(903, 657);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.cbPath);
             this.Controls.Add(this.cbDrive);
             this.Controls.Add(this.metroTabControl1);
@@ -360,6 +397,8 @@
         private MetroFramework.Controls.MetroTabPage tbFolder;
         private System.Windows.Forms.ComboBox cbDrive;
         private System.Windows.Forms.ComboBox cbPath;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
     }
 }
 

@@ -170,7 +170,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5ym9zYF9SL0xuawxnNYkWd/95ELrv0AiWudMG/0GKWU=</dsig:DigestValue>
+        <dsig:DigestValue>grG4QXzIVakGGQlb3yx4uItYhoBzexV0OXipTaWUL4c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -211,14 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VM_Viewer.exe" size="78848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VM_Viewer.exe" size="80384">
       <assemblyIdentity name="VM_Viewer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>h1hIqC2BIPoL4BBz3M4JI2jkNTGGqdhPmutl4vk1cJo=</dsig:DigestValue>
+        <dsig:DigestValue>Rst3gg9TT91gZgeOTRllZKi7YwrIkKhhmKwfP/pyIqA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
