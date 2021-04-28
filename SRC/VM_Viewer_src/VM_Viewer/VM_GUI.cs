@@ -15,6 +15,7 @@ using System.Threading;
 using System.Windows.Forms;
 using static cwc.LauchTool;
 using MetroFramework.Forms;
+using OutputW;
 
 namespace VM_Viewer {
     public partial class VM_GUI : DocumentC {
@@ -417,13 +418,14 @@ namespace VM_Viewer {
         }
 
 
+        public static OutputW m_sortie;
+        
 
-     
-       public void 	fOut(LauchTool _oTool, string _sOut){
+        public void 	fOut(LauchTool _oTool, string _sOut){
          //   Debug.fTrace("O: " + _sOut);
            this.BeginInvoke((MethodInvoker)delegate  {
-               rtOutput.AppendText(_sOut + "\n");
-               rtOutput.SelectionStart = rtOutput.Text.Length;
+              Form1.rtOutput2.AppendText(_sOut + "\n");
+               Form1.rtOutput2.SelectionStart = Form1.rtOutput2.Text.Length;
               // rtOutput.ScrollToCaret();
            });
         }
@@ -1421,6 +1423,11 @@ namespace VM_Viewer {
             //--detach ??
             //--reset
             //--exit
+        }
+       
+        private void rtOutput_TextChanged(object sender, FastColoredTextBoxNS.TextChangedEventArgs e)
+        {
+            
         }
     }
 }

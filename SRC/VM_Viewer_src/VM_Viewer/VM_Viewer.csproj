@@ -109,7 +109,19 @@
     <Compile Include="Output\Debug.cs" />
     <Compile Include="Setting\Config.cs" />
     <Compile Include="Setting\Data.cs" />
+    <Compile Include="Sortie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sortie.Designer.cs">
+      <DependentUpon>Sortie.cs</DependentUpon>
+    </Compile>
     <Compile Include="System\WinApi.cs" />
+    <Compile Include="ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolWindow.Designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\FileUtils.cs" />
     <Compile Include="Utilities\LauchTool.cs" />
     <Compile Include="Utilities\PathHelper.cs" />
@@ -135,6 +147,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sortie.resx">
+      <DependentUpon>Sortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolWindow.resx">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VM_GUI.resx">
       <DependentUpon>VM_GUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +198,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OutputW\OutputW.csproj">
+      <Project>{ed752041-ee6c-492f-a2c4-aaf8e6c7036f}</Project>
+      <Name>OutputW</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

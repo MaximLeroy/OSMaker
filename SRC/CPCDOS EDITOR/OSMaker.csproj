@@ -868,6 +868,10 @@
       <Project>{35446b57-9ac5-4ddb-9d65-16d6dff39c04}</Project>
       <Name>Loader</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OutputW\OutputW.csproj">
+      <Project>{ed752041-ee6c-492f-a2c4-aaf8e6c7036f}</Project>
+      <Name>OutputW</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ToolBox\ToolBox.vbproj">
       <Project>{18fe5640-9031-469a-be67-9039735d500a}</Project>
       <Name>ToolBox</Name>

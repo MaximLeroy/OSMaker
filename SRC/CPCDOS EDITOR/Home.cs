@@ -16,6 +16,7 @@ using Exporter;
 using System.Drawing.Design;
 using MetroFramework;
 using VM_Viewer;
+using OutputW;
 
 namespace OSMaker
 {
@@ -31,7 +32,8 @@ namespace OSMaker
         public static PropertyWindow m_propertyWindow;
         public static DockPanel m_dockPanel;
         public static Toolbox m_toolbox;
-        public static Sortie m_sortie;
+        public static OutputW.Form1 m_sortie;
+     
         
        // private DummyTaskList m_taskList;
         private bool _showSplash;
@@ -61,8 +63,8 @@ namespace OSMaker
             m_solutionExplorer = new SolutionExplorer();
             m_propertyWindow = new PropertyWindow();
             m_toolbox = new Toolbox();
-            m_sortie = new Sortie();
-         
+          m_sortie = new OutputW.Form1();
+
             //   m_outputWindow = new OutputWindow();
 
         }
@@ -186,7 +188,8 @@ namespace OSMaker
 
 
             m_toolbox.Show(dockPanel, DockState.DockLeftAutoHide);
-            m_sortie.Show(dockPanel, DockState.DockBottom);
+            m_sortie.Show(dockPanel, DockState.DockBottomAutoHide);
+            m_sortie.Text = "Sortie";
 
 
            
@@ -838,16 +841,22 @@ namespace OSMaker
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            VM_Viewer.VM_GUI machinevirtuelle = new VM_Viewer.VM_GUI();
-            machinevirtuelle.Show();
+           
 
         }
-
+       
         private void metroButton2_Click(object sender, EventArgs e)
         {
             VM_GUI mv = new VM_GUI();
-           mv.Show(dockPanel);
-            
+            mv.Show(dockPanel);
+            m_sortie.DockState = DockState.DockBottom;
+
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+           
         }
     }
 

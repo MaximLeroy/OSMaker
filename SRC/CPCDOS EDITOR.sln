@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exporter", "Exporter\Export
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VM_Viewer", "VM_Viewer_src\VM_Viewer\VM_Viewer.csproj", "{62D63ACE-2A7E-4D35-9EA9-57FD9F9C6506}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputW", "OutputW\OutputW.csproj", "{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,14 @@ Global
 		{62D63ACE-2A7E-4D35-9EA9-57FD9F9C6506}.Release|Any CPU.Build.0 = Release|Any CPU
 		{62D63ACE-2A7E-4D35-9EA9-57FD9F9C6506}.Release|x86.ActiveCfg = Release|Any CPU
 		{62D63ACE-2A7E-4D35-9EA9-57FD9F9C6506}.Release|x86.Build.0 = Release|Any CPU
+		{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED752041-EE6C-492F-A2C4-AAF8E6C7036F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

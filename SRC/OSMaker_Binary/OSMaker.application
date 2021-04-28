@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="OSMaker.exe.manifest" size="21030">
+    <dependentAssembly dependencyType="install" codebase="OSMaker.exe.manifest" size="21662">
       <assemblyIdentity name="OSMaker.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RiOOq2wNVd24DpAYl8eTaEG4feR1w/3aIj9Rgx2npq4=</dsig:DigestValue>
+        <dsig:DigestValue>ckZ/2pI1T+1cJbNWe58xplPhrjdQMbcLAa8FnW5P4rM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

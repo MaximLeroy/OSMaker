@@ -170,7 +170,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CWzataVKqOuBwGOnkrVvqPDZvB2Ft3prXgPQdiI7O3Q=</dsig:DigestValue>
+        <dsig:DigestValue>5ym9zYF9SL0xuawxnNYkWd/95ELrv0AiWudMG/0GKWU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OutputW.exe" size="11264">
+      <assemblyIdentity name="OutputW" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iqi93VyhJTzdd13TytblPPv6nvQQelGIb0Qt0jFjAs4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -199,14 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VM_Viewer.exe" size="76288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VM_Viewer.exe" size="78848">
       <assemblyIdentity name="VM_Viewer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cSC+FU7G+6jwJDLiwcDwqxYRW3oUSd3SCA0/qtqg23o=</dsig:DigestValue>
+        <dsig:DigestValue>h1hIqC2BIPoL4BBz3M4JI2jkNTGGqdhPmutl4vk1cJo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

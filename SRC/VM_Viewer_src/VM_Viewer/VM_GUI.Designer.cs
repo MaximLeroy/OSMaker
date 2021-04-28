@@ -23,7 +23,6 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VM_GUI));
             this.mnViewer = new System.Windows.Forms.MenuStrip();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,28 +42,26 @@
             this.btnPause = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.tbControl = new MetroFramework.Controls.MetroTabPage();
-            this.rtOutput = new FastColoredTextBoxNS.FastColoredTextBox();
             this.tbFolder = new MetroFramework.Controls.MetroTabPage();
             this.cbDrive = new System.Windows.Forms.ComboBox();
             this.cbPath = new System.Windows.Forms.ComboBox();
             this.mnViewer.SuspendLayout();
             this.gbFullScreen.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
-            this.tbControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rtOutput)).BeginInit();
             this.SuspendLayout();
             // 
             // mnViewer
             // 
-            this.mnViewer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.mnViewer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.mnViewer.Dock = System.Windows.Forms.DockStyle.None;
             this.mnViewer.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnViewer.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnViewer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem,
             this.exportToolStripMenuItem});
-            this.mnViewer.Location = new System.Drawing.Point(27, 74);
+            this.mnViewer.Location = new System.Drawing.Point(0, 0);
             this.mnViewer.Name = "mnViewer";
-            this.mnViewer.Size = new System.Drawing.Size(849, 25);
+            this.mnViewer.Size = new System.Drawing.Size(147, 25);
             this.mnViewer.TabIndex = 16;
             this.mnViewer.Text = "menuStrip1";
             // 
@@ -79,7 +76,7 @@
             // vmxSettingsToolStripMenuItem
             // 
             this.vmxSettingsToolStripMenuItem.Name = "vmxSettingsToolStripMenuItem";
-            this.vmxSettingsToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.vmxSettingsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.vmxSettingsToolStripMenuItem.Text = "Open Library";
             this.vmxSettingsToolStripMenuItem.Click += new System.EventHandler(this.vmxSettingsToolStripMenuItem_Click);
             // 
@@ -94,7 +91,7 @@
             // exportToovaToolStripMenuItem
             // 
             this.exportToovaToolStripMenuItem.Name = "exportToovaToolStripMenuItem";
-            this.exportToovaToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.exportToovaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exportToovaToolStripMenuItem.Text = "Export to .ova";
             this.exportToovaToolStripMenuItem.Click += new System.EventHandler(this.exportToovaToolStripMenuItem_Click);
             // 
@@ -103,20 +100,21 @@
             this.ckbAdmin.AutoSize = true;
             this.ckbAdmin.Checked = true;
             this.ckbAdmin.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbAdmin.Location = new System.Drawing.Point(27, 107);
+            this.ckbAdmin.Location = new System.Drawing.Point(9, 38);
             this.ckbAdmin.Name = "ckbAdmin";
             this.ckbAdmin.Size = new System.Drawing.Size(145, 17);
             this.ckbAdmin.TabIndex = 19;
             this.ckbAdmin.Text = "Run as administrator";
             this.ckbAdmin.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.ckbAdmin.UseCustomBackColor = true;
             this.ckbAdmin.UseSelectable = true;
             this.ckbAdmin.CheckedChanged += new System.EventHandler(this.metroCheckBox1_CheckedChanged);
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(671, 130);
+            this.metroButton1.Location = new System.Drawing.Point(653, 61);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(57, 30);
+            this.metroButton1.Size = new System.Drawing.Size(57, 24);
             this.metroButton1.TabIndex = 21;
             this.metroButton1.Text = "...";
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -125,11 +123,11 @@
             // 
             // btnLauch
             // 
-            this.btnLauch.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnLauch.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnLauch.Highlight = true;
-            this.btnLauch.Location = new System.Drawing.Point(734, 118);
+            this.btnLauch.Location = new System.Drawing.Point(9, 183);
             this.btnLauch.Name = "btnLauch";
-            this.btnLauch.Size = new System.Drawing.Size(144, 53);
+            this.btnLauch.Size = new System.Drawing.Size(638, 53);
             this.btnLauch.Style = MetroFramework.MetroColorStyle.Green;
             this.btnLauch.TabIndex = 22;
             this.btnLauch.Text = "Launch";
@@ -140,12 +138,13 @@
             // cbFullScreen
             // 
             this.cbFullScreen.AutoSize = true;
-            this.cbFullScreen.Location = new System.Drawing.Point(27, 170);
+            this.cbFullScreen.Location = new System.Drawing.Point(9, 101);
             this.cbFullScreen.Name = "cbFullScreen";
             this.cbFullScreen.Size = new System.Drawing.Size(123, 17);
             this.cbFullScreen.TabIndex = 23;
             this.cbFullScreen.Text = "Full screen mode";
             this.cbFullScreen.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbFullScreen.UseCustomBackColor = true;
             this.cbFullScreen.UseSelectable = true;
             this.cbFullScreen.CheckedChanged += new System.EventHandler(this.metroCheckBox2_CheckedChanged);
             // 
@@ -154,19 +153,20 @@
             this.cbOpen.AutoSize = true;
             this.cbOpen.Checked = true;
             this.cbOpen.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbOpen.Location = new System.Drawing.Point(27, 229);
+            this.cbOpen.Location = new System.Drawing.Point(9, 160);
             this.cbOpen.Name = "cbOpen";
             this.cbOpen.Size = new System.Drawing.Size(116, 17);
             this.cbOpen.TabIndex = 26;
             this.cbOpen.Text = "Open on mount";
             this.cbOpen.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbOpen.UseCustomBackColor = true;
             this.cbOpen.UseSelectable = true;
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(734, 193);
+            this.btnEdit.Location = new System.Drawing.Point(653, 183);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(145, 30);
+            this.btnEdit.Size = new System.Drawing.Size(90, 53);
             this.btnEdit.TabIndex = 27;
             this.btnEdit.Text = "Edit Drive";
             this.btnEdit.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -194,7 +194,7 @@
             this.gbFullScreen.HorizontalScrollbarBarColor = true;
             this.gbFullScreen.HorizontalScrollbarHighlightOnWheel = false;
             this.gbFullScreen.HorizontalScrollbarSize = 10;
-            this.gbFullScreen.Location = new System.Drawing.Point(27, 257);
+            this.gbFullScreen.Location = new System.Drawing.Point(9, 257);
             this.gbFullScreen.Name = "gbFullScreen";
             this.gbFullScreen.Size = new System.Drawing.Size(734, 100);
             this.gbFullScreen.TabIndex = 32;
@@ -243,17 +243,17 @@
             // 
             this.metroTabControl1.Controls.Add(this.tbControl);
             this.metroTabControl1.Controls.Add(this.tbFolder);
-            this.metroTabControl1.Location = new System.Drawing.Point(27, 363);
+            this.metroTabControl1.Location = new System.Drawing.Point(9, 379);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(856, 266);
             this.metroTabControl1.TabIndex = 33;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroTabControl1.UseSelectable = true;
+            this.metroTabControl1.Visible = false;
             // 
             // tbControl
             // 
-            this.tbControl.Controls.Add(this.rtOutput);
             this.tbControl.HorizontalScrollbarBarColor = true;
             this.tbControl.HorizontalScrollbarHighlightOnWheel = false;
             this.tbControl.HorizontalScrollbarSize = 10;
@@ -266,45 +266,6 @@
             this.tbControl.VerticalScrollbarBarColor = true;
             this.tbControl.VerticalScrollbarHighlightOnWheel = false;
             this.tbControl.VerticalScrollbarSize = 10;
-            // 
-            // rtOutput
-            // 
-            this.rtOutput.AutoCompleteBracketsList = new char[] {
-        '(',
-        ')',
-        '{',
-        '}',
-        '[',
-        ']',
-        '\"',
-        '\"',
-        '\'',
-        '\''};
-            this.rtOutput.AutoScrollMinSize = new System.Drawing.Size(52, 17);
-            this.rtOutput.BackBrush = null;
-            this.rtOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.rtOutput.CharHeight = 17;
-            this.rtOutput.CharWidth = 8;
-            this.rtOutput.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.rtOutput.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.rtOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtOutput.Font = new System.Drawing.Font("Consolas", 9F);
-            this.rtOutput.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rtOutput.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.rtOutput.IsReplaceMode = false;
-            this.rtOutput.LeftPadding = 25;
-            this.rtOutput.LineNumberColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(175)))));
-            this.rtOutput.Location = new System.Drawing.Point(0, 0);
-            this.rtOutput.Margin = new System.Windows.Forms.Padding(4);
-            this.rtOutput.Name = "rtOutput";
-            this.rtOutput.Paddings = new System.Windows.Forms.Padding(0);
-            this.rtOutput.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.rtOutput.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("rtOutput.ServiceColors")));
-            this.rtOutput.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            this.rtOutput.ShowScrollBars = false;
-            this.rtOutput.Size = new System.Drawing.Size(848, 224);
-            this.rtOutput.TabIndex = 7;
-            this.rtOutput.Zoom = 100;
             // 
             // tbFolder
             // 
@@ -324,7 +285,7 @@
             // cbDrive
             // 
             this.cbDrive.FormattingEnabled = true;
-            this.cbDrive.Location = new System.Drawing.Point(27, 193);
+            this.cbDrive.Location = new System.Drawing.Point(9, 124);
             this.cbDrive.Name = "cbDrive";
             this.cbDrive.Size = new System.Drawing.Size(638, 24);
             this.cbDrive.TabIndex = 34;
@@ -332,7 +293,7 @@
             // cbPath
             // 
             this.cbPath.FormattingEnabled = true;
-            this.cbPath.Location = new System.Drawing.Point(27, 130);
+            this.cbPath.Location = new System.Drawing.Point(9, 61);
             this.cbPath.Name = "cbPath";
             this.cbPath.Size = new System.Drawing.Size(638, 24);
             this.cbPath.TabIndex = 35;
@@ -372,8 +333,6 @@
             this.mnViewer.PerformLayout();
             this.gbFullScreen.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
-            this.tbControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.rtOutput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,7 +357,6 @@
         private MetroFramework.Controls.MetroButton btnPause;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage tbControl;
-        private FastColoredTextBoxNS.FastColoredTextBox rtOutput;
         private MetroFramework.Controls.MetroTabPage tbFolder;
         private System.Windows.Forms.ComboBox cbDrive;
         private System.Windows.Forms.ComboBox cbPath;
