@@ -44,6 +44,7 @@ namespace OSMaker
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,21 +64,21 @@ namespace OSMaker
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Font = new System.Drawing.Font("Kristen ITC", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label1.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ForeColor = System.Drawing.SystemColors.Control;
             this.Label1.Location = new System.Drawing.Point(17, 146);
             this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(767, 110);
+            this.Label1.Size = new System.Drawing.Size(371, 106);
             this.Label1.TabIndex = 9;
-            this.Label1.Text = "OSMaker Beta 0.2";
+            this.Label1.Text = "OSMaker";
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.Label2.Location = new System.Drawing.Point(576, 251);
+            this.Label2.Location = new System.Drawing.Point(506, 245);
             this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(163, 28);
@@ -87,7 +88,7 @@ namespace OSMaker
             // pictureBox2
             // 
             this.pictureBox2.Image = global::OSMaker.My.Resources.Resources.logocpcdos;
-            this.pictureBox2.Location = new System.Drawing.Point(641, 281);
+            this.pictureBox2.Location = new System.Drawing.Point(571, 275);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(144, 125);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,16 +110,30 @@ namespace OSMaker
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label3.Location = new System.Drawing.Point(8, 368);
+            this.label3.Location = new System.Drawing.Point(147, 47);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(265, 38);
+            this.label3.Size = new System.Drawing.Size(265, 57);
             this.label3.TabIndex = 13;
-            this.label3.Text = "GNU General Public License v3.0\r\nhttps://github.com/MaximLeroy/OSMaker";
+            this.label3.Text = "2015 - 2021\r\nGNU General Public License v3.0\r\nhttps://github.com/MaximLeroy/OSMak" +
+    "er";
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(391, 192);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(154, 51);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "beta 0.3";
             // 
             // SplashScreen1
             // 
@@ -126,8 +141,9 @@ namespace OSMaker
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(797, 412);
+            this.ClientSize = new System.Drawing.Size(735, 412);
             this.ControlBox = false;
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -156,5 +172,6 @@ namespace OSMaker
         private PictureBox pictureBox2;
         internal Label label3;
         private Timer timer1;
+        internal Label label5;
     }
 }
