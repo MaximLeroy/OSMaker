@@ -337,7 +337,7 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
             Parametres1 = value
         End Set
     End Property
-    Public Overloads Property _HANDLE() As String
+    Public Overloads Property Handle() As String
         Get
             Return handle1
         End Get
@@ -406,10 +406,11 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
         COL = System.Boolean.TrueString
         IMGAUTO = 0
         UPD1 = System.Boolean.TrueString
-        handle1 = Handle
+
         EVENT_PATH = ""
         CouleurFond = ""
         CouleurTexte = ""
+        handle1 = "MonHandle"
     End Sub
 End Class
 
@@ -441,7 +442,7 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
             Parametres1 = value
         End Set
     End Property
-    Public Overloads Property HANDLE() As String
+    Public Overloads Property Handle() As String
         Get
             Return handle1
         End Get
@@ -515,7 +516,7 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
         Col1 = System.Boolean.TrueString
         Imgauto1 = "0"
         UPD1 = System.Boolean.TrueString
-        HANDLE = "MonHandle"
+        Handle = "MonHandle"
         EVENT_PATH = ""
         CouleurFond = "200,255,240"
         CouleurTexte = "250,100,100"
@@ -553,7 +554,7 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
             Parametres1 = value
         End Set
     End Property
-    Public Overloads Property HANDLE() As String
+    Public Overloads Property Handle() As String
         Get
             Return handle1
         End Get
@@ -622,7 +623,7 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
         COL = System.Boolean.TrueString
         IMGAUTO = "2"
         UPD1 = System.Boolean.TrueString
-        HANDLE = "MonHandle"
+        Handle = "MonHandle"
         EVENT_PATH = ""
         CouleurFond = "255,255,240"
         CouleurTexte = "000,000,000"
@@ -660,7 +661,7 @@ Public Class ProgressBar : Inherits System.Windows.Forms.ProgressBar
         End Set
     End Property
 
-    Public Overloads Property HANDLE() As String
+    Public Overloads Property Handle() As String
         Get
             Return handle1
         End Get
@@ -731,7 +732,7 @@ Public Class ProgressBar : Inherits System.Windows.Forms.ProgressBar
 
         IMGAUTO = "2"
         UPD1 = System.Boolean.TrueString
-        HANDLE = "MonHandle"
+        Handle = "MonHandle"
         EVENT_PATH = ""
         CouleurFond = "200,255,240"
         CouleurTexte = "250,100,100"
@@ -761,7 +762,7 @@ Public Class PictureBox : Inherits System.Windows.Forms.PictureBox
             Parametres1 = value
         End Set
     End Property
-    Public Overloads Property HANDLE() As String
+    Public Overloads Property Handle() As String
         Get
             Return handle1
         End Get
@@ -846,7 +847,7 @@ Public Class PictureBox : Inherits System.Windows.Forms.PictureBox
         COL = System.Boolean.TrueString
         IMGAUTO = 0
         UPD1 = System.Boolean.TrueString
-        HANDLE = "MonHandle"
+        Handle = "MonHandle"
         EVENT_PATH = ""
         CouleurFond = ""
         CouleurTexte = ""
