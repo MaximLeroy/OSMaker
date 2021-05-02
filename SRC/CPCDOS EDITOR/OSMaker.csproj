@@ -11,7 +11,7 @@
     <AssemblyName>OSMaker</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -110,13 +110,21 @@
     <ApplicationIcon>OSM_LOGO.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastColoredTextBox, Version=2.16.11.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\FastColoredTextBox\FastColoredTextBox.dll</HintPath>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="FastColoredTextBox, Version=2.16.24.0, Culture=neutral, PublicKeyToken=fb8aa12b994ef61b, processorArchitecture=MSIL">
+      <HintPath>..\packages\FCTB.2.16.24\lib\FastColoredTextBox.dll</HintPath>
     </Reference>
     <Reference Include="GraphLibrary, Version=1.0.1389.18615, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\Autres\GraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>..\DLL\VM_Viewer\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Shell32">
+      <HintPath>..\DLL\VM_Viewer\Interop.Shell32.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -139,6 +147,12 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\..\..\..\..\Program Files\DotNetBar for Windows Forms\envdte.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.4.0, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Core.1.1.4\lib\net452\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.4.0, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Shell.1.1.4\lib\net452\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
     </Reference>
     <Reference Include="NgenInstaller, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -214,6 +228,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FolderPicker.cs" />
     <Compile Include="Formulaires\Events.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +288,9 @@
     <Compile Include="Formulaires\Nouveau.Designer.cs">
       <DependentUpon>Nouveau.cs</DependentUpon>
     </Compile>
+    <Compile Include="ofoldg.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Panneaux\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +338,12 @@
     </Compile>
     <Compile Include="Panneaux\PropertyWindow.Designer.cs">
       <DependentUpon>PropertyWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panneaux\Propriétés.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panneaux\Propriétés.Designer.cs">
+      <DependentUpon>Propriétés.cs</DependentUpon>
     </Compile>
     <Compile Include="Panneaux\SolutionExplorer.cs">
       <SubType>Form</SubType>
@@ -390,6 +414,20 @@
     <Compile Include="Classes\TbInfo.cs" />
     <Compile Include="Classes\TbInfo2.cs" />
     <Compile Include="Classes\Variables.cs" />
+    <Compile Include="VM_Viewer\Output\Debug.cs" />
+    <Compile Include="VM_Viewer\Setting\Config.cs" />
+    <Compile Include="VM_Viewer\Setting\Data.cs" />
+    <Compile Include="VM_Viewer\System\WinApi.cs" />
+    <Compile Include="VM_Viewer\Utilities\FileUtils.cs" />
+    <Compile Include="VM_Viewer\Utilities\LaunchTool.cs" />
+    <Compile Include="VM_Viewer\Utilities\PathHelper.cs" />
+    <Compile Include="VM_Viewer\Utilities\str.cs" />
+    <Compile Include="VM_Viewer\VM_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VM_Viewer\VM_GUI.Designer.cs">
+      <DependentUpon>VM_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinToCpc\ModuleCpc.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -435,6 +473,9 @@
     <EmbeddedResource Include="Panneaux\PropertyWindow.resx">
       <DependentUpon>PropertyWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panneaux\Propriétés.resx">
+      <DependentUpon>Propriétés.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panneaux\SolutionExplorer.resx">
       <DependentUpon>SolutionExplorer.cs</DependentUpon>
     </EmbeddedResource>
@@ -463,6 +504,9 @@
     <EmbeddedResource Include="Panneaux\EditeurCCplus.resx">
       <DependentUpon>EditeurCCplus.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VM_Viewer\VM_GUI.resx">
+      <DependentUpon>VM_GUI.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="fichier1.cpc" />
@@ -482,6 +526,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="OSMaker_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Resources\Anonymous Pro.ttf" />
     <None Include="Resources\ReflectionImage.png" />
   </ItemGroup>
   <ItemGroup>
@@ -782,12 +828,60 @@
     <Content Include="AIMS.Docking.dll" />
     <Content Include="Classes\OSMAKERR.xml" />
     <Content Include="OSM_LOGO.ico" />
+    <None Include="Resources\Redo_grey_16x.png" />
+    <None Include="Resources\Undo_grey_16x.png" />
+    <None Include="Resources\ReplaceAll_16x.png" />
+    <None Include="Resources\UncommentCode_16x.png" />
+    <None Include="Resources\ThreeDScene_16x.png" />
+    <None Include="Resources\Property_16x.png" />
+    <None Include="Resources\WIN.png" />
+    <None Include="Resources\text.png" />
+    <None Include="Resources\prog.png" />
+    <None Include="Resources\PIC.png" />
+    <None Include="Resources\Pause_16x.png" />
+    <None Include="Resources\Stop_16x.png" />
+    <None Include="Resources\Run_16x.png" />
+    <None Include="Resources\SelectAll_16x.png" />
+    <None Include="Resources\Redo_16x.png" />
+    <None Include="Resources\Undo_16x.png" />
+    <None Include="Resources\Paste_16x.png" />
     <None Include="Resources\BringtoFront_16x.png" />
     <None Include="Resources\BringForward_16x.png" />
+    <None Include="Resources\DeleteAzureResource_16x.png" />
+    <None Include="Resources\Cut_16x.png" />
+    <None Include="Resources\Copy_16x.png" />
+    <None Include="Resources\CodeDefinitionWindow_16x.png" />
+    <None Include="Resources\DeleteAzureResource_16x1.png" />
+    <None Include="Resources\DeleteAzureResource_16x2.png" />
+    <None Include="Resources\CenterHorizontally_16x.png" />
+    <None Include="Resources\CenterVertically_16x.png" />
+    <None Include="Resources\Close_red_16x.png" />
+    <None Include="Resources\ASX_Edit_blue_16x.png" />
+    <None Include="Resources\ASX_Edit_blue_16x1.png" />
+    <None Include="Resources\butt.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\Class_16x.png" />
+    <None Include="Resources\CommentCode_16x.png" />
+    <None Include="Resources\Create_16x.png" />
+    <None Include="Resources\CommentCode_16x1.png" />
+    <None Include="Resources\CopyItem_16x.png" />
     <Content Include="Resources\DockPanel.xml" />
     <None Include="Resources\logocpcdos.png" />
     <None Include="Resources\LockCyan_16x.png" />
     <None Include="Resources\Lock_16x.png" />
+    <None Include="Resources\FolderInformation_16x.png" />
+    <None Include="Resources\EventAdded_16x.png" />
+    <None Include="Resources\FormatDocument_16x.png" />
+    <None Include="Resources\FolderBrowserDialogControl_16x.png" />
+    <None Include="Resources\NewFile_16x.png" />
+    <None Include="Resources\Open_16x.png" />
+    <None Include="Resources\FileDestination_16x.png" />
+    <None Include="Resources\Edit_16x.png" />
+    <None Include="Resources\Label.PNG" />
+    <None Include="Resources\Method_16x.png" />
+    <None Include="Resources\Event_16x.png" />
+    <None Include="Resources\EndPoint_16x.png" />
+    <None Include="Resources\FindInFile_16x.png" />
     <Content Include="Resources\OSMaker.xml" />
     <None Include="Resources\repair-tools.png" />
     <None Include="Resources\file-explorer.png" />
@@ -796,9 +890,7 @@
     <None Include="Resources\import.png" />
     <None Include="Resources\OSM_LOGO.png" />
     <None Include="Resources\OSMaker.png" />
-    <None Include="Resources\WIN.png" />
     <None Include="Resources\icons8-categorize-48.png" />
-    <None Include="Resources\Label.PNG" />
     <None Include="Resources\openfolderpng1.png" />
     <None Include="Resources\diamond161.png" />
     <None Include="Resources\light16.png" />
@@ -875,10 +967,6 @@
     <ProjectReference Include="..\ToolBox\ToolBox.vbproj">
       <Project>{18fe5640-9031-469a-be67-9039735d500a}</Project>
       <Name>ToolBox</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VM_Viewer_src\VM_Viewer\VM_Viewer.csproj">
-      <Project>{62d63ace-2a7e-4d35-9ea9-57fd9f9c6506}</Project>
-      <Name>VM_Viewer</Name>
     </ProjectReference>
     <ProjectReference Include="..\WinToCpcDosCplus\WinToCpcDosCplus.vbproj">
       <Project>{bca0393d-06c8-4959-8bf5-bf066cad56a6}</Project>

@@ -37,6 +37,8 @@ namespace OSMaker.Panneaux
             EqualStyle = new TextStyle(SolidEqual, null, FontStyle.Regular);
            
         }
+
+        public string filepath = "";
         private List<ExplorerItem> explorerList = new List<ExplorerItem>();
 
         // 'SolidBrush
@@ -336,7 +338,6 @@ namespace OSMaker.Panneaux
         private ToolStripMenuItem pasteToolStripMenuItem;
         private ToolStripMenuItem selectAllToolStripMenuItem;
         private ToolStripSeparator toolStripMenuItem2;
-        private ToolStripMenuItem undoToolStripMenuItem;
         private ToolStripMenuItem redoToolStripMenuItem;
         private System.Windows.Forms.Timer tmUpdateInterface;
         private ToolStripSeparator toolStripSeparator;
@@ -422,10 +423,7 @@ namespace OSMaker.Panneaux
 
      
 
-        private void menuItemCheckTest_Click(object sender, System.EventArgs e)
-        {
-            menuItemCheckTest.Checked = !menuItemCheckTest.Checked;
-        }
+      
         
         protected override void OnTextChanged(EventArgs e)
         {
@@ -436,8 +434,18 @@ namespace OSMaker.Panneaux
 
         private void Doc_Load(object sender, EventArgs e)
         {
-            string text = _tb.Text;
-            ThreadPool.QueueUserWorkItem((o) => ReBuildObjectExplorer(text));
+           
+
+               
+                    metroTextBox1.Text = filepath ;
+                    
+                
+
+                _tb.Focus();
+                string text = _tb.Text;
+                ThreadPool.QueueUserWorkItem((o) => ReBuildObjectExplorer(text));
+            
+           
         }
 
         private void menuItem2_Click_1(object sender, EventArgs e)
@@ -631,8 +639,8 @@ namespace OSMaker.Panneaux
             _tb.LeftBracket2 = Conversions.ToChar(@"\x0");
             _tb.RightBracket2 = Conversions.ToChar(@"\x0");
             _tb.DoCaretVisible();
-            _tb.IsChanged = false;
-            _tb.ClearUndo();
+            _tb.IsChanged = true;
+           // _tb.ClearUndo();
             _tb.Focus();
             _tb.DelayedTextChangedInterval = 1000;
             _tb.DelayedEventsInterval = 1000;
@@ -653,79 +661,79 @@ namespace OSMaker.Panneaux
                     {
                         case ExplorerItemType.Class:
                             {
-                                e.Value = My.Resources.Resources.class_libraries;
+                                e.Value = My.Resources.Resources.Class_16x;
                                 break;
                             }
 
                         case ExplorerItemType.Method:
                             {
-                                e.Value = My.Resources.Resources.box;
+                                e.Value = My.Resources.Resources.Method_16x;
                                 break;
                             }
 
                         case ExplorerItemType.Property:
                             {
-                                e.Value = My.Resources.Resources.Bouton;
+                                e.Value = My.Resources.Resources.Property_16x;
                                 break;
                             }
 
                         case ExplorerItemType.Event:
                             {
-                                e.Value = My.Resources.Resources.light16;
+                                e.Value = My.Resources.Resources.Event_16x;
                                 break;
                             }
 
                         case ExplorerItemType.Bouton:
                             {
-                                e.Value = My.Resources.Resources.Bouton;
+                                e.Value = My.Resources.Resources.butt;
                                 break;
                             }
 
                         case ExplorerItemType.Checkbox:
                             {
-                                e.Value = My.Resources.Resources.checkbox;
+                                e.Value = My.Resources.Resources.check;
                                 break;
                             }
 
                         case ExplorerItemType.Comment:
                             {
-                                e.Value = My.Resources.Resources.Comment;
+                                e.Value = My.Resources.Resources.CommentCode_16x;
                                 break;
                             }
 
                         case ExplorerItemType.Creer:
                             {
-                                e.Value = My.Resources.Resources.creer;
+                                e.Value = My.Resources.Resources.Create_16x;
                                 break;
                             }
 
                         case ExplorerItemType.Fin:
                             {
-                                e.Value = My.Resources.Resources.fin;
+                                e.Value = My.Resources.Resources.EndPoint_16x;
                                 break;
                             }
 
                         case ExplorerItemType.Textbox:
                             {
-                                e.Value = My.Resources.Resources.textebox;
+                                e.Value = My.Resources.Resources.text;
                                 break;
                             }
 
                         case ExplorerItemType.Textbloc:
                             {
-                                e.Value = My.Resources.Resources.textebloc;
+                                e.Value = My.Resources.Resources.Label;
                                 break;
                             }
 
                         case ExplorerItemType.Imagebox:
                             {
-                                e.Value = My.Resources.Resources.imagebox;
+                                e.Value = My.Resources.Resources.PIC;
                                 break;
                             }
 
                         case ExplorerItemType.Fonction:
                             {
-                                e.Value = My.Resources.Resources.diamond16;
+                                e.Value = My.Resources.Resources.fonction16;
                                 break;
                             }
                     }
@@ -746,6 +754,230 @@ namespace OSMaker.Panneaux
                 _tb.DoSelectionVisible();
                 _tb.Focus();
             }
+        }
+
+        private void Undo()
+        {
+            if (_tb.UndoEnabled)
+                _tb.Undo();
+        }
+        private void Redo()
+        {
+            if (_tb.RedoEnabled)
+                _tb.Redo();
+        }
+        private void SelectAll()
+        {
+            _tb.Selection.SelectAll();
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            Undo();
+        }
+
+        private void metroButton4_Click(object sender, EventArgs e)
+        {
+            Redo();
+        }
+
+        private void metroButton11_Click(object sender, EventArgs e)
+        {
+            SelectAll();
+        }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+            _tb.Copy();
+        }
+
+        private void metroButton10_Click(object sender, EventArgs e)
+        {
+            _tb.Paste();
+        }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+            _tb.Cut();
+        }
+
+        private void metroButton9_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tmUpdateInterface2_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+               
+                    annulerToolStripMenuItem1.Enabled = undoButton.Enabled = _tb.UndoEnabled;
+                    rétablirToolStripMenuItem1.Enabled = redoButton.Enabled = _tb.RedoEnabled;
+                    saveButton.Enabled = _tb.IsChanged;
+                  
+                    pasteButton.Enabled = collerCtrlVToolStripMenuItem.Enabled = true;
+                    cutButton.Enabled = couperToolStripMenuItem.Enabled =
+                    copyButton.Enabled = copierCtrlCToolStripMenuItem.Enabled = !_tb.Selection.IsEmpty;
+
+                if (_tb.UndoEnabled == true) 
+                {
+                    undoButton.BackgroundImage = My.Resources.Resources.Undo_16x;
+                }
+                else
+                {
+                    undoButton.BackgroundImage = My.Resources.Resources.Undo_grey_16x;
+                }
+                if (_tb.RedoEnabled == true)
+                {
+                    redoButton.BackgroundImage = My.Resources.Resources.Redo_16x;
+                }
+                else
+                {
+                    redoButton.BackgroundImage = My.Resources.Resources.Redo_grey_16x;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            _tb.ShowFindDialog();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            _tb.ShowReplaceDialog();
+        }
+
+        private void findButton_Click(object sender, EventArgs e)
+        {
+            _tb.ShowFindDialog();
+        }
+
+        private void replaceButton_Click(object sender, EventArgs e)
+        {
+            _tb.ShowReplaceDialog();
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                File.WriteAllText(filepath, _tb.Text);
+                _tb.IsChanged = false;
+            }
+            catch (Exception ex)
+            {
+                if (MessageBox.Show(ex.Message, "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Retry)
+                    File.WriteAllText(filepath, _tb.Text);
+                  
+                else
+                {
+
+                }
+            }
+
+        }
+
+        private void sélectionnerToutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelectAll();
+        }
+
+        private void commentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _tb.InsertLinePrefix("//");
+        }
+
+        private void rétablirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Redo();
+        }
+
+        private void annulerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Undo();
+        }
+
+        private void couperToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _tb.Cut();
+        }
+
+        private void copierCtrlCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _tb.Copy();
+        }
+
+        private void collerCtrlVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _tb.Paste();
+        }
+
+        private void cloneButton_Click(object sender, EventArgs e)
+        {
+            //expand selection
+            _tb.Selection.Expand();
+            //get text of selected lines
+            string text = Environment.NewLine + _tb.Selection.Text;
+            //move caret to end of selected lines
+            _tb.Selection.Start = _tb.Selection.End;
+            //insert text
+            _tb.InsertText(text);
+        }
+
+        private void commentButton_Click(object sender, EventArgs e)
+        {
+            _tb.InsertLinePrefix("//");
+        }
+
+        private void uncommentButton_Click(object sender, EventArgs e)
+        {
+            _tb.RemoveLinePrefix("//");
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            _tb.RemoveLinePrefix("//");
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            //expand selection
+            _tb.Selection.Expand();
+            //get text of selected lines
+            string text = Environment.NewLine + _tb.Selection.Text;
+            //move caret to end of selected lines
+            _tb.Selection.Start = _tb.Selection.End;
+            //insert text
+            _tb.InsertText(text);
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            //start autoUndo block
+            _tb.BeginAutoUndo();
+            //expand selection
+            _tb.Selection.Expand();
+            //get text of selected lines
+            string text = Environment.NewLine + _tb.Selection.Text;
+            //comment lines
+            _tb.InsertLinePrefix("//");
+            //move caret to end of selected lines
+            _tb.Selection.Start = _tb.Selection.End;
+            //insert text
+            _tb.InsertText(text);
+            //end of autoUndo block
+            _tb.EndAutoUndo();
+        }
+
+        private void metroButton4_Click_1(object sender, EventArgs e)
+        {
+            filepath = metroTextBox1.Text;
         }
     }
 

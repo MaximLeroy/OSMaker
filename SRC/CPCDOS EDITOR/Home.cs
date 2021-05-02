@@ -15,8 +15,10 @@ using Exporter.Controls;
 using Exporter;
 using System.Drawing.Design;
 using MetroFramework;
-using VM_Viewer;
+//using VM_Viewer;
 using OutputW;
+using OSMaker.VM_Viewer;
+using static cwc.LauchTool;
 
 namespace OSMaker
 {
@@ -152,6 +154,8 @@ namespace OSMaker
             }
          
         }
+        public static string OSMPATH = "";
+        public static string CPCPATH = "";
         private void Home_Load(object sender, EventArgs e)
 
         {
@@ -681,10 +685,13 @@ namespace OSMaker
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
         {
             string configFile = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "OSMaker.config");
+            
             if (m_bSaveLayout)
                 dockPanel.SaveAsXml(configFile);
             else if (File.Exists(configFile))
                 File.Delete(configFile);
+
+            Application.Exit();
 
         }
 
@@ -857,6 +864,52 @@ namespace OSMaker
         private void timer1_Tick(object sender, EventArgs e)
         {
            
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            if (panel5.Visible == false)
+            {
+                panel5.Visible = true;
+            }
+            else
+                panel5.Visible = false;
+        }
+        VM_GUI mv = new VM_GUI();
+        private void metroButton1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (mv.Visible == false)
+                { mv.Show(dockPanel); }
+                else
+                { mv.Hide(); }
+                //mv.Show(dockPanel);
+              //  mv.CloseBu;
+                m_sortie.DockState = DockState.DockBottom;
+                mv.fLauchBtn(metroFichierMV.Text); ;
+                panel6.Visible = true;
+            }
+            catch
+            {
+
+            }
+
+        }
+
+        private void metroButton7_Click(object sender, EventArgs e)
+        {
+           // mv.Stop();
+            panel6.Visible = false;
+           
+            mv.Hide();
+           
+        }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+          //  mv.Show();
+          //  mv.EditDrive(metroFichierDisk.Text);
         }
     }
 

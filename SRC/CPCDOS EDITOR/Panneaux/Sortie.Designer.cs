@@ -80,7 +80,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.rtOutput);
             this.Name = "Sortie";
-            this.Text = "Sortie";
+            this.Text = "Output";
             this.Load += new System.EventHandler(this.Sortie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rtOutput)).EndInit();
             this.ResumeLayout(false);

@@ -123,6 +123,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap actualiseer {
+            get {
+                object obj = ResourceManager.GetObject("actualiseer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap actualiser {
             get {
                 object obj = ResourceManager.GetObject("actualiser", resourceCulture);
@@ -173,6 +183,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arriere {
+            get {
+                object obj = ResourceManager.GetObject("arriere", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_left_15601 {
             get {
                 object obj = ResourceManager.GetObject("arrow_left_15601", resourceCulture);
@@ -213,29 +233,39 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arrows {
-            get {
-                object obj = ResourceManager.GetObject("arrows", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap arrows___Copie {
-            get {
-                object obj = ResourceManager.GetObject("arrows___Copie", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap arrows_1_ {
             get {
                 object obj = ResourceManager.GetObject("arrows_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ASX_Edit_blue_16x {
+            get {
+                object obj = ResourceManager.GetObject("ASX_Edit_blue_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ASX_Edit_blue_16x1 {
+            get {
+                object obj = ResourceManager.GetObject("ASX_Edit_blue_16x1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap avant {
+            get {
+                object obj = ResourceManager.GetObject("avant", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,19 +363,9 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BringForward_16x {
+        internal static System.Drawing.Bitmap butt {
             get {
-                object obj = ResourceManager.GetObject("BringForward_16x", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BringtoFront_16x {
-            get {
-                object obj = ResourceManager.GetObject("BringtoFront_16x", resourceCulture);
+                object obj = ResourceManager.GetObject("butt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +423,49 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CenterHorizontally_16x {
+            get {
+                object obj = ResourceManager.GetObject("CenterHorizontally_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CenterVertically_16x {
+            get {
+                object obj = ResourceManager.GetObject("CenterVertically_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check {
+            get {
+                object obj = ResourceManager.GetObject("check", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap checkbox {
             get {
                 object obj = ResourceManager.GetObject("checkbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Class_16x {
+            get {
+                object obj = ResourceManager.GetObject("Class_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,9 +493,9 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap clipboard {
+        internal static System.Drawing.Bitmap Close_red_16x {
             get {
-                object obj = ResourceManager.GetObject("clipboard", resourceCulture);
+                object obj = ResourceManager.GetObject("Close_red_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,9 +503,9 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap close {
+        internal static System.Drawing.Bitmap code {
             get {
-                object obj = ResourceManager.GetObject("close", resourceCulture);
+                object obj = ResourceManager.GetObject("code", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,9 +533,9 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap code_cpc_file1 {
+        internal static System.Drawing.Bitmap code_cpc_file2 {
             get {
-                object obj = ResourceManager.GetObject("code_cpc_file1", resourceCulture);
+                object obj = ResourceManager.GetObject("code_cpc_file2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,9 +543,9 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap code_cpc_file2 {
+        internal static System.Drawing.Bitmap CodeDefinitionWindow_16x {
             get {
-                object obj = ResourceManager.GetObject("code_cpc_file2", resourceCulture);
+                object obj = ResourceManager.GetObject("CodeDefinitionWindow_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,9 +593,49 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coller {
+            get {
+                object obj = ResourceManager.GetObject("coller", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Comment {
             get {
                 object obj = ResourceManager.GetObject("Comment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CommentCode_16x {
+            get {
+                object obj = ResourceManager.GetObject("CommentCode_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CommentCode_16x1 {
+            get {
+                object obj = ResourceManager.GetObject("CommentCode_16x1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Copy_16x {
+            get {
+                object obj = ResourceManager.GetObject("Copy_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -583,6 +683,36 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CopyItem_16x {
+            get {
+                object obj = ResourceManager.GetObject("CopyItem_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap couper {
+            get {
+                object obj = ResourceManager.GetObject("couper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Create_16x {
+            get {
+                object obj = ResourceManager.GetObject("Create_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap creer {
             get {
                 object obj = ResourceManager.GetObject("creer", resourceCulture);
@@ -613,6 +743,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cut_16x {
+            get {
+                object obj = ResourceManager.GetObject("Cut_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cut_icon_icons_com_73697 {
             get {
                 object obj = ResourceManager.GetObject("Cut_icon_icons_com_73697", resourceCulture);
@@ -626,6 +766,36 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap Cut_icon_icons_com_73697__Copier_ {
             get {
                 object obj = ResourceManager.GetObject("Cut_icon_icons_com_73697__Copier_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DeleteAzureResource_16x {
+            get {
+                object obj = ResourceManager.GetObject("DeleteAzureResource_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DeleteAzureResource_16x1 {
+            get {
+                object obj = ResourceManager.GetObject("DeleteAzureResource_16x1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DeleteAzureResource_16x2 {
+            get {
+                object obj = ResourceManager.GetObject("DeleteAzureResource_16x2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -693,6 +863,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Edit_16x {
+            get {
+                object obj = ResourceManager.GetObject("Edit_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit_padding_top {
             get {
                 object obj = ResourceManager.GetObject("edit_padding_top", resourceCulture);
@@ -713,9 +893,29 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap emblemsynchronizing_93485 {
+        internal static System.Drawing.Bitmap EndPoint_16x {
             get {
-                object obj = ResourceManager.GetObject("emblemsynchronizing_93485", resourceCulture);
+                object obj = ResourceManager.GetObject("EndPoint_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Event_16x {
+            get {
+                object obj = ResourceManager.GetObject("Event_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EventAdded_16x {
+            get {
+                object obj = ResourceManager.GetObject("EventAdded_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -743,9 +943,29 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FileDestination_16x {
+            get {
+                object obj = ResourceManager.GetObject("FileDestination_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fin {
             get {
                 object obj = ResourceManager.GetObject("fin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FindInFile_16x {
+            get {
+                object obj = ResourceManager.GetObject("FindInFile_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -813,9 +1033,49 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FolderBrowserDialogControl_16x {
+            get {
+                object obj = ResourceManager.GetObject("FolderBrowserDialogControl_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FolderInformation_16x {
+            get {
+                object obj = ResourceManager.GetObject("FolderInformation_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fonction16 {
+            get {
+                object obj = ResourceManager.GetObject("fonction16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap format_textbox_icon_137574 {
             get {
                 object obj = ResourceManager.GetObject("format_textbox_icon_137574", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FormatDocument_16x {
+            get {
+                object obj = ResourceManager.GetObject("FormatDocument_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1143,6 +1403,36 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Method_16x {
+            get {
+                object obj = ResourceManager.GetObject("Method_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewFile_16x {
+            get {
+                object obj = ResourceManager.GetObject("NewFile_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Open_16x {
+            get {
+                object obj = ResourceManager.GetObject("Open_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap openfolderpng {
             get {
                 object obj = ResourceManager.GetObject("openfolderpng", resourceCulture);
@@ -1243,6 +1533,26 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Paste_16x {
+            get {
+                object obj = ResourceManager.GetObject("Paste_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pause_16x {
+            get {
+                object obj = ResourceManager.GetObject("Pause_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pen {
             get {
                 object obj = ResourceManager.GetObject("pen", resourceCulture);
@@ -1256,6 +1566,16 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap pencil {
             get {
                 object obj = ResourceManager.GetObject("pencil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PIC {
+            get {
+                object obj = ResourceManager.GetObject("PIC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1283,9 +1603,39 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap prog {
+            get {
+                object obj = ResourceManager.GetObject("prog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Property_16x {
+            get {
+                object obj = ResourceManager.GetObject("Property_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap redo {
             get {
                 object obj = ResourceManager.GetObject("redo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Redo_16x {
+            get {
+                object obj = ResourceManager.GetObject("Redo_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1313,6 +1663,26 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Redo_grey_16x {
+            get {
+                object obj = ResourceManager.GetObject("Redo_grey_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap redoo {
+            get {
+                object obj = ResourceManager.GetObject("redoo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Reduire_Projet {
             get {
                 object obj = ResourceManager.GetObject("Reduire_Projet", resourceCulture);
@@ -1333,6 +1703,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ReplaceAll_16x {
+            get {
+                object obj = ResourceManager.GetObject("ReplaceAll_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rolleyes {
             get {
                 object obj = ResourceManager.GetObject("rolleyes", resourceCulture);
@@ -1346,6 +1726,16 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap rolleyes1 {
             get {
                 object obj = ResourceManager.GetObject("rolleyes1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Run_16x {
+            get {
+                object obj = ResourceManager.GetObject("Run_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1423,9 +1813,9 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap scissors {
+        internal static System.Drawing.Bitmap search {
             get {
-                object obj = ResourceManager.GetObject("scissors", resourceCulture);
+                object obj = ResourceManager.GetObject("search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1433,9 +1823,9 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap search {
+        internal static System.Drawing.Bitmap SelectAll_16x {
             get {
-                object obj = ResourceManager.GetObject("search", resourceCulture);
+                object obj = ResourceManager.GetObject("SelectAll_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1456,6 +1846,26 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap smile_16x161 {
             get {
                 object obj = ResourceManager.GetObject("smile_16x161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stop_16x {
+            get {
+                object obj = ResourceManager.GetObject("Stop_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap supprimer {
+            get {
+                object obj = ResourceManager.GetObject("supprimer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1533,6 +1943,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap text {
+            get {
+                object obj = ResourceManager.GetObject("text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap textebloc {
             get {
                 object obj = ResourceManager.GetObject("textebloc", resourceCulture);
@@ -1573,9 +1993,29 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap UncommentCode_16x {
+            get {
+                object obj = ResourceManager.GetObject("UncommentCode_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap undo {
             get {
                 object obj = ResourceManager.GetObject("undo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Undo_16x {
+            get {
+                object obj = ResourceManager.GetObject("Undo_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1596,6 +2036,26 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap undo_16x161 {
             get {
                 object obj = ResourceManager.GetObject("undo_16x161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Undo_grey_16x {
+            get {
+                object obj = ResourceManager.GetObject("Undo_grey_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undoo {
+            get {
+                object obj = ResourceManager.GetObject("undoo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

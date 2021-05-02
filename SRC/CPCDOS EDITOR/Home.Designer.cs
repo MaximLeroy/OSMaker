@@ -43,7 +43,6 @@
             this.vS2012LightTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2012LightTheme();
             this.vS2012DarkTheme1 = new WeifenLuo.WinFormsUI.Docking.VS2012DarkTheme();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
             this.visualStudioToolStripExtender1 = new WeifenLuo.WinFormsUI.Docking.VisualStudioToolStripExtender(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainMenu = new System.Windows.Forms.MenuStrip();
@@ -87,18 +86,42 @@
             this.menuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.metroButton7 = new MetroFramework.Controls.MetroButton();
+            this.metroButton8 = new MetroFramework.Controls.MetroButton();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton16 = new MetroFramework.Controls.MetroButton();
+            this.metroButton15 = new MetroFramework.Controls.MetroButton();
+            this.metroFichierMV = new MetroFramework.Controls.MetroTextBox();
+            this.metroFichierDisk = new MetroFramework.Controls.MetroTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
             this.mainMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -120,15 +143,6 @@
             this.imageList.Images.SetKeyName(6, "");
             this.imageList.Images.SetKeyName(7, "");
             this.imageList.Images.SetKeyName(8, "");
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(2, 60);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(806, 458);
-            this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // visualStudioToolStripExtender1
             // 
@@ -190,7 +204,7 @@
             this.fichierTexteToolStripMenuItem,
             this.autresLanguagesToolStripMenuItem});
             this.menuItemNew.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemNew.Image = global::OSMaker.My.Resources.Resources.add_objet;
+            this.menuItemNew.Image = global::OSMaker.My.Resources.Resources.NewFile_16x;
             this.menuItemNew.Name = "menuItemNew";
             this.menuItemNew.Size = new System.Drawing.Size(290, 26);
             this.menuItemNew.Text = "Nouveau";
@@ -301,6 +315,7 @@
             this.dossierToolStripMenuItem,
             this.fichierToolStripMenuItem});
             this.menuItemOpen.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemOpen.Image = global::OSMaker.My.Resources.Resources.Open_16x;
             this.menuItemOpen.Name = "menuItemOpen";
             this.menuItemOpen.Size = new System.Drawing.Size(290, 26);
             this.menuItemOpen.Text = "Ouvrir";
@@ -327,7 +342,7 @@
             // 
             this.menuItemClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.menuItemClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.menuItemClose.Image = global::OSMaker.My.Resources.Resources.close;
+            this.menuItemClose.Image = global::OSMaker.My.Resources.Resources.Close_red_16x;
             this.menuItemClose.Name = "menuItemClose";
             this.menuItemClose.Size = new System.Drawing.Size(290, 26);
             this.menuItemClose.Text = "Fermer";
@@ -337,6 +352,7 @@
             // 
             this.menuItemCloseAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.menuItemCloseAll.ForeColor = System.Drawing.SystemColors.Control;
+            this.menuItemCloseAll.Image = global::OSMaker.My.Resources.Resources.Close_red_16x;
             this.menuItemCloseAll.Name = "menuItemCloseAll";
             this.menuItemCloseAll.Size = new System.Drawing.Size(290, 26);
             this.menuItemCloseAll.Text = "Tout fermer";
@@ -541,6 +557,9 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.metroButton3);
+            this.panel3.Controls.Add(this.metroButton1);
             this.panel3.Controls.Add(this.metroButton2);
             this.panel3.Controls.Add(this.toolStrip1);
             this.panel3.Location = new System.Drawing.Point(40, 30);
@@ -550,6 +569,35 @@
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseMove);
             this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseUp);
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.BackgroundImage = global::OSMaker.My.Resources.Resources.FileDestination_16x;
+            this.metroButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton3.Location = new System.Drawing.Point(136, 3);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(27, 23);
+            this.metroButton3.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroButton3.TabIndex = 4;
+            this.metroButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.BackgroundImage = global::OSMaker.My.Resources.Resources.Run_16x;
+            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton1.Highlight = true;
+            this.metroButton1.Location = new System.Drawing.Point(84, 3);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(46, 23);
+            this.metroButton1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroButton1.TabIndex = 3;
+            this.metroButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click_1);
             // 
             // metroButton2
             // 
@@ -606,6 +654,251 @@
             this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // metroStyleManager1
+            // 
+            this.metroStyleManager1.Owner = this;
+            this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(2, 60);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(806, 458);
+            this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.panel6.Controls.Add(this.metroButton4);
+            this.panel6.Controls.Add(this.metroButton7);
+            this.panel6.Controls.Add(this.metroButton8);
+            this.panel6.Controls.Add(this.toolStrip2);
+            this.panel6.Location = new System.Drawing.Point(3, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(791, 27);
+            this.panel6.TabIndex = 80;
+            this.panel6.Visible = false;
+            // 
+            // metroButton4
+            // 
+            this.metroButton4.BackgroundImage = global::OSMaker.My.Resources.Resources.Pause_16x;
+            this.metroButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton4.Highlight = true;
+            this.metroButton4.Location = new System.Drawing.Point(136, 3);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(46, 23);
+            this.metroButton4.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton4.TabIndex = 4;
+            this.metroButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroButton4.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton4.UseSelectable = true;
+            // 
+            // metroButton7
+            // 
+            this.metroButton7.BackgroundImage = global::OSMaker.My.Resources.Resources.Stop_16x;
+            this.metroButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton7.Highlight = true;
+            this.metroButton7.Location = new System.Drawing.Point(84, 3);
+            this.metroButton7.Name = "metroButton7";
+            this.metroButton7.Size = new System.Drawing.Size(46, 23);
+            this.metroButton7.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroButton7.TabIndex = 3;
+            this.metroButton7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroButton7.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton7.UseSelectable = true;
+            this.metroButton7.Click += new System.EventHandler(this.metroButton7_Click);
+            // 
+            // metroButton8
+            // 
+            this.metroButton8.Location = new System.Drawing.Point(3, 3);
+            this.metroButton8.Name = "metroButton8";
+            this.metroButton8.Size = new System.Drawing.Size(75, 23);
+            this.metroButton8.TabIndex = 2;
+            this.metroButton8.Text = "VM Viewer";
+            this.metroButton8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton8.UseSelectable = true;
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton4,
+            this.toolStripButton5,
+            this.toolStripButton6});
+            this.toolStrip2.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(791, 27);
+            this.toolStrip2.TabIndex = 0;
+            this.toolStrip2.Text = "toolStrip2";
+            this.toolStrip2.Visible = false;
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = global::OSMaker.My.Resources.Resources.openfolderpng;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton4.Text = "toolStripButton1";
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = global::OSMaker.My.Resources.Resources.redo;
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton5.Text = "toolStripButton2";
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton6.Image = global::OSMaker.My.Resources.Resources.sad_16x161;
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton6.Text = "toolStripButton3";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.metroLabel2);
+            this.panel5.Controls.Add(this.metroLabel1);
+            this.panel5.Controls.Add(this.metroButton16);
+            this.panel5.Controls.Add(this.metroButton15);
+            this.panel5.Controls.Add(this.metroFichierMV);
+            this.panel5.Controls.Add(this.metroFichierDisk);
+            this.panel5.Location = new System.Drawing.Point(122, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(498, 63);
+            this.panel5.TabIndex = 79;
+            this.panel5.Visible = false;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(16, 33);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(49, 20);
+            this.metroLabel2.TabIndex = 83;
+            this.metroLabel2.Text = "Drive :";
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.UseCustomBackColor = true;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(3, 4);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(62, 20);
+            this.metroLabel1.TabIndex = 82;
+            this.metroLabel1.Text = "VM File :";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.UseCustomBackColor = true;
+            // 
+            // metroButton16
+            // 
+            this.metroButton16.BackgroundImage = global::OSMaker.My.Resources.Resources.FolderBrowserDialogControl_16x;
+            this.metroButton16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton16.Location = new System.Drawing.Point(458, 33);
+            this.metroButton16.Name = "metroButton16";
+            this.metroButton16.Size = new System.Drawing.Size(35, 23);
+            this.metroButton16.TabIndex = 81;
+            this.metroButton16.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton16.UseSelectable = true;
+            // 
+            // metroButton15
+            // 
+            this.metroButton15.BackgroundImage = global::OSMaker.My.Resources.Resources.FolderBrowserDialogControl_16x;
+            this.metroButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton15.Location = new System.Drawing.Point(458, 4);
+            this.metroButton15.Name = "metroButton15";
+            this.metroButton15.Size = new System.Drawing.Size(35, 23);
+            this.metroButton15.TabIndex = 80;
+            this.metroButton15.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton15.UseSelectable = true;
+            // 
+            // metroFichierMV
+            // 
+            // 
+            // 
+            // 
+            this.metroFichierMV.CustomButton.Image = null;
+            this.metroFichierMV.CustomButton.Location = new System.Drawing.Point(359, 1);
+            this.metroFichierMV.CustomButton.Name = "";
+            this.metroFichierMV.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroFichierMV.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroFichierMV.CustomButton.TabIndex = 1;
+            this.metroFichierMV.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroFichierMV.CustomButton.UseSelectable = true;
+            this.metroFichierMV.CustomButton.Visible = false;
+            this.metroFichierMV.Lines = new string[] {
+        "C:\\Users\\btaco\\Documents\\vm\\PUBLIC Cpcdos OSx.ova"};
+            this.metroFichierMV.Location = new System.Drawing.Point(71, 4);
+            this.metroFichierMV.MaxLength = 32767;
+            this.metroFichierMV.Name = "metroFichierMV";
+            this.metroFichierMV.PasswordChar = '\0';
+            this.metroFichierMV.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroFichierMV.SelectedText = "";
+            this.metroFichierMV.SelectionLength = 0;
+            this.metroFichierMV.SelectionStart = 0;
+            this.metroFichierMV.ShortcutsEnabled = true;
+            this.metroFichierMV.Size = new System.Drawing.Size(381, 23);
+            this.metroFichierMV.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroFichierMV.TabIndex = 71;
+            this.metroFichierMV.Text = "C:\\Users\\btaco\\Documents\\vm\\PUBLIC Cpcdos OSx.ova";
+            this.metroFichierMV.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroFichierMV.UseCustomBackColor = true;
+            this.metroFichierMV.UseSelectable = true;
+            this.metroFichierMV.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroFichierMV.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroFichierDisk
+            // 
+            // 
+            // 
+            // 
+            this.metroFichierDisk.CustomButton.Image = null;
+            this.metroFichierDisk.CustomButton.Location = new System.Drawing.Point(359, 1);
+            this.metroFichierDisk.CustomButton.Name = "";
+            this.metroFichierDisk.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroFichierDisk.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroFichierDisk.CustomButton.TabIndex = 1;
+            this.metroFichierDisk.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroFichierDisk.CustomButton.UseSelectable = true;
+            this.metroFichierDisk.CustomButton.Visible = false;
+            this.metroFichierDisk.Lines = new string[] {
+        "C:\\Users\\btaco\\Documents\\vm\\PUBLIC Cpcdos OSx-disk1.vmdk"};
+            this.metroFichierDisk.Location = new System.Drawing.Point(71, 33);
+            this.metroFichierDisk.MaxLength = 32767;
+            this.metroFichierDisk.Name = "metroFichierDisk";
+            this.metroFichierDisk.PasswordChar = '\0';
+            this.metroFichierDisk.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroFichierDisk.SelectedText = "";
+            this.metroFichierDisk.SelectionLength = 0;
+            this.metroFichierDisk.SelectionStart = 0;
+            this.metroFichierDisk.ShortcutsEnabled = true;
+            this.metroFichierDisk.Size = new System.Drawing.Size(381, 23);
+            this.metroFichierDisk.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroFichierDisk.TabIndex = 77;
+            this.metroFichierDisk.Text = "C:\\Users\\btaco\\Documents\\vm\\PUBLIC Cpcdos OSx-disk1.vmdk";
+            this.metroFichierDisk.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroFichierDisk.UseCustomBackColor = true;
+            this.metroFichierDisk.UseSelectable = true;
+            this.metroFichierDisk.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroFichierDisk.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -625,10 +918,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Home
             // 
@@ -656,6 +945,14 @@
             this.panel3.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -676,7 +973,6 @@
         private WeifenLuo.WinFormsUI.Docking.VS2012LightTheme vS2012LightTheme1;
         private WeifenLuo.WinFormsUI.Docking.VS2012DarkTheme vS2012DarkTheme1;
         private System.Windows.Forms.ImageList imageList;
-        public System.Windows.Forms.Panel panel1;
         private WeifenLuo.WinFormsUI.Docking.VisualStudioToolStripExtender visualStudioToolStripExtender1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -728,5 +1024,24 @@
         private System.Windows.Forms.ToolStripMenuItem virtualisationToolStripMenuItem;
         private MetroFramework.Controls.MetroButton metroButton2;
         private System.Windows.Forms.Timer timer1;
+        private MetroFramework.Components.MetroStyleManager metroStyleManager1;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton3;
+        public System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
+        private MetroFramework.Controls.MetroButton metroButton16;
+        private MetroFramework.Controls.MetroButton metroButton15;
+        public MetroFramework.Controls.MetroTextBox metroFichierMV;
+        public MetroFramework.Controls.MetroTextBox metroFichierDisk;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.Panel panel6;
+        private MetroFramework.Controls.MetroButton metroButton7;
+        private MetroFramework.Controls.MetroButton metroButton8;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private MetroFramework.Controls.MetroButton metroButton4;
     }
 }

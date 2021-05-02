@@ -28,3 +28,6 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\VM_Viewer_src\VM_Viewer\obj\Debug\VM_Viewer.DocumentC.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\VM_Viewer_src\VM_Viewer\obj\Debug\VM_Viewer.OutputW.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\VM_Viewer_src\VM_Viewer\obj\Debug\VM_Viewer.ToolWindow.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\VM_Viewer_src\bin\VM_Viewer.exe.config
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\VM_Viewer_src\bin\VM_Viewer.exe
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\VM_Viewer_src\bin\VM_Viewer.pdb

@@ -19,7 +19,7 @@ namespace OSMaker.Host
     /// Manages numerous HostSurfaces. Any services added to HostSurfaceManager
     /// will be accessible to all HostSurfaces
     /// </summary>
-    internal class HostSurfaceManager : DesignSurfaceManager
+    public class HostSurfaceManager : DesignSurfaceManager
     {
         public HostSurfaceManager() : base()
         {

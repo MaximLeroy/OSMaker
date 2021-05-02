@@ -42,14 +42,23 @@ namespace OSMaker.Host
         private void UpdateUndoRedoMenuCommandsStatus()
         {
             // this components maybe cached.
-            MenuCommandService menuCommandService = GetService(typeof(MenuCommandService)) as MenuCommandService;
-            MenuCommand undoMenuCommand = menuCommandService.FindCommand(StandardCommands.Undo);
-            MenuCommand redoMenuCommand = menuCommandService.FindCommand(StandardCommands.Redo);
+            try
+            {
+             
+                MenuCommandService menuCommandService = GetService(typeof(MenuCommandService)) as MenuCommandService;
+                menuCommandService = new Host.MenuCommandServiceImpl(EditeurCCplus._hostSurfaceManager);
+                MenuCommand undoMenuCommand = menuCommandService.FindCommand(StandardCommands.Undo);
+                MenuCommand redoMenuCommand = menuCommandService.FindCommand(StandardCommands.Redo);
 
-            if (undoMenuCommand != null)
-                undoMenuCommand.Enabled = currentPos > 0;
-            if (redoMenuCommand != null)
-                redoMenuCommand.Enabled = currentPos < this.undoUnitList.Count;
+                if (undoMenuCommand != null)
+                    undoMenuCommand.Enabled = currentPos > 0;
+                if (redoMenuCommand != null)
+                    redoMenuCommand.Enabled = currentPos < this.undoUnitList.Count;
+            }
+            catch
+            {
+
+            }
         }
 
         protected override void AddUndoUnit(UndoEngine.UndoUnit unit)

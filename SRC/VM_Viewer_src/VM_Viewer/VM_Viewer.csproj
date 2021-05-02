@@ -34,7 +34,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\</OutputPath>
+    <OutputPath>..\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -105,6 +105,12 @@
     </Compile>
     <Compile Include="DocumentC.Designer.cs">
       <DependentUpon>DocumentC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Folder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Folder.Designer.cs">
+      <DependentUpon>Folder.cs</DependentUpon>
     </Compile>
     <Compile Include="Output\Debug.cs" />
     <Compile Include="Setting\Config.cs" />

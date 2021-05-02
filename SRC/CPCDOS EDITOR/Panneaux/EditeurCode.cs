@@ -31,8 +31,7 @@ namespace OSMaker.Panneaux
         private bool tbFindChanged = false;
         private DateTime lastNavigatedDateTime = DateTime.Now;
         [CLSCompliant(false)]
-        public Host.Designer Designer = new Host.Designer(My.MySettingsProperty.Settings.Afficher_La_Griller, true, My.MySettingsProperty.Settings.Aimentation_Intelligente, true, My.MySettingsProperty.Settings.Smart_Tags, true, My.MySettingsProperty.Settings.Afficher_La_Griller);
-        public System.ComponentModel.Design.IComponentChangeService componentChangeService;
+     
         private XmlDocument doc;
         private Dictionary<string, string> WinToCpcControls;
         private Dictionary<string, string> CpcDebutToFins;

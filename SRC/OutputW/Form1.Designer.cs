@@ -28,7 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.SuspendLayout();
+            // 
+            // metroContextMenu1
+            // 
+            this.metroContextMenu1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.metroContextMenu1.Name = "metroContextMenu1";
+            this.metroContextMenu1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -36,13 +44,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Output";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private MetroFramework.Controls.MetroContextMenu metroContextMenu1;
     }
 }
 

@@ -125,10 +125,11 @@
             for Cut, Copy, Paste, etc.
             </summary>
         </member>
-        <member name="M:OSMaker.Host.HostSurface.selectionService_SelectionChanged(System.Object,System.EventArgs)">
+        <member name="M:OSMaker.Host.HostSurface.ExecuteUndo(System.Object,System.EventArgs)">
             <summary>
             When the selection changes this sets the PropertyGrid's selected component
             </summary>
+            
         </member>
         <member name="T:OSMaker.Host.HostSurfaceManager">
             <summary>
@@ -233,6 +234,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.actualiseer">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.actualiser">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -258,6 +264,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.arriere">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.arrow_left_15601">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -278,17 +289,22 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.arrows">
-            <summary>
-              Recherche une ressource localisée de type System.Drawing.Bitmap.
-            </summary>
-        </member>
-        <member name="P:OSMaker.My.Resources.Resources.arrows___Copie">
-            <summary>
-              Recherche une ressource localisée de type System.Drawing.Bitmap.
-            </summary>
-        </member>
         <member name="P:OSMaker.My.Resources.Resources.arrows_1_">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.ASX_Edit_blue_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.ASX_Edit_blue_16x1">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.avant">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -338,12 +354,7 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.BringForward_16x">
-            <summary>
-              Recherche une ressource localisée de type System.Drawing.Bitmap.
-            </summary>
-        </member>
-        <member name="P:OSMaker.My.Resources.Resources.BringtoFront_16x">
+        <member name="P:OSMaker.My.Resources.Resources.butt">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -373,7 +384,27 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.CenterHorizontally_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.CenterVertically_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.check">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.checkbox">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Class_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -388,12 +419,12 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.clipboard">
+        <member name="P:OSMaker.My.Resources.Resources.Close_red_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.close">
+        <member name="P:OSMaker.My.Resources.Resources.code">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -408,12 +439,12 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.code_cpc_file1">
+        <member name="P:OSMaker.My.Resources.Resources.code_cpc_file2">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.code_cpc_file2">
+        <member name="P:OSMaker.My.Resources.Resources.CodeDefinitionWindow_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -438,7 +469,27 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.coller">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.Comment">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.CommentCode_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.CommentCode_16x1">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Copy_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -463,6 +514,21 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.CopyItem_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.couper">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Create_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.creer">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -478,12 +544,32 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.Cut_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.Cut_icon_icons_com_73697">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.Cut_icon_icons_com_73697__Copier_">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.DeleteAzureResource_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.DeleteAzureResource_16x1">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.DeleteAzureResource_16x2">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -518,6 +604,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.Edit_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.edit_padding_top">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -528,7 +619,17 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.emblemsynchronizing_93485">
+        <member name="P:OSMaker.My.Resources.Resources.EndPoint_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Event_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.EventAdded_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -543,7 +644,17 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.FileDestination_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.fin">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.FindInFile_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -578,7 +689,27 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.FolderBrowserDialogControl_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.FolderInformation_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.fonction16">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.format_textbox_icon_137574">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.FormatDocument_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -743,6 +874,21 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.Method_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.NewFile_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Open_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.openfolderpng">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -793,12 +939,27 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.Paste_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Pause_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.pen">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.pencil">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.PIC">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -813,7 +974,22 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.prog">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Property_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.redo">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Redo_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -828,6 +1004,16 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.Redo_grey_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.redoo">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.Reduire_Projet">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -838,12 +1024,22 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.ReplaceAll_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.rolleyes">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.rolleyes1">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Run_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -883,12 +1079,12 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.scissors">
+        <member name="P:OSMaker.My.Resources.Resources.search">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="P:OSMaker.My.Resources.Resources.search">
+        <member name="P:OSMaker.My.Resources.Resources.SelectAll_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -899,6 +1095,16 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.smile_16x161">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Stop_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.supprimer">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -938,6 +1144,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.text">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.textebloc">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -958,7 +1169,17 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.UncommentCode_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.undo">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Undo_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -969,6 +1190,16 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.undo_16x161">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Undo_grey_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.undoo">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -1175,6 +1406,12 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <!-- Badly formed XML comment ignored for member "P:OSMaker.FileFolderDialog.SelectedPath" -->
+        <member name="P:OSMaker.FileFolderDialog.SelectedPaths">
+            <summary>
+            When multiple files are selected returns them as semi-colon seprated string
+            </summary>
+        </member>
         <member name="M:OSMaker.Panneaux.Accueil.LoadRecentList">
             <summary>
             load recent file list from file
@@ -1311,6 +1548,23 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:OSMaker.Panneaux.PropertyWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:OSMaker.Panneaux.Propriétés.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Panneaux.Propriétés.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OSMaker.Panneaux.Propriétés.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
@@ -1458,6 +1712,43 @@
             <param name="WordsColor">Couleur qui sera utilisé pour peindre le mot</param>
             <param name="WordsToFind">Tableau des mots à peindre</param>
             <remarks></remarks>
+        </member>
+        <member name="F:OSMaker.VM_Viewer.VM_GUI.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OSMaker.VM_Viewer.VM_GUI.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OSMaker.VM_Viewer.VM_GUI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:cwc.ProcessOutputHandler.#ctor(cwc.LauchTool)">
+            <summary>  
+            The constructor requires a reference to the process that will be read.  
+            The process should have .RedirectStandardOutput and .RedirectStandardError set to true.  
+            </summary>  
+            <param name="process">The process that will have its output read by this class.</param>  
+        </member>
+        <member name="M:cwc.Utilities.PathHelper.GetExeDirectory">
+            <summary>
+            Gets the directory of the app.
+            </summary>
+        </member>
+        <member name="M:CwcGUI.WinApi.GetFullPathFromWindows(System.String)">
+            <summary>
+            Gets the full path of the given executable filename as if the user had entered this
+            executable in a shell. So, for example, the Windows PATH environment variable will
+            be examined. If the filename can't be found by Windows, null is returned.</summary>
+            <param name="exeName"></param>
+            <returns>The full path if successful, or null otherwise.</returns>
         </member>
     </members>
 </doc>

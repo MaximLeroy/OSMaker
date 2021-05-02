@@ -112,3 +112,5 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Host.contextmenu.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Formulaires.EvenementsFenetre.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.Sortie.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.Propriétés.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.VM_Viewer.VM_GUI.resources

@@ -40,16 +40,15 @@
             this.btConfig = new MetroFramework.Controls.MetroButton();
             this.btnStop = new MetroFramework.Controls.MetroButton();
             this.btnPause = new MetroFramework.Controls.MetroButton();
-            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
-            this.tbControl = new MetroFramework.Controls.MetroTabPage();
-            this.tbFolder = new MetroFramework.Controls.MetroTabPage();
             this.cbDrive = new System.Windows.Forms.ComboBox();
             this.cbPath = new System.Windows.Forms.ComboBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.tbControl = new System.Windows.Forms.Panel();
+            this.tbFolder = new System.Windows.Forms.Panel();
+            this.Barreoblique = new System.Windows.Forms.Label();
             this.mnViewer.SuspendLayout();
             this.gbFullScreen.SuspendLayout();
-            this.metroTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnViewer
@@ -63,7 +62,7 @@
             this.exportToolStripMenuItem});
             this.mnViewer.Location = new System.Drawing.Point(0, 0);
             this.mnViewer.Name = "mnViewer";
-            this.mnViewer.Size = new System.Drawing.Size(149, 30);
+            this.mnViewer.Size = new System.Drawing.Size(147, 25);
             this.mnViewer.TabIndex = 16;
             this.mnViewer.Text = "menuStrip1";
             // 
@@ -72,7 +71,7 @@
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vmxSettingsToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(75, 21);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // vmxSettingsToolStripMenuItem
@@ -87,7 +86,7 @@
             this.exportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportToovaToolStripMenuItem});
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(64, 21);
             this.exportToolStripMenuItem.Text = "Export";
             // 
             // exportToovaToolStripMenuItem
@@ -244,49 +243,6 @@
             this.btnPause.UseSelectable = true;
             this.btnPause.Click += new System.EventHandler(this.metroButton3_Click);
             // 
-            // metroTabControl1
-            // 
-            this.metroTabControl1.Controls.Add(this.tbControl);
-            this.metroTabControl1.Controls.Add(this.tbFolder);
-            this.metroTabControl1.Location = new System.Drawing.Point(9, 379);
-            this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(856, 266);
-            this.metroTabControl1.TabIndex = 33;
-            this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroTabControl1.UseSelectable = true;
-            this.metroTabControl1.Visible = false;
-            // 
-            // tbControl
-            // 
-            this.tbControl.HorizontalScrollbarBarColor = true;
-            this.tbControl.HorizontalScrollbarHighlightOnWheel = false;
-            this.tbControl.HorizontalScrollbarSize = 10;
-            this.tbControl.Location = new System.Drawing.Point(4, 38);
-            this.tbControl.Name = "tbControl";
-            this.tbControl.Size = new System.Drawing.Size(848, 224);
-            this.tbControl.TabIndex = 0;
-            this.tbControl.Text = "Console";
-            this.tbControl.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.tbControl.VerticalScrollbarBarColor = true;
-            this.tbControl.VerticalScrollbarHighlightOnWheel = false;
-            this.tbControl.VerticalScrollbarSize = 10;
-            // 
-            // tbFolder
-            // 
-            this.tbFolder.HorizontalScrollbarBarColor = true;
-            this.tbFolder.HorizontalScrollbarHighlightOnWheel = false;
-            this.tbFolder.HorizontalScrollbarSize = 10;
-            this.tbFolder.Location = new System.Drawing.Point(4, 38);
-            this.tbFolder.Name = "tbFolder";
-            this.tbFolder.Size = new System.Drawing.Size(848, 224);
-            this.tbFolder.TabIndex = 1;
-            this.tbFolder.Text = "Folder";
-            this.tbFolder.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.tbFolder.VerticalScrollbarBarColor = true;
-            this.tbFolder.VerticalScrollbarHighlightOnWheel = false;
-            this.tbFolder.VerticalScrollbarSize = 10;
-            // 
             // cbDrive
             // 
             this.cbDrive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -310,6 +266,7 @@
             this.cbPath.Name = "cbPath";
             this.cbPath.Size = new System.Drawing.Size(662, 25);
             this.cbPath.TabIndex = 35;
+            this.cbPath.TextChanged += new System.EventHandler(this.cbPath_TextChanged_1);
             // 
             // metroLabel1
             // 
@@ -333,17 +290,47 @@
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel2.UseCustomBackColor = true;
             // 
+            // tbControl
+            // 
+            this.tbControl.Location = new System.Drawing.Point(803, 307);
+            this.tbControl.Name = "tbControl";
+            this.tbControl.Size = new System.Drawing.Size(73, 50);
+            this.tbControl.TabIndex = 39;
+            this.tbControl.Visible = false;
+            // 
+            // tbFolder
+            // 
+            this.tbFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbFolder.Location = new System.Drawing.Point(9, 383);
+            this.tbFolder.Name = "tbFolder";
+            this.tbFolder.Size = new System.Drawing.Size(887, 156);
+            this.tbFolder.TabIndex = 38;
+            // 
+            // Barreoblique
+            // 
+            this.Barreoblique.AutoSize = true;
+            this.Barreoblique.Location = new System.Drawing.Point(793, 25);
+            this.Barreoblique.Name = "Barreoblique";
+            this.Barreoblique.Size = new System.Drawing.Size(12, 17);
+            this.Barreoblique.TabIndex = 40;
+            this.Barreoblique.Text = "\\";
+            this.Barreoblique.Visible = false;
+            // 
             // VM_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(903, 657);
+            this.ClientSize = new System.Drawing.Size(903, 550);
+            this.Controls.Add(this.Barreoblique);
+            this.Controls.Add(this.tbControl);
+            this.Controls.Add(this.tbFolder);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.cbPath);
             this.Controls.Add(this.cbDrive);
-            this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.gbFullScreen);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.cbOpen);
@@ -369,7 +356,6 @@
             this.mnViewer.ResumeLayout(false);
             this.mnViewer.PerformLayout();
             this.gbFullScreen.ResumeLayout(false);
-            this.metroTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -392,13 +378,14 @@
         private MetroFramework.Controls.MetroButton btConfig;
         private MetroFramework.Controls.MetroButton btnStop;
         private MetroFramework.Controls.MetroButton btnPause;
-        private MetroFramework.Controls.MetroTabControl metroTabControl1;
-        private MetroFramework.Controls.MetroTabPage tbControl;
-        private MetroFramework.Controls.MetroTabPage tbFolder;
+
         private System.Windows.Forms.ComboBox cbDrive;
         private System.Windows.Forms.ComboBox cbPath;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.Panel tbControl;
+        private System.Windows.Forms.Panel tbFolder;
+        private System.Windows.Forms.Label Barreoblique;
     }
 }
 

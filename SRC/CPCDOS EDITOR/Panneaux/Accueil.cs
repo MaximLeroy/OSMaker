@@ -79,12 +79,12 @@ namespace OSMaker.Panneaux
 
             try
             {
-                var dlg = new FolderBrowserDialog();
+                var dlg = new   FileFolderDialog();
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    Home.m_solutionExplorer.txtDirectory.Text = dlg.SelectedPath;
+                    Home.m_solutionExplorer.txtDirectory.Text = dlg.SelectedPath + "\\";
                     Home.m_solutionExplorer._tv.Nodes.Clear();
-                   Home.m_solutionExplorer.LoadDirectory(Home.m_solutionExplorer.txtDirectory.Text);
+                    Home.m_solutionExplorer.LoadDirectory(Home.m_solutionExplorer.txtDirectory.Text);
                     Home.m_solutionExplorer.txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
                 }
             }
@@ -92,6 +92,13 @@ namespace OSMaker.Panneaux
             {
 
             }
+        }
+
+        private void metroLink2_Click(object sender, EventArgs e)
+        {
+            FileFolderDialog fileFolderDialog = new FileFolderDialog();
+            fileFolderDialog.ShowDialog();
+           
         }
     }
 }

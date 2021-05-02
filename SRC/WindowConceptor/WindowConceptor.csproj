@@ -1,0 +1,1213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DEC94EB-3272-4D5C-B55A-0D2FC2947F1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowConceptor</RootNamespace>
+    <AssemblyName>WindowConceptor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AIMS.Docking">
+      <HintPath>..\DLL\Autres\AIMS.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\DLL\FastColoredTextBox\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphLibrary">
+      <HintPath>..\DLL\Autres\GraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\DLL\Theme_MetroUI1.4\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\DLL\Theme_MetroUI1.4\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\DLL\Theme_MetroUI1.4\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NgenInstaller">
+      <HintPath>..\DLL\Autres\NgenInstaller.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ToolWindows">
+      <HintPath>..\DLL\Autres\ToolWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2003">
+      <HintPath>..\DLL\Theme_DockPanel\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2005">
+      <HintPath>..\DLL\Theme_DockPanel\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading">
+      <HintPath>..\DLL\Theme_DockPanel\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2012">
+      <HintPath>..\DLL\Theme_DockPanel\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2013">
+      <HintPath>..\DLL\Theme_DockPanel\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015">
+      <HintPath>..\DLL\Theme_DockPanel\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="WinFormsUI">
+      <HintPath>..\DLL\Theme_DockPanel\WinFormsUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conceptor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conceptor.Designer.cs">
+      <DependentUpon>Conceptor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentC.Designer.cs">
+      <DependentUpon>DocumentC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Host\DesignerSerializationService.cs" />
+    <Compile Include="Host\HostControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Host\HostControl.Designer.cs">
+      <DependentUpon>HostControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Host\HostSurface.cs" />
+    <Compile Include="Host\HostSurfaceManager.cs" />
+    <Compile Include="Host\MenuCommandServiceImpl.cs" />
+    <Compile Include="Host\MyRootDesigner.cs" />
+    <Compile Include="Host\MyTopLevelComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Host\NameCreationService.cs" />
+    <Compile Include="Host\RandomUtil.cs" />
+    <Compile Include="Host\UndoEngineImpl.cs" />
+    <Compile Include="Loader\OSMakerLoader.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Conceptor.resx">
+      <DependentUpon>Conceptor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentC.resx">
+      <DependentUpon>DocumentC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Host\HostControl.resx">
+      <DependentUpon>HostControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\305_Close_16x16_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\305_Close_32x32_72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62872bookmarktabs_109236 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62872bookmarktabs_109236.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62872bookmarktabs_109236add %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62872bookmarktabs_109236add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62872bookmarktabs_109236remove %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62872bookmarktabs_109236remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62872bookmarktabs_1092361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62872bookmarktabs_1092362.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About_Box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About_Box_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Activer_SZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Activer_Sz_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualiser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualiser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_ctrl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_icon-icons.com_74429 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_icon-icons.com_74429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_icon-icons.com_744291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjustHeight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjustHeightAndWeight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjustToGrid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjustWeight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsBottomHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsCenteredHorizontalHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsCenteredVerticalHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsLeftHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsRightHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsTopHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignToGridHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignToGridHS_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left_15601%281%29 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left_15601%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right_15600 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right_15600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrows - Copie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrows%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward0_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward0_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bases_de_donnees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boite a outils.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark--plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bouton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bouton2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakpoint_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakpoint_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakpoint_delete_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakpoint_delete_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakpoint_disabled_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breakpoint_disabled_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BringForward_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BringtoFront_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BringToFrontHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bye.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bye1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C_File_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C_File_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cblmk-px9wh-002.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterHorizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterHorizontally_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterVertically_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class_libraries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class_libraries1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_red_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code_cpc_file %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code_cpc_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code_cpc_file1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\code_cpc_file2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CodeDefinitionWindow_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codingbrowser_102152 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codingbrowser_102152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codingbrowser_1021521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\codingbrowser_1021522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colors_Within_by_giannisgx89 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_paste_document_file_1557 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_paste_document_file_1557.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_paste_documents_1580 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_paste_documents_1580.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_icon-icons.com_73697 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut_icon-icons.com_73697.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_mysql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_oracle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_sql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataContainer_MoveNextHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Debogguer_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Debugger_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Debugger_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Debugger_Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Debugger_Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteAzureResource_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteAzureResource_16x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteAzureResource_16x2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dna1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DockPanel.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-padding-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-padding-top1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\effacer_tout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemsynchronizing_93485.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EventAdded_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Executer_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Executer_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explorateur de solutions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exporter_VS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exporter_VS_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feedback_Bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback_big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feedback_Good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feedback_Ideas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fichier BMP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fichier Code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fichier Fenetre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fichier Inconnu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fichier Statistiques.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fichier Texte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-explorer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-style-circle-redo_icon-icons.com_66947%281%29 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-style-circle-redo_icon-icons.com_66947%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-style-circle-undo_icon-icons.com_66949%281%29 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flat-style-circle-undo_icon-icons.com_66949%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderBrowserDialogControl_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderInformation_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fonction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fonction_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format_textbox_icon_137574.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormatDocument_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generer_Obfuscation_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generer_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gest_var.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestionnaire_plugins_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestionnaire_plugins_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconContainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categorize-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagebox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagebox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagebox2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IUG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer--minus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer--plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\light16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightning1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightning2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_dotted_icon_125232 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_dotted_icon_125232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_dotted_icon_1252321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_dotted_icon_1252322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_dotted_icon_1252323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LockCyan_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logocpcdos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifier_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifier_action_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifyvarBIG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewFile_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nouveau Projet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nouveau Projet_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nouveau_dossier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nouveau_Fichier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nouveau_Fichier_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nouvelle_bases_de_donnees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nouvelle_bases_de_donnees_existante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nouvelle_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openfolderpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openfolderpng1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ordre_Generation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordre_tabulation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSM ICON 128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSM_LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSM_NEW_Project6868.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSM_OS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSM_OS3232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSM_OS32321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSMaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSMaker.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ouvrir Projet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ouvrir Projet_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_de_demarrage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_de_demarrage_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageLayoutLarge_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageLayoutLarge_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parametre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Partner_Microsoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Partner_MySql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Partner_Sql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_sma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presse_papiers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_before.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_before_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_fast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_fast_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_text_10868 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_text_10868.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Project_Application_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Project_DLL_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Project_Icon 32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Propriété.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProtectFormHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reduire_Projet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reduire_Projet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReflectionImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReflectionImage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair-tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rolleyes.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rolleyes1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_37110 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_37110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_371101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_371102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_all_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save6868.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll_opened_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectAll_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendToBackHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smile_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sortie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceEqual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strawberry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabulation %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabulation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabulation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabulation2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabulation3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabulation4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textebloc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textebox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsure.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsure1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\var_ajouter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\var_modifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\var_supprimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VB_File_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VB_File_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Visual_Studio_2010_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vocale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vocale_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Voice_Progress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\where-to-vote_117295 %28Copier%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\where-to-vote_117295.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOut_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomReset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomReset_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CPCDOS EDITOR\OSMaker.csproj">
+      <Project>{bebfa983-a7ca-0976-3410-eecb70232d22}</Project>
+      <Name>OSMaker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolBox\ToolBox.vbproj">
+      <Project>{18fe5640-9031-469a-be67-9039735d500a}</Project>
+      <Name>ToolBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinToCpcDosCplus\WinToCpcDosCplus.vbproj">
+      <Project>{bca0393d-06c8-4959-8bf5-bf066cad56a6}</Project>
+      <Name>WinToCpcDosCplus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -39,6 +39,23 @@ namespace OSMaker.Host
                 new DesignerSerializationService(this.ServiceContainer));
             this.AddService(typeof(ComponentSerializationService),
                 new CodeDomComponentSerializationService(this.ServiceContainer));
+            // AJOUT : UndoEngine
+            UndoEngine undoEngine = new UndoEngineImpl(this.ServiceContainer);
+
+            //- enable the UndoEngine
+            undoEngine.Enabled = true;
+            if (undoEngine != null)
+            {
+                //- the UndoEngine is ready to be replaced
+                this.ServiceContainer.RemoveService(typeof(UndoEngine), false);
+                this.ServiceContainer.AddService(typeof(UndoEngine), undoEngine);
+                Menu = new MenuCommandServiceImpl(this.ServiceContainer);
+                Menu.Designer = this;
+                ServiceContainer.AddService(typeof(System.ComponentModel.Design.IMenuCommandService), Menu);
+                Menu.AddCommand(new MenuCommand(new EventHandler(this.ExecuteUndo), StandardCommands.Undo));
+                Menu.AddCommand(new MenuCommand(new EventHandler(this.ExecuteRedo), StandardCommands.Redo));
+
+            }
         }
 
         public HostSurface(IServiceProvider parentProvider) : base(parentProvider)
@@ -46,6 +63,8 @@ namespace OSMaker.Host
             Menu = new MenuCommandServiceImpl(this.ServiceContainer);
             Menu.Designer = this;
             ServiceContainer.AddService(typeof(System.ComponentModel.Design.IMenuCommandService), Menu);
+            Menu.AddCommand(new MenuCommand(new EventHandler(this.ExecuteUndo), StandardCommands.Undo));
+            Menu.AddCommand(new MenuCommand(new EventHandler(this.ExecuteRedo), StandardCommands.Redo));
             // idem  correction
             //  this.AddService(typeof(IMenuCommandService), new MenuCommandService(this.ServiceContainer));
             // Ajout : les 2 lignes de code suivantes. 
@@ -53,6 +72,7 @@ namespace OSMaker.Host
                 new DesignerSerializationService(this.ServiceContainer));
             this.AddService(typeof(ComponentSerializationService),
                 new CodeDomComponentSerializationService(this.ServiceContainer));
+            this.AddService(typeof(UndoEngine), new UndoEngineImpl(this.ServiceContainer));
         }
 
         internal void Initialize()
@@ -119,6 +139,29 @@ namespace OSMaker.Host
         /// <summary>
         /// When the selection changes this sets the PropertyGrid's selected component
         /// </summary>
+        /// 
+        // ICI les EVENT HANDLERS
+        private void ExecuteUndo(object sender, EventArgs e)
+        {
+
+            UndoEngineImpl undoEngine = this.GetService(typeof(UndoEngine)) as UndoEngineImpl;
+
+            if (undoEngine != null)
+
+                undoEngine.DoUndo();
+
+        }
+
+        private void ExecuteRedo(object sender, EventArgs e)
+        {
+
+            UndoEngineImpl undoEngine = this.GetService(typeof(UndoEngine)) as UndoEngineImpl;
+
+            if (undoEngine != null)
+
+                undoEngine.DoRedo();
+
+        }
         private void selectionService_SelectionChanged(object sender, EventArgs e)
         {
             if (_selectionService is object)

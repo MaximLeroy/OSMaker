@@ -39,6 +39,8 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +63,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(95, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 45);
+            this.label1.Size = new System.Drawing.Size(165, 43);
             this.label1.TabIndex = 19;
             this.label1.Text = "OSMaker";
             // 
@@ -87,7 +89,7 @@
             this.metroLink3.Size = new System.Drawing.Size(286, 23);
             this.metroLink3.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLink3.TabIndex = 21;
-            this.metroLink3.Text = "     Trouver de l\'aide";
+            this.metroLink3.Text = "     Find help";
             this.metroLink3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLink3.UseCustomBackColor = true;
@@ -115,12 +117,13 @@
             this.metroLink2.Size = new System.Drawing.Size(286, 23);
             this.metroLink2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLink2.TabIndex = 17;
-            this.metroLink2.Text = "     Créer un nouvel OS";
+            this.metroLink2.Text = "     Create a new OS";
             this.metroLink2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink2.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLink2.UseCustomBackColor = true;
             this.metroLink2.UseSelectable = true;
             this.metroLink2.UseStyleColors = true;
+            this.metroLink2.Click += new System.EventHandler(this.metroLink2_Click);
             // 
             // metroLink1
             // 
@@ -129,10 +132,10 @@
             this.metroLink1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink1.Location = new System.Drawing.Point(22, 155);
             this.metroLink1.Name = "metroLink1";
-            this.metroLink1.Size = new System.Drawing.Size(286, 23);
+            this.metroLink1.Size = new System.Drawing.Size(348, 23);
             this.metroLink1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLink1.TabIndex = 16;
-            this.metroLink1.Text = "     Choisir le dossier contenant mon OS";
+            this.metroLink1.Text = "     Choose the location of my OS";
             this.metroLink1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLink1.UseCustomBackColor = true;
@@ -147,9 +150,9 @@
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel1.Location = new System.Drawing.Point(22, 117);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(155, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(84, 25);
             this.metroLabel1.TabIndex = 22;
-            this.metroLabel1.Text = "Pour commencer";
+            this.metroLabel1.Text = "To begin";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel1.UseCustomBackColor = true;
             // 
@@ -162,7 +165,7 @@
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(68, 25);
             this.metroLabel2.TabIndex = 23;
-            this.metroLabel2.Text = "Récent";
+            this.metroLabel2.Text = "Recent";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel2.UseCustomBackColor = true;
             // 
@@ -173,9 +176,9 @@
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel3.Location = new System.Drawing.Point(22, 290);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(50, 25);
+            this.metroLabel3.Size = new System.Drawing.Size(51, 25);
             this.metroLabel3.TabIndex = 24;
-            this.metroLabel3.Text = "Aide";
+            this.metroLabel3.Text = "Help";
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel3.UseCustomBackColor = true;
             // 
@@ -192,12 +195,32 @@
             this.metroComboBox1.UseCustomBackColor = true;
             this.metroComboBox1.UseSelectable = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(430, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(12, 17);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "\\";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(590, 217);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.metroComboBox1);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
@@ -210,7 +233,7 @@
             this.Controls.Add(this.metroLink1);
             this.Controls.Add(this.Label4);
             this.Name = "Accueil";
-            this.Text = "Accueil";
+            this.Text = "Welcome";
             this.Load += new System.EventHandler(this.Accueil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -230,5 +253,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        public System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

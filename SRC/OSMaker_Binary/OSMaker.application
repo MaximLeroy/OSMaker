@@ -4,17 +4,17 @@
   <description asmv2:publisher="HP Inc." asmv2:product="OSMaker" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="OSMaker.exe.manifest" size="21662">
+    <dependentAssembly dependencyType="install" codebase="OSMaker.exe.manifest" size="22456">
       <assemblyIdentity name="OSMaker.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/GEzWn86GPpcuI+zHJvfJ7rXy8fKNDwpwQIf2VqZW8g=</dsig:DigestValue>
+        <dsig:DigestValue>MP7+N39n7VHLlLTWgJLVL5XtejD2dS7RRtpSOf+rWfw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

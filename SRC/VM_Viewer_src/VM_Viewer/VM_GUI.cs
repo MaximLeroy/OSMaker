@@ -44,8 +44,9 @@ namespace VM_Viewer {
 
         public VM_GUI() {
             InitializeComponent();
-           // cbPath.Text = sFilePath;
-            
+           
+            // cbPath.Text = sFilePath;
+
         }
 
         private void fSetBtnLauch(string _sText)
@@ -446,7 +447,7 @@ namespace VM_Viewer {
 
           Point rtStartPos;
           Size rtStartSize;
-             int nTtitleHeight=0;
+          int nTtitleHeight=0;
          private void VM_GUI_Load(object sender, EventArgs e) {
              ///////Ini State///
              mnViewer.ForeColor = Color.WhiteSmoke; 
@@ -992,7 +993,7 @@ namespace VM_Viewer {
    
                   //  WinApi.ShowWindow(nFolderHandle, LauchTool.SW_MAXIMIZE);
                     WinApi.ShowWindow(nFolderHandle, LauchTool.SW_NORMAL);
-                    metroTabControl1.SelectedIndex = 2;
+                  
                     ResizeConsole(tbFolder.Handle, nFolderHandle,0, tbControl, nTtitleHeight);
                     Thread.Sleep(100);
                     WinApi.ShowWindow(nFolderHandle, WinApi.SW_SHOW);
@@ -1076,7 +1077,7 @@ namespace VM_Viewer {
                    fOut(null, "Close Location: " +sCloseLocation);
                 //   fOut(null, "sMountDirectory: " +sMountDirectory.Replace('\\', '/'));
                     oFolderWindow.Quit();
-                    metroTabControl1.SelectedIndex = 1 ;
+                    
                 }
                
               //  btnEdit.Text = "Edit Drive";
@@ -1097,47 +1098,7 @@ namespace VM_Viewer {
 
         private void cbPath_TextChanged(object sender, EventArgs e)
         {
-            string _sLastItem = cbDrive.Text;
-            cbDrive.Items.Clear();
-            cbDrive.Text = "";
-            try {
-           string _sDir = Path.GetDirectoryName(  cbPath.Text) ;
-            if (Directory.Exists(_sDir))
-            {
-                int _nIndex = 0;
-                int _nFoundIndex = 0;
-                foreach (string _sFile in Directory.GetFiles(_sDir, "*.*", SearchOption.TopDirectoryOnly))  {
-                 
-                //string supportedExtensions = "*.vmdk,*.vhd,*.vdi,*.img,*.ima,*.raw,*.vfd";
-               // foreach (string _sFile in Directory.GetFiles(_sDir, "*.*", SearchOption.AllDirectories).Where(s => supportedExtensions.Contains(Path.GetExtension(s).ToLower()))) {
-                   string _sExtention = Str.fGetExtention(_sFile);
-                   switch(_sExtention){
-                            case "vmdk":
-                            case "vhd":
-                            case "vdi":
-                            case "img":
-                            case "raw":
-                            case "vfd":
-                                
-                            cbDrive.Items.Add(_sFile);
-                            if (_sLastItem == _sFile)
-                            {
-                                _nFoundIndex = _nIndex;
-                            }
-                            _nIndex++;
-
-                         break;
-                    }
-                }
-                if (cbDrive.Items.Count > 0)
-                {
-                    cbDrive.SelectedIndex = _nFoundIndex;
-                }
-            }
-            }catch(Exception ex)
-            {
-
-            }
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -1200,7 +1161,7 @@ namespace VM_Viewer {
                 tbControl.Location = new Point(rtStartPos.X, rtStartPos.Y          - _nSize);
             }
         }
-
+        
         private void tbControl_SelectedIndexChanged(object sender, EventArgs e)
         {
               ResizeConsole(tbFolder.Handle, nFolderHandle,0, tbControl, nTtitleHeight);
@@ -1239,7 +1200,7 @@ namespace VM_Viewer {
         {
             fUpdateRtState();
         }
-
+        public static string drivepath = "";
         private void metroButton2_Click_1(object sender, EventArgs e)
         {
 
@@ -1248,6 +1209,7 @@ namespace VM_Viewer {
             {
 
                 string _sPath = cbDrive.Text;
+                drivepath = cbDrive.Text;
 
                 if (File.Exists(_sPath))
                 {
@@ -1258,6 +1220,7 @@ namespace VM_Viewer {
 
                         //  btPause_Click(null,null);
                         string _sDirectory = Path.GetDirectoryName(_sPath) + "\\" + Path.GetFileNameWithoutExtension(_sPath) + "_Mount";
+                        drivepath = _sDirectory;
                         if (!Directory.Exists(_sDirectory))
                         {
                             Directory.CreateDirectory(_sDirectory);
@@ -1287,6 +1250,7 @@ namespace VM_Viewer {
                                            }*/
                                         _nCount++;
                                         _sNewPath = _sDirectory + "_" + _nCount.ToString();
+                                        drivepath = _sNewPath;
                                     } while (Directory.Exists(_sNewPath));
 
                                 }
@@ -1300,6 +1264,7 @@ namespace VM_Viewer {
                                 }
 
                                 _sDirectory = _sNewPath;
+                                drivepath = _sNewPath;
                                 Directory.CreateDirectory(_sDirectory);
                             }
                         }
@@ -1312,6 +1277,7 @@ namespace VM_Viewer {
 
 
                         sMountDirectory = _sDirectory;
+                        drivepath = _sDirectory;
                         oLoadedDrive = oLDrive;
                         fOut(null, "Mount[DiscUtilsDevio]: " + sMountDirectory);
                         // oLauch.bRunInThread = false;
@@ -1434,5 +1400,56 @@ namespace VM_Viewer {
         {
 
         }
+
+        private void cbPath_TextChanged_1(object sender, EventArgs e)
+        {
+            string _sLastItem = cbDrive.Text;
+            cbDrive.Items.Clear();
+            cbDrive.Text = "";
+            try
+            {
+                string _sDir = Path.GetDirectoryName(cbPath.Text);
+                if (Directory.Exists(_sDir))
+                {
+                    int _nIndex = 0;
+                    int _nFoundIndex = 0;
+                    foreach (string _sFile in Directory.GetFiles(_sDir, "*.*", SearchOption.TopDirectoryOnly))
+                    {
+
+                        //string supportedExtensions = "*.vmdk,*.vhd,*.vdi,*.img,*.ima,*.raw,*.vfd";
+                        // foreach (string _sFile in Directory.GetFiles(_sDir, "*.*", SearchOption.AllDirectories).Where(s => supportedExtensions.Contains(Path.GetExtension(s).ToLower()))) {
+                        string _sExtention = Str.fGetExtention(_sFile);
+                        switch (_sExtention)
+                        {
+                            case "vmdk":
+                            case "vhd":
+                            case "vdi":
+                            case "img":
+                            case "raw":
+                            case "vfd":
+
+                                cbDrive.Items.Add(_sFile);
+                                if (_sLastItem == _sFile)
+                                {
+                                    _nFoundIndex = _nIndex;
+                                }
+                                _nIndex++;
+
+                                break;
+                        }
+                    }
+                    if (cbDrive.Items.Count > 0)
+                    {
+                        cbDrive.SelectedIndex = _nFoundIndex;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+       // ResizeConsole(tbFolder.Handle, nFolderHandle, 0, tbControl, nTtitleHeight);
+      
     }
 }
