@@ -979,6 +979,26 @@ namespace OSMaker.Panneaux
         {
             filepath = metroTextBox1.Text;
         }
+
+        private void metroButton15_Click(object sender, EventArgs e)
+        {
+            if (panel4.Visible == false)
+            {
+                panel4.Visible = true;
+            }
+            else
+                panel4.Visible = false;
+        }
+
+        private void metroButton17_Click(object sender, EventArgs e)
+        {
+            if (panel3.Visible == false)
+            {
+                panel3.Visible = true;
+            }
+            else
+                panel3.Visible = false;
+        }
     }
 
 }

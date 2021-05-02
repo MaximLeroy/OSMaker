@@ -57,6 +57,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbFullScreen.SuspendLayout();
             this.mnViewer.SuspendLayout();
             this.SuspendLayout();
@@ -163,7 +164,7 @@
             this.gbFullScreen.HorizontalScrollbarBarColor = true;
             this.gbFullScreen.HorizontalScrollbarHighlightOnWheel = false;
             this.gbFullScreen.HorizontalScrollbarSize = 10;
-            this.gbFullScreen.Location = new System.Drawing.Point(103, 356);
+            this.gbFullScreen.Location = new System.Drawing.Point(101, 390);
             this.gbFullScreen.Name = "gbFullScreen";
             this.gbFullScreen.Size = new System.Drawing.Size(483, 100);
             this.gbFullScreen.TabIndex = 47;
@@ -384,12 +385,24 @@
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(100, 353);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(416, 34);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "It is not recommended to work directly in the virtual machine files.\r\nSave your w" +
+    "ork in a safe place before.";
+            // 
             // VM_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1283, 581);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.progressBar1);
@@ -452,5 +465,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroButton metroButton2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -73,10 +73,10 @@ namespace OSMaker.Host
             // HostControl
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "HostControl";
             this.Size = new System.Drawing.Size(484, 346);
             this.Load += new System.EventHandler(this.HostControl_Load_1);
-            
             this.ContextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 

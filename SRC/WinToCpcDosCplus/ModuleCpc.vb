@@ -156,8 +156,18 @@ Public Module ModuleCpcDosCplus
                             WriteNodeProperty(item, sbuilder)
                         Next
                         sbuilder.AppendLine("Create/")
-                        sbuilder.AppendLine(CpcDebutToFins.Values(6))
-                End Select
+                    sbuilder.AppendLine(CpcDebutToFins.Values(6))
+                Case WinToCpcControls.Keys(7)
+                    sbuilder.Append(WinToCpcControls.Values(7))
+                    sbuilder.Append(" " + names(0))
+                    sbuilder.AppendLine()
+                    Dim childrops As XmlNodeList = currentNode.SelectNodes("Property")
+                    For Each item As XmlNode In childrops
+                        WriteNodeProperty(item, sbuilder)
+                    Next
+                    sbuilder.AppendLine("Create/")
+                    sbuilder.AppendLine(CpcDebutToFins.Values(7))
+            End Select
                 sbuilder.AppendLine()
                 For Each itemNode In currentNode.ChildNodes
                     WriteNodeObject(itemNode, sbuilder) 'appel recurif car XML genere en fait un tree
@@ -181,7 +191,10 @@ Public Module ModuleCpcDosCplus
 
 
         If name = "Text" Then
+
             sbuilder.AppendLine("   .Text" + "         " + " = """ + propertyValues(0) + """")
+
+
 
         ElseIf name = "HANDLEFENETRE" Then
             HandletextS = propertyValues(0)
@@ -243,122 +256,128 @@ Public Module ModuleCpcDosCplus
             sbuilder.AppendLine("   .Handle" + "       " + " = """ + "%" & HandletextS & "%" + """")
 
         ElseIf name = "Location" Then
-                sbuilder.Append("   .PX" + "           " + " = """ + propertyValues(0).Trim + """")
-                sbuilder.AppendLine()
-                sbuilder.AppendLine("   .PY" + "           " + " = """ + propertyValues(1).Trim + """")
-            ElseIf name = "ClientSize" Or name = "Size" Then
-                sbuilder.Append("   .SX" + "           " + " = """ + propertyValues(0).Trim + """")
-                sbuilder.AppendLine()
-                sbuilder.AppendLine("   .SY" + "           " + " = """ + propertyValues(1).Trim + """")
+            sbuilder.Append("   .PX" + "           " + " = """ + propertyValues(0).Trim + """")
+            sbuilder.AppendLine()
+            sbuilder.AppendLine("   .PY" + "           " + " = """ + propertyValues(1).Trim + """")
+        ElseIf name = "ClientSize" Or name = "Size" Then
+            sbuilder.Append("   .SX" + "           " + " = """ + propertyValues(0).Trim + """")
+            sbuilder.AppendLine()
+            sbuilder.AppendLine("   .SY" + "           " + " = """ + propertyValues(1).Trim + """")
 
-            ElseIf name = "BackColor" Then
-                Dim r As String = "0"
-                Dim g As String = "0"
-                Dim b As String = "0"
-                Dim colorname As Color
-                Dim rgb As String()
+        ElseIf name = "BackColor" Then
+            Dim r As String = "0"
+            Dim g As String = "0"
+            Dim b As String = "0"
+            Dim colorname As Color
+            Dim rgb As String()
+            Try
+                colorname = Color.FromName(propertyValues2)
+
+                r = colorname.R.ToString
+                g = colorname.G.ToString
+                b = colorname.B.ToString
+
+
+            Catch
+            End Try
+
+            If r = "0" Then
                 Try
-                    colorname = Color.FromName(propertyValues2)
-
-                    r = colorname.R.ToString
-                    g = colorname.G.ToString
-                    b = colorname.B.ToString
-
-
+                    rgb = propertyValues2.Trim.Replace(" ", String.Empty).Split(",")
+                    r = Integer.Parse(rgb(0))
+                    g = Integer.Parse(rgb(1))
+                    b = Integer.Parse(rgb(2))
                 Catch
                 End Try
+            End If
 
-                If r = "0" Then
-                    Try
-                        rgb = propertyValues2.Trim.Replace(" ", String.Empty).Split(",")
-                        r = Integer.Parse(rgb(0))
-                        g = Integer.Parse(rgb(1))
-                        b = Integer.Parse(rgb(2))
-                    Catch
-                    End Try
-                End If
-
-                Dim red As Integer = String.Format("{0:D3}", r)
-                Dim green As Integer = String.Format("{0:D3}", g)
-                Dim blue As Integer = String.Format("{0:D3}", b)
+            Dim red As Integer = String.Format("{0:D3}", r)
+            Dim green As Integer = String.Format("{0:D3}", g)
+            Dim blue As Integer = String.Format("{0:D3}", b)
 
 
-                If propertyValues2 = Nothing Then
-                Else
-                    sbuilder.Append("   .BackColor" + "    " + " = """ + String.Format("{0:D3}", red) + "," + String.Format("{0:D3}", green) + "," + String.Format("{0:D3}", blue) + """")
-                    sbuilder.AppendLine()
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .BackColor" + "    " + " = """ + String.Format("{0:D3}", red) + "," + String.Format("{0:D3}", green) + "," + String.Format("{0:D3}", blue) + """")
+                sbuilder.AppendLine()
 
-                End If
+            End If
 
-            ElseIf name = "ForeColor" Then
-                Dim r As String = ""
-                Dim g As String = ""
-                Dim b As String = ""
-                Dim colorname As Color
-                Dim rgb As String()
+        ElseIf name = "ForeColor" Then
+            Dim r As String = ""
+            Dim g As String = ""
+            Dim b As String = ""
+            Dim colorname As Color
+            Dim rgb As String()
+            Try
+                colorname = Color.FromName(propertyValues2)
+
+                r = colorname.R.ToString
+                g = colorname.G.ToString
+                b = colorname.B.ToString
+
+
+            Catch
+            End Try
+
+            If r = "0" Then
                 Try
-                    colorname = Color.FromName(propertyValues2)
-
-                    r = colorname.R.ToString
-                    g = colorname.G.ToString
-                    b = colorname.B.ToString
-
-
+                    rgb = propertyValues2.Trim.Replace(" ", String.Empty).Split(",")
+                    r = Integer.Parse(rgb(0))
+                    g = Integer.Parse(rgb(1))
+                    b = Integer.Parse(rgb(2))
                 Catch
                 End Try
+            End If
 
-                If r = "0" Then
-                    Try
-                        rgb = propertyValues2.Trim.Replace(" ", String.Empty).Split(",")
-                        r = Integer.Parse(rgb(0))
-                        g = Integer.Parse(rgb(1))
-                        b = Integer.Parse(rgb(2))
-                    Catch
-                    End Try
-                End If
-
-                Dim red As Integer = String.Format("{0:D3}", r)
-                Dim green As Integer = String.Format("{0:D3}", g)
-                Dim blue As Integer = String.Format("{0:D3}", b)
+            Dim red As Integer = String.Format("{0:D3}", r)
+            Dim green As Integer = String.Format("{0:D3}", g)
+            Dim blue As Integer = String.Format("{0:D3}", b)
 
 
-                If propertyValues2 = Nothing Then
-                Else
-                    sbuilder.Append("   .TextColor" + "    " + " = """ + String.Format("{0:D3}", red) + "," + String.Format("{0:D3}", green) + "," + String.Format("{0:D3}", blue) + """")
-                    sbuilder.AppendLine()
-                End If
-            ElseIf name = "Checked" Then
-                Dim valeur As String = If(propertyValues(0) = "True", "1", "0")
-                sbuilder.AppendLine("   .Value" + "        " + " = """ + valeur + """")
-            ElseIf name = "EVENT_PATH" Then
-                If propertyValues2 = Nothing Then
-                Else
-                    sbuilder.Append("   .Event" + "        " + " = """ + propertyValues2.Trim + """")
-                    sbuilder.AppendLine()
-                End If
-            ElseIf name = "IMGAUTO" Then
-                If propertyValues2 = Nothing Then
-                Else
-                    IMGAUTO1 = "IMGAUTO:" & propertyValues2
-                End If
-            ElseIf name = "COL" Then
-                If propertyValues2 = Nothing Then
-                Else
-                    COL1 = "COL:" & propertyValues2
-                End If
-            ElseIf name = "UPD" Then
-                If propertyValues2 = True Then
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .TextColor" + "    " + " = """ + String.Format("{0:D3}", red) + "," + String.Format("{0:D3}", green) + "," + String.Format("{0:D3}", blue) + """")
+                sbuilder.AppendLine()
+            End If
+        ElseIf name = "Checked" Then
+            Dim valeur As String = If(propertyValues(0) = "True", "1", "0")
+            sbuilder.AppendLine("   .Value" + "        " + " = """ + valeur + """")
+        ElseIf name = "EVENT_PATH" Then
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .Event" + "        " + " = """ + propertyValues2.Trim + """")
+                sbuilder.AppendLine()
+            End If
+        ElseIf name = "IMGAUTO" Then
+            If propertyValues2 = Nothing Then
+            Else
+                IMGAUTO1 = "IMGAUTO:" & propertyValues2
+            End If
+        ElseIf name = "COL" Then
+            If propertyValues2 = Nothing Then
+            Else
+                COL1 = "COL:" & propertyValues2
+            End If
+        ElseIf name = "UPD" Then
+            If propertyValues2 = True Then
 
-                    UPD1 = "UPD:1"
-                End If
+                UPD1 = "UPD:1"
+            End If
 
 
-            ElseIf name = "Image" Then
-                If propertyValues2 = Nothing Then
-                Else
-                    sbuilder.Append("   .Image" + "        " + " = """ + propertyValues2 + """")
-                    sbuilder.AppendLine()
-                End If
+        ElseIf name = "Image" Then
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .Image" + "        " + " = """ + propertyValues2 + """")
+                sbuilder.AppendLine()
+            End If
+        ElseIf name = "Value" Then
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .Value" + "        " + " = """ + propertyValues2 + """")
+                sbuilder.AppendLine()
+            End If
 
         End If
 

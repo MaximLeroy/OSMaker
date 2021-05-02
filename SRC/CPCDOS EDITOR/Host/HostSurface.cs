@@ -92,7 +92,8 @@ namespace OSMaker.Host
                     control = View as Control;
                     control.BackColor = Color.FromArgb(Conversions.ToInteger(Conversions.ToByte(30)), Conversions.ToInteger(Conversions.ToByte(30)), Conversions.ToInteger(Conversions.ToByte(30)));
                     control.Dock = DockStyle.Fill;
-                    ;
+                  control.Font = new Font("Consolas", 7.8f);
+                    
                     
                 }
                 else if (ReferenceEquals(hostType, typeof(UserControl)))

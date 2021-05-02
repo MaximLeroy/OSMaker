@@ -406,11 +406,12 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
         COL = System.Boolean.TrueString
         IMGAUTO = 0
         UPD1 = System.Boolean.TrueString
-
+        handle1 = Handle
         EVENT_PATH = ""
         CouleurFond = ""
         CouleurTexte = ""
         handle1 = "MonHandle"
+
     End Sub
 End Class
 
@@ -522,6 +523,7 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
         CouleurTexte = "250,100,100"
         MULTILINES = System.Boolean.FalseString
         Parameters = ""
+
     End Sub
 
 End Class
@@ -628,6 +630,7 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
         CouleurFond = "255,255,240"
         CouleurTexte = "000,000,000"
         Parameters = ""
+        Me.FlatStyle = FlatStyle.Flat
     End Sub
 
 End Class
@@ -975,6 +978,7 @@ Public Class Button : Inherits System.Windows.Forms.Button
         OPACITE = 255
         IMAGE = ""
         Parameters = ""
+        Me.FlatStyle = FlatStyle.Flat
     End Sub
 End Class
 

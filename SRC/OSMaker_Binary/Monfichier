@@ -7,12 +7,3 @@ Window/ Window1
 @#MonHandle Create/ 
 End/ Window
 
-TextBox/ TextBox1
-   .Handle        = "%MonHandle%"
-   .PX            = "153"
-   .PY            = "48"
-   .SX            = "100"
-   .SY            = "18"
-Create/
-End/ TextBox
-
