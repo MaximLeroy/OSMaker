@@ -685,13 +685,13 @@ namespace OSMaker.Panneaux
 
                         case ExplorerItemType.Bouton:
                             {
-                                e.Value = My.Resources.Resources.butt;
+                                e.Value = My.Resources.Resources.Button_16xBlack;
                                 break;
                             }
 
                         case ExplorerItemType.Checkbox:
                             {
-                                e.Value = My.Resources.Resources.check;
+                                e.Value = My.Resources.Resources.CheckBoxChecked_16xBlack;
                                 break;
                             }
 
@@ -715,19 +715,19 @@ namespace OSMaker.Panneaux
 
                         case ExplorerItemType.Textbox:
                             {
-                                e.Value = My.Resources.Resources.text;
+                                e.Value = My.Resources.Resources.TextBox_16xBlack;
                                 break;
                             }
 
                         case ExplorerItemType.Textbloc:
                             {
-                                e.Value = My.Resources.Resources.Label;
+                                e.Value = My.Resources.Resources.TextBlock_16xBlack;
                                 break;
                             }
 
                         case ExplorerItemType.Imagebox:
                             {
-                                e.Value = My.Resources.Resources.PIC;
+                                e.Value = My.Resources.Resources.Image_16xBlack;
                                 break;
                             }
 

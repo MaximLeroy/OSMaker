@@ -393,6 +393,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Button_16xBlack {
+            get {
+                object obj = ResourceManager.GetObject("Button_16xBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bye {
             get {
                 object obj = ResourceManager.GetObject("bye", resourceCulture);
@@ -456,6 +466,16 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap checkbox {
             get {
                 object obj = ResourceManager.GetObject("checkbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CheckBoxChecked_16xBlack {
+            get {
+                object obj = ResourceManager.GetObject("CheckBoxChecked_16xBlack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1153,6 +1173,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Image_16xBlack {
+            get {
+                object obj = ResourceManager.GetObject("Image_16xBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imagebox {
             get {
                 object obj = ResourceManager.GetObject("imagebox", resourceCulture);
@@ -1623,6 +1653,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ProgressBar_16xBlack {
+            get {
+                object obj = ResourceManager.GetObject("ProgressBar_16xBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Property_16x {
             get {
                 object obj = ResourceManager.GetObject("Property_16x", resourceCulture);
@@ -1956,6 +1996,26 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap text {
             get {
                 object obj = ResourceManager.GetObject("text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TextBlock_16xBlack {
+            get {
+                object obj = ResourceManager.GetObject("TextBlock_16xBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TextBox_16xBlack {
+            get {
+                object obj = ResourceManager.GetObject("TextBox_16xBlack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

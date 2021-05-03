@@ -819,6 +819,9 @@
     <Content Include="AIMS.Docking.dll" />
     <Content Include="Classes\OSMAKERR.xml" />
     <Content Include="OSM_LOGO.ico" />
+    <None Include="Resources\ProgressBar_16xBlack.png" />
+    <None Include="Resources\TextBlock_16xBlack.png" />
+    <None Include="Resources\TextBox_16xBlack.png" />
     <None Include="Resources\Redo_grey_16x.png" />
     <None Include="Resources\Undo_grey_16x.png" />
     <None Include="Resources\ReplaceAll_16x.png" />
@@ -856,6 +859,8 @@
     <None Include="Resources\Create_16x.png" />
     <None Include="Resources\CommentCode_16x1.png" />
     <None Include="Resources\CopyItem_16x.png" />
+    <None Include="Resources\Button_16xBlack.png" />
+    <None Include="Resources\CheckBoxChecked_16xBlack.png" />
     <Content Include="Resources\DockPanel.xml" />
     <None Include="Resources\logocpcdos.png" />
     <None Include="Resources\LockCyan_16x.png" />
@@ -874,6 +879,7 @@
     <None Include="Resources\EndPoint_16x.png" />
     <None Include="Resources\FindInFile_16x.png" />
     <None Include="Resources\logocpcdosblack.png" />
+    <None Include="Resources\Image_16xBlack.png" />
     <Content Include="Resources\OSMaker.xml" />
     <None Include="Resources\repair-tools.png" />
     <None Include="Resources\file-explorer.png" />

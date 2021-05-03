@@ -369,6 +369,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.Button_16xBlack">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.bye">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -400,6 +405,11 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.checkbox">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.CheckBoxChecked_16xBlack">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -749,6 +759,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.Image_16xBlack">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.imagebox">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -984,6 +999,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.ProgressBar_16xBlack">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.Property_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -1150,6 +1170,16 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.text">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.TextBlock_16xBlack">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.TextBox_16xBlack">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>

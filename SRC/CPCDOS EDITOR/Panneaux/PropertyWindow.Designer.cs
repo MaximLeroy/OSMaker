@@ -104,7 +104,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.propertyGrid);
             this.Name = "PropertyWindow";
-            this.Text = "Propriétés";
+            this.Text = "Property";
             this.Load += new System.EventHandler(this.PropertyWindow_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -208,9 +208,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::OSMaker.My.Resources.Resources.logocpcdosblack;
-            this.pictureBox1.Location = new System.Drawing.Point(264, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(228, 68);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 28);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;

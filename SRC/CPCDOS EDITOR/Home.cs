@@ -193,7 +193,7 @@ namespace OSMaker
 
             m_toolbox.Show(dockPanel, DockState.DockLeftAutoHide);
             m_sortie.Show(dockPanel, DockState.DockBottomAutoHide);
-            m_sortie.Text = "Sortie";
+            m_sortie.Text = "Output";
 
 
            
