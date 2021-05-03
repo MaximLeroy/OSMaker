@@ -255,9 +255,9 @@ namespace OSMaker
             exporter.Text = text;
             return exporter;
         }
-        private EditeurCCplus CreateNewConcepteur()
+        private IUGConceptor CreateNewConcepteur()
         {
-           EditeurCCplus Concepteurr = new EditeurCCplus();
+           IUGConceptor Concepteurr = new IUGConceptor();
 
             int count = 1;
             string text = $"Document{count}";
@@ -283,15 +283,7 @@ namespace OSMaker
             return MonAccueil;
         }
         public static string fileName = null;
-        private OuvrirConcepteur OuvrirConcepteur()
-        {
-            OuvrirConcepteur Concepteurr = new OuvrirConcepteur();
-
-
-          
-            // Concepteurr. = new Font("Microsoft Sans Serif", 7);
-            return Concepteurr;
-        }
+      
         // NOUVEAU DOCUMENT
         private Doc CreateNewDocument(string text)
         {
@@ -307,19 +299,14 @@ namespace OSMaker
             return exporter;
         }
         // NOUVELLE FENETRE
-        private EditeurCCplus CreateNewConcepteur(string text)
+        private IUGConceptor CreateNewConcepteur(string text)
         {
-            EditeurCCplus concepteurr = new EditeurCCplus();
+            IUGConceptor concepteurr = new IUGConceptor();
             concepteurr.Text = text;
             return concepteurr;
         }
         // OUVRIR FENETRE
-        private OuvrirConcepteur OuvrirConcepteur(string text)
-        {
-            OuvrirConcepteur concepteurr = new OuvrirConcepteur();
-            concepteurr.Text = text;
-            return concepteurr;
-        }
+       
         // TOUT FERMER
         private void CloseAllDocuments()
         {
@@ -607,7 +594,7 @@ namespace OSMaker
 
         private void menuItemTaskList_Click(object sender, EventArgs e)
         {
-           EditeurCCplus concepteur = CreateNewConcepteur();
+           IUGConceptor concepteur = CreateNewConcepteur();
             if (dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
             {
                 concepteur.MdiParent = this;
@@ -619,8 +606,8 @@ namespace OSMaker
 
         private void ouvrirUnDocumentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OuvrirConcepteur concepteur = new OuvrirConcepteur();
-            concepteur.Text = fileName;
+           // OuvrirConcepteur concepteur = new OuvrirConcepteur();
+            //concepteur.Text = fileName;
             // Open File Dialog
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.DefaultExt = "osm";
@@ -637,16 +624,16 @@ namespace OSMaker
             }
             else
             {
-                concepteur.Text = nomfichier;
-                concepteur.Font = new Font("Microsoft Sans Serif", 7);
+                //concepteur.Text = nomfichier;
+               // concepteur.Font = new Font("Microsoft Sans Serif", 7);
                 if (dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
                 {
-                    concepteur.MdiParent = this;
-                    concepteur.Show();
+                    //concepteur.MdiParent = this;
+                    //concepteur.Show();
                 }
                 else
                 {
-                    concepteur.Show(dockPanel);
+                    //concepteur.Show(dockPanel);
                 }
             }
         }
@@ -740,8 +727,8 @@ namespace OSMaker
 
         private void fichierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OuvrirConcepteur concepteur = new OuvrirConcepteur();
-            concepteur.Text = fileName;
+            //OuvrirConcepteur concepteur = new OuvrirConcepteur();
+            //concepteur.Text = fileName;
             // Open File Dialog
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.DefaultExt = "osm";
@@ -758,16 +745,16 @@ namespace OSMaker
             }
             else
             {
-                concepteur.Text = nomfichier;
-                concepteur.Font = new Font("Microsoft Sans Serif", 7);
+                //concepteur.Text = nomfichier;
+                //concepteur.Font = new Font("Microsoft Sans Serif", 7);
                 if (dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
                 {
-                    concepteur.MdiParent = this;
-                    concepteur.Show();
+                   // concepteur.MdiParent = this;
+                    //concepteur.Show();
                 }
                 else
                 {
-                    concepteur.Show(dockPanel);
+                   // concepteur.Show(dockPanel);
                 }
             }
         }

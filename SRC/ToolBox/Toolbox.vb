@@ -56,13 +56,13 @@ Namespace ToolboxLibrary
             Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
             Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
             Me.ImageList1.Images.SetKeyName(0, "pointeur.PNG")
-            Me.ImageList1.Images.SetKeyName(1, "butt.png")
-            Me.ImageList1.Images.SetKeyName(2, "check.png")
-            Me.ImageList1.Images.SetKeyName(3, "Label.PNG")
-            Me.ImageList1.Images.SetKeyName(4, "text.png")
-            Me.ImageList1.Images.SetKeyName(5, "PIC.png")
-            Me.ImageList1.Images.SetKeyName(6, "prog.png")
-            Me.ImageList1.Images.SetKeyName(7, "WIN.png")
+            Me.ImageList1.Images.SetKeyName(1, "Button_16xBlack.png")
+            Me.ImageList1.Images.SetKeyName(2, "CheckBoxChecked_16xBlack.png")
+            Me.ImageList1.Images.SetKeyName(3, "TextBlock_16xBlack.png")
+            Me.ImageList1.Images.SetKeyName(4, "TextBox_16xBlack.png")
+            Me.ImageList1.Images.SetKeyName(5, "Image_16xBlack.png")
+            Me.ImageList1.Images.SetKeyName(6, "ProgressBar_16xBlack.png")
+            Me.ImageList1.Images.SetKeyName(7, "WindowsFormBlue_16x.png")
             '
             'Toolbox
             '

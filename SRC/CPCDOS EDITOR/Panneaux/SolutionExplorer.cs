@@ -326,8 +326,15 @@ namespace OSMaker.Panneaux
             {
                 var CPCfiles = Directory.GetFiles(dir, "*.cpc");
                 var OSMfiles = Directory.GetFiles(dir, "*.osm");
-
-
+                var OVAfiles = Directory.GetFiles(dir, "*.ova");
+                var LOGfiles = Directory.GetFiles(dir, "*.log");
+                var LSTfiles = Directory.GetFiles(dir, "*.lst");
+                var TXTfiles = Directory.GetFiles(dir, "*.txt");
+                // Image files
+                var PNGfiles = Directory.GetFiles(dir, "*.png");
+                var JPGfiles = Directory.GetFiles(dir, "*.jpg");
+                var JPEGfiles = Directory.GetFiles(dir, "*.jpeg");
+                var BMPfiles = Directory.GetFiles(dir, "*.bmp");
                 // Loop through them to see files  
                 foreach (var CPCfile in CPCfiles)
                 {
@@ -343,6 +350,71 @@ namespace OSMaker.Panneaux
                     var tnode = td.Nodes.Add(fi.Name);
                     tnode.Tag = fi.FullName;
                     tnode.StateImageIndex = 4;
+
+                }
+                foreach (var OVAfile in OVAfiles)
+                {
+                    var fi = new FileInfo(OVAfile);
+                    var tnode = td.Nodes.Add(fi.Name);
+                    tnode.Tag = fi.FullName;
+                    tnode.StateImageIndex = 5;
+
+                }
+                foreach (var LOGfile in LOGfiles)
+                {
+                    var fi = new FileInfo(LOGfile);
+                    var tnode = td.Nodes.Add(fi.Name);
+                    tnode.Tag = fi.FullName;
+                    tnode.StateImageIndex = 6;
+
+                }
+                foreach (var LSTfile in LSTfiles)
+                {
+                    var fi = new FileInfo(LSTfile);
+                    var tnode = td.Nodes.Add(fi.Name);
+                    tnode.Tag = fi.FullName;
+                    tnode.StateImageIndex = 7;
+
+                }
+                foreach (var TXTfile in TXTfiles)
+                {
+                    var fi = new FileInfo(TXTfile);
+                    var tnode = td.Nodes.Add(fi.Name);
+                    tnode.Tag = fi.FullName;
+                    tnode.StateImageIndex = 8;
+
+                }
+                //Images files
+                foreach (var PNGfile in PNGfiles)
+                {
+                    var fi = new FileInfo(PNGfile);
+                    var tnode = td.Nodes.Add(fi.Name);
+                    tnode.Tag = fi.FullName;
+                    tnode.StateImageIndex = 9;
+
+                }
+                foreach (var JPGfile in JPGfiles)
+                {
+                    var fi = new FileInfo(JPGfile);
+                    var tnode = td.Nodes.Add(fi.Name);
+                    tnode.Tag = fi.FullName;
+                    tnode.StateImageIndex = 9;
+
+                }
+                foreach (var JPEGfile in JPEGfiles)
+                {
+                    var fi = new FileInfo(JPEGfile);
+                    var tnode = td.Nodes.Add(fi.Name);
+                    tnode.Tag = fi.FullName;
+                    tnode.StateImageIndex = 9;
+
+                }
+                foreach (var BMPfile in BMPfiles)
+                {
+                    var fi = new FileInfo(BMPfile);
+                    var tnode = td.Nodes.Add(fi.Name);
+                    tnode.Tag = fi.FullName;
+                    tnode.StateImageIndex = 9;
 
                 }
             }
@@ -476,23 +548,23 @@ namespace OSMaker.Panneaux
 
 
 
-                OuvrirConcepteur concepteur = new OuvrirConcepteur();
-                concepteur.Text = Home.fileName;
+                //OuvrirConcepteur concepteur = new OuvrirConcepteur();
+                //concepteur.Text = Home.fileName;
 
                 Home.fileName = fi.FullName;
                 string nomfichier = fi.Name;
                 string text = fi.Name;
 
-                concepteur.Text = nomfichier + " [Design]";
-                concepteur.Font = new Font("Microsoft Sans Serif", 7);
+                //concepteur.Text = nomfichier + " [Design]";
+                //concepteur.Font = new Font("Microsoft Sans Serif", 7);
                 if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
                 {
-                    concepteur.MdiParent = this;
-                    concepteur.Show();
+                   // concepteur.MdiParent = this;
+                   // concepteur.Show();
                 }
                 else
                 {
-                    concepteur.Show(Home.dockPanel);
+                    //concepteur.Show(Home.dockPanel);
                 }
 
             }
@@ -555,7 +627,7 @@ namespace OSMaker.Panneaux
                 
 
                 Home.fileName = fi.FullName;
-                EditeurCCplus concepteur = new EditeurCCplus();
+                IUGConceptor concepteur = new IUGConceptor();
                 concepteur.Text = Home.fileName;
                 string nomfichier = fi.Name;
                 string text = fi.Name;
@@ -575,15 +647,15 @@ namespace OSMaker.Panneaux
 
             }
         }
-        private EditeurCCplus CreateNewConcepteur(string text)
+        private IUGConceptor CreateNewConcepteur(string text)
         {
-            EditeurCCplus concepteurr = new EditeurCCplus();
+            IUGConceptor concepteurr = new IUGConceptor();
             concepteurr.Text = text;
             return concepteurr;
         }
-        private EditeurCCplus CreateNewConcepteur()
+        private IUGConceptor CreateNewConcepteur()
         {
-            EditeurCCplus Concepteurr = new EditeurCCplus();
+            IUGConceptor Concepteurr = new IUGConceptor();
 
             int count = 1;
             string text = $"IUG{count}";
@@ -645,7 +717,7 @@ namespace OSMaker.Panneaux
                 // PanelDockContainer will be used to host any controls. It provides automatic focus management so focused
                 // document tab appears bold
 
-                EditeurCCplus concepteur = CreateNewConcepteur();
+                IUGConceptor concepteur = CreateNewConcepteur();
                 if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
                 {
                     concepteur.MdiParent = this;

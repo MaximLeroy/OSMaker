@@ -46,7 +46,7 @@ namespace OSMaker.Host
             {
              
                 MenuCommandService menuCommandService = GetService(typeof(MenuCommandService)) as MenuCommandService;
-                menuCommandService = new Host.MenuCommandServiceImpl(EditeurCCplus._hostSurfaceManager);
+                menuCommandService = new Host.MenuCommandServiceImpl(IUGConceptor._hostSurfaceManager);
                 MenuCommand undoMenuCommand = menuCommandService.FindCommand(StandardCommands.Undo);
                 MenuCommand redoMenuCommand = menuCommandService.FindCommand(StandardCommands.Redo);
 

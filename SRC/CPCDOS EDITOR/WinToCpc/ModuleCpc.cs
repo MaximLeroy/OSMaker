@@ -45,8 +45,8 @@ namespace OSMaker.WinToCpc
         {
             string[] nameTypes = { };
             string[] names = { };
-            EditeurCCplus editeurC;
-            editeurC = new EditeurCCplus();
+            IUGConceptor editeurC;
+            editeurC = new IUGConceptor();
 
             if (currentNode.Name == "Object") // c'est un node Object i.e. un Control
                 nameTypes = currentNode.Attributes.GetNamedItem("type").Value.Split(new Char[] { ',' });
@@ -288,8 +288,8 @@ namespace OSMaker.WinToCpc
         // AJOUT => UN SAVEDIALOG
         private static string GetFileNameToSave()
         {
-            EditeurCCplus  editeurC;
-            editeurC = new EditeurCCplus();
+            IUGConceptor  editeurC;
+            editeurC = new IUGConceptor();
             string fileName = null;
             if (string.IsNullOrEmpty(editeurC.metroFichierCCPlus.Text))
             {

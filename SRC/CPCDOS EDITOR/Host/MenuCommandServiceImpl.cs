@@ -215,8 +215,8 @@ namespace OSMaker.Host
 
 
             // erreur sur Designer.View : conversion impossible de 'object' en system.windows.form.control
-            EditeurCCplus _editeur = new EditeurCCplus();
-               _editeur.metroContextMenu1.Show(EditeurCCplus.HostC, new Point(System.Windows.Forms.Control.MousePosition.X, System.Windows.Forms.Control.MousePosition.Y));
+            IUGConceptor _editeur = new IUGConceptor();
+               _editeur.metroContextMenu1.Show(IUGConceptor.HostC, new Point(System.Windows.Forms.Control.MousePosition.X, System.Windows.Forms.Control.MousePosition.Y));
             
         }
 

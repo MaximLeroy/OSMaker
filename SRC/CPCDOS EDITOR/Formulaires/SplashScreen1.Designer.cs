@@ -40,13 +40,13 @@ namespace OSMaker
             this.Label4 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Label4
@@ -84,16 +84,6 @@ namespace OSMaker
             this.Label2.Size = new System.Drawing.Size(163, 28);
             this.Label2.TabIndex = 10;
             this.Label2.Text = "For CPCDOS OSx";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::OSMaker.My.Resources.Resources.logocpcdos;
-            this.pictureBox2.Location = new System.Drawing.Point(571, 275);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(144, 125);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -135,11 +125,21 @@ namespace OSMaker
             this.label5.TabIndex = 14;
             this.label5.Text = "beta 0.3";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::OSMaker.My.Resources.Resources.logocpcdosblack;
+            this.pictureBox2.Location = new System.Drawing.Point(571, 275);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(144, 125);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
             // SplashScreen1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(735, 412);
             this.ControlBox = false;
@@ -158,8 +158,8 @@ namespace OSMaker
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.SplashScreen1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,9 +169,9 @@ namespace OSMaker
         internal Label Label1;
         internal Label Label2;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
         internal Label label3;
         private Timer timer1;
         internal Label label5;
+        private PictureBox pictureBox2;
     }
 }

@@ -854,6 +854,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.logocpcdosblack">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.lol">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -1468,23 +1473,6 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="F:OSMaker.Panneaux.Concepteur.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:OSMaker.Panneaux.Concepteur.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:OSMaker.Panneaux.Concepteur.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
         <member name="F:OSMaker.Panneaux.ExporterEnOsm.components">
             <summary>
             Required designer variable.
@@ -1502,6 +1490,23 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="F:OSMaker.Panneaux.IMGViewer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OSMaker.Panneaux.IMGViewer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OSMaker.Panneaux.IMGViewer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="F:OSMaker.Panneaux.OutputWindow.components">
             <summary>
             Required designer variable.
@@ -1514,23 +1519,6 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:OSMaker.Panneaux.OutputWindow.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="F:OSMaker.Panneaux.OuvrirConcepteur.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:OSMaker.Panneaux.OuvrirConcepteur.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:OSMaker.Panneaux.OuvrirConcepteur.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.

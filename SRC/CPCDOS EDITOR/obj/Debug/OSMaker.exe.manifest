@@ -187,14 +187,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="6287296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="6279104">
       <assemblyIdentity name="OSMaker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RuwQTtAUA5opgT2Su5yqdnIPH5kBOtff9RcpsORnO9o=</dsig:DigestValue>
+        <dsig:DigestValue>wzqNYcEZwot/gUtVq6TbwfGncUN29vp4YHhr1xacyuQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -211,14 +211,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToolBox.dll" size="43008">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToolBox.dll" size="45056">
       <assemblyIdentity name="ToolBox" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pEbNSVyf40LSXMVi3CSTrnZrQ6wsfRmoX2HMeyVIxH4=</dsig:DigestValue>
+        <dsig:DigestValue>x1kONjITeB3O+QC2/1/iqF//w/dxGjyb3N7TljUCZOQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -82,10 +82,8 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.Accueil.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.Doc.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.DocumentC.resources
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.Concepteur.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.ExporterEnOsm.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.OutputWindow.resources
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.OuvrirConcepteur.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.PropertyWindow.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.SolutionExplorer.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.Toolbox.resources
@@ -93,7 +91,6 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.View.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.SplashScreen1.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Resources.resources
-C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.EditeurCCplus.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.csproj.GenerateResource.cache
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe.licenses
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.csproj.CoreCompileInputs.cache
@@ -114,3 +111,5 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.Sortie.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.Propriétés.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.VM_Viewer.VM_GUI.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.IUGConceptor.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.IMGViewer.resources

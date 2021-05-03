@@ -42,13 +42,13 @@
             this.renommerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.progressBar1 = new MetroFramework.Controls.MetroProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this._tv = new System.Windows.Forms.TreeView();
             this.ImageList1 = new System.Windows.Forms.ImageList(this.components);
             this.txtDirectory = new MetroFramework.Controls.MetroTextBox();
             this._PictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.progressBar1 = new MetroFramework.Controls.MetroProgressBar();
             this.metroContextMenu1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -154,6 +154,17 @@
             this.panel2.Size = new System.Drawing.Size(261, 532);
             this.panel2.TabIndex = 7;
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.Location = new System.Drawing.Point(5, 3);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(253, 10);
+            this.progressBar1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.progressBar1.TabIndex = 10;
+            this.progressBar1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -205,6 +216,11 @@
             this.ImageList1.Images.SetKeyName(2, "cube(1).png");
             this.ImageList1.Images.SetKeyName(3, "FolderOpened_blue_16x.png");
             this.ImageList1.Images.SetKeyName(4, "WindowsFormBlue_16x.png");
+            this.ImageList1.Images.SetKeyName(5, "logocpcdosblack16x.png");
+            this.ImageList1.Images.SetKeyName(6, "DebugTemplate_16x.png");
+            this.ImageList1.Images.SetKeyName(7, "ListMembers_16x.png");
+            this.ImageList1.Images.SetKeyName(8, "TextFile_16x.png");
+            this.ImageList1.Images.SetKeyName(9, "Image_16x.png");
             // 
             // txtDirectory
             // 
@@ -262,17 +278,6 @@
             // 
             this.metroStyleManager1.Owner = null;
             this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(5, 3);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(253, 10);
-            this.progressBar1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.progressBar1.TabIndex = 10;
-            this.progressBar1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // SolutionExplorer
             // 

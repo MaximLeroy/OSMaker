@@ -1363,6 +1363,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logocpcdosblack {
+            get {
+                object obj = ResourceManager.GetObject("logocpcdosblack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lol {
             get {
                 object obj = ResourceManager.GetObject("lol", resourceCulture);
