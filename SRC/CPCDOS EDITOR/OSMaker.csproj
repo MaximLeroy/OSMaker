@@ -309,23 +309,11 @@
     <Compile Include="Panneaux\DocumentC.Designer.cs">
       <DependentUpon>DocumentC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Panneaux\ExporterEnOsm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Panneaux\ExporterEnOsm.Designer.cs">
-      <DependentUpon>ExporterEnOsm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Panneaux\IMGViewer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Panneaux\IMGViewer.Designer.cs">
       <DependentUpon>IMGViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panneaux\OutputWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Panneaux\OutputWindow.Designer.cs">
-      <DependentUpon>OutputWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Panneaux\PropertyWindow.cs">
       <SubType>Form</SubType>
@@ -452,14 +440,8 @@
     <EmbeddedResource Include="Panneaux\DocumentC.resx">
       <DependentUpon>DocumentC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panneaux\ExporterEnOsm.resx">
-      <DependentUpon>ExporterEnOsm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Panneaux\IMGViewer.resx">
       <DependentUpon>IMGViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Panneaux\OutputWindow.resx">
-      <DependentUpon>OutputWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panneaux\PropertyWindow.resx">
       <DependentUpon>PropertyWindow.cs</DependentUpon>

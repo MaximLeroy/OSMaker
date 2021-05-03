@@ -347,7 +347,7 @@ namespace OSMaker
             this.metroButton18.TabIndex = 92;
             this.metroButton18.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroButton18.UseSelectable = true;
-            this.metroButton18.Click += new System.EventHandler(this.metroButton18_Click);
+      
             // 
             // metroButton11
             // 

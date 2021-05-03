@@ -27,14 +27,7 @@ namespace OSMaker
         public IUGConceptor()
         {
 
-            BlueStyle = new TextStyle(SolidBlue, null, FontStyle.Regular);
-            OrangeStyle = new TextStyle(SolidBlueLight, null, FontStyle.Regular);
-            VertLightStyle = new TextStyle(SolidVert, null, FontStyle.Regular);
-            MagentaStyle = new TextStyle(SolidNumber, null, FontStyle.Regular);
-            YellowStyle = new TextStyle(SolidJaune, null, FontStyle.Regular);
-            GreenStyle = new TextStyle(SolidGreen, null, FontStyle.Regular);
-            RoseStyle = new TextStyle(SolidRose, null, FontStyle.Regular);
-            EqualStyle = new TextStyle(SolidEqual, null, FontStyle.Regular);
+           
             InitializeComponent();
             CustomInitialize();
 
@@ -70,110 +63,9 @@ namespace OSMaker
         private int _formCount = 0;
         public static Host.HostControl HostC;
         // 'SolidBrush
-        private SolidBrush SolidGreen = new SolidBrush(Color.FromArgb(87, 166, 74));
-        private SolidBrush SolidBlue = new SolidBrush(Color.FromArgb(86, 156, 214));
-        private SolidBrush SolidBlueLight = new SolidBrush(Color.FromArgb(156, 220, 254));
-        private SolidBrush SolidEqual = new SolidBrush(Color.FromArgb(180, 180, 180));
-        private SolidBrush SolidRose = new SolidBrush(Color.FromArgb(216, 160, 223));
-        private SolidBrush SolidVert = new SolidBrush(Color.FromArgb(78, 201, 176));
-        private SolidBrush SolidVertFonce = new SolidBrush(Color.FromArgb(55, 146, 124));
-        private SolidBrush SolidJaune = new SolidBrush(Color.FromArgb(220, 220, 170));
-        private SolidBrush SolidNumber = new SolidBrush(Color.FromArgb(181, 206, 168));
-        // 'Brushes
-        private TextStyle SpringGreenStyle = new TextStyle(Brushes.SpringGreen, null, FontStyle.Regular);
-        private TextStyle BlueStyle;
-        private TextStyle OrangeStyle;
-        private TextStyle RedStyle = new TextStyle(Brushes.LightCoral, null, FontStyle.Regular);
-        private TextStyle VertLightStyle;
-        private TextStyle BoldStyle = new TextStyle(null, null, FontStyle.Bold | FontStyle.Underline);
-        private TextStyle Gras = new TextStyle(null, null, FontStyle.Bold);
-        private TextStyle GrayStyle = new TextStyle(Brushes.Gray, null, FontStyle.Regular);
-        private TextStyle MagentaStyle;
-        private TextStyle YellowStyle;
-        private TextStyle GreenStyle;
-        private TextStyle BrownStyle = new TextStyle(Brushes.Brown, null, FontStyle.Italic);
-        private TextStyle MaroonStyle = new TextStyle(Brushes.Maroon, null, FontStyle.Regular);
-        private TextStyle RoseStyle;
-        private TextStyle EqualStyle;
-        private MarkerStyle SameWordsStyle = new MarkerStyle(new SolidBrush(Color.FromArgb(40, Color.Gray)));
+    
 
-        private void CPCDOSSyntaxHighlight(TextChangedEventArgs e)
-        {
-
-            // clear style of changed range
-            e.ChangedRange.ClearStyle(BlueStyle, BoldStyle, GrayStyle, MagentaStyle, GreenStyle, BrownStyle, RedStyle);
-            // string highlighting
-
-
-            // comment highlighting
-            e.ChangedRange.SetStyle(GreenStyle, "//.*$", RegexOptions.Multiline);
-            e.ChangedRange.SetStyle(GreenStyle, "rem/.*$", RegexOptions.Multiline);
-            e.ChangedRange.SetStyle(GreenStyle, "'.*$", RegexOptions.Multiline);
-            e.ChangedRange.SetStyle(GreenStyle, @"(/\*.*?\*/)|(/\*.*)", RegexOptions.Singleline);
-            e.ChangedRange.SetStyle(GreenStyle, @"(/\*.*?\*/)|(.*\*/)", RegexOptions.Singleline | RegexOptions.RightToLeft);
-            e.ChangedRange.SetStyle(VertLightStyle, "%.+?%");
-            // number highlighting
-            e.ChangedRange.SetStyle(MagentaStyle, @"\b\d+[\.]?\d*([eE]\-?\d+)?[lLdDfF]?\b|\b0x[a-fA-F\d]+\b");
-            e.ChangedRange.SetStyle(RoseStyle, @"(TYPE:|CTN:|BORD:|OMBRE:|IMGAUTO:|EDIT:|MULTILINE:|\,)");
-            e.ChangedRange.SetStyle(EqualStyle, @"\=");
-            e.ChangedRange.SetStyle(BlueStyle, @"(Create\/|create\/|End\/ window|window\/|End\/ button|button\/|End\/ textbox|textbox\/|End\/ textblock|textblock\/|End\/ progressbar|progressbar\/|End\/ picturebox|picturebox\/|End\/ checkbox|checkbox\/)", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetStyle(YellowStyle, "@#.*$", RegexOptions.Multiline);
-            e.ChangedRange.SetStyle(YellowStyle, "/.*$", RegexOptions.Multiline);
-            e.ChangedRange.SetStyle(RedStyle, "\".*?\"|'.+?'");
-
-
-            // attribute highlighting
-            e.ChangedRange.SetStyle(GrayStyle, @"^\s*(?<range>\[.+?\])\s*$", RegexOptions.Multiline);
-            // class name highlighting
-            e.ChangedRange.SetStyle(BoldStyle, @"\b(class|struct|enum)\s+(?<range>\w+?)\b");
-            // keyword highlighting
-            e.ChangedRange.SetStyle(BlueStyle, @"\b(abstract|as|base|bool|break|byte|case|catch|char|class|const|continue|decimal|default|delegate|do|double|else|enum|explicit|extern|false|finally|fixed|float|for|foreach|goto|if|implicit|in|int|interface|internal|is|lock|long|namespace|new|null|object|operator|out|override|params|private|protected|public|readonly|ref|return|sbyte|sealed|short|sizeof|stackalloc|static|string|struct|switch|this|throw|true|try|typeof|uint|ulong|unchecked|unsafe|ushort|using|virtual|void|volatile|while|add|alias|ascending|descending|dynamic|from|get|global|group|into|join|let|orderby|partial|remove|select|set|value|var|where|yield)\b|#region\b|#endregion\b|");
-            e.ChangedRange.SetStyle(OrangeStyle, @"(\.Parametres|\.PX|\.PY|\.SX|\.SY|\.Valeur|\.BackColor|\.CouleurText|\.Event|\.event|\.Icone|\.ImgTitre|\.Opacite|\.titre|\.CouleurFenetre|\.CouleurTitre|\.px|\.py|\.tx|\.ty|\.opacite|\.Text|\.Image|\.evenement|\.texte|\.Handle|\.handle)", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetStyle(Gras, @"fenetre\/", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetStyle(Gras, @"Fin\/ fenetre", RegexOptions.IgnoreCase);
-
-
-
-            // CE QUE JE TEST @# DEVELOPPEZ.NET
-
-
-            // clear folding markers
-            e.ChangedRange.ClearFoldingMarkers();
-            // set folding markers
-
-            e.ToString().ToUpper();
-            // allow to collapse region blocks
-            e.ChangedRange.SetFoldingMarkers(@"Window\/", @"End\/ Window", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetFoldingMarkers(@"picturebox\/", @"End\/ picturebox", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetFoldingMarkers(@"Texteblock\/", @"End\/ Texteblock", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetFoldingMarkers(@"Button\/", @"End\/ Button", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetFoldingMarkers(@"Imagebox\/", @"End\/ Imagebox", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetFoldingMarkers(@"Textbox\/", @"End\/ Textbox", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetFoldingMarkers(@"Checkbox\/", @"End\/ Checkbox", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetFoldingMarkers(@"Progressbar\/", @"End\/ Progressbar", RegexOptions.IgnoreCase);
-        }
-
-        private class Strings
-        {
-            public const string Design = "Design";
-            public const string Code = "Code";
-        }
-
-        private enum ExplorerItemType
-        {
-            Class,
-            Method,
-            Property,
-            Event,
-            Bouton,
-            Imagebox,
-            Comment,
-            Textbox,
-            Textbloc,
-            Checkbox,
-            Fin,
-            Creer
-        }
+       
 
         // Private Class ExplorerItem
         // Public type As PowerfulCSharpEditor.ExplorerItemType
@@ -655,25 +547,11 @@ namespace OSMaker
             MenuCommandService.GlobalInvoke(a);
         }
 
-
-
-
-
-
-
-
-
-
         private void ButtonItem1_Click(object sender, EventArgs e)
         {
             //FastColoredTextBox1.Text = ((Loader.BasicHostLoader)HostC.HostSurface.Loader).GetCode();
         }
 
-        private void ButtonItem11_Click(object sender, EventArgs e)
-        {
-           
-
-        }
 
         private XmlDocument doc;
         private Dictionary<string, string> WinToCpcControls;
@@ -689,21 +567,9 @@ namespace OSMaker
             ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).Save(true);
         }
 
-        private void ButtonItem9_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Indisponible (version Beta)");
-        }
+    
 
-        private void tb_TextChangedDelayed(object sender, TextChangedEventArgs e)
-        {
-            CPCDOSSyntaxHighlight(e);
-           
-        }
-
-        private void ButtonX1_Click(object sender, EventArgs e)
-        {
-        }
-
+    
         private void ButtonX1_Click_1(object sender, EventArgs e)
         {
             string Nom_Ctrl_Actif;
@@ -996,21 +862,7 @@ namespace OSMaker
             MessageBox.Show("double click");
         }
         
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-          
-        }
-
-        private void toolStripMenuItem6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void horizontalementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+ 
 
         private void verticalementToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -1021,10 +873,6 @@ namespace OSMaker
             MenuCommandService.GlobalInvoke(a);
         }
 
-        private void sélectionnerToutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-       
-        }
 
         private void toolStripMenuItem9_Click_1(object sender, EventArgs e)
         {
@@ -1038,11 +886,6 @@ namespace OSMaker
             OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
             if (undoEngine != null)
                 undoEngine.DoRedo();
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
 
         private void testToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1104,24 +947,6 @@ namespace OSMaker
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            // Assigner une valeur aux variables
-            //WinToCpcDosCplus.ModuleCpcDosCplus.OpacitetextS = metroOpacite.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.couleurfondtextS = metroCFR.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.couleurtitretextS = metroCTR.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.ombretextS = metroOmbre.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.imgtitretextS = metroImgTitre.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.iconetextS = metroIcone.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.HandletextS = metroHandle.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.typetextS = metroType.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.ctntextS = metroCTN.Text;
-            //if (metroParametres.Checked == true)
-            //{
-            //    WinToCpcDosCplus.ModuleCpcDosCplus.parametrescheckB = true;
-            //}
-            //else
-            //{
-            //    WinToCpcDosCplus.ModuleCpcDosCplus.parametrescheckB = false;
-            //}
 
             var currentHostControl = HostC;
             string stringXML = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
@@ -1366,11 +1191,6 @@ namespace OSMaker
         private void metroButton11_Click(object sender, EventArgs e)
         {
             SelectionnerTout();
-        }
-
-        private void metroButton18_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void metroContextMenu1_Opening(object sender, CancelEventArgs e)
