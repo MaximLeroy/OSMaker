@@ -734,7 +734,6 @@ namespace OSMaker.Panneaux
         {
             try
             {
-                
                    
                     _tv.Nodes.Clear();
                     LoadDirectory(txtDirectory.Text);

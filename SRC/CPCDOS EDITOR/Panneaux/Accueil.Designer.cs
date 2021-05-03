@@ -78,7 +78,7 @@
             this.label2.Size = new System.Drawing.Size(113, 27);
             this.label2.TabIndex = 20;
             this.label2.Text = "Welcome !";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+         
             // 
             // metroLink3
             // 
@@ -236,7 +236,7 @@
             this.Controls.Add(this.Label4);
             this.Name = "Accueil";
             this.Text = "Welcome";
-            this.Load += new System.EventHandler(this.Accueil_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

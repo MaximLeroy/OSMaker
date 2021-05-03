@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Exporter.exe" size="55296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Exporter.exe" size="54784">
       <assemblyIdentity name="Exporter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SHdW+08PaL91p/L+TahwnwkR6A4zLwa878CNHU9PuAc=</dsig:DigestValue>
+        <dsig:DigestValue>Q8caF1OS7E0BGKWA9icPn2jZ1YrkyWrj98sj3fh42aI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -187,14 +187,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="6271936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="6265280">
       <assemblyIdentity name="OSMaker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MaE0lPFmqueaZjgE4W66kJUHDoYEtUHpzWo8mPjenGU=</dsig:DigestValue>
+        <dsig:DigestValue>VC94cfpMd+ktJea3e4AVX3aYMwyM0jcL5IW+JZkMf48=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -319,14 +319,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinToCpcDosCplus.exe" size="20992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinToCpcDosCplus.exe" size="20480">
       <assemblyIdentity name="WinToCpcDosCplus" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>z6ovb9xj7GHbnGSjcici1JmvQb/hRe/ND7eX0SyO5FI=</dsig:DigestValue>
+        <dsig:DigestValue>TIhLpOfHSV0RWHNJYxJ9R9LvodK5GcUh9NuHXdfSa9A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -64,15 +64,6 @@ namespace OSMaker.Panneaux
         //    stringToWrite.Flush(); //write stream to file
         //    stringToWrite.Close(); //close the stream and reclaim memory
         //}
-        private void Accueil_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void metroLink1_Click(object sender, EventArgs e)
         {

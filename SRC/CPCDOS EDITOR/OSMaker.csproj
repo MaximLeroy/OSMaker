@@ -410,7 +410,6 @@
     <Compile Include="VM_Viewer\VM_GUI.Designer.cs">
       <DependentUpon>VM_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinToCpc\ModuleCpc.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Formulaires\Events.resx">

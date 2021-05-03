@@ -54,7 +54,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(621, 476);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+           
             // 
             // panel2
             // 
@@ -71,7 +71,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(358, 476);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+           
             // 
             // textBox2
             // 
@@ -79,7 +79,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(176, 22);
             this.textBox2.TabIndex = 25;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            
             // 
             // metroButton1
             // 
@@ -102,7 +102,7 @@
             this.textBox1.Size = new System.Drawing.Size(217, 22);
             this.textBox1.TabIndex = 23;
             this.textBox1.Visible = false;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+         
             // 
             // textBox8
             // 
@@ -114,7 +114,7 @@
             this.textBox8.TabIndex = 21;
             this.textBox8.Text = "255";
             this.textBox8.Visible = false;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+         
             // 
             // textBox7
             // 
@@ -126,7 +126,7 @@
             this.textBox7.TabIndex = 20;
             this.textBox7.Text = "255";
             this.textBox7.Visible = false;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+           
             // 
             // textBox5
             // 
@@ -138,7 +138,7 @@
             this.textBox5.TabIndex = 17;
             this.textBox5.Text = "255";
             this.textBox5.Visible = false;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+     
             // 
             // button1
             // 
@@ -158,7 +158,7 @@
             this.button1.Text = "button1";
             this.button1.UPD = true;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+           
             // 
             // UCButton
             // 
