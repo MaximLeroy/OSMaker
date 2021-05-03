@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
             this.Label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,8 +43,10 @@
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.fastColoredTextBox1 = new FastColoredTextBoxNS.FastColoredTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Label4
@@ -78,7 +82,6 @@
             this.label2.Size = new System.Drawing.Size(113, 27);
             this.label2.TabIndex = 20;
             this.label2.Text = "Welcome !";
-         
             // 
             // metroLink3
             // 
@@ -215,12 +218,44 @@
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
+            // fastColoredTextBox1
+            // 
+            this.fastColoredTextBox1.AutoCompleteBracketsList = new char[] {
+        '(',
+        ')',
+        '{',
+        '}',
+        '[',
+        ']',
+        '\"',
+        '\"',
+        '\'',
+        '\''};
+            this.fastColoredTextBox1.AutoScrollMinSize = new System.Drawing.Size(211, 42);
+            this.fastColoredTextBox1.BackBrush = null;
+            this.fastColoredTextBox1.CharHeight = 21;
+            this.fastColoredTextBox1.CharWidth = 10;
+            this.fastColoredTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fastColoredTextBox1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.fastColoredTextBox1.Font = new System.Drawing.Font("Source Code Pro", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fastColoredTextBox1.IsReplaceMode = false;
+            this.fastColoredTextBox1.Location = new System.Drawing.Point(370, 155);
+            this.fastColoredTextBox1.Name = "fastColoredTextBox1";
+            this.fastColoredTextBox1.Paddings = new System.Windows.Forms.Padding(0);
+            this.fastColoredTextBox1.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.fastColoredTextBox1.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("fastColoredTextBox1.ServiceColors")));
+            this.fastColoredTextBox1.Size = new System.Drawing.Size(428, 251);
+            this.fastColoredTextBox1.TabIndex = 28;
+            this.fastColoredTextBox1.Text = "Window/ test\r\n   .Text = \"Hello\"";
+            this.fastColoredTextBox1.Zoom = 100;
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.fastColoredTextBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.metroComboBox1);
@@ -236,9 +271,9 @@
             this.Controls.Add(this.Label4);
             this.Name = "Accueil";
             this.Text = "Welcome";
-            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fastColoredTextBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +293,6 @@
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
         public System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private FastColoredTextBoxNS.FastColoredTextBox fastColoredTextBox1;
     }
 }

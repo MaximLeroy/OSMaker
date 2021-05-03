@@ -290,6 +290,7 @@
             this.Text = "OS explorer";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.SolutionExplorer_Load);
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.SolutionExplorer_MouseDoubleClick);
             this.metroContextMenu1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

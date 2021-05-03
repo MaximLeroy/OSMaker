@@ -16,9 +16,12 @@ using System.Threading;
 using FastColoredTextBoxNS;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.CompilerServices;
+using System.Windows.Media;
 
 namespace OSMaker.Panneaux
 {
+    [System.ComponentModel.TypeConverter(typeof(System.Windows.Media.FontFamilyConverter))]
+    [System.Windows.Localizability(System.Windows.LocalizationCategory.Font)]
     public partial class Doc : DockContent
     {
         private View m_view;
@@ -42,32 +45,32 @@ namespace OSMaker.Panneaux
         private List<ExplorerItem> explorerList = new List<ExplorerItem>();
 
         // 'SolidBrush
-        private SolidBrush SolidGreen = new SolidBrush(Color.FromArgb(87, 166, 74));
-        private SolidBrush SolidBlue = new SolidBrush(Color.FromArgb(86, 156, 214));
-        private SolidBrush SolidBlueLight = new SolidBrush(Color.FromArgb(156, 220, 254));
-        private SolidBrush SolidEqual = new SolidBrush(Color.FromArgb(180, 180, 180));
-        private SolidBrush SolidRose = new SolidBrush(Color.FromArgb(216, 160, 223));
-        private SolidBrush SolidVert = new SolidBrush(Color.FromArgb(78, 201, 176));
-        private SolidBrush SolidVertFonce = new SolidBrush(Color.FromArgb(55, 146, 124));
-        private SolidBrush SolidJaune = new SolidBrush(Color.FromArgb(220, 220, 170));
-        private SolidBrush SolidNumber = new SolidBrush(Color.FromArgb(181, 206, 168));
+        private SolidBrush SolidGreen = new SolidBrush(System.Drawing.Color.FromArgb(87, 166, 74));
+        private SolidBrush SolidBlue = new SolidBrush(System.Drawing.Color.FromArgb(86, 156, 214));
+        private SolidBrush SolidBlueLight = new SolidBrush(System.Drawing.Color.FromArgb(156, 220, 254));
+        private SolidBrush SolidEqual = new SolidBrush(System.Drawing.Color.FromArgb(180, 180, 180));
+        private SolidBrush SolidRose = new SolidBrush(System.Drawing.Color.FromArgb(216, 160, 223));
+        private SolidBrush SolidVert = new SolidBrush(System.Drawing.Color.FromArgb(78, 201, 176));
+        private SolidBrush SolidVertFonce = new SolidBrush(System.Drawing.Color.FromArgb(55, 146, 124));
+        private SolidBrush SolidJaune = new SolidBrush(System.Drawing.Color.FromArgb(220, 220, 170));
+        private SolidBrush SolidNumber = new SolidBrush(System.Drawing.Color.FromArgb(181, 206, 168));
         // 'Brushes
-        private TextStyle SpringGreenStyle = new TextStyle(Brushes.SpringGreen, null, FontStyle.Regular);
+        private TextStyle SpringGreenStyle = new TextStyle(System.Drawing.Brushes.SpringGreen, null, FontStyle.Regular);
         private TextStyle BlueStyle;
         private TextStyle OrangeStyle;
-        private TextStyle RedStyle = new TextStyle(Brushes.LightCoral, null, FontStyle.Regular);
+        private TextStyle RedStyle = new TextStyle(System.Drawing.Brushes.LightCoral, null, FontStyle.Regular);
         private TextStyle VertLightStyle;
         private TextStyle BoldStyle = new TextStyle(null, null, FontStyle.Bold | FontStyle.Underline);
         private TextStyle Gras = new TextStyle(null, null, FontStyle.Bold);
-        private TextStyle GrayStyle = new TextStyle(Brushes.Gray, null, FontStyle.Regular);
+        private TextStyle GrayStyle = new TextStyle(System.Drawing.Brushes.Gray, null, FontStyle.Regular);
         private TextStyle MagentaStyle;
         private TextStyle YellowStyle;
         private TextStyle GreenStyle;
-        private TextStyle BrownStyle = new TextStyle(Brushes.Brown, null, FontStyle.Italic);
-        private TextStyle MaroonStyle = new TextStyle(Brushes.Maroon, null, FontStyle.Regular);
+        private TextStyle BrownStyle = new TextStyle(System.Drawing.Brushes.Brown, null, FontStyle.Italic);
+        private TextStyle MaroonStyle = new TextStyle(System.Drawing.Brushes.Maroon, null, FontStyle.Regular);
         private TextStyle RoseStyle;
         private TextStyle EqualStyle;
-        private MarkerStyle SameWordsStyle = new MarkerStyle(new SolidBrush(Color.FromArgb(40, Color.Gray)));
+        private MarkerStyle SameWordsStyle = new MarkerStyle(new SolidBrush(System.Drawing.Color.FromArgb(40, System.Drawing.Color.Gray)));
 
         private void CPCDOSSyntaxHighlight(TextChangedEventArgs e)
         {
@@ -363,8 +366,8 @@ namespace OSMaker.Panneaux
 
         // Private invisibleCharsStyle As Style = New InvisibleCharsRenderer(Pens.Gray)
 
-        private Color currentLineColor = Color.FromArgb(100, 210, 210, 255);
-        private Color changedLineColor = Color.FromArgb(255, 230, 230, 255);
+        private System.Drawing.Color currentLineColor = System.Drawing.Color.FromArgb(100, 210, 210, 255);
+        private System.Drawing.Color changedLineColor = System.Drawing.Color.FromArgb(255, 230, 230, 255);
 
         // Private explorerList As List(Of PowerfulCSharpEditor.ExplorerItem) = New List(Of PowerfulCSharpEditor.ExplorerItem)()
 
@@ -431,17 +434,20 @@ namespace OSMaker.Panneaux
             if (FileName == string.Empty)
                 this.richTextBox1.Text = Text;
         }
-
+     
         private void Doc_Load(object sender, EventArgs e)
         {
-           
+         //  System.Windows.Media.TextFormatting.Pr pfc = new PrivateFontCollection();
+         //   pfc.AddFontFile("C:\\Path To\\PALETX3.ttf");
+         //   label1.Font = new Font(pfc.Families[0], 16, FontStyle.Regular);
 
-               
-                    metroTextBox1.Text = filepath ;
+
+            metroTextBox1.Text = filepath ;
                     
                 
 
                 _tb.Focus();
+            
                 string text = _tb.Text;
                 ThreadPool.QueueUserWorkItem((o) => ReBuildObjectExplorer(text));
             
@@ -631,8 +637,9 @@ namespace OSMaker.Panneaux
             string text = (sender as FastColoredTextBox).Text;
             ThreadPool.QueueUserWorkItem((o) => ReBuildObjectExplorer(text));
             CPCDOSSyntaxHighlight(e);
-            _tb.AutoScroll = true;
-            _tb.Font = new Font("Consolas", 9.75f);
+         //   _tb.AutoScroll = true;
+            _tb.ShowScrollBars = true;
+            _tb.Font = new Font("Source Code Pro", 9.75f);
             _tb.Dock = DockStyle.Fill;
             _tb.LeftBracket = '(';
             _tb.RightBracket = ')';
@@ -998,6 +1005,23 @@ namespace OSMaker.Panneaux
             }
             else
                 panel3.Visible = false;
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            DocumentMap1.Visible = true;
+            dataGridView1.Visible = false;
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            DocumentMap1.Visible = false;
+            dataGridView1.Visible = true;
+        }
+
+        private void _tb_TextChanging(object sender, TextChangingEventArgs e)
+        {
+
         }
     }
 

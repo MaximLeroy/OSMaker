@@ -646,6 +646,74 @@ namespace OSMaker.Panneaux
                 }
 
             }
+
+            if (selNode.Text.EndsWith("png") || selNode.Text.EndsWith("PNG") || selNode.Text.EndsWith("jpg") || selNode.Text.EndsWith("JPG") || selNode.Text.EndsWith("JPEG") || selNode.Text.EndsWith("BMP") || selNode.Text.EndsWith("bmp"))
+            {
+                string pathDir = Conversions.ToString(selNode.Tag);
+                var fi = new FileInfo(pathDir);
+
+                // edit file
+
+                {
+
+                    string fullName = fi.FullName;
+                    string fileName = Path.GetFileName(fullName);
+
+
+
+                    IMGViewer IMGDoc = new IMGViewer();
+                    IMGDoc.Text = fileName;
+                    if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+                    {
+                        IMGDoc.MdiParent = this;
+
+                        //IMGDoc.file = fullName;
+                        //Load the image
+                        IMGDoc.pictureBox1.Load(fullName);
+                        Image img = IMGDoc.pictureBox1.Image;
+                        //Adjust the image size after loading it to Picture box
+                        if (IMGDoc.pictureBox1.Width < img.Width && IMGDoc.pictureBox1.Height < img.Height)
+                        {
+                            IMGDoc.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                        }
+                        else
+                        {
+
+                            IMGDoc.pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+                        }
+                        
+                        IMGDoc.Show();
+                    }
+                    else
+                        //dummyDoc.filepath = fullName;
+                        IMGDoc.pictureBox1.Load(fullName);
+                    Image img2 = IMGDoc.pictureBox1.Image;
+                    //Adjust the image size after loading it to Picture box
+                    if (IMGDoc.pictureBox1.Width < img2.Width && IMGDoc.pictureBox1.Height < img2.Height)
+                    {
+                        IMGDoc.pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                    }
+                    else
+                    {
+
+                        IMGDoc.pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+                    }
+                    IMGDoc.Show(Home.dockPanel);
+                    try
+                    {
+                        //IMGDoc.FileName = fullName;
+                       // Doc.filepath = fullName;
+                    }
+                    catch (Exception exception)
+                    {
+                        IMGDoc.Close();
+                        MessageBox.Show(exception.Message);
+                    }
+
+
+                }
+            }
+
         }
         private IUGConceptor CreateNewConcepteur(string text)
         {
@@ -871,6 +939,11 @@ namespace OSMaker.Panneaux
         private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SolutionExplorer_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+         
         }
     }
     }
