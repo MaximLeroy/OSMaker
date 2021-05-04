@@ -1493,6 +1493,26 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OSM_CPCDOSC_ {
+            get {
+                object obj = ResourceManager.GetObject("OSM_CPCDOSC+", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OSM_IUG {
+            get {
+                object obj = ResourceManager.GetObject("OSM_IUG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OSM_LOGO {
             get {
                 object obj = ResourceManager.GetObject("OSM_LOGO", resourceCulture);
@@ -1516,6 +1536,16 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap OSM_OS {
             get {
                 object obj = ResourceManager.GetObject("OSM_OS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OSM_OS1 {
+            get {
+                object obj = ResourceManager.GetObject("OSM_OS1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

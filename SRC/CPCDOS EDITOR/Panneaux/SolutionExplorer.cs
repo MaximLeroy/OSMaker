@@ -742,6 +742,9 @@ namespace OSMaker.Panneaux
             Home.fileName = null;
             var node = _tv.SelectedNode;
             string oldPathDir = node.Text;
+            Nouveau nouve = new Nouveau();
+            nouve.Show();
+            nouve.TopMost = true;
             if (oldPathDir.ToLower().Contains(".txt") || oldPathDir.ToLower().Contains(".osm") || oldPathDir.ToLower().Contains(".cpc"))
             {
                 MessageBox.Show("Veuillez sélectionner un dossier et non un fichier");

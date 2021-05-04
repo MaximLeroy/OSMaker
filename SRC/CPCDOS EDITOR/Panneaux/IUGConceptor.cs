@@ -31,8 +31,6 @@ namespace OSMaker
             InitializeComponent();
             CustomInitialize();
 
-            
-          
             _Panel1.Name = "Panel1";
         }
         //private ServiceContainer serviceContainer = null;
@@ -62,234 +60,10 @@ namespace OSMaker
         public static Host.HostSurfaceManager _hostSurfaceManager;
         private int _formCount = 0;
         public static Host.HostControl HostC;
-        // 'SolidBrush
-    
-
-       
-
-        // Private Class ExplorerItem
-        // Public type As PowerfulCSharpEditor.ExplorerItemType
-
-        // Public title As String
-
-        // Public position As Integer
-        // End Class
-
-        // Private Class ExplorerItemComparer
-        // Implements IComparer(Of PowerfulCSharpEditor.ExplorerItem)
-
-        // Public Function Compare(x As PowerfulCSharpEditor.ExplorerItem, y As PowerfulCSharpEditor.ExplorerItem) As Integer Implements IComparer(Of PowerfulCSharpEditor.ExplorerItem).Compare
-        // Return x.title.CompareTo(y.title)
-        // End Function
-        // End Class
-
-        private class DeclarationSnippet : SnippetAutocompleteItem
-        {
-            public DeclarationSnippet(string snippet) : base(snippet)
-            {
-            }
-
-            public override CompareResult Compare(string fragmentText)
-            {
-                string pattern = Regex.Escape(fragmentText);
-                CompareResult result;
-                if (Regex.IsMatch(Text, @"\b" + pattern, RegexOptions.IgnoreCase))
-                {
-                    result = CompareResult.Visible;
-                }
-                else
-                {
-                    result = CompareResult.Hidden;
-                }
-
-                return result;
-            }
-        }
-
-        private class InsertSpaceSnippet : AutocompleteItem
-        {
-            private string pattern;
-
-            public override string ToolTipTitle
-            {
-                get
-                {
-                    return Text;
-                }
-
-                set
-                {
-                }
-            }
-
-            public InsertSpaceSnippet(string pattern) : base("")
-            {
-                this.pattern = pattern;
-            }
-
-            public InsertSpaceSnippet() : this(@"^(\d+)([a-zA-Z_]+)(\d*)$")
-            {
-            }
-
-            public override CompareResult Compare(string fragmentText)
-            {
-                CompareResult result;
-                if (Regex.IsMatch(fragmentText, pattern))
-                {
-                    Text = InsertSpaces(fragmentText);
-                    if ((Text ?? "") != (fragmentText ?? ""))
-                    {
-                        result = CompareResult.Visible;
-                        return result;
-                    }
-                }
-
-                result = CompareResult.Hidden;
-                return result;
-            }
-
-            public string InsertSpaces(string fragment)
-            {
-                var i = Regex.Match(fragment, pattern);
-                string result;
-                if (i is null)
-                {
-                    result = fragment;
-                }
-                else if (string.IsNullOrEmpty(i.Groups[1].Value) && string.IsNullOrEmpty(i.Groups[3].Value))
-                {
-                    result = fragment;
-                }
-                else
-                {
-                    result = string.Concat(new string[] { i.Groups[1].Value, " ", i.Groups[2].Value, " ", i.Groups[3].Value }).Trim();
-                }
-
-                return result;
-            }
-        }
-
-        private class InsertEnterSnippet : AutocompleteItem
-        {
-            private Place enterPlace = Place.Empty;
-
-            public override string ToolTipTitle
-            {
-                get
-                {
-                    return "Insert line break after '}'";
-                }
-
-                set
-                {
-                }
-            }
-
-            public InsertEnterSnippet() : base("[Line break]")
-            {
-            }
-
-            public override CompareResult Compare(string fragmentText)
-            {
-                var r = Parent.Fragment.Clone();
-                CompareResult result;
-                while (r.Start.iChar > 0)
-                {
-                    if (Conversions.ToString(r.CharBeforeStart) == "}")
-                    {
-                        enterPlace = r.Start;
-                        result = CompareResult.Visible;
-                        return result;
-                    }
-
-                    r.GoLeftThroughFolded();
-                }
-
-                result = CompareResult.Hidden;
-                return result;
-            }
-
-            public override string GetTextForReplace()
-            {
-                var r = Parent.Fragment;
-                var end = r.End;
-                r.Start = enterPlace;
-                r.End = r.End;
-                return Environment.NewLine + r.Text;
-            }
-
-            public override void OnSelected(AutocompleteMenu popupMenu, SelectedEventArgs e)
-            {
-                base.OnSelected(popupMenu, e);
-                if (Parent.Fragment.tb.AutoIndent)
-                {
-                    Parent.Fragment.tb.DoAutoIndent();
-                }
-            }
-        }
-
-        public class BookmarkInfo
-        {
-            public int iBookmark;
-            public FastColoredTextBox tb;
-        }
-
-        // Private components As IContainer = Nothing
-
-        private StatusStrip ssMain;
-
-        // Private WithEvents tsFiles3 As FATabStrip
 
 
-        private SaveFileDialog sfdMain;
-        private OpenFileDialog ofdMain;
-        private ContextMenuStrip cmMain;
-        private ToolStripMenuItem cutToolStripMenuItem;
-        private ToolStripMenuItem copyToolStripMenuItem;
-        private ToolStripMenuItem pasteToolStripMenuItem;
-        private ToolStripMenuItem selectAllToolStripMenuItem;
-        private ToolStripSeparator toolStripMenuItem2;
-        private ToolStripMenuItem undoToolStripMenuItem;
-        private ToolStripMenuItem redoToolStripMenuItem;
-        private System.Windows.Forms.Timer tmUpdateInterface;
-        private ToolStripSeparator toolStripSeparator;
-        private ToolStripSeparator toolStripSeparator1;
-        private ToolStripSeparator toolStripSeparator2;
-        private ToolStripSeparator toolStripMenuItem3;
-        private ToolStripMenuItem findToolStripMenuItem;
-        private ToolStripMenuItem replaceToolStripMenuItem;
-        private DataGridView dgvObjectExplorer;
-        private DataGridViewImageColumn clImage;
-        private DataGridViewTextBoxColumn clName;
-        private ToolStripStatusLabel lbWordUnderMouse;
-        private ToolStripSeparator toolStripMenuItem4;
-        private ToolStripMenuItem autoIndentSelectedTextToolStripMenuItem;
-        private ToolStripMenuItem commentSelectedToolStripMenuItem;
-        private ToolStripMenuItem uncommentSelectedToolStripMenuItem;
-        private ToolStripMenuItem cloneLinesToolStripMenuItem;
-        private ToolStripMenuItem cloneLinesAndCommentToolStripMenuItem;
-        private string[] keywords = new string[] { "abstract", "as", "base", "bool", "break", "byte", "case", "catch", "char", "checked", "class", "const", "continue", "decimal", "default", "delegate", "do", "double", "else", "enum", "event", "explicit", "extern", "false", "finally", "fixed", "float", "for", "foreach", "goto", "if", "implicit", "in", "int", "interface", "internal", "is", "lock", "long", "namespace", "new", "null", "object", "operator", "out", "override", "params", "private", "protected", "public", "readonly", "ref", "return", "sbyte", "sealed", "short", "sizeof", "stackalloc", "static", "string", "struct", "switch", "this", "throw", "true", "try", "typeof", "uint", "ulong", "unchecked", "unsafe", "ushort", "using", "virtual", "void", "volatile", "while", "add", "alias", "ascending", "descending", "dynamic", "from", "get", "global", "group", "into", "join", "let", "orderby", "partial", "remove", "select", "set", "value", "var", "where", "yield", "cpcdoscesttropbien" };
-        private string[] methods = new string[] { "Equals()", "GetHashCode()", "GetType()", "ToString()", "Maxime", "GetMaxou()" };
-        private string[] snippets = new string[] { "if(^)" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "if(^)" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}" + Constants.vbLf + "else" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "for(^;;)" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "while(^)" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "do" + Constants.vbLf + "{" + Constants.vbLf + "^;" + Constants.vbLf + "}while();", "switch(^)" + Constants.vbLf + "{" + Constants.vbLf + "case : break;" + Constants.vbLf + "}" };
-        private string[] declarationSnippets = new string[] { "public class ^" + Constants.vbLf + "{" + Constants.vbLf + "}", "private class ^" + Constants.vbLf + "{" + Constants.vbLf + "}", "internal class ^" + Constants.vbLf + "{" + Constants.vbLf + "}", "public struct ^" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "private struct ^" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "internal struct ^" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "public void ^()" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "" + Constants.vbLf + "fenetre/^" + Constants.vbLf + "creer/" + Constants.vbLf + "Fin/ fenetre", "internal void ^()" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "protected void ^()" + Constants.vbLf + "{" + Constants.vbLf + ";" + Constants.vbLf + "}", "public ^{ get; set; }", "private ^{ get; set; }", "internal ^{ get; set; }", "protected ^{ get; set; }" };
-
-        // Private invisibleCharsStyle As Style = New InvisibleCharsRenderer(Pens.Gray)
-
-        private Color currentLineColor = Color.FromArgb(100, 210, 210, 255);
-        private Color changedLineColor = Color.FromArgb(255, 230, 230, 255);
-
-        // Private explorerList As List(Of PowerfulCSharpEditor.ExplorerItem) = New List(Of PowerfulCSharpEditor.ExplorerItem)()
-
-        private bool tbFindChanged = false;
-        private DateTime lastNavigatedDateTime = DateTime.Now;
-        [CLSCompliant(false)]
-      
         public System.ComponentModel.Design.IComponentChangeService componentChangeService;
-     
-        private void HostControl_MouseDoubleClick(object sender, EventArgs e)
-        {
-            MessageBox.Show("double click");
-        }
+
         private void EditeurCCplus_Load(object sender, EventArgs e)
         {
             try
@@ -299,8 +73,7 @@ namespace OSMaker
                 {
                     _formCount += 1;
                     HostC = _hostSurfaceManager.GetNewHost(typeof(Form), Host.LoaderType.BasicDesignerLoader);
-                    // AddTabForNewHost("Form" & _formCount.ToString() & " - " & Strings.Design)
-                    HostC.Parent = Panel1;
+                  
                     HostC.Dock = DockStyle.Fill;
 
                     metroFichierXml.Text = Home.OSMPATH;
@@ -404,7 +177,6 @@ namespace OSMaker
         private void CustomInitialize()
         {
             
-           
 
             //on pourra choisir sur quelle forme ajouter en modifiant avec un textbox
           
@@ -424,7 +196,7 @@ namespace OSMaker
         Home.m_toolbox.toolbox1.DesignerHost = HostC.DesignerHost;
             // Dim tabpage As TabPage = New TabPage(tabText)
             // TabPage.Tag = CurrentMenuSelectionLoaderType
-            HostC.Parent = Panel1;
+   
             HostC.Dock = DockStyle.Fill;
 
 
@@ -443,7 +215,7 @@ namespace OSMaker
             ISelectionService s = (ISelectionService)_hostSurfaceManager.GetService(typeof(ISelectionService));
             s.SelectionChanged += new EventHandler(OnSelectionChanged);
         }
-
+        #region commandes
         public void Coller()
         {
             MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
@@ -470,7 +242,6 @@ namespace OSMaker
             var a = System.ComponentModel.Design.StandardCommands.Cut;
             ims.GlobalInvoke(a);
             MenuCommandService.GlobalInvoke(a);
-
 
         }
 
@@ -546,6 +317,7 @@ namespace OSMaker
             ims.GlobalInvoke(a);
             MenuCommandService.GlobalInvoke(a);
         }
+        #endregion commandes
 
         private void ButtonItem1_Click(object sender, EventArgs e)
         {
@@ -566,8 +338,6 @@ namespace OSMaker
             var currentHostControl = HostC;
             ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).Save(true);
         }
-
-    
 
     
         private void ButtonX1_Click_1(object sender, EventArgs e)
@@ -610,106 +380,6 @@ namespace OSMaker
             fileName = metroFichierCCPlus.Text;
         }
 
-        private void ButtonX2_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void Panel1_Paint(object sender, PaintEventArgs e)
-        {
-            // Try
-
-            // _formCount += 1
-            // HostC = _hostSurfaceManager.GetNewHost(TextBoxX2.Text)
-            // rm2.Toolbox.DesignerHost = HostC.DesignerHost
-            // ' Dim tabpage As TabPage = New TabPage(tabText)
-            // TabPage.Tag = CurrentMenuSelectionLoaderType
-            // HostC.Parent = Panel1
-            // HostC.Dock = DockStyle.Fill
-
-
-            // tabControl1.TabPages.Add(tabpage)
-            // tabControl1.SelectedIndex = tabControl1.TabPages.Count - 1
-            // _hostSurfaceManager.ActiveDesignSurface = HostC.HostSurface
-
-            // Dim ims As System.ComponentModel.Design.IMenuCommandService = TryCast(HostC.HostSurface.GetService(GetType(System.ComponentModel.Design.IMenuCommandService)), System.ComponentModel.Design.IMenuCommandService)
-
-            // Catch
-            // MessageBox.Show("Error in creating new host", "Shell Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            // End Try
-        }
-
-        private void ButtonItem1_Click_1(object sender, EventArgs e)
-        {
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            ims.GlobalInvoke(System.ComponentModel.Design.StandardCommands.Delete);
-        }
-
-        // Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-
-        // Try
-        // Dim fileName As String = Nothing
-
-        // Open File Dialog
-        // Dim dlg As OpenFileDialog = New OpenFileDialog()
-        // dlg.DefaultExt = "xml"
-        // dlg.Filter = "Xml Files|*.xml"
-        // If dlg.ShowDialog() = DialogResult.OK Then fileName = dlg.FileName
-        // Equals(fileName, Nothing) Then Return
-
-        // Create Form
-        // _formCount += 1
-        // ostC = _hostSurfaceManager.GetNewHost(fileName)
-        // Toolbox.DesignerHost = hc.DesignerHost
-
-        // xtBoxX2.Text = fileName
-
-        // e.Tag = HostC.HostSurface.Loader
-
-
-        // HostC.Parent = Panel1
-        // HostC.Dock = DockStyle.Fill
-        // _hostSurfaceManager.ActiveDesignSurface = HostC.HostSurface
-        // F 'orm2.Toolbox.DesignerHost = HostC.DesignerHost
-        // Catch
-        // MessageBox.Show("Error in creating new host", "Shell Message", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        // End Try
-        // End Sub
-
-        private void PictureBox4_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Copy_Click(object sender, EventArgs e)
-        {
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            ims.GlobalInvoke(System.ComponentModel.Design.StandardCommands.CenterHorizontally);
-        }
-
-        private void ButtonItem6_Click(object sender, EventArgs e)
-        {
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            ims.GlobalInvoke(System.ComponentModel.Design.StandardCommands.CenterVertically);
-        }
-
-        private void buttonItem1_Click_2(object sender, EventArgs e)
-        {
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            ims.GlobalInvoke(System.ComponentModel.Design.StandardCommands.Copy);
-        }
-
-        private void buttonItem2_Click_1(object sender, EventArgs e)
-        {
-           
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            ims.GlobalInvoke(System.ComponentModel.Design.StandardCommands.Paste);
-            
-        }
-
-        private void Bar1_ItemClick(object sender, EventArgs e)
-        {
-
-        }
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
@@ -746,25 +416,6 @@ namespace OSMaker
 
         private void saveMenuItem_Click(object sender, EventArgs e)
         {
-            // Assigner une valeur aux variables
-            //WinToCpcDosCplus.ModuleCpcDosCplus.OpacitetextS = metroOpacite.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.couleurfondtextS = metroCFR.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.couleurtitretextS = metroCTR.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.ombretextS = metroOmbre.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.imgtitretextS = metroImgTitre.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.iconetextS = metroIcone.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.HandletextS = metroHandle.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.typetextS = metroType.Text;
-            //WinToCpcDosCplus.ModuleCpcDosCplus.ctntextS = metroCTN.Text;
-            //if (metroParametres.Checked == true)
-            //{
-            //    WinToCpcDosCplus.ModuleCpcDosCplus.parametrescheckB = true;
-            //}
-            //else
-            //{
-            //    WinToCpcDosCplus.ModuleCpcDosCplus.parametrescheckB = false;
-            //}
-
             var currentHostControl = HostC;
             string stringXML = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
             ModuleCpcDosCplus.GenTextCpc(stringXML);
@@ -829,10 +480,6 @@ namespace OSMaker
             }
         }
 
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
@@ -840,111 +487,7 @@ namespace OSMaker
             
         }
 
-        private void toolStripMenuItem9_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-           
-        }
-
       
-
-        private void _Panel1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            MessageBox.Show("double click");
-        }
-
-        private void _Panel1_DoubleClick(object sender, EventArgs e)
-        {
-            MessageBox.Show("double click");
-        }
-        
- 
-
-        private void verticalementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.CenterVertically;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-
-        private void toolStripMenuItem9_Click_1(object sender, EventArgs e)
-        {
-            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
-            if (undoEngine != null)
-                undoEngine.DoUndo();
-        }
-
-        private void toolStripMenuItem10_Click(object sender, EventArgs e)
-        {
-            OSMaker.UndoEngineImpl undoEngine = GetService(typeof(UndoEngine)) as OSMaker.UndoEngineImpl;
-            if (undoEngine != null)
-                undoEngine.DoRedo();
-        }
-
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Cut;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void testToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Copy;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void testToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Paste;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
-        private void annulerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Undo;
-            ims.GlobalInvoke(a);
-           
-        }
-
-        private void rétablirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.Redo;
-            ims.GlobalInvoke(a);
-
-        }
-
-        private void sélectionnerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MenuCommandService = new Host.MenuCommandServiceImpl(_hostSurfaceManager);
-            System.ComponentModel.Design.IMenuCommandService ims = HostC.HostSurface.GetService(typeof(System.ComponentModel.Design.IMenuCommandService)) as System.ComponentModel.Design.IMenuCommandService;
-            var a = System.ComponentModel.Design.StandardCommands.SelectAll;
-            ims.GlobalInvoke(a);
-            MenuCommandService.GlobalInvoke(a);
-        }
-
         private void metroButton1_Click(object sender, EventArgs e)
         {
 
@@ -1203,6 +746,16 @@ namespace OSMaker
             {
                 collerCtrlVToolStripMenuItem.Enabled = false;
             }
+        }
+
+        private void metroButton17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroButton18_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

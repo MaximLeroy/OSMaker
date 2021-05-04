@@ -135,9 +135,6 @@ namespace OSMaker
             this._Panel1.Name = "_Panel1";
             this._Panel1.Size = new System.Drawing.Size(1053, 609);
             this._Panel1.TabIndex = 13;
-            this._Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
-            this._Panel1.DoubleClick += new System.EventHandler(this._Panel1_DoubleClick);
-            this._Panel1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this._Panel1_MouseDoubleClick);
             // 
             // panel3
             // 
@@ -284,7 +281,6 @@ namespace OSMaker
             this.sélectionnerToolStripMenuItem.Name = "sélectionnerToolStripMenuItem";
             this.sélectionnerToolStripMenuItem.Size = new System.Drawing.Size(231, 24);
             this.sélectionnerToolStripMenuItem.Text = "Sélectionner tout";
-            this.sélectionnerToolStripMenuItem.Click += new System.EventHandler(this.sélectionnerToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
@@ -336,6 +332,7 @@ namespace OSMaker
             this.metroButton17.TabIndex = 93;
             this.metroButton17.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroButton17.UseSelectable = true;
+            this.metroButton17.Click += new System.EventHandler(this.metroButton17_Click);
             // 
             // metroButton18
             // 
@@ -347,7 +344,7 @@ namespace OSMaker
             this.metroButton18.TabIndex = 92;
             this.metroButton18.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroButton18.UseSelectable = true;
-      
+            this.metroButton18.Click += new System.EventHandler(this.metroButton18_Click);
             // 
             // metroButton11
             // 
@@ -553,7 +550,7 @@ namespace OSMaker
             this.oSMToolStripMenuItem});
             this.affichierLeCodeToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.CodeDefinitionWindow_16x;
             this.affichierLeCodeToolStripMenuItem.Name = "affichierLeCodeToolStripMenuItem";
-            this.affichierLeCodeToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.affichierLeCodeToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.affichierLeCodeToolStripMenuItem.Text = "Show code";
             // 
             // cpcdosCToolStripMenuItem
@@ -575,7 +572,7 @@ namespace OSMaker
             this.mouseMoveToolStripMenuItem});
             this.lierÀUnÉvènementToolStripMenuItem1.Image = global::OSMaker.My.Resources.Resources.EventAdded_16x;
             this.lierÀUnÉvènementToolStripMenuItem1.Name = "lierÀUnÉvènementToolStripMenuItem1";
-            this.lierÀUnÉvènementToolStripMenuItem1.Size = new System.Drawing.Size(214, 26);
+            this.lierÀUnÉvènementToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
             this.lierÀUnÉvènementToolStripMenuItem1.Text = "Link to an event";
             // 
             // mouseClickToolStripMenuItem1
@@ -593,13 +590,13 @@ namespace OSMaker
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(195, 6);
             // 
             // couperToolStripMenuItem
             // 
             this.couperToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Cut_16x;
             this.couperToolStripMenuItem.Name = "couperToolStripMenuItem";
-            this.couperToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.couperToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.couperToolStripMenuItem.Text = "Cut           Ctrl + X";
             this.couperToolStripMenuItem.Click += new System.EventHandler(this.couperToolStripMenuItem_Click);
             // 
@@ -607,7 +604,7 @@ namespace OSMaker
             // 
             this.copierCtrlCToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Copy_16x;
             this.copierCtrlCToolStripMenuItem.Name = "copierCtrlCToolStripMenuItem";
-            this.copierCtrlCToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.copierCtrlCToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.copierCtrlCToolStripMenuItem.Text = "Copy        Ctrl + C";
             this.copierCtrlCToolStripMenuItem.Click += new System.EventHandler(this.copierCtrlCToolStripMenuItem_Click);
             // 
@@ -615,7 +612,7 @@ namespace OSMaker
             // 
             this.collerCtrlVToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Paste_16x;
             this.collerCtrlVToolStripMenuItem.Name = "collerCtrlVToolStripMenuItem";
-            this.collerCtrlVToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.collerCtrlVToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.collerCtrlVToolStripMenuItem.Text = "Paste        Ctrl + V";
             this.collerCtrlVToolStripMenuItem.Click += new System.EventHandler(this.collerCtrlVToolStripMenuItem_Click);
             // 
@@ -623,20 +620,20 @@ namespace OSMaker
             // 
             this.supprimerToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.DeleteAzureResource_16x2;
             this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
-            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.supprimerToolStripMenuItem.Text = "Delete      Del";
             this.supprimerToolStripMenuItem.Click += new System.EventHandler(this.supprimerToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(239, 6);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(195, 6);
             // 
             // mettreEnAvantToolStripMenuItem
             // 
             this.mettreEnAvantToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.avant;
             this.mettreEnAvantToolStripMenuItem.Name = "mettreEnAvantToolStripMenuItem";
-            this.mettreEnAvantToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.mettreEnAvantToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.mettreEnAvantToolStripMenuItem.Text = "Bring to front";
             this.mettreEnAvantToolStripMenuItem.Click += new System.EventHandler(this.mettreEnAvantToolStripMenuItem_Click);
             // 
@@ -651,26 +648,26 @@ namespace OSMaker
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(195, 6);
             // 
             // vérouillerLesContrôlesToolStripMenuItem
             // 
             this.vérouillerLesContrôlesToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Lock_16x;
             this.vérouillerLesContrôlesToolStripMenuItem.Name = "vérouillerLesContrôlesToolStripMenuItem";
-            this.vérouillerLesContrôlesToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.vérouillerLesContrôlesToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.vérouillerLesContrôlesToolStripMenuItem.Text = "Lock controls";
             this.vérouillerLesContrôlesToolStripMenuItem.Click += new System.EventHandler(this.vérouillerLesContrôlesToolStripMenuItem_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(195, 6);
             // 
             // annulerToolStripMenuItem1
             // 
             this.annulerToolStripMenuItem1.Image = global::OSMaker.My.Resources.Resources.Undo_16x;
             this.annulerToolStripMenuItem1.Name = "annulerToolStripMenuItem1";
-            this.annulerToolStripMenuItem1.Size = new System.Drawing.Size(242, 26);
+            this.annulerToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
             this.annulerToolStripMenuItem1.Text = "Undo";
             this.annulerToolStripMenuItem1.Click += new System.EventHandler(this.annulerToolStripMenuItem1_Click);
             // 
@@ -678,14 +675,14 @@ namespace OSMaker
             // 
             this.rétablirToolStripMenuItem1.Image = global::OSMaker.My.Resources.Resources.Redo_16x;
             this.rétablirToolStripMenuItem1.Name = "rétablirToolStripMenuItem1";
-            this.rétablirToolStripMenuItem1.Size = new System.Drawing.Size(242, 26);
+            this.rétablirToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
             this.rétablirToolStripMenuItem1.Text = "Redo";
             this.rétablirToolStripMenuItem1.Click += new System.EventHandler(this.rétablirToolStripMenuItem1_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(195, 6);
             // 
             // alignerToolStripMenuItem
             // 
@@ -694,14 +691,14 @@ namespace OSMaker
             this.verticalementToolStripMenuItem});
             this.alignerToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.FormatDocument_16x;
             this.alignerToolStripMenuItem.Name = "alignerToolStripMenuItem";
-            this.alignerToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.alignerToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.alignerToolStripMenuItem.Text = "Center";
             // 
             // horizontalementToolStripMenuItem
             // 
             this.horizontalementToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.CenterHorizontally_16x;
             this.horizontalementToolStripMenuItem.Name = "horizontalementToolStripMenuItem";
-            this.horizontalementToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.horizontalementToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.horizontalementToolStripMenuItem.Text = "Horizontally";
             this.horizontalementToolStripMenuItem.Click += new System.EventHandler(this.horizontalementToolStripMenuItem_Click_1);
             // 
@@ -709,20 +706,20 @@ namespace OSMaker
             // 
             this.verticalementToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.CenterVertically_16x;
             this.verticalementToolStripMenuItem.Name = "verticalementToolStripMenuItem";
-            this.verticalementToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.verticalementToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.verticalementToolStripMenuItem.Text = "Vertically";
             this.verticalementToolStripMenuItem.Click += new System.EventHandler(this.verticalementToolStripMenuItem_Click_1);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(195, 6);
             // 
             // sélectionnerToutToolStripMenuItem
             // 
             this.sélectionnerToutToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.SelectAll_16x;
             this.sélectionnerToutToolStripMenuItem.Name = "sélectionnerToutToolStripMenuItem";
-            this.sélectionnerToutToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.sélectionnerToutToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.sélectionnerToutToolStripMenuItem.Text = "Select all";
             this.sélectionnerToutToolStripMenuItem.Click += new System.EventHandler(this.sélectionnerToutToolStripMenuItem_Click_1);
             // 
@@ -786,7 +783,6 @@ namespace OSMaker
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
             this.testToolStripMenuItem.Size = new System.Drawing.Size(231, 24);
             this.testToolStripMenuItem.Text = "Couper";
-            this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
             // 
             // testToolStripMenuItem1
             // 
@@ -794,7 +790,6 @@ namespace OSMaker
             this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
             this.testToolStripMenuItem1.Size = new System.Drawing.Size(231, 24);
             this.testToolStripMenuItem1.Text = "Copier";
-            this.testToolStripMenuItem1.Click += new System.EventHandler(this.testToolStripMenuItem1_Click);
             // 
             // testToolStripMenuItem2
             // 
@@ -802,7 +797,6 @@ namespace OSMaker
             this.testToolStripMenuItem2.Name = "testToolStripMenuItem2";
             this.testToolStripMenuItem2.Size = new System.Drawing.Size(231, 24);
             this.testToolStripMenuItem2.Text = "Coller";
-            this.testToolStripMenuItem2.Click += new System.EventHandler(this.testToolStripMenuItem2_Click);
             // 
             // annulerToolStripMenuItem
             // 
@@ -810,7 +804,6 @@ namespace OSMaker
             this.annulerToolStripMenuItem.Name = "annulerToolStripMenuItem";
             this.annulerToolStripMenuItem.Size = new System.Drawing.Size(231, 24);
             this.annulerToolStripMenuItem.Text = "Annuler";
-            this.annulerToolStripMenuItem.Click += new System.EventHandler(this.annulerToolStripMenuItem_Click);
             // 
             // rétablirToolStripMenuItem
             // 
@@ -818,7 +811,6 @@ namespace OSMaker
             this.rétablirToolStripMenuItem.Name = "rétablirToolStripMenuItem";
             this.rétablirToolStripMenuItem.Size = new System.Drawing.Size(231, 24);
             this.rétablirToolStripMenuItem.Text = "Rétablir";
-            this.rétablirToolStripMenuItem.Click += new System.EventHandler(this.rétablirToolStripMenuItem_Click);
             // 
             // IUGConceptor
             // 
@@ -845,29 +837,8 @@ namespace OSMaker
     
         private Panel _Panel1;
 
-        internal Panel Panel1
-        {
-            [MethodImpl(MethodImplOptions.Synchronized)]
-            get
-            {
-                return _Panel1;
-            }
-
-            [MethodImpl(MethodImplOptions.Synchronized)]
-            set
-            {
-                if (_Panel1 != null)
-                {
-                    _Panel1.Paint -= Panel1_Paint;
-                }
-
-                _Panel1 = value;
-                if (_Panel1 != null)
-                {
-                    _Panel1.Paint += Panel1_Paint;
-                }
-            }
-        }
+   
+        
 
      
 

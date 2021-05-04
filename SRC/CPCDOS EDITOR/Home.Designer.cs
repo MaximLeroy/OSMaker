@@ -80,11 +80,8 @@
             this.menuItemLayoutByXml = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuItemTools = new System.Windows.Forms.ToolStripMenuItem();
-            this.virtualisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemWindow = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemNewWindow = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
@@ -207,15 +204,15 @@
             this.menuItemNew.Image = global::OSMaker.My.Resources.Resources.NewFile_16x;
             this.menuItemNew.Name = "menuItemNew";
             this.menuItemNew.Size = new System.Drawing.Size(290, 26);
-            this.menuItemNew.Text = "Nouveau";
+            this.menuItemNew.Text = "New";
             // 
             // dossierToolStripMenuItem1
             // 
             this.dossierToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.dossierToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Control;
             this.dossierToolStripMenuItem1.Name = "dossierToolStripMenuItem1";
-            this.dossierToolStripMenuItem1.Size = new System.Drawing.Size(291, 26);
-            this.dossierToolStripMenuItem1.Text = "Dossier";
+            this.dossierToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.dossierToolStripMenuItem1.Text = "Folder";
             // 
             // fenêtreToolStripMenuItem
             // 
@@ -226,8 +223,8 @@
             this.fenêtreToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fenêtreToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.IUG;
             this.fenêtreToolStripMenuItem.Name = "fenêtreToolStripMenuItem";
-            this.fenêtreToolStripMenuItem.Size = new System.Drawing.Size(291, 26);
-            this.fenêtreToolStripMenuItem.Text = "Interface utilisateur graphique";
+            this.fenêtreToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fenêtreToolStripMenuItem.Text = "Window";
             // 
             // fenêtreToolStripMenuItem1
             // 
@@ -235,7 +232,7 @@
             this.fenêtreToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Control;
             this.fenêtreToolStripMenuItem1.Image = global::OSMaker.My.Resources.Resources.WIN;
             this.fenêtreToolStripMenuItem1.Name = "fenêtreToolStripMenuItem1";
-            this.fenêtreToolStripMenuItem1.Size = new System.Drawing.Size(141, 26);
+            this.fenêtreToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.fenêtreToolStripMenuItem1.Text = "Fenêtre";
             // 
             // bureauToolStripMenuItem
@@ -243,7 +240,7 @@
             this.bureauToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.bureauToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.bureauToolStripMenuItem.Name = "bureauToolStripMenuItem";
-            this.bureauToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
+            this.bureauToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.bureauToolStripMenuItem.Text = "Bureau";
             // 
             // fichierCpcdosCToolStripMenuItem
@@ -252,16 +249,16 @@
             this.fichierCpcdosCToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierCpcdosCToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.code_cpc_file;
             this.fichierCpcdosCToolStripMenuItem.Name = "fichierCpcdosCToolStripMenuItem";
-            this.fichierCpcdosCToolStripMenuItem.Size = new System.Drawing.Size(291, 26);
-            this.fichierCpcdosCToolStripMenuItem.Text = "Fichier CpcdosC+";
+            this.fichierCpcdosCToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fichierCpcdosCToolStripMenuItem.Text = "CpcdosC+ file";
             // 
             // fichierTexteToolStripMenuItem
             // 
             this.fichierTexteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierTexteToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierTexteToolStripMenuItem.Name = "fichierTexteToolStripMenuItem";
-            this.fichierTexteToolStripMenuItem.Size = new System.Drawing.Size(291, 26);
-            this.fichierTexteToolStripMenuItem.Text = "Fichier Texte";
+            this.fichierTexteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fichierTexteToolStripMenuItem.Text = "Text file";
             // 
             // autresLanguagesToolStripMenuItem
             // 
@@ -273,7 +270,7 @@
             this.fichierXMLToolStripMenuItem});
             this.autresLanguagesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.autresLanguagesToolStripMenuItem.Name = "autresLanguagesToolStripMenuItem";
-            this.autresLanguagesToolStripMenuItem.Size = new System.Drawing.Size(291, 26);
+            this.autresLanguagesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.autresLanguagesToolStripMenuItem.Text = "Autres languages";
             // 
             // fichierCToolStripMenuItem
@@ -281,7 +278,7 @@
             this.fichierCToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierCToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierCToolStripMenuItem.Name = "fichierCToolStripMenuItem";
-            this.fichierCToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.fichierCToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierCToolStripMenuItem.Text = "Fichier C";
             // 
             // fichierCToolStripMenuItem1
@@ -289,7 +286,7 @@
             this.fichierCToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierCToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierCToolStripMenuItem1.Name = "fichierCToolStripMenuItem1";
-            this.fichierCToolStripMenuItem1.Size = new System.Drawing.Size(171, 26);
+            this.fichierCToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.fichierCToolStripMenuItem1.Text = "Fichier C++";
             // 
             // fichierJAVAToolStripMenuItem
@@ -297,7 +294,7 @@
             this.fichierJAVAToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierJAVAToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierJAVAToolStripMenuItem.Name = "fichierJAVAToolStripMenuItem";
-            this.fichierJAVAToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.fichierJAVAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierJAVAToolStripMenuItem.Text = "Fichier JAVA";
             // 
             // fichierXMLToolStripMenuItem
@@ -305,7 +302,7 @@
             this.fichierXMLToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierXMLToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierXMLToolStripMenuItem.Name = "fichierXMLToolStripMenuItem";
-            this.fichierXMLToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.fichierXMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierXMLToolStripMenuItem.Text = "Fichier XML";
             // 
             // menuItemOpen
@@ -318,7 +315,7 @@
             this.menuItemOpen.Image = global::OSMaker.My.Resources.Resources.Open_16x;
             this.menuItemOpen.Name = "menuItemOpen";
             this.menuItemOpen.Size = new System.Drawing.Size(290, 26);
-            this.menuItemOpen.Text = "Ouvrir";
+            this.menuItemOpen.Text = "Open";
             // 
             // dossierToolStripMenuItem
             // 
@@ -326,16 +323,16 @@
             this.dossierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.dossierToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.folder;
             this.dossierToolStripMenuItem.Name = "dossierToolStripMenuItem";
-            this.dossierToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
-            this.dossierToolStripMenuItem.Text = "Dossier";
+            this.dossierToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dossierToolStripMenuItem.Text = "Folder";
             // 
             // fichierToolStripMenuItem
             // 
             this.fichierToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(141, 26);
-            this.fichierToolStripMenuItem.Text = "Fichier";
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fichierToolStripMenuItem.Text = "File";
             this.fichierToolStripMenuItem.Click += new System.EventHandler(this.fichierToolStripMenuItem_Click);
             // 
             // menuItemClose
@@ -345,7 +342,7 @@
             this.menuItemClose.Image = global::OSMaker.My.Resources.Resources.Close_red_16x;
             this.menuItemClose.Name = "menuItemClose";
             this.menuItemClose.Size = new System.Drawing.Size(290, 26);
-            this.menuItemClose.Text = "Fermer";
+            this.menuItemClose.Text = "Close";
             this.menuItemClose.Click += new System.EventHandler(this.menuItemClose_Click);
             // 
             // menuItemCloseAll
@@ -355,7 +352,7 @@
             this.menuItemCloseAll.Image = global::OSMaker.My.Resources.Resources.Close_red_16x;
             this.menuItemCloseAll.Name = "menuItemCloseAll";
             this.menuItemCloseAll.Size = new System.Drawing.Size(290, 26);
-            this.menuItemCloseAll.Text = "Tout fermer";
+            this.menuItemCloseAll.Text = "Close all";
             // 
             // menuItemCloseAllButThisOne
             // 
@@ -383,7 +380,7 @@
             this.fichierCCToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierCCToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.code_cpc_file;
             this.fichierCCToolStripMenuItem.Name = "fichierCCToolStripMenuItem";
-            this.fichierCCToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
+            this.fichierCCToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierCCToolStripMenuItem.Text = "Fichier CC+ (IUG)";
             this.fichierCCToolStripMenuItem.Click += new System.EventHandler(this.fichierCCToolStripMenuItem_Click);
             // 
@@ -421,8 +418,8 @@
             this.menuItemSolutionExplorer.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemSolutionExplorer.Image = global::OSMaker.My.Resources.Resources.file_explorer;
             this.menuItemSolutionExplorer.Name = "menuItemSolutionExplorer";
-            this.menuItemSolutionExplorer.Size = new System.Drawing.Size(264, 26);
-            this.menuItemSolutionExplorer.Text = "&Explorateur de fichiers";
+            this.menuItemSolutionExplorer.Size = new System.Drawing.Size(224, 26);
+            this.menuItemSolutionExplorer.Text = "&OS explorer";
             this.menuItemSolutionExplorer.Click += new System.EventHandler(this.menuItemSolutionExplorer_Click_1);
             // 
             // menuItemPropertyWindow
@@ -431,8 +428,8 @@
             this.menuItemPropertyWindow.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemPropertyWindow.Name = "menuItemPropertyWindow";
             this.menuItemPropertyWindow.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.menuItemPropertyWindow.Size = new System.Drawing.Size(264, 26);
-            this.menuItemPropertyWindow.Text = "&Fenêtre des propriétés";
+            this.menuItemPropertyWindow.Size = new System.Drawing.Size(224, 26);
+            this.menuItemPropertyWindow.Text = "&Property";
             this.menuItemPropertyWindow.Click += new System.EventHandler(this.menuItemPropertyWindow_Click_1);
             // 
             // menuItemToolbox
@@ -441,8 +438,8 @@
             this.menuItemToolbox.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemToolbox.Image = global::OSMaker.My.Resources.Resources.repair_tools;
             this.menuItemToolbox.Name = "menuItemToolbox";
-            this.menuItemToolbox.Size = new System.Drawing.Size(264, 26);
-            this.menuItemToolbox.Text = "Boite à outils";
+            this.menuItemToolbox.Size = new System.Drawing.Size(224, 26);
+            this.menuItemToolbox.Text = "Toolbox";
             this.menuItemToolbox.Click += new System.EventHandler(this.menuItemToolbox_Click_1);
             // 
             // menuItemOutputWindow
@@ -450,15 +447,15 @@
             this.menuItemOutputWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.menuItemOutputWindow.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemOutputWindow.Name = "menuItemOutputWindow";
-            this.menuItemOutputWindow.Size = new System.Drawing.Size(264, 26);
-            this.menuItemOutputWindow.Text = "&Output Window";
+            this.menuItemOutputWindow.Size = new System.Drawing.Size(224, 26);
+            this.menuItemOutputWindow.Text = "&Output";
             // 
             // menuItemTaskList
             // 
             this.menuItemTaskList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.menuItemTaskList.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemTaskList.Name = "menuItemTaskList";
-            this.menuItemTaskList.Size = new System.Drawing.Size(264, 26);
+            this.menuItemTaskList.Size = new System.Drawing.Size(224, 26);
             this.menuItemTaskList.Text = "Task &List";
             // 
             // menuItemToolBar
@@ -468,7 +465,7 @@
             this.menuItemToolBar.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItemToolBar.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemToolBar.Name = "menuItemToolBar";
-            this.menuItemToolBar.Size = new System.Drawing.Size(264, 26);
+            this.menuItemToolBar.Size = new System.Drawing.Size(224, 26);
             this.menuItemToolBar.Text = "Tool &Bar";
             // 
             // menuItemStatusBar
@@ -478,7 +475,7 @@
             this.menuItemStatusBar.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItemStatusBar.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemStatusBar.Name = "menuItemStatusBar";
-            this.menuItemStatusBar.Size = new System.Drawing.Size(264, 26);
+            this.menuItemStatusBar.Size = new System.Drawing.Size(224, 26);
             this.menuItemStatusBar.Text = "Status B&ar";
             // 
             // menuItemLayoutByCode
@@ -486,7 +483,7 @@
             this.menuItemLayoutByCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.menuItemLayoutByCode.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemLayoutByCode.Name = "menuItemLayoutByCode";
-            this.menuItemLayoutByCode.Size = new System.Drawing.Size(264, 26);
+            this.menuItemLayoutByCode.Size = new System.Drawing.Size(224, 26);
             this.menuItemLayoutByCode.Text = "Layout By &Code";
             // 
             // menuItemLayoutByXml
@@ -494,63 +491,38 @@
             this.menuItemLayoutByXml.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.menuItemLayoutByXml.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemLayoutByXml.Name = "menuItemLayoutByXml";
-            this.menuItemLayoutByXml.Size = new System.Drawing.Size(264, 26);
+            this.menuItemLayoutByXml.Size = new System.Drawing.Size(224, 26);
             this.menuItemLayoutByXml.Text = "Layout By &XML";
             this.menuItemLayoutByXml.Click += new System.EventHandler(this.menuItemLayoutByXml_Click_1);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(261, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // menuItemTools
             // 
-            this.menuItemTools.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.virtualisationToolStripMenuItem});
             this.menuItemTools.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemTools.MergeIndex = 2;
             this.menuItemTools.Name = "menuItemTools";
             this.menuItemTools.Size = new System.Drawing.Size(58, 24);
             this.menuItemTools.Text = "Tools";
             // 
-            // virtualisationToolStripMenuItem
-            // 
-            this.virtualisationToolStripMenuItem.Name = "virtualisationToolStripMenuItem";
-            this.virtualisationToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
-            this.virtualisationToolStripMenuItem.Text = "Virtualisation";
-            // 
             // menuItemWindow
             // 
-            this.menuItemWindow.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemNewWindow});
             this.menuItemWindow.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemWindow.MergeIndex = 2;
             this.menuItemWindow.Name = "menuItemWindow";
             this.menuItemWindow.Size = new System.Drawing.Size(78, 24);
             this.menuItemWindow.Text = "Window";
             // 
-            // menuItemNewWindow
-            // 
-            this.menuItemNewWindow.Name = "menuItemNewWindow";
-            this.menuItemNewWindow.Size = new System.Drawing.Size(181, 26);
-            this.menuItemNewWindow.Text = "&New Window";
-            // 
             // menuItemHelp
             // 
-            this.menuItemHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemAbout});
             this.menuItemHelp.ForeColor = System.Drawing.SystemColors.Control;
             this.menuItemHelp.MergeIndex = 3;
             this.menuItemHelp.Name = "menuItemHelp";
             this.menuItemHelp.Size = new System.Drawing.Size(55, 24);
             this.menuItemHelp.Text = "Help";
-            // 
-            // menuItemAbout
-            // 
-            this.menuItemAbout.Name = "menuItemAbout";
-            this.menuItemAbout.Size = new System.Drawing.Size(230, 26);
-            this.menuItemAbout.Text = "&About DockSample...";
-            this.menuItemAbout.Click += new System.EventHandler(this.menuItemAbout_Click);
             // 
             // panel3
             // 
@@ -1000,9 +972,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem menuItemTools;
         private System.Windows.Forms.ToolStripMenuItem menuItemWindow;
-        private System.Windows.Forms.ToolStripMenuItem menuItemNewWindow;
         private System.Windows.Forms.ToolStripMenuItem menuItemHelp;
-        private System.Windows.Forms.ToolStripMenuItem menuItemAbout;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
@@ -1021,7 +991,6 @@
         private System.Windows.Forms.ToolStripMenuItem dossierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichierCCToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem virtualisationToolStripMenuItem;
         private MetroFramework.Controls.MetroButton metroButton2;
         private System.Windows.Forms.Timer timer1;
         private MetroFramework.Components.MetroStyleManager metroStyleManager1;

@@ -37,32 +37,42 @@
             this._tb = new FastColoredTextBoxNS.FastColoredTextBox();
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.couperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copierCtrlCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.collerCtrlVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
-            this.sélectionnerToutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.commentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.annulerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.rétablirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.tmUpdateInterface2 = new System.Windows.Forms.Timer(this.components);
             this.ilAutocomplete = new System.Windows.Forms.ImageList(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.metroFichierXml = new MetroFramework.Controls.MetroTextBox();
+            this.DocumentMap1 = new FastColoredTextBoxNS.DocumentMap();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.couperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copierCtrlCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.collerCtrlVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sélectionnerToutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.commentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.annulerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rétablirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.metroButton17 = new MetroFramework.Controls.MetroButton();
             this.selectAllButton = new MetroFramework.Controls.MetroButton();
             this.replaceButton = new MetroFramework.Controls.MetroButton();
@@ -78,17 +88,7 @@
             this.undoButton = new MetroFramework.Controls.MetroButton();
             this.metroButton15 = new MetroFramework.Controls.MetroButton();
             this.saveButton = new MetroFramework.Controls.MetroButton();
-            this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.metroFichierXml = new MetroFramework.Controls.MetroTextBox();
-            this.DocumentMap1 = new FastColoredTextBoxNS.DocumentMap();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this._tb)).BeginInit();
             this.metroContextMenu1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -107,6 +107,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(258, 96);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
+            this.richTextBox1.Visible = false;
             // 
             // _tb
             // 
@@ -186,106 +187,25 @@
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(257, 6);
             // 
-            // couperToolStripMenuItem
-            // 
-            this.couperToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Cut_16x;
-            this.couperToolStripMenuItem.Name = "couperToolStripMenuItem";
-            this.couperToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
-            this.couperToolStripMenuItem.Text = "Cut           Ctrl + X";
-            this.couperToolStripMenuItem.Click += new System.EventHandler(this.couperToolStripMenuItem_Click);
-            // 
-            // copierCtrlCToolStripMenuItem
-            // 
-            this.copierCtrlCToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Copy_16x;
-            this.copierCtrlCToolStripMenuItem.Name = "copierCtrlCToolStripMenuItem";
-            this.copierCtrlCToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
-            this.copierCtrlCToolStripMenuItem.Text = "Copy        Ctrl + C";
-            this.copierCtrlCToolStripMenuItem.Click += new System.EventHandler(this.copierCtrlCToolStripMenuItem_Click);
-            // 
-            // collerCtrlVToolStripMenuItem
-            // 
-            this.collerCtrlVToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Paste_16x;
-            this.collerCtrlVToolStripMenuItem.Name = "collerCtrlVToolStripMenuItem";
-            this.collerCtrlVToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
-            this.collerCtrlVToolStripMenuItem.Text = "Paste        Ctrl + V";
-            this.collerCtrlVToolStripMenuItem.Click += new System.EventHandler(this.collerCtrlVToolStripMenuItem_Click);
-            // 
-            // supprimerToolStripMenuItem
-            // 
-            this.supprimerToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.DeleteAzureResource_16x2;
-            this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
-            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
-            this.supprimerToolStripMenuItem.Text = "Delete      Del";
-            // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(257, 6);
-            // 
-            // sélectionnerToutToolStripMenuItem
-            // 
-            this.sélectionnerToutToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.SelectAll_16x;
-            this.sélectionnerToutToolStripMenuItem.Name = "sélectionnerToutToolStripMenuItem";
-            this.sélectionnerToutToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
-            this.sélectionnerToutToolStripMenuItem.Text = "Select all";
-            this.sélectionnerToutToolStripMenuItem.Click += new System.EventHandler(this.sélectionnerToutToolStripMenuItem_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
             this.toolStripSeparator8.Size = new System.Drawing.Size(257, 6);
             // 
-            // commentToolStripMenuItem
-            // 
-            this.commentToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.CommentCode_16x1;
-            this.commentToolStripMenuItem.Name = "commentToolStripMenuItem";
-            this.commentToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
-            this.commentToolStripMenuItem.Text = "Comment selected";
-            this.commentToolStripMenuItem.Click += new System.EventHandler(this.commentToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Image = global::OSMaker.My.Resources.Resources.UncommentCode_16x;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(260, 26);
-            this.toolStripMenuItem5.Text = "Uncomment selected";
-            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
-            // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
             this.toolStripSeparator9.Size = new System.Drawing.Size(257, 6);
             // 
-            // annulerToolStripMenuItem1
-            // 
-            this.annulerToolStripMenuItem1.Enabled = false;
-            this.annulerToolStripMenuItem1.Image = global::OSMaker.My.Resources.Resources.Undo_16x;
-            this.annulerToolStripMenuItem1.Name = "annulerToolStripMenuItem1";
-            this.annulerToolStripMenuItem1.Size = new System.Drawing.Size(260, 26);
-            this.annulerToolStripMenuItem1.Text = "Undo";
-            this.annulerToolStripMenuItem1.Click += new System.EventHandler(this.annulerToolStripMenuItem1_Click);
-            // 
-            // rétablirToolStripMenuItem1
-            // 
-            this.rétablirToolStripMenuItem1.Enabled = false;
-            this.rétablirToolStripMenuItem1.Image = global::OSMaker.My.Resources.Resources.Redo_16x;
-            this.rétablirToolStripMenuItem1.Name = "rétablirToolStripMenuItem1";
-            this.rétablirToolStripMenuItem1.Size = new System.Drawing.Size(260, 26);
-            this.rétablirToolStripMenuItem1.Text = "Redo";
-            this.rétablirToolStripMenuItem1.Click += new System.EventHandler(this.rétablirToolStripMenuItem1_Click);
-            // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(257, 6);
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Image = global::OSMaker.My.Resources.Resources.CopyItem_16x;
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(260, 26);
-            this.toolStripMenuItem7.Text = "Clone line(s)";
-            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
@@ -298,22 +218,6 @@
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
             this.toolStripSeparator11.Size = new System.Drawing.Size(257, 6);
-            // 
-            // toolStripMenuItem9
-            // 
-            this.toolStripMenuItem9.Image = global::OSMaker.My.Resources.Resources.FindInFile_16x;
-            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(260, 26);
-            this.toolStripMenuItem9.Text = "Find";
-            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
-            // 
-            // toolStripMenuItem10
-            // 
-            this.toolStripMenuItem10.Image = global::OSMaker.My.Resources.Resources.ReplaceAll_16x;
-            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(260, 26);
-            this.toolStripMenuItem10.Text = "Replace";
-            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // panel1
             // 
@@ -336,18 +240,6 @@
             this.panel4.Size = new System.Drawing.Size(502, 35);
             this.panel4.TabIndex = 79;
             this.panel4.Visible = false;
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.BackgroundImage = global::OSMaker.My.Resources.Resources.FolderBrowserDialogControl_16x;
-            this.metroButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton4.Location = new System.Drawing.Point(458, 4);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(35, 23);
-            this.metroButton4.TabIndex = 80;
-            this.metroButton4.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton4.UseSelectable = true;
-            this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click_1);
             // 
             // metroTextBox1
             // 
@@ -427,6 +319,271 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1300, 31);
             this.panel2.TabIndex = 80;
+            // 
+            // metroStyleManager1
+            // 
+            this.metroStyleManager1.Owner = this;
+            this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.metroFichierXml);
+            this.panel3.Location = new System.Drawing.Point(578, 29);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(364, 31);
+            this.panel3.TabIndex = 81;
+            this.panel3.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(210, 5);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(145, 24);
+            this.comboBox1.TabIndex = 72;
+            // 
+            // metroFichierXml
+            // 
+            // 
+            // 
+            // 
+            this.metroFichierXml.CustomButton.Image = null;
+            this.metroFichierXml.CustomButton.Location = new System.Drawing.Point(179, 1);
+            this.metroFichierXml.CustomButton.Name = "";
+            this.metroFichierXml.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroFichierXml.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroFichierXml.CustomButton.TabIndex = 1;
+            this.metroFichierXml.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroFichierXml.CustomButton.UseSelectable = true;
+            this.metroFichierXml.CustomButton.Visible = false;
+            this.metroFichierXml.Lines = new string[0];
+            this.metroFichierXml.Location = new System.Drawing.Point(3, 6);
+            this.metroFichierXml.MaxLength = 32767;
+            this.metroFichierXml.Name = "metroFichierXml";
+            this.metroFichierXml.PasswordChar = '\0';
+            this.metroFichierXml.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroFichierXml.SelectedText = "";
+            this.metroFichierXml.SelectionLength = 0;
+            this.metroFichierXml.SelectionStart = 0;
+            this.metroFichierXml.ShortcutsEnabled = true;
+            this.metroFichierXml.Size = new System.Drawing.Size(201, 23);
+            this.metroFichierXml.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroFichierXml.TabIndex = 71;
+            this.metroFichierXml.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroFichierXml.UseCustomBackColor = true;
+            this.metroFichierXml.UseSelectable = true;
+            this.metroFichierXml.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroFichierXml.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // DocumentMap1
+            // 
+            this.DocumentMap1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.DocumentMap1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DocumentMap1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DocumentMap1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(175)))));
+            this.DocumentMap1.Location = new System.Drawing.Point(0, 0);
+            this.DocumentMap1.Margin = new System.Windows.Forms.Padding(4);
+            this.DocumentMap1.Name = "DocumentMap1";
+            this.DocumentMap1.Size = new System.Drawing.Size(201, 435);
+            this.DocumentMap1.TabIndex = 7;
+            this.DocumentMap1.Target = this._tb;
+            this.DocumentMap1.Text = "DocumentMap1";
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "";
+            this.Column2.MinimumWidth = 32;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 32;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column2,
+            this.Column1});
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.DimGray;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(201, 435);
+            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.VirtualMode = true;
+            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
+            this.dataGridView1.CellValueNeeded += new System.Windows.Forms.DataGridViewCellValueEventHandler(this.dataGridView1_CellValueNeeded);
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton1.Location = new System.Drawing.Point(0, 0);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(99, 18);
+            this.metroButton1.TabIndex = 8;
+            this.metroButton1.Text = "View";
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton2.Location = new System.Drawing.Point(98, 0);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(103, 18);
+            this.metroButton2.TabIndex = 9;
+            this.metroButton2.Text = "Elements";
+            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.metroButton2);
+            this.panel5.Controls.Add(this.metroButton1);
+            this.panel5.Controls.Add(this.dataGridView1);
+            this.panel5.Controls.Add(this.DocumentMap1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(1099, 31);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(201, 435);
+            this.panel5.TabIndex = 80;
+            // 
+            // couperToolStripMenuItem
+            // 
+            this.couperToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Cut_16x;
+            this.couperToolStripMenuItem.Name = "couperToolStripMenuItem";
+            this.couperToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.couperToolStripMenuItem.Text = "Cut           Ctrl + X";
+            this.couperToolStripMenuItem.Click += new System.EventHandler(this.couperToolStripMenuItem_Click);
+            // 
+            // copierCtrlCToolStripMenuItem
+            // 
+            this.copierCtrlCToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Copy_16x;
+            this.copierCtrlCToolStripMenuItem.Name = "copierCtrlCToolStripMenuItem";
+            this.copierCtrlCToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.copierCtrlCToolStripMenuItem.Text = "Copy        Ctrl + C";
+            this.copierCtrlCToolStripMenuItem.Click += new System.EventHandler(this.copierCtrlCToolStripMenuItem_Click);
+            // 
+            // collerCtrlVToolStripMenuItem
+            // 
+            this.collerCtrlVToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.Paste_16x;
+            this.collerCtrlVToolStripMenuItem.Name = "collerCtrlVToolStripMenuItem";
+            this.collerCtrlVToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.collerCtrlVToolStripMenuItem.Text = "Paste        Ctrl + V";
+            this.collerCtrlVToolStripMenuItem.Click += new System.EventHandler(this.collerCtrlVToolStripMenuItem_Click);
+            // 
+            // supprimerToolStripMenuItem
+            // 
+            this.supprimerToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.DeleteAzureResource_16x2;
+            this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.supprimerToolStripMenuItem.Text = "Delete      Del";
+            // 
+            // sélectionnerToutToolStripMenuItem
+            // 
+            this.sélectionnerToutToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.SelectAll_16x;
+            this.sélectionnerToutToolStripMenuItem.Name = "sélectionnerToutToolStripMenuItem";
+            this.sélectionnerToutToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.sélectionnerToutToolStripMenuItem.Text = "Select all";
+            this.sélectionnerToutToolStripMenuItem.Click += new System.EventHandler(this.sélectionnerToutToolStripMenuItem_Click);
+            // 
+            // commentToolStripMenuItem
+            // 
+            this.commentToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.CommentCode_16x1;
+            this.commentToolStripMenuItem.Name = "commentToolStripMenuItem";
+            this.commentToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
+            this.commentToolStripMenuItem.Text = "Comment selected";
+            this.commentToolStripMenuItem.Click += new System.EventHandler(this.commentToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Image = global::OSMaker.My.Resources.Resources.UncommentCode_16x;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(260, 26);
+            this.toolStripMenuItem5.Text = "Uncomment selected";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
+            // 
+            // annulerToolStripMenuItem1
+            // 
+            this.annulerToolStripMenuItem1.Enabled = false;
+            this.annulerToolStripMenuItem1.Image = global::OSMaker.My.Resources.Resources.Undo_16x;
+            this.annulerToolStripMenuItem1.Name = "annulerToolStripMenuItem1";
+            this.annulerToolStripMenuItem1.Size = new System.Drawing.Size(260, 26);
+            this.annulerToolStripMenuItem1.Text = "Undo";
+            this.annulerToolStripMenuItem1.Click += new System.EventHandler(this.annulerToolStripMenuItem1_Click);
+            // 
+            // rétablirToolStripMenuItem1
+            // 
+            this.rétablirToolStripMenuItem1.Enabled = false;
+            this.rétablirToolStripMenuItem1.Image = global::OSMaker.My.Resources.Resources.Redo_16x;
+            this.rétablirToolStripMenuItem1.Name = "rétablirToolStripMenuItem1";
+            this.rétablirToolStripMenuItem1.Size = new System.Drawing.Size(260, 26);
+            this.rétablirToolStripMenuItem1.Text = "Redo";
+            this.rétablirToolStripMenuItem1.Click += new System.EventHandler(this.rétablirToolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Image = global::OSMaker.My.Resources.Resources.CopyItem_16x;
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(260, 26);
+            this.toolStripMenuItem7.Text = "Clone line(s)";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Image = global::OSMaker.My.Resources.Resources.FindInFile_16x;
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(260, 26);
+            this.toolStripMenuItem9.Text = "Find";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Image = global::OSMaker.My.Resources.Resources.ReplaceAll_16x;
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(260, 26);
+            this.toolStripMenuItem10.Text = "Replace";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // metroButton17
             // 
@@ -610,173 +767,17 @@
             this.saveButton.UseSelectable = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // metroStyleManager1
+            // metroButton4
             // 
-            this.metroStyleManager1.Owner = this;
-            this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.metroFichierXml);
-            this.panel3.Location = new System.Drawing.Point(578, 29);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(364, 31);
-            this.panel3.TabIndex = 81;
-            this.panel3.Visible = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(210, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(145, 24);
-            this.comboBox1.TabIndex = 72;
-            // 
-            // metroFichierXml
-            // 
-            // 
-            // 
-            // 
-            this.metroFichierXml.CustomButton.Image = null;
-            this.metroFichierXml.CustomButton.Location = new System.Drawing.Point(179, 1);
-            this.metroFichierXml.CustomButton.Name = "";
-            this.metroFichierXml.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroFichierXml.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroFichierXml.CustomButton.TabIndex = 1;
-            this.metroFichierXml.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroFichierXml.CustomButton.UseSelectable = true;
-            this.metroFichierXml.CustomButton.Visible = false;
-            this.metroFichierXml.Lines = new string[0];
-            this.metroFichierXml.Location = new System.Drawing.Point(3, 6);
-            this.metroFichierXml.MaxLength = 32767;
-            this.metroFichierXml.Name = "metroFichierXml";
-            this.metroFichierXml.PasswordChar = '\0';
-            this.metroFichierXml.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroFichierXml.SelectedText = "";
-            this.metroFichierXml.SelectionLength = 0;
-            this.metroFichierXml.SelectionStart = 0;
-            this.metroFichierXml.ShortcutsEnabled = true;
-            this.metroFichierXml.Size = new System.Drawing.Size(201, 23);
-            this.metroFichierXml.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroFichierXml.TabIndex = 71;
-            this.metroFichierXml.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroFichierXml.UseCustomBackColor = true;
-            this.metroFichierXml.UseSelectable = true;
-            this.metroFichierXml.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroFichierXml.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // DocumentMap1
-            // 
-            this.DocumentMap1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.DocumentMap1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DocumentMap1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DocumentMap1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(145)))), ((int)(((byte)(175)))));
-            this.DocumentMap1.Location = new System.Drawing.Point(0, 0);
-            this.DocumentMap1.Margin = new System.Windows.Forms.Padding(4);
-            this.DocumentMap1.Name = "DocumentMap1";
-            this.DocumentMap1.Size = new System.Drawing.Size(201, 435);
-            this.DocumentMap1.TabIndex = 7;
-            this.DocumentMap1.Target = this._tb;
-            this.DocumentMap1.Text = "DocumentMap1";
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "";
-            this.Column2.MinimumWidth = 32;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 32;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2,
-            this.Column1});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.DimGray;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(201, 435);
-            this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.VirtualMode = true;
-            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
-            this.dataGridView1.CellValueNeeded += new System.Windows.Forms.DataGridViewCellValueEventHandler(this.dataGridView1_CellValueNeeded);
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton1.Location = new System.Drawing.Point(0, 0);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(99, 18);
-            this.metroButton1.TabIndex = 8;
-            this.metroButton1.Text = "View";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton2.Location = new System.Drawing.Point(98, 0);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(103, 18);
-            this.metroButton2.TabIndex = 9;
-            this.metroButton2.Text = "Elements";
-            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.metroButton2);
-            this.panel5.Controls.Add(this.metroButton1);
-            this.panel5.Controls.Add(this.dataGridView1);
-            this.panel5.Controls.Add(this.DocumentMap1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1099, 31);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(201, 435);
-            this.panel5.TabIndex = 80;
+            this.metroButton4.BackgroundImage = global::OSMaker.My.Resources.Resources.FolderBrowserDialogControl_16x;
+            this.metroButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton4.Location = new System.Drawing.Point(458, 4);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(35, 23);
+            this.metroButton4.TabIndex = 80;
+            this.metroButton4.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton4.UseSelectable = true;
+            this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click_1);
             // 
             // Doc
             // 

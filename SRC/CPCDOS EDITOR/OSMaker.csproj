@@ -800,6 +800,9 @@
     <Content Include="AIMS.Docking.dll" />
     <Content Include="Classes\OSMAKERR.xml" />
     <Content Include="OSM_LOGO.ico" />
+    <None Include="Resources\OSM_OS1.png" />
+    <None Include="Resources\OSM_CPCDOSC+.png" />
+    <None Include="Resources\OSM_IUG.png" />
     <None Include="Resources\ProgressBar_16xBlack.png" />
     <None Include="Resources\TextBlock_16xBlack.png" />
     <None Include="Resources\TextBox_16xBlack.png" />

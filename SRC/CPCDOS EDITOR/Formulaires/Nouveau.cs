@@ -15,6 +15,7 @@ namespace OSMaker
         public Nouveau()
         {
             InitializeComponent();
+            AutoScaleMode = AutoScaleMode.Dpi;
         }
 
         private void Nouveau_Load(object sender, EventArgs e)

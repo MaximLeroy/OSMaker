@@ -919,6 +919,16 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.OSM_CPCDOSC_">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.OSM_IUG">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.OSM_LOGO">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -930,6 +940,11 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.OSM_OS">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.OSM_OS1">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
