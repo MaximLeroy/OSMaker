@@ -6,9 +6,7 @@ It allows windows to be generated using the XML window designer, and are transla
 It allows you to create events and edit CpcdosC + code with its beautiful code editor suitable for CC +.
 OSMaker includes a virtual machine called "VM Viewer" created by Maeiky dependent on VM Ware Workstation 16 Player. 
 And the possibility of directly editing the files of the virtual machine.
-Platform
- --- 
-Windows
+
 
 ## To begin
 * [Install the Github extension for Visual Studio 2019/2017](https://visualstudio.github.com/)
