@@ -27,6 +27,7 @@ or download zip file
 **Without Visual Studio**:
 Find and launch OSMaker.exe leaving it in the original folder with the DLLs.
 You can create a shortcut on the desktop or in the Start menu, but not move OSMaker.exe.
+![](https://raw.githubusercontent.com/MaximLeroy/OSMaker/OSMakerCSharp/Medias/OSMAKER_exe.PNG)
 
 **With Visual Studio** :
 Build the CPCDOS EDITOR solution in Visual Studio and add the references if they are indicated by yellow "warning" signs.
