@@ -20,8 +20,8 @@ or download zip file
 * [Releases](https://github.com/MaximLeroy/OSMaker/releases)
 
 **With Visual Studio** :
-Clone * [OSMaker repository](https://github.com/MaximLeroy/OSMaker) in Visual Studio
-see : * [Cloning a repository to Visual Studio](https://github.com/github/VisualStudio/blob/master/docs/using/cloning-a-repository-to-visual-studio.md)
+* [Clone OSMaker repository](https://github.com/MaximLeroy/OSMaker) in Visual Studio
+* [see Cloning a repository to Visual Studio](https://github.com/github/VisualStudio/blob/master/docs/using/cloning-a-repository-to-visual-studio.md)
 
 ## Start
 **Without Visual Studio**:
