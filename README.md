@@ -18,6 +18,7 @@ or download zip file
 ### Installation
 **Without Visual Studio** : unzip the archive OSMaker_Binary.rar available in
 https://github.com/MaximLeroy/OSMaker/releases
+
 **With Visual Studio** :
 Clone * [OSMaker repository](https://github.com/MaximLeroy/OSMaker) in Visual Studio
 see : * [Cloning a repository to Visual Studio](https://github.com/github/VisualStudio/blob/master/docs/using/cloning-a-repository-to-visual-studio.md)
@@ -26,6 +27,7 @@ see : * [Cloning a repository to Visual Studio](https://github.com/github/Visual
 **Without Visual Studio**:
 Find and launch OSMaker.exe leaving it in the original folder with the DLLs.
 You can create a shortcut on the desktop or in the Start menu, but not move OSMaker.exe.
+
 **With Visual Studio** :
 Build the project in Visual Studio and add the references if they are indicated by yellow "warning" signs.
 
