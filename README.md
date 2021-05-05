@@ -4,6 +4,8 @@
 OSMaker is a development environment to create your own operating system with a full graphical interface on the Cpcdos OSx kernel.
 It allows windows to be generated using the XML window designer, and are translated into CpcdosC + to be able to be interpreted by the Cpcdos kernel. 
 It allows you to create events and edit CpcdosC + code with its beautiful code editor suitable for CC +.
+OSMaker includes a virtual machine called "VM Viewer" created by Maeiky dependent on VM Ware Workstation 16 Player. 
+And the possibility of directly editing the files of the virtual machine.
 
 ## To begin
 * [Install the Github extension for Visual Studio 2019/2017](https://visualstudio.github.com/)
@@ -27,7 +29,6 @@ or download zip file
 **Without Visual Studio**:
 Find and launch OSMaker.exe leaving it in the original folder with the DLLs.
 You can create a shortcut on the desktop or in the Start menu, but not move OSMaker.exe.
-![](https://raw.githubusercontent.com/MaximLeroy/OSMaker/OSMakerCSharp/Medias/OSMAKER_exe.PNG)
 
 **With Visual Studio** :
 Build the CPCDOS EDITOR solution in Visual Studio and add the references if they are indicated by yellow "warning" signs.
