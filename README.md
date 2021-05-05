@@ -26,6 +26,8 @@ or download zip file
 ## Start
 **Without Visual Studio**:
 Find and launch OSMaker.exe leaving it in the original folder with the DLLs.
+![](https://raw.githubusercontent.com/MaximLeroy/OSMaker/OSMakerCSharp/Medias/OSMAKER_exe.PNG)
+
 You can create a shortcut on the desktop or in the Start menu, but not move OSMaker.exe.
 
 **With Visual Studio** :
