@@ -235,6 +235,12 @@
     <Compile Include="Formulaires\Events.Designer.cs">
       <DependentUpon>Events.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulaires\New_OS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\New_OS.Designer.cs">
+      <DependentUpon>New_OS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -414,6 +420,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Formulaires\Events.resx">
       <DependentUpon>Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\New_OS.resx">
+      <DependentUpon>New_OS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

@@ -111,3 +111,4 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.VM_Viewer.VM_GUI.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.IUGConceptor.resources
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Panneaux.IMGViewer.resources
+C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Formulaires.New_OS.resources

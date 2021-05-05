@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using OSMaker.Formulaires;
 namespace OSMaker.Panneaux
 {
     public partial class Accueil : DocumentC
@@ -84,11 +85,11 @@ namespace OSMaker.Panneaux
 
             }
         }
-
+        
         private void metroLink2_Click(object sender, EventArgs e)
         {
-            FileFolderDialog fileFolderDialog = new FileFolderDialog();
-            fileFolderDialog.ShowDialog();
+            New_OS new_OS = new New_OS();
+            new_OS.Show();
            
         }
     }

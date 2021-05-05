@@ -948,6 +948,33 @@ namespace OSMaker.Panneaux
         {
          
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                var dlg = new FileFolderDialog();
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                   txtDirectory.Text = dlg.SelectedPath + "\\";
+                   _tv.Nodes.Clear();
+                   LoadDirectory(txtDirectory.Text);
+                   txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
+                    metroButton1.Visible = false;
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void txtDirectory_TextChanged(object sender, EventArgs e)
+        {
+            if (txtDirectory.Text == "")
+                metroButton1.Visible = true;
+        }
     }
     }
 

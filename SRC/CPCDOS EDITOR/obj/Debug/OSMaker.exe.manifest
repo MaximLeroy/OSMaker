@@ -187,26 +187,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="14791104">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="14788544">
       <assemblyIdentity name="OSMaker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Fx+rI+pnpNFnH3Kj+aL8KUx1EtGsEA4vQBFfipyasDM=</dsig:DigestValue>
+        <dsig:DigestValue>7bEv99vVikT4PIp7o61W8PgDuwZRMWHRYMLwfDzvrn4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OutputW.exe" size="10240">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OutputW.exe" size="9216">
       <assemblyIdentity name="OutputW" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>o7h7OF3lrkAIno7fTJ+6GVQbFkohXkS0oRGL/wubpG8=</dsig:DigestValue>
+        <dsig:DigestValue>qFi/pabE3Do2RntYpeaESgdTm/7UAkH3DBko2TGEjvU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

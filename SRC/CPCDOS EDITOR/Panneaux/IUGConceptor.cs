@@ -66,6 +66,10 @@ namespace OSMaker
 
         private void EditeurCCplus_Load(object sender, EventArgs e)
         {
+            if (Home.m_propertyWindow.DockState == DockState.DockRightAutoHide) 
+            {
+                Home.m_propertyWindow.DockState = DockState.DockRight;
+            }
             try
             {
 

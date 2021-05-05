@@ -17,6 +17,7 @@ using static cwc.LauchTool;
 using MetroFramework.Forms;
 using OutputW;
 using OSMaker.Panneaux;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace OSMaker.VM_Viewer
 {
@@ -55,6 +56,7 @@ namespace OSMaker.VM_Viewer
         private void VM_GUI_Load(object sender, EventArgs e)
         {
             ///////Ini State///
+           Home.m_sortie.DockState = DockState.DockBottom;
             mnViewer.ForeColor = Color.WhiteSmoke;
             oOriColor = btnLauch.BackColor;
             sOriText = btnLauch.Text;
@@ -1074,9 +1076,9 @@ namespace OSMaker.VM_Viewer
         {
             //   Debug.fTrace("O: " + _sOut);
             this.BeginInvoke((MethodInvoker)delegate {
-                Form1.rtOutput2.AppendText(_sOut + "\n");
-                Form1.rtOutput2.SelectionStart = Form1.rtOutput2.Text.Length;
-                // rtOutput.ScrollToCaret();
+                Form1.rtOutput.AppendText(_sOut + "\n");
+                Form1.rtOutput.SelectionStart = Form1.rtOutput.Text.Length;
+                Form1.rtOutput.ScrollToCaret();
             });
         }
 
@@ -1161,6 +1163,7 @@ namespace OSMaker.VM_Viewer
                     e.Cancel = true;
 
                 }
+                
             }
 
             ConfigMng.oConfig.bMaximize = (WindowState == FormWindowState.Maximized);
@@ -1175,8 +1178,9 @@ namespace OSMaker.VM_Viewer
                 
             }
             Hide();
-            
-            
+
+            Home.m_sortie.DockState = DockState.DockBottomAutoHide;
+           
         }
 
         private void VM_GUI_Move(object sender, EventArgs e)

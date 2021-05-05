@@ -189,7 +189,7 @@ namespace OSMaker
             m_propertyWindow.Show(dockPanel, DockState.DockRight);
 
             m_solutionExplorer.Show(m_propertyWindow.Pane, DockAlignment.Top, 0.5) ;
-
+            m_propertyWindow.DockState = DockState.DockRightAutoHide;
 
             m_toolbox.Show(dockPanel, DockState.DockLeftAutoHide);
             m_sortie.Show(dockPanel, DockState.DockBottomAutoHide);
@@ -843,7 +843,7 @@ namespace OSMaker
         {
             VM_GUI mv = new VM_GUI();
             mv.Show(dockPanel);
-            m_sortie.DockState = DockState.DockBottom;
+            
 
 
         }
@@ -897,6 +897,11 @@ namespace OSMaker
         {
           //  mv.Show();
           //  mv.EditDrive(metroFichierDisk.Text);
+        }
+
+        private void metroButton8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
