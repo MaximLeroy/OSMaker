@@ -1,5 +1,5 @@
 # OSMaker
-
+![](https://static.wixstatic.com/media/7fb7ad_f3c46fc36b8a4485adf9e2b08ed0cbcf~mv2.png/v1/fill/w_238,h_238,al_c,q_85,usm_0.66_1.00_0.01/OSM_LOGO.webp)
 [Powered by Cpcdos OSx](http://cpcdos.net)
 OSMaker is a development environment to create your own operating system with a full graphical interface on the Cpcdos OSx kernel.
 It allows windows to be generated using the XML window designer, and are translated into CpcdosC + to be able to be interpreted by the Cpcdos kernel. 
@@ -29,7 +29,7 @@ Find and launch OSMaker.exe leaving it in the original folder with the DLLs.
 You can create a shortcut on the desktop or in the Start menu, but not move OSMaker.exe.
 
 **With Visual Studio** :
-Build the project in Visual Studio and add the references if they are indicated by yellow "warning" signs.
+Build the project CPCDOS EDITOR in Visual Studio and add the references if they are indicated by yellow "warning" signs.
 
 ## Make with
 
