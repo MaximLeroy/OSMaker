@@ -192,8 +192,7 @@ namespace OSMaker
             m_propertyWindow.DockState = DockState.DockRightAutoHide;
 
             m_toolbox.Show(dockPanel, DockState.DockLeftAutoHide);
-            m_sortie.Show(dockPanel, DockState.DockBottomAutoHide);
-            m_sortie.Text = "Output";
+           
 
 
            
@@ -208,6 +207,10 @@ namespace OSMaker
             }
             else
                 MonAccueil.Show(dockPanel);
+
+            m_sortie.Show(MonAccueil.PanelPane, DockAlignment.Left, 0.5);
+            m_sortie.Text = "Output";
+            m_sortie.DockState = DockState.DockBottomAutoHide;
         }
         private IDockContent FindDocument(string text)
         {
