@@ -11,9 +11,9 @@ or download zip file
 
 ### Prerequisites
 
-- VM Ware Workstation 16 or <
-- Cpcdos OS 2.1 virtual machine file (.ova, .vmx etc...)
-- Visual Studio 2019 or <
+- * [VM Ware Workstation 16 Player or <](https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=WKST-PLAYER-1611&productId=1039&rPId=63655)
+- * [Cpcdos OS 2.1 virtual machine file (.ova, .vmx etc...)](https://cpcdos.net/en/download)
+- * [Visual Studio 2019 or <](https://visualstudio.microsoft.com/fr/downloads/)
 
 ### Installation
 **Without Visual Studio** : unzip the archive OSMaker_Binary.rar available in
