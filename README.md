@@ -17,7 +17,7 @@ or download zip file
 
 ### Installation
 **Without Visual Studio** : unzip the archive OSMaker_Binary.rar available in
-https://github.com/MaximLeroy/OSMaker/releases
+* [Releases](https://github.com/MaximLeroy/OSMaker/releases)
 
 **With Visual Studio** :
 Clone * [OSMaker repository](https://github.com/MaximLeroy/OSMaker) in Visual Studio
@@ -41,7 +41,9 @@ DLL :
 * [FastColoredTextBox](https://github.com/PavelTorgashov/FastColoredTextBox) - Code editor
 
 ## Contributing
-Read [Contributors](https://github.com/MaximLeroy/OSMaker/graphs/contributors) pour voir qui à aidé au projet !
+If you are successful in C #, you are welcome!
+
+Read [Contributors](https://github.com/MaximLeroy/OSMaker/graphs/contributors)
 
 ## Versions
 **Last version :** beta 1.0
