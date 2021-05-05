@@ -26,8 +26,6 @@ or download zip file
 ## Start
 **Without Visual Studio**:
 Find and launch OSMaker.exe leaving it in the original folder with the DLLs.
-![](https://raw.githubusercontent.com/MaximLeroy/OSMaker/OSMakerCSharp/Medias/OSMAKER_exe.PNG)
-
 You can create a shortcut on the desktop or in the Start menu, but not move OSMaker.exe.
 
 **With Visual Studio** :
@@ -57,5 +55,5 @@ Versions list : [Click to show](https://github.com/MaximLeroy/OSMaker/tags)
 
 ## License
 
-This project is under ``GPL v 3.0`` license - see [LICENSE.md](https://github.com/MaximLeroy/OSMaker/blob/OSMakerCSharp/LICENSE) for more informations.
+This project is under `` GPL-3.0 License`` - see [LICENSE.md](https://github.com/MaximLeroy/OSMaker/blob/OSMakerCSharp/LICENSE) for more informations.
 
