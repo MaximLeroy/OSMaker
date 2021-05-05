@@ -1,8 +1,7 @@
 # OSMaker
 
 [Powered by Cpcdos OSx](http://cpcdos.net)
-
-OSMaker is a development environment for CpcdosC + and other languages. 
+OSMaker is a development environment to create your own operating system with a full graphical interface on the Cpcdos OSx kernel.
 It allows windows to be generated using the XML window designer, and are translated into CpcdosC + to be able to be interpreted by the Cpcdos kernel. 
 
 ## To begin
