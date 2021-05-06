@@ -35,6 +35,7 @@ You can create a shortcut on the desktop or in the Start menu, but not move OSMa
 
 **With Visual Studio** :
 Build the CPCDOS EDITOR solution in Visual Studio and add the references if they are indicated by yellow "warning" signs.
+See [SRC/DLL](https://github.com/MaximLeroy/OSMaker/tree/OSMakerCSharp/SRC/DLL)
 
 ## Make with
 
