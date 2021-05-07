@@ -64,112 +64,292 @@ namespace OSMaker
 
         public System.ComponentModel.Design.IComponentChangeService componentChangeService;
 
+        public void New_Host(string osmfilepath, string cpcfilepath)
+        {
+            try
+            {
+                _formCount += 1;
+                HostC = _hostSurfaceManager.GetNewHost(typeof(Form), Host.LoaderType.BasicDesignerLoader);
+
+                HostC.Parent = _Panel1;
+                HostC.Dock = DockStyle.Fill;
+                //  _hostSurfaceManager.AddService(typeof(IToolboxService), Home.m_toolbox.toolbox1);
+                //  _hostSurfaceManager.AddService(typeof(PropertyGrid), Home.m_propertyWindow.propertyGrid);
+                metroFichierXml.Text = osmfilepath;
+                metroFichierCCPlus.Text = cpcfilepath;
+                ToolBox.Window b1 = (ToolBox.Window)HostC.CreateControl(typeof(ToolBox.Window), new Size(50, 50), new Point(10, 10));
+                
+                b1.Dock = DockStyle.Fill;
+                var currentHostControl = HostC;
+                string stringXML = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
+                ModuleCpcDosCplus.GenTextCpc(stringXML);
+                //GenTextCpc(stringXML);
+                string code = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
+                //FastColoredTextBox1.Text = code;
+                //tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+                string fileName = metroFichierXml.Text;
+                string codeccplus = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+                string fileNameC = metroFichierCCPlus.Text;
+
+                if (string.IsNullOrEmpty(metroFichierXml.Text))
+                {
+                    var dlgSaveFile = new SaveFileDialog();
+                    dlgSaveFile.Filter = "Fichier OSMaker (.*osm)|*.osm";
+                    if (dlgSaveFile.ShowDialog() == DialogResult.OK)
+                    {
+                        fileName = dlgSaveFile.FileName;
+                        metroFichierXml.Text = fileName;
+                        if (fileName.Length != 0)
+                        {
+                        }
+                    }
+                }
+                else
+                {
+                    fileName = metroFichierXml.Text;
+                }
+
+                if (string.IsNullOrEmpty(metroFichierXml.Text))
+                {
+                    MessageBox.Show("Pas de chemin de fichier OSMaker renseigné, enregistrement impossible !");
+                }
+                else
+                {
+                    File.WriteAllText(metroFichierXml.Text, code);
+                }
+                if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
+                {
+                    var dlgSaveFile = new SaveFileDialog();
+                    dlgSaveFile.Filter = "Fichier CPC (.*cpc)|*.cpc";
+                    if (dlgSaveFile.ShowDialog() == DialogResult.OK)
+                    {
+                        fileNameC = dlgSaveFile.FileName;
+                        metroFichierCCPlus.Text = fileNameC;
+                        if (fileNameC.Length != 0)
+                        {
+                        }
+                    }
+                }
+                else
+                {
+                    fileNameC = metroFichierCCPlus.Text;
+                }
+
+                if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
+                {
+                    MessageBox.Show("Pas de chemin de fichier CpcdosC+ renseigné, enregistrement impossible !");
+                }
+                else
+                {
+                    File.WriteAllText(metroFichierCCPlus.Text, codeccplus);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error in creating new host", "OSMaker IUG Conceptor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void New_Desktop(string osmfilepath, string cpcfilepath)
+        {
+            try
+            {
+                _formCount += 1;
+                HostC = _hostSurfaceManager.GetNewHost(typeof(UserControl), Host.LoaderType.BasicDesignerLoader);
+
+                HostC.Parent = _Panel1;
+                HostC.Dock = DockStyle.Fill;
+                //  _hostSurfaceManager.AddService(typeof(IToolboxService), Home.m_toolbox.toolbox1);
+                //  _hostSurfaceManager.AddService(typeof(PropertyGrid), Home.m_propertyWindow.propertyGrid);
+                metroFichierXml.Text = osmfilepath;
+                metroFichierCCPlus.Text = cpcfilepath;
+                ToolBox.Window b1 = (ToolBox.Window)HostC.CreateControl(typeof(ToolBox.Window), new Size(100, 20), new Point(0, 0));
+
+                b1.Dock = DockStyle.Top;
+                var currentHostControl = HostC;
+                string stringXML = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
+                ModuleCpcDosCplus.GenTextCpc(stringXML);
+                //GenTextCpc(stringXML);
+                string code = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
+                //FastColoredTextBox1.Text = code;
+                //tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+                string fileName = metroFichierXml.Text;
+                string codeccplus = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+                string fileNameC = metroFichierCCPlus.Text;
+
+                if (string.IsNullOrEmpty(metroFichierXml.Text))
+                {
+                    var dlgSaveFile = new SaveFileDialog();
+                    dlgSaveFile.Filter = "Fichier OSMaker (.*osm)|*.osm";
+                    if (dlgSaveFile.ShowDialog() == DialogResult.OK)
+                    {
+                        fileName = dlgSaveFile.FileName;
+                        metroFichierXml.Text = fileName;
+                        if (fileName.Length != 0)
+                        {
+                        }
+                    }
+                }
+                else
+                {
+                    fileName = metroFichierXml.Text;
+                }
+
+                if (string.IsNullOrEmpty(metroFichierXml.Text))
+                {
+                    MessageBox.Show("Pas de chemin de fichier OSMaker renseigné, enregistrement impossible !");
+                }
+                else
+                {
+                    File.WriteAllText(metroFichierXml.Text, code);
+                }
+                if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
+                {
+                    var dlgSaveFile = new SaveFileDialog();
+                    dlgSaveFile.Filter = "Fichier CPC (.*cpc)|*.cpc";
+                    if (dlgSaveFile.ShowDialog() == DialogResult.OK)
+                    {
+                        fileNameC = dlgSaveFile.FileName;
+                        metroFichierCCPlus.Text = fileNameC;
+                        if (fileNameC.Length != 0)
+                        {
+                        }
+                    }
+                }
+                else
+                {
+                    fileNameC = metroFichierCCPlus.Text;
+                }
+
+                if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
+                {
+                    MessageBox.Show("Pas de chemin de fichier CpcdosC+ renseigné, enregistrement impossible !");
+                }
+                else
+                {
+                    File.WriteAllText(metroFichierCCPlus.Text, codeccplus);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error in creating new host", "OSMaker IUG Conceptor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void Open_Host(string filepath)
+        {
+            try
+            {
+                // Create Form
+                _hostSurfaceManager = new Host.HostSurfaceManager();
+                HostC = _hostSurfaceManager.GetNewHost(filepath);
+
+                //Toolbox.DesignerHost = hc.DesignerHost;
+
+                metroFichierXml.Text = Home.fileName;
+
+                //  metroButton2.Visible = false;
+                HostC.Parent = _Panel1;
+                HostC.Dock = DockStyle.Fill;
+                _hostSurfaceManager.AddService(typeof(IToolboxService), Home.m_toolbox.toolbox1);
+                _hostSurfaceManager.AddService(typeof(PropertyGrid), Home.m_propertyWindow.propertyGrid);
+            }
+            catch
+            {
+                MessageBox.Show("Error in opening new host", "OSMaker IUG Conceptor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         private void EditeurCCplus_Load(object sender, EventArgs e)
         {
             if (Home.m_propertyWindow.DockState == DockState.DockRightAutoHide) 
             {
                 Home.m_propertyWindow.DockState = DockState.DockRight;
             }
-            try
-            {
+            //try
+           // {
 
-                if (Home.fileName == null)
-                {
-                    _formCount += 1;
-                    HostC = _hostSurfaceManager.GetNewHost(typeof(Form), Host.LoaderType.BasicDesignerLoader);
+                //if (Home.fileName == null)
+                //{
+                //    _formCount += 1;
+                //    HostC = _hostSurfaceManager.GetNewHost(typeof(Form), Host.LoaderType.BasicDesignerLoader);
                   
-                    HostC.Dock = DockStyle.Fill;
-
-                    metroFichierXml.Text = Home.OSMPATH;
-                    metroFichierCCPlus.Text = Home.CPCPATH;
-                    ToolBox.Window b1 = (ToolBox.Window)HostC.CreateControl(typeof(ToolBox.Window), new Size(50, 50), new Point(10, 10));
-                    b1.Dock = DockStyle.Fill;
-                    var currentHostControl = HostC;
-                    string stringXML = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
-                    ModuleCpcDosCplus.GenTextCpc(stringXML);
-                    //GenTextCpc(stringXML);
-                    string code = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
-                    //FastColoredTextBox1.Text = code;
-                    //tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
-                    string fileName = metroFichierXml.Text;
-                    string codeccplus = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
-                    string fileNameC = metroFichierCCPlus.Text;
-                    if (string.IsNullOrEmpty(metroFichierXml.Text))
-                    {
-                        var dlgSaveFile = new SaveFileDialog();
-                        dlgSaveFile.Filter = "Fichier OSMaker (.*osm)|*.osm";
-                        if (dlgSaveFile.ShowDialog() == DialogResult.OK)
-                        {
-                            fileName = dlgSaveFile.FileName;
-                            metroFichierXml.Text = fileName;
-                            if (fileName.Length != 0)
-                            {
-                            }
-                        }
-                    }
-                    else
-                    {
-                        fileName = metroFichierXml.Text;
-                    }
-
-                    if (string.IsNullOrEmpty(metroFichierXml.Text))
-                    {
-                        MessageBox.Show("Pas de chemin de fichier OSMaker renseigné, enregistrement impossible !");
-                    }
-                    else
-                    {
-                        File.WriteAllText(metroFichierXml.Text, code);
-                    }
-                    if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
-                    {
-                        var dlgSaveFile = new SaveFileDialog();
-                        dlgSaveFile.Filter = "Fichier CPC (.*cpc)|*.cpc";
-                        if (dlgSaveFile.ShowDialog() == DialogResult.OK)
-                        {
-                            fileNameC = dlgSaveFile.FileName;
-                            metroFichierCCPlus.Text = fileNameC;
-                            if (fileNameC.Length != 0)
-                            {
-                            }
-                        }
-                    }
-                    else
-                    {
-                        fileNameC = metroFichierCCPlus.Text;
-                    }
-
-                    if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
-                    {
-                        MessageBox.Show("Pas de chemin de fichier CpcdosC+ renseigné, enregistrement impossible !");
-                    }
-                    else
-                    {
-                        File.WriteAllText(metroFichierCCPlus.Text, codeccplus);
-                    }
-                }
-                else
-                {
-
-                    // Create Form
-                    _hostSurfaceManager = new Host.HostSurfaceManager();
-                    HostC = _hostSurfaceManager.GetNewHost(Home.fileName);
+                //    HostC.Dock = DockStyle.Fill;
+                //    HostC.Parent = _Panel1;
+                //    HostC.Dock = DockStyle.Fill;
+                //    _hostSurfaceManager.AddService(typeof(IToolboxService), Home.m_toolbox.toolbox1);
+                //    _hostSurfaceManager.AddService(typeof(PropertyGrid), Home.m_propertyWindow.propertyGrid);
+                //    metroFichierXml.Text = Home.OSMPATH;
+                //    metroFichierCCPlus.Text = Home.CPCPATH;
+                //    ToolBox.Window b1 = (ToolBox.Window)HostC.CreateControl(typeof(ToolBox.Window), new Size(50, 50), new Point(10, 10));
+                //    b1.Dock = DockStyle.Fill;
+                //    var currentHostControl = HostC;
+                //    string stringXML = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
+                //    ModuleCpcDosCplus.GenTextCpc(stringXML);
+                //    //GenTextCpc(stringXML);
+                //    string code = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
+                //    //FastColoredTextBox1.Text = code;
+                //    //tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+                //    string fileName = metroFichierXml.Text;
+                //    string codeccplus = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+                //    string fileNameC = metroFichierCCPlus.Text;
                    
-                    //Toolbox.DesignerHost = hc.DesignerHost;
+                //    if (string.IsNullOrEmpty(metroFichierXml.Text))
+                //    {
+                //        var dlgSaveFile = new SaveFileDialog();
+                //        dlgSaveFile.Filter = "Fichier OSMaker (.*osm)|*.osm";
+                //        if (dlgSaveFile.ShowDialog() == DialogResult.OK)
+                //        {
+                //            fileName = dlgSaveFile.FileName;
+                //            metroFichierXml.Text = fileName;
+                //            if (fileName.Length != 0)
+                //            {
+                //            }
+                //        }
+                //    }
+                //    else
+                //    {
+                //        fileName = metroFichierXml.Text;
+                //    }
 
-                    metroFichierXml.Text = Home.fileName;
+                //    if (string.IsNullOrEmpty(metroFichierXml.Text))
+                //    {
+                //        MessageBox.Show("Pas de chemin de fichier OSMaker renseigné, enregistrement impossible !");
+                //    }
+                //    else
+                //    {
+                //        File.WriteAllText(metroFichierXml.Text, code);
+                //    }
+                //    if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
+                //    {
+                //        var dlgSaveFile = new SaveFileDialog();
+                //        dlgSaveFile.Filter = "Fichier CPC (.*cpc)|*.cpc";
+                //        if (dlgSaveFile.ShowDialog() == DialogResult.OK)
+                //        {
+                //            fileNameC = dlgSaveFile.FileName;
+                //            metroFichierCCPlus.Text = fileNameC;
+                //            if (fileNameC.Length != 0)
+                //            {
+                //            }
+                //        }
+                //    }
+                //    else
+                //    {
+                //        fileNameC = metroFichierCCPlus.Text;
+                //    }
 
-                    //  metroButton2.Visible = false;
-                    HostC.Parent = _Panel1;
-                    HostC.Dock = DockStyle.Fill;
-                    _hostSurfaceManager.AddService(typeof(IToolboxService), Home.m_toolbox.toolbox1);
-                    _hostSurfaceManager.AddService(typeof(PropertyGrid), Home.m_propertyWindow.propertyGrid);
-                }
+                //    if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
+                //    {
+                //        MessageBox.Show("Pas de chemin de fichier CpcdosC+ renseigné, enregistrement impossible !");
+                //    }
+                //    else
+                //    {
+                //        File.WriteAllText(metroFichierCCPlus.Text, codeccplus);
+                //    }
+               // }
 
-            }
-            catch
-            {
-                MessageBox.Show("Error in creating new host", "Shell Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+
+            
+          
         
 
 
@@ -418,71 +598,7 @@ namespace OSMaker
            
         }
 
-        private void saveMenuItem_Click(object sender, EventArgs e)
-        {
-            var currentHostControl = HostC;
-            string stringXML = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
-            ModuleCpcDosCplus.GenTextCpc(stringXML);
-            //GenTextCpc(stringXML);
-            string code = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
-            //FastColoredTextBox1.Text = code;
-          //  tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
-            string fileName = metroFichierXml.Text;
-            string codeccplus = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
-            string fileNameC = metroFichierCCPlus.Text;
-            if (string.IsNullOrEmpty(metroFichierXml.Text))
-            {
-                var dlgSaveFile = new SaveFileDialog();
-                dlgSaveFile.Filter = "Fichier OSMaker (.*osm)|*.osm";
-                if (dlgSaveFile.ShowDialog() == DialogResult.OK)
-                {
-                    fileName = dlgSaveFile.FileName;
-                    metroFichierXml.Text = fileName;
-                    if (fileName.Length != 0)
-                    {
-                    }
-                }
-            }
-            else
-            {
-                fileName = metroFichierXml.Text;
-            }
-
-            if (string.IsNullOrEmpty(metroFichierXml.Text))
-            {
-                MessageBox.Show("Pas de chemin de fichier OSMaker renseigné, enregistrement impossible !");
-            }
-            else
-            {
-                File.WriteAllText(metroFichierXml.Text, code);
-            }
-            if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
-            {
-                var dlgSaveFile = new SaveFileDialog();
-                dlgSaveFile.Filter = "Fichier CPC (.*cpc)|*.cpc";
-                if (dlgSaveFile.ShowDialog() == DialogResult.OK)
-                {
-                    fileNameC = dlgSaveFile.FileName;
-                    metroFichierCCPlus.Text = fileNameC;
-                    if (fileNameC.Length != 0)
-                    {
-                    }
-                }
-            }
-            else
-            {
-                fileNameC = metroFichierCCPlus.Text;
-            }
-
-            if (string.IsNullOrEmpty(metroFichierCCPlus.Text))
-            {
-                MessageBox.Show("Pas de chemin de fichier CpcdosC+ renseigné, enregistrement impossible !");
-            }
-            else
-            {
-                File.WriteAllText(metroFichierCCPlus.Text, codeccplus);
-            }
-        }
+        
 
 
         private void metroButton2_Click(object sender, EventArgs e)
@@ -491,10 +607,8 @@ namespace OSMaker
             
         }
 
-      
-        private void metroButton1_Click(object sender, EventArgs e)
+      public void Save()
         {
-
             var currentHostControl = HostC;
             string stringXML = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
             ModuleCpcDosCplus.GenTextCpc(stringXML);
@@ -557,6 +671,11 @@ namespace OSMaker
             {
                 File.WriteAllText(metroFichierCCPlus.Text, codeccplus);
             }
+        }
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+
+            Save();
         }
 
         private void mouseClickToolStripMenuItem_Click(object sender, EventArgs e)

@@ -145,8 +145,52 @@ namespace OSMaker.Panneaux
             this.Size = new Size(316, 579);
         }
         private object path = "E:/";
-        
-        private string GetNewFileNameCPC(DirectoryInfo di)
+        private DocumentC FindDocument(string text)
+        {
+            if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+            {
+                foreach (Form form in MdiChildren)
+                    if (form.Text == text)
+                        return form as DocumentC;
+
+                return null;
+            }
+            else
+            {
+                foreach (DocumentC content in Home.dockPanel.Documents)
+                    if (content.DockHandler.TabText == text)
+                    {
+                        content.DockHandler.Show(Home.dockPanel);
+                        return content;
+                    }
+
+                return null;
+            }
+        }
+        private IDockContent FindMetroDocument(string text)
+        {
+            if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+            {
+                foreach (MetroFramework.Forms.MetroForm form in MdiChildren)
+                    if (form.Text == text)
+                        return form as IDockContent;
+
+                return null;
+            }
+            else
+            {
+                foreach (IDockContent content in Home.dockPanel.Documents)
+                    if (content.DockHandler.TabText == text)
+                    {
+                        content.DockHandler.Show(Home.dockPanel);
+                        return content;
+                    }
+
+                return null;
+            }
+        }
+      
+        public string GetNewFileNameCPC(DirectoryInfo di)
         {
             string newItem = "IUG";
             var files = Directory.GetFiles(di.FullName, "*.cpc");
@@ -177,8 +221,10 @@ namespace OSMaker.Panneaux
             return newItem;
         }
 
-        private string GetNewFileNameXML(DirectoryInfo di)
+        public string GetNewFileNameXML(DirectoryInfo di)
         {
+          
+
             string newItem = "IUG";
             var files = Directory.GetFiles(di.FullName, "*.osm");
             string fileName = di.FullName + @"\" + newItem;
@@ -195,12 +241,7 @@ namespace OSMaker.Panneaux
             fileName += countFile.ToString() + ".osm";
             var fi = new FileInfo(fileName);
 
-            // Create a file .
-            using (var sw = fi.CreateText())
-            {
-
-                
-            }
+          
 
             newItem += countFile.ToString() + ".osm";
             return newItem;
@@ -578,73 +619,84 @@ namespace OSMaker.Panneaux
             var selNode = _tv.SelectedNode;
             if (selNode.Text.EndsWith("cpc") || selNode.Text.EndsWith("CPC"))
             {
-                string pathDir = Conversions.ToString(selNode.Tag);
-                var fi = new FileInfo(pathDir);
-
-                // edit file
-
+                if (FindDocument(_tv.SelectedNode.Text) == null)
                 {
 
-                    string fullName = fi.FullName;
-                    string fileName = Path.GetFileName(fullName);
 
+                    string pathDir = Conversions.ToString(selNode.Tag);
+                    var fi = new FileInfo(pathDir);
 
+                    // edit file
 
-                    Doc dummyDoc = new Doc();
-                    dummyDoc.Text = fileName;
-                    if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
                     {
-                        dummyDoc.MdiParent = this;
-                        dummyDoc.filepath = fullName;
-                        dummyDoc.Show();
-                    }
-                    else
-                        dummyDoc.filepath = fullName;
-                    dummyDoc.Show(Home.dockPanel);
-                    try
-                    {
-                        dummyDoc.FileName = fullName;
-                        dummyDoc.filepath = fullName;
-                    }
-                    catch (Exception exception)
-                    {
-                        dummyDoc.Close();
-                        MessageBox.Show(exception.Message);
-                    }
+
+                        string fullName = fi.FullName;
+                        string fileName = Path.GetFileName(fullName);
 
 
-                }
+
+                        Doc dummyDoc = new Doc();
+                        dummyDoc.Text = fileName;
+                        if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+                        {
+                            dummyDoc.MdiParent = this;
+                            dummyDoc.filepath = fullName;
+                            dummyDoc.Show();
+                        }
+                        else
+                            dummyDoc.filepath = fullName;
+                        dummyDoc.Show(Home.dockPanel);
+                        try
+                        {
+                            dummyDoc.FileName = fullName;
+                            dummyDoc.filepath = fullName;
+                        }
+                        catch (Exception exception)
+                        {
+                            dummyDoc.Close();
+                            MessageBox.Show(exception.Message);
+                        }
+
+
+                    }
+               }
+               
             }
 
             if (selNode.Text.EndsWith("osm") || selNode.Text.EndsWith("OSM"))
             {
-                string pathDir = Conversions.ToString(selNode.Tag);
-                var fi = new FileInfo(pathDir);
-
-
-
-                
-                
-
-                Home.fileName = fi.FullName;
-                IUGConceptor concepteur = new IUGConceptor();
-                concepteur.Text = Home.fileName;
-                string nomfichier = fi.Name;
-                string text = fi.Name;
-
-                concepteur.Text = nomfichier + " [Design]";
-                concepteur.Font = new Font("Microsoft Sans Serif", 7);
-
-                if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+                if (FindDocument(_tv.SelectedNode.Text + " [Design]") == null)
                 {
-                    concepteur.MdiParent = this;
-                    concepteur.Show();
-                }
-                else
-                {
-                    concepteur.Show(Home.dockPanel);
-                }
+                    string pathDir = Conversions.ToString(selNode.Tag);
+                    var fi = new FileInfo(pathDir);
 
+
+
+
+
+
+                    //   Home.fileName = fi.FullName;
+                    IUGConceptor concepteur = new IUGConceptor();
+
+                    string nomfichier = fi.Name;
+                    string text = fi.Name;
+
+                    concepteur.Text = nomfichier + " [Design]";
+                    concepteur.Font = new Font("Microsoft Sans Serif", 7);
+
+                    if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+                    {
+                        concepteur.MdiParent = this;
+                        concepteur.Show();
+                        concepteur.Open_Host(fi.FullName);
+                    }
+                    else
+                    {
+                        concepteur.Show(Home.dockPanel);
+                        concepteur.Open_Host(fi.FullName);
+                        concepteur.metroFichierXml.Text = fi.FullName;
+                    }
+                }
             }
 
             if (selNode.Text.EndsWith("png") || selNode.Text.EndsWith("PNG") || selNode.Text.EndsWith("jpg") || selNode.Text.EndsWith("JPG") || selNode.Text.EndsWith("JPEG") || selNode.Text.EndsWith("BMP") || selNode.Text.EndsWith("bmp"))
@@ -737,67 +789,78 @@ namespace OSMaker.Panneaux
         public static string pathXml;
         public static string pathCPC = "";
         public static string pathOSM = "";
-        private void iUGToolStripMenuItem_Click(object sender, EventArgs e)
+        public void New_IUG(string osmpath,string cpcpath, string name)
         {
-            Home.fileName = null;
+
             var node = _tv.SelectedNode;
             string oldPathDir = node.Text;
-            Nouveau nouve = new Nouveau();
-            nouve.Show();
-            nouve.TopMost = true;
-            if (oldPathDir.ToLower().Contains(".txt") || oldPathDir.ToLower().Contains(".osm") || oldPathDir.ToLower().Contains(".cpc"))
-            {
-                MessageBox.Show("Veuillez sélectionner un dossier et non un fichier");
-            }
-            else
-            {
+
+           
                 if (_tv.SelectedNode is null)
                     return;
-                string pathDir = Conversions.ToString(_tv.SelectedNode.Tag);
-                var di = new DirectoryInfo(pathDir);
+            // string pathDir = Conversions.ToString(_tv.SelectedNode.Tag);
+            //var di = new DirectoryInfo(pathDir);
 
-                // add file to  di
-                string newFileName = GetNewFileNameXML(di);
-               
-                string newCpcFileName = GetNewFileNameCPC(di);
+            // add file to  di
+            string newFileName = name + ".osm";
+
+                string newCpcFileName = name + ".cpc";
                 // Adds new node as a child node of the currently selected node.
                 var newNode = new TreeNode(newFileName);
-                var newCpcNode = new TreeNode(newCpcFileName);
-                newNode.Tag = di.FullName + @"\" + newFileName;
-                Home.OSMPATH = newNode.Tag.ToString();
+                 var newCpcNode = new TreeNode(newCpcFileName);
+                newNode.Tag = osmpath;
+               // Home.OSMPATH = newNode.Tag.ToString();
                 newNode.ImageKey = "NewFile";
                 newNode.StateImageIndex = 4;
                 _tv.SelectedNode.Nodes.Add(newNode);
                 ///
-                newCpcNode.Tag = di.FullName + @"\" + newCpcFileName;
-                Home.CPCPATH = newNode.Tag.ToString().Replace(".osm",".cpc");
+                  newCpcNode.Tag = cpcpath;
+                //  Home.CPCPATH = newNode.Tag.ToString().Replace(".osm",".cpc");
 
-                newCpcNode.ImageKey = "NewFile";
-                newCpcNode.StateImageIndex = 1;
+                 newCpcNode.ImageKey = "NewFile";
+                 newCpcNode.StateImageIndex = 1;
                 _tv.SelectedNode.Nodes.Add(newCpcNode);
 
                 _tv.SelectedNode = newNode;
-             
+
                 // Create new document and add it to existing bar
-              
+
 
                 // Add control to it
-                
+
 
 
                 // PanelDockContainer will be used to host any controls. It provides automatic focus management so focused
                 // document tab appears bold
 
-                IUGConceptor concepteur = CreateNewConcepteur();
-                if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
-                {
-                    concepteur.MdiParent = this;
-                    concepteur.Show();
+               
+            
+        }
+        private void iUGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_tv.SelectedNode.Text.ToLower().Contains(".txt") || _tv.SelectedNode.Text.ToLower().Contains(".osm") || _tv.SelectedNode.Text.ToLower().Contains(".cpc"))
+            {
+                MessageBox.Show("Veuillez sélectionner un dossier et non un fichier");
+            }
+            else
+            {
+                Nouveau nouveau = new Nouveau();
+                nouveau.Show();
 
-                }
-                else
-                    concepteur.metroFichierXml.Text = di.FullName + @"\" + newFileName;
-                    concepteur.Show(Home.dockPanel);
+                Home.fileName = null;
+                string pathDir = Conversions.ToString(_tv.SelectedNode.Tag);
+                var di = new DirectoryInfo(pathDir);
+                nouveau.pathdirectory = di.ToString();
+                // add file to  di
+                string newFileName = GetNewFileNameXML(di);
+                nouveau.pathcpc = di.ToString();
+                nouveau.pathosm = di.ToString();
+                nouveau.nameccplustextBox.Text = newFileName.Replace(".osm", "");
+                nouveau.pathosmtextBox.Text = di.ToString() + newFileName;
+                nouveau.pathcpctextBox.Text = di.ToString() + newFileName.Replace(".osm", ".cpc");
+                nouveau.nameosmtextbox.Text = nouveau.nameccplustextBox.Text;
+             
+
             }
         }
 
@@ -882,7 +945,7 @@ namespace OSMaker.Panneaux
 
                     // Adds new node as a child node of the currently selected node.
                     var newNode = new TreeNode(newDirectoryName);
-                    newNode.Tag = di.FullName + @"\\" + newDirectoryName;
+                    newNode.Tag = di.FullName + @"" + newDirectoryName;
                     newNode.ImageKey = "NewFolder";
                     newNode.StateImageIndex = 0;
                     selNode.Nodes.Add(newNode);
@@ -962,6 +1025,7 @@ namespace OSMaker.Panneaux
                    LoadDirectory(txtDirectory.Text);
                    txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
                     metroButton1.Visible = false;
+                    _tv.Visible = true;
                 }
             }
             catch
@@ -974,6 +1038,18 @@ namespace OSMaker.Panneaux
         {
             if (txtDirectory.Text == "")
                 metroButton1.Visible = true;
+        }
+
+        private void metroContextMenu1_Opening(object sender, CancelEventArgs e)
+        {
+            if (_tv.SelectedNode.Text.ToLower().Contains(".txt") || _tv.SelectedNode.Text.ToLower().Contains(".osm") || _tv.SelectedNode.Text.ToLower().Contains(".cpc"))
+            {
+                nouveauToolStripMenuItem.Visible = false;
+            }
+            else
+            {
+                nouveauToolStripMenuItem.Visible = true;
+            }
         }
     }
     }

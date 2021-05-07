@@ -1,5 +1,6 @@
 
 Window/ Window1
+   .Parameters    = "CTN:0 TYPE:4 BORD:1 SHADOW:0 MOVE:1 SIZ:1 SIZBTN:1 REDUCT:1 CLOSE:1 TASKBAR:1"
    .PX            = "0"
    .PY            = "0"
    .SX            = "284"

@@ -22,7 +22,7 @@ namespace OSMaker.Panneaux
 {
     [System.ComponentModel.TypeConverter(typeof(System.Windows.Media.FontFamilyConverter))]
     [System.Windows.Localizability(System.Windows.LocalizationCategory.Font)]
-    public partial class Doc : DockContent
+    public partial class Doc : DocumentC
     {
         private View m_view;
         public Doc()
@@ -89,7 +89,7 @@ namespace OSMaker.Panneaux
             e.ChangedRange.SetStyle(VertLightStyle, "%.+?%");
             // number highlighting
             e.ChangedRange.SetStyle(MagentaStyle, @"\b\d+[\.]?\d*([eE]\-?\d+)?[lLdDfF]?\b|\b0x[a-fA-F\d]+\b");
-            e.ChangedRange.SetStyle(RoseStyle, @"(TYPE:|CTN:|BORD:|OMBRE:|IMGAUTO:|EDIT:|MULTILINE:|\,|fonction\/|function\/|End\/ Function|Fin\/ Fonction|Si\/|If\/|Fin\/ si|End\/ If|alors\:|Txt\/|Fin\/ Fonction|then:|sinon:|else:)", RegexOptions.IgnoreCase);
+            e.ChangedRange.SetStyle(RoseStyle, @"(TYPE:|CTN:|BORD:|OMBRE:|IMGAUTO:|EDIT:|MULTILINE:|SHADOW:|MOVE:|SIZ:|SIZBTN:|REDUCT:|CLOSE:|TASKBAR:|\,|fonction\/|function\/|End\/ Function|Fin\/ Fonction|Si\/|If\/|Fin\/ si|End\/ If|alors\:|Txt\/|Fin\/ Fonction|then:|sinon:|else:)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(EqualStyle, @"\=");
             e.ChangedRange.SetStyle(OrangeStyle, @"(\.Parametres|\.titlecolor|\.PX|\.PY|\.SX|\.SY|\.Valeur|\.BackColor|\.CouleurText|\.Icone|\.ImgTitre|\.Opacite|\.titre|\.CouleurFenetre|\.CouleurTitre|\.px|\.py|\.tx|\.ty|\.opacite|\.Text|\.Image|\.evenement|\.texte|\.Handle|\.pid|\.nom|\.name|\.title|\.parameters|\.opacity|\.image|\.evenement|\.couleurfenetre|\.windowcolor|\.couleurtitre|\.couleurtexte|\.textcolor|\.handle|\.icone|\.icon|\.imgtitre|\.titleimg|fenetre\/|fin\/ fenetre|\.event|\.couleurfond)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(BlueStyle, @"(End\/ window|window\/|End\/ button|button\/|End\/ textbox|textbox\/|End\/ textblock|textblock\/|End\/ progressbar|progressbar\/|End\/ picturebox|picturebox\/|End\/ checkbox|checkbox\/|sys\/|\/processus|exe\/|\/pid\:|ccp\/|\/SET.LEVEL)", RegexOptions.IgnoreCase);
@@ -431,8 +431,8 @@ namespace OSMaker.Panneaux
         protected override void OnTextChanged(EventArgs e)
         {
             base.OnTextChanged(e);
-            if (FileName == string.Empty)
-                this.richTextBox1.Text = Text;
+           // if (FileName == string.Empty)
+               // this.richTextBox1.Text = DocumentC.d;
         }
      
         private void Doc_Load(object sender, EventArgs e)
@@ -1020,6 +1020,11 @@ namespace OSMaker.Panneaux
         }
 
         private void _tb_TextChanging(object sender, TextChangingEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

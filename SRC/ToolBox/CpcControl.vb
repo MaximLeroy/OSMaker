@@ -243,10 +243,10 @@ Public Class Window : Inherits Panel
     <Description("Fenêtre héberge une taskbar d’application")>
     Public Property TASKBAR As Boolean
         Get
-            Return Close1
+            Return TaskBar1
         End Get
         Set(value As Boolean)
-            Close1 = value
+            TaskBar1 = value
 
         End Set
     End Property
@@ -303,7 +303,7 @@ Public Class Window : Inherits Panel
         SizBtn1 = Boolean.TrueString
         Reduct1 = Boolean.TrueString
         Close1 = Boolean.TrueString
-        TaskBar1 = Boolean.FalseString
+        TaskBar1 = System.Boolean.FalseString
         Opacite1 = "255"
         Ombre1 = "0"
     End Sub

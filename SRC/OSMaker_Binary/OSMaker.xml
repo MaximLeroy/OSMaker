@@ -921,7 +921,17 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.NewRelationshipMenu_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.Open_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.OpenFolder_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
@@ -1037,6 +1047,11 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.Property_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.Question_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>

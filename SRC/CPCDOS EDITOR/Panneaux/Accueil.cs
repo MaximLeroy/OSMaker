@@ -78,6 +78,8 @@ namespace OSMaker.Panneaux
                     Home.m_solutionExplorer._tv.Nodes.Clear();
                     Home.m_solutionExplorer.LoadDirectory(Home.m_solutionExplorer.txtDirectory.Text);
                     Home.m_solutionExplorer.txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
+                    Home.m_solutionExplorer.metroButton1.Visible = false;
+                    Home.m_solutionExplorer._tv.Visible = true;
                 }
             }
             catch

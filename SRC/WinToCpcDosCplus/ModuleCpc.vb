@@ -179,6 +179,15 @@ Public Module ModuleCpcDosCplus
     Private Lesparametres As String = ""
     Public CTNnum As String = "1"
     Public TYPEnum As String = "0"
+    Public BORDnum As String = "1"
+    Public SHADOWnum As String = "128"
+    Public MOVEnum As String = "1"
+    Public SIZnum As String = "1"
+    Public SIZBTNnum As String = "1"
+    Public REDUCTnum As String = "1"
+    Public CLOSEnum As String = "1"
+    Public TASKBARnum As String = "0"
+
     Private Sub WriteNodeProperty(currentNode As XmlNode, sbuilder As StringBuilder)
             Dim name As String
             Dim propertyValues() As String
@@ -201,12 +210,12 @@ Public Module ModuleCpcDosCplus
 
         ElseIf name = "CTN" Then
             If (propertyValues2 = "True") Then
-                CTNnum = "0"
+                CTNnum = "1"
 
             ElseIf (propertyValues2 = "False") Then
-                CTNnum = "1"
-            ElseIf (propertyValues2 = Nothing) Then 'False par défaut donc valeur nulle
                 CTNnum = "0"
+            ElseIf (propertyValues2 = Nothing) Then 'False par défaut donc valeur nulle
+                CTNnum = "1"
             End If
         ElseIf name = "Type" Then
             If (propertyValues2 = "Sans_conteneur_visible") Then
@@ -227,22 +236,89 @@ Public Module ModuleCpcDosCplus
                 TYPEnum = "5"
 
             End If
+        ElseIf name = "BORD" Then
+            If (propertyValues2 = "True") Then
+                BORDnum = "1"
 
+            ElseIf (propertyValues2 = "False") Then
+                BORDnum = "0"
+            ElseIf (propertyValues2 = Nothing) Then 'False par défaut donc valeur nulle
+                BORDnum = "1"
+            End If
+        ElseIf name = "OMBRE" Then
+            SHADOWnum = propertyValues2
+            If (propertyValues2 = Nothing) Then
+                SHADOWnum = "128"
+            End If
+        ElseIf name = "MOVE" Then
+            If (propertyValues2 = "True") Then
+                MOVEnum = "1"
+
+            ElseIf (propertyValues2 = "False") Then
+                MOVEnum = "0"
+            ElseIf (propertyValues2 = Nothing) Then
+                MOVEnum = "1"
+            End If
+        ElseIf name = "SIZ" Then
+            If (propertyValues2 = "True") Then
+                SIZnum = "1"
+
+            ElseIf (propertyValues2 = "False") Then
+                SIZnum = "0"
+            ElseIf (propertyValues2 = Nothing) Then
+                SIZnum = "1"
+            End If
+        ElseIf name = "SIZBTN" Then
+            If (propertyValues2 = "True") Then
+                SIZBTNnum = "1"
+
+            ElseIf (propertyValues2 = "False") Then
+                SIZBTNnum = "0"
+            ElseIf (propertyValues2 = Nothing) Then
+                SIZBTNnum = "1"
+            End If
+        ElseIf name = "REDUCT" Then
+            If (propertyValues2 = "True") Then
+                REDUCTnum = "1"
+
+            ElseIf (propertyValues2 = "False") Then
+                REDUCTnum = "0"
+            ElseIf (propertyValues2 = Nothing) Then
+                REDUCTnum = "1"
+            End If
+        ElseIf name = "CLOSE" Then
+            If (propertyValues2 = "True") Then
+                CLOSEnum = "1"
+
+            ElseIf (propertyValues2 = "False") Then
+                CLOSEnum = "0"
+            ElseIf (propertyValues2 = Nothing) Then
+                CLOSEnum = "1"
+            End If
+        ElseIf name = "TASKBAR" Then
+            If (propertyValues2 = "True") Then
+                TASKBARnum = "1"
+
+            ElseIf (propertyValues2 = "False") Then
+                TASKBARnum = "0"
+            ElseIf (propertyValues2 = Nothing) Then
+                TASKBARnum = "0"
+            End If
         ElseIf name = "Parameters" Then
             If propertyValues2 = Nothing Then
             ElseIf (propertyValues2 = "True") Then
 
                 sbuilder.Append("   .Parameters" + "   " + " = """)
                 sbuilder.Append("CTN:" + CTNnum)
-                sbuilder.Append("TYPE:" + TYPEnum)
-                sbuilder.Append("BORD:" + TYPEnum)
-                sbuilder.Append("SHADOW:" + TYPEnum)
-                sbuilder.Append("MOVE:" + TYPEnum)
-                sbuilder.Append("SIZ:" + TYPEnum)
-                sbuilder.Append("SIZBTN:" + TYPEnum)
-                sbuilder.Append("REDUCT:" + TYPEnum)
-                sbuilder.Append("CLOSE:" + TYPEnum)
-                sbuilder.Append("TASKBAR:" + TYPEnum)
+                sbuilder.Append(" TYPE:" + TYPEnum)
+                sbuilder.Append(" BORD:" + BORDnum)
+                sbuilder.Append(" SHADOW:" + SHADOWnum)
+                sbuilder.Append(" MOVE:" + MOVEnum)
+                sbuilder.Append(" SIZ:" + SIZnum)
+                sbuilder.Append(" SIZBTN:" + SIZBTNnum)
+                sbuilder.Append(" REDUCT:" + REDUCTnum)
+                sbuilder.Append(" CLOSE:" + CLOSEnum)
+                sbuilder.Append(" TASKBAR:" + TASKBARnum)
                 sbuilder.Append("""")
                 sbuilder.AppendLine()
             End If
@@ -390,14 +466,14 @@ Public Module ModuleCpcDosCplus
         Private UPD1 As String
         Private Sub LoadWinToCpcControls()
 
-            WinToCpcControls = New Dictionary(Of String, String)
+        WinToCpcControls = New Dictionary(Of String, String)
         WinToCpcControls.Add("ToolBox.Window", "Window/")
         WinToCpcControls.Add("ToolBox.PictureBox", "PictureBox/")
-            WinToCpcControls.Add("ToolBox.CheckBox", "CheckBox/")
-            WinToCpcControls.Add("ToolBox.Button", "Button/")
-            WinToCpcControls.Add("ToolBox.TextBox", "TextBox/")
-            WinToCpcControls.Add("ToolBox.TextBlock", "TextBlock/")
-            WinToCpcControls.Add("ToolBox.ProgressBar", "ProgressBar/")
+        WinToCpcControls.Add("ToolBox.CheckBox", "CheckBox/")
+        WinToCpcControls.Add("ToolBox.Button", "Button/")
+        WinToCpcControls.Add("ToolBox.TextBox", "TextBox/")
+        WinToCpcControls.Add("ToolBox.TextBlock", "TextBlock/")
+        WinToCpcControls.Add("ToolBox.ProgressBar", "ProgressBar/")
 
             CpcDebutToFins = New Dictionary(Of String, String)
             CpcDebutToFins.Add("Window/", "End/ Window")

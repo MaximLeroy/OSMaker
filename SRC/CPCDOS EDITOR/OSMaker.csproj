@@ -809,6 +809,7 @@
     <Content Include="AIMS.Docking.dll" />
     <Content Include="Classes\OSMAKERR.xml" />
     <Content Include="OSM_LOGO.ico" />
+    <None Include="Resources\Question_16x.png" />
     <None Include="Resources\OSM_OS1.png" />
     <None Include="Resources\OSM_CPCDOSC+.png" />
     <None Include="Resources\OSM_IUG.png" />
@@ -873,6 +874,8 @@
     <None Include="Resources\FindInFile_16x.png" />
     <None Include="Resources\logocpcdosblack.png" />
     <None Include="Resources\Image_16xBlack.png" />
+    <None Include="Resources\OpenFolder_16x.png" />
+    <None Include="Resources\NewRelationshipMenu_16x.png" />
     <Content Include="Resources\OSMaker.xml" />
     <None Include="Resources\repair-tools.png" />
     <None Include="Resources\file-explorer.png" />

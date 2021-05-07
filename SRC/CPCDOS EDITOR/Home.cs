@@ -280,8 +280,8 @@ namespace OSMaker
             Accueil MonAccueil = new Accueil();
           
 
-            MonAccueil.Text = "Accueil";
-            MonAccueil.Font = new Font("Microsoft Sans Serif", 7);
+            MonAccueil.Text = "Welcome";
+            //MonAccueil.Font = new Font("Microsoft Sans Serif", 7);
            
             return MonAccueil;
         }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Explorer");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Explorer");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SolutionExplorer));
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.nouveauToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,6 +42,7 @@
             this.renommerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.progressBar1 = new MetroFramework.Controls.MetroProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this._tv = new System.Windows.Forms.TreeView();
@@ -49,7 +50,6 @@
             this.txtDirectory = new MetroFramework.Controls.MetroTextBox();
             this._PictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroContextMenu1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,6 +70,7 @@
             this.metroContextMenu1.Size = new System.Drawing.Size(152, 100);
             this.metroContextMenu1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroContextMenu1.UseCustomBackColor = true;
+            this.metroContextMenu1.Opening += new System.ComponentModel.CancelEventHandler(this.metroContextMenu1_Opening);
             // 
             // nouveauToolStripMenuItem
             // 
@@ -156,6 +157,22 @@
             this.panel2.Size = new System.Drawing.Size(261, 532);
             this.panel2.TabIndex = 7;
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton1.Highlight = true;
+            this.metroButton1.Location = new System.Drawing.Point(3, 3);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(253, 39);
+            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroButton1.TabIndex = 8;
+            this.metroButton1.Text = "Select a folder";
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // progressBar1
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -196,13 +213,14 @@
             this._tv.LabelEdit = true;
             this._tv.Location = new System.Drawing.Point(0, 48);
             this._tv.Name = "_tv";
-            treeNode2.Name = "ExplorerNode";
-            treeNode2.Text = "Explorer";
+            treeNode1.Name = "ExplorerNode";
+            treeNode1.Text = "Explorer";
             this._tv.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2});
+            treeNode1});
             this._tv.Size = new System.Drawing.Size(258, 481);
             this._tv.StateImageList = this.ImageList1;
             this._tv.TabIndex = 1;
+            this._tv.Visible = false;
             this._tv.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this._tv_AfterLabelEdit);
             this._tv.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this._tv_BeforeCollapse);
             this._tv.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this._tv_BeforeExpand);
@@ -267,10 +285,10 @@
             this._PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this._PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this._PictureBox1.ForeColor = System.Drawing.Color.Black;
-            this._PictureBox1.Image = global::OSMaker.My.Resources.Resources.Open_16x;
+            this._PictureBox1.Image = global::OSMaker.My.Resources.Resources.OpenFolder_16x;
             this._PictureBox1.Location = new System.Drawing.Point(198, 19);
             this._PictureBox1.Name = "_PictureBox1";
-            this._PictureBox1.Size = new System.Drawing.Size(21, 23);
+            this._PictureBox1.Size = new System.Drawing.Size(18, 23);
             this._PictureBox1.TabIndex = 5;
             this._PictureBox1.TabStop = false;
             this._PictureBox1.Click += new System.EventHandler(this._PictureBox1_Click);
@@ -279,22 +297,6 @@
             // 
             this.metroStyleManager1.Owner = null;
             this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(5, 3);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(253, 39);
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroButton1.TabIndex = 8;
-            this.metroButton1.Text = "Select a folder";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // SolutionExplorer
             // 
@@ -336,6 +338,6 @@
         private System.Windows.Forms.ToolStripMenuItem renommerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supprimerToolStripMenuItem;
         private MetroFramework.Controls.MetroProgressBar progressBar1;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        public MetroFramework.Controls.MetroButton metroButton1;
     }
 }
