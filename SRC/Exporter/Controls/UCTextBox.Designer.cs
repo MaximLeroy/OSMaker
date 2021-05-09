@@ -134,15 +134,14 @@
             // textBox3
             // 
             this.textBox3.COL = true;
-            this.textBox3.CouleurFond = "";
-            this.textBox3.CouleurTexte = "";
-            this.textBox3.EVENT_PATH = "";
+        
+            this.textBox3._EVENT = "";
             
-            this.textBox3.IMGAUTO = 0;
+            this.textBox3.IMGAUTO = false;
             this.textBox3.Location = new System.Drawing.Point(16, 13);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Parameters = "False";
+            this.textBox3.TextBoxParameters = bool.Parse("False");
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 0;
             this.textBox3.UPD = true;

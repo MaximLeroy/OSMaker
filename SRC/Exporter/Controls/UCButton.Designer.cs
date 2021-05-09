@@ -143,16 +143,15 @@
             // button1
             // 
             this.button1.COL = true;
-            this.button1.CouleurFond = "";
-            this.button1.CouleurTexte = "Color [Control]";
-            this.button1.EVENT_PATH = "";
+          
+            this.button1._EVENT = "";
             this.button1.Handle = "MonHandle";
-            this.button1.Image = "";
+            this.button1._IMAGE = "";
             this.button1.IMGAUTO = 0;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.OPACITE = 255;
-            this.button1.Parameters = "";
+            this.button1.ButtonParameters = false;
             this.button1.Size = new System.Drawing.Size(224, 81);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";

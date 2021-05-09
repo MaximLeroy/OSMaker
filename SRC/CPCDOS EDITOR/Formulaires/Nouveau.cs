@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using OSMaker.Panneaux;
 
 namespace OSMaker
 {
@@ -31,6 +32,11 @@ namespace OSMaker
         public string pathdirectory = "";
         private void metroButton1_Click(object sender, EventArgs e)
         {
+            if (Home.m_solutionExplorer.txtDirectory.Text == "")
+            {
+                Home.m_solutionExplorer.txtDirectory.Text = pathosm;
+                Home.m_solutionExplorer.Actualiser();
+            }
             if (metroRadioButton2.Checked == true)
             {
                 Home.m_solutionExplorer.New_IUG(pathosmtextBox.Text, pathcpctextBox.Text, nameccplustextBox.Text);
@@ -38,6 +44,16 @@ namespace OSMaker
                 conceptordesk.New_Desktop(pathosmtextBox.Text, pathcpctextBox.Text);
                 conceptordesk.Show(Home.dockPanel);
                 conceptordesk.Text = nameccplustextBox.Text + ".osm [Design]";
+                Close();
+            }
+            if (metroRadioButton3.Checked == true)
+            {
+                Home.m_solutionExplorer.New_CPC(pathosmtextBox.Text, pathcpctextBox.Text, nameccplustextBox.Text);
+                Doc conceptordesk = new Doc();
+                
+                conceptordesk.Show(Home.dockPanel);
+                conceptordesk.Text = nameccplustextBox.Text + ".cpc";
+                conceptordesk.metroTextBox1.Text = pathcpctextBox.Text;
                 Close();
             }
             else
@@ -73,7 +89,7 @@ namespace OSMaker
                 {
                     
                     pathosmtextBox.Text = dlg.SelectedPath + "\\" + nameosmtextbox.Text + ".osm";
-                    pathosm = dlg.SelectedPath + "\\";
+                    pathosm = dlg.SelectedPath;
                     //_tv.Nodes.Clear();
                     //LoadDirectory(txtDirectory.Text);
                     //txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
@@ -95,7 +111,7 @@ namespace OSMaker
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     pathcpctextBox.Text = dlg.SelectedPath + "\\" + nameccplustextBox.Text + ".cpc";
-                    pathcpc = dlg.SelectedPath + "\\";
+                    pathcpc = dlg.SelectedPath ;
                     //_tv.Nodes.Clear();
                     //LoadDirectory(txtDirectory.Text);
                     //txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
@@ -112,11 +128,11 @@ namespace OSMaker
         {
             if (metroRadioButton3.Checked == true) 
             {
-                metroLabel2.Visible = pathosmtextBox.Visible = metroButton3.Visible = false;
+                metroLabel2.Visible = pathosmtextBox.Visible = metroButton3.Visible = nameosmtextbox.Visible = false;
             }
             else
             {
-                metroLabel2.Visible = pathosmtextBox.Visible = metroButton3.Visible = true;
+                metroLabel2.Visible = pathosmtextBox.Visible = metroButton3.Visible = nameosmtextbox.Visible = true;
                 
             }
         }
@@ -144,7 +160,7 @@ namespace OSMaker
             {
 
                 nameosmtextbox.Text = Home.m_solutionExplorer.GetNewFileNameXML(diosm).Replace(".osm","");
-                nameccplustextBox.Text = Home.m_solutionExplorer.GetNewFileNameCPC(dicpc).Replace(".cpc", "");
+                nameccplustextBox.Text = Home.m_solutionExplorer.GetNewFileNameXML(dicpc).Replace(".osm", "");
             }
             else
             {

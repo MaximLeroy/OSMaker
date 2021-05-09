@@ -170,7 +170,7 @@ namespace OSMaker
             // 
             // metroButton16
             // 
-            this.metroButton16.BackgroundImage = global::OSMaker.My.Resources.Resources.FolderBrowserDialogControl_16x;
+            this.metroButton16.BackgroundImage = global::OSMaker.My.Resources.Resources.OpenFolder_16x;
             this.metroButton16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.metroButton16.Location = new System.Drawing.Point(458, 33);
             this.metroButton16.Name = "metroButton16";
@@ -181,7 +181,7 @@ namespace OSMaker
             // 
             // metroButton15
             // 
-            this.metroButton15.BackgroundImage = global::OSMaker.My.Resources.Resources.FolderBrowserDialogControl_16x;
+            this.metroButton15.BackgroundImage = global::OSMaker.My.Resources.Resources.OpenFolder_16x;
             this.metroButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.metroButton15.Location = new System.Drawing.Point(458, 4);
             this.metroButton15.Name = "metroButton15";

@@ -2103,6 +2103,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TextFile_white_16x {
+            get {
+                object obj = ResourceManager.GetObject("TextFile_white_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap trash {
             get {
                 object obj = ResourceManager.GetObject("trash", resourceCulture);
@@ -2206,6 +2216,16 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap unsure1 {
             get {
                 object obj = ResourceManager.GetObject("unsure1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VideoCamera_16x {
+            get {
+                object obj = ResourceManager.GetObject("VideoCamera_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

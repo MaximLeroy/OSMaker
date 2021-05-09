@@ -1241,6 +1241,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.TextFile_white_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.trash">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -1292,6 +1297,11 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.unsure1">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.VideoCamera_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>

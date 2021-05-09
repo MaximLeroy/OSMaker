@@ -709,9 +709,10 @@ namespace OSMaker
 
         private void menuItemClose_Click(object sender, EventArgs e)
         {
-            string configFile = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "OSMaker.config");
+            //    string configFile = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "OSMaker.config");
 
-            dockPanel.SaveAsXml(configFile);
+            //    dockPanel.SaveAsXml(configFile);
+            dockPanel.ActiveDocument.DockHandler.Close();
         }
 
         private void fichierCCToolStripMenuItem_Click(object sender, EventArgs e)
@@ -905,6 +906,39 @@ namespace OSMaker
         private void metroButton8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void menuItemExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void dossierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                var dlg = new FileFolderDialog();
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    Home.m_solutionExplorer.txtDirectory.Text = dlg.SelectedPath + "\\";
+                    Home.m_solutionExplorer._tv.Nodes.Clear();
+                    Home.m_solutionExplorer.LoadDirectory(Home.m_solutionExplorer.txtDirectory.Text);
+                    Home.m_solutionExplorer.txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
+                    Home.m_solutionExplorer.metroButton1.Visible = false;
+                    Home.m_solutionExplorer._tv.Visible = true;
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void menuItemNew_Click_1(object sender, EventArgs e)
+        {
+            Nouveau nouveau = new Nouveau();
+            nouveau.Show();
         }
     }
 

@@ -158,8 +158,8 @@ namespace Exporter.Controls
             b1.ForeColor = Color.FromArgb(int.Parse(redT), int.Parse(greenT), int.Parse(blueT));
             b1.Name = Nom;
             b1.Text = Btext;
-            b1.EVENT_PATH = Bevent;
-            b1.Parameters = Bparameters;
+            b1._EVENT = Bevent;
+            b1.ButtonParameters = bool.Parse(Bparameters);
             try { b1.OPACITE = int.Parse(Bopacite); }
             catch (System.ArgumentNullException f)
             {

@@ -13,27 +13,27 @@ Public Class FormatStringConverter
     Inherits StringConverter
 
     Public Overrides Function GetStandardValuesSupported(ByVal context As ITypeDescriptorContext) As Boolean
-        Return True
-    End Function
+            Return True
+        End Function
 
-    Public Overrides Function GetStandardValuesExclusive(ByVal context As ITypeDescriptorContext) As Boolean
-        Return True
-    End Function
+        Public Overrides Function GetStandardValuesExclusive(ByVal context As ITypeDescriptorContext) As Boolean
+            Return True
+        End Function
 
-    Public Overrides Function GetStandardValues(ByVal context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection
-        Dim list As Collections.Generic.List(Of String) = New Collections.Generic.List(Of String)()
-        list.Add("")
-        list.Add("Currency")
-        list.Add("Scientific Notation")
-        list.Add("General Number")
-        list.Add("Number")
-        list.Add("Percent")
-        list.Add("Time")
-        list.Add("Date")
-        Return New StandardValuesCollection(list)
-    End Function
-End Class
-Public Class BitmapLocationEditor : Inherits UITypeEditor
+        Public Overrides Function GetStandardValues(ByVal context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection
+            Dim list As Collections.Generic.List(Of String) = New Collections.Generic.List(Of String)()
+            list.Add("")
+            list.Add("Currency")
+            list.Add("Scientific Notation")
+            list.Add("General Number")
+            list.Add("Number")
+            list.Add("Percent")
+            list.Add("Time")
+            list.Add("Date")
+            Return New StandardValuesCollection(list)
+        End Function
+    End Class
+    Public Class BitmapLocationEditor : Inherits UITypeEditor
     Public Overrides Function GetEditStyle(ByVal context As ITypeDescriptorContext) As UITypeEditorEditStyle
         Return UITypeEditorEditStyle.Modal
     End Function
@@ -62,18 +62,21 @@ Public Class Window : Inherits Panel
     Private Reduct1 As Boolean
     Private Move1 As Boolean
     Private Bord1 As Boolean
-    Private Imgauto1 As Integer
+    Private Imgauto1 As Boolean
     Private UPD1 As Boolean
     Private handle1 As String
     Private Evant1 As String
+    Private TitleImg1 As String
+    Private Icon1 As String
     Private couleurtitre1 As Color
     Private couleurfenetre1 As Color
     Private Close1 As Boolean
     Private TaskBar1 As Boolean
     Private Parametres1 As Boolean
-    Private Ombre1 As String
-    Private _Type As String
-    Private Opacite1 As String
+    Private Ombre1 As Integer
+    Private _Type1 As SummaryOptions
+    Private Opacite1 As Integer
+    Private Param1 As String
 
     Public Enum SummaryOptions
       
@@ -85,7 +88,10 @@ Public Class Window : Inherits Panel
         Sans_barre_de_titre_et_sans_conteneur_visible
 
     End Enum
-    Private _Type1 As SummaryOptions
+
+
+
+
 
     <Category("Propriétés CPCDOS")>
     <DisplayName("Type")>
@@ -98,12 +104,93 @@ Public Class Window : Inherits Panel
             _Type1 = value
         End Set
     End Property
-
-
     <Category("Propriétés CPCDOS")>
     <DisplayName("Parameters")>
+    <Description("Modes et paramètres")>
+    Public Property Parameters() As String
+
+        Get
+            If Parametres1 = True Then
+                Dim _type As Integer = 0
+                If _Type1 = SummaryOptions.Normale Then
+                    _type = 0
+                ElseIf _Type1 = SummaryOptions.Sans_conteneur_visible Then
+                    _type = 1
+                ElseIf _Type1 = SummaryOptions.Sans_bitmap_de_titre Then
+                    _type = 2
+                ElseIf _Type1 = SummaryOptions.Sans_bitmap_de_titre_et_sans_conteneur_visible Then
+                    _type = 3
+                ElseIf _Type1 = SummaryOptions.Sans_barre_de_titre Then
+                    _type = 4
+                ElseIf _Type1 = SummaryOptions.Sans_barre_de_titre_et_sans_conteneur_visible Then
+                    _type = 5
+                End If
+                Dim _ctn As Integer = 0
+                If Ctn1 = True Then
+                    _ctn = 1
+                Else
+                    _ctn = 0
+                End If
+                Dim _bord As Integer = 0
+                If Bord1 = True Then
+                    _bord = 1
+                Else
+                    _bord = 0
+                End If
+                Dim _move As Integer = 0
+                If Move1 = True Then
+                    _move = 1
+                Else
+                    _move = 0
+                End If
+                Dim _siz As Integer = 0
+                If Siz1 = True Then
+                    _siz = 1
+                Else
+                    _siz = 0
+                End If
+                Dim _sizbtn As Integer = 0
+                If SizBtn1 = True Then
+                    _sizbtn = 1
+                Else
+                    _sizbtn = 0
+                End If
+                Dim _reduct As Integer = 0
+                If Reduct1 = True Then
+                    _reduct = 1
+                Else
+                    _reduct = 0
+                End If
+                Dim _close As Integer = 0
+                If Close1 = True Then
+                    _close = 1
+                Else
+                    _close = 0
+                End If
+                Dim _taskbar As Integer = 0
+                If TaskBar1 = True Then
+                    _taskbar = 1
+                Else
+                    _taskbar = 0
+                End If
+
+                Return "TYPE:" + _type.ToString() + " " + "CTN:" + _ctn.ToString() + " " + "BORD:" + _bord.ToString() + " " + "MOVE:" + _move.ToString() + " " + "SIZ:" + _siz.ToString() + " " + "SHADOW:" + OMBRE.ToString() + " " + "TASKBAR:" + _taskbar.ToString() + " " + "CLOSE:" + _close.ToString() + " " + "REDUCT:" + _reduct.ToString() + " " + "SIZEBTN:" + _sizbtn.ToString()
+            Else
+                Return ""
+            End If
+        End Get
+        Set(value As String)
+
+            Param1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Show Parameters")>
     <Description("Utiliser les paramètres")>
-    Public Property Parameters As Boolean
+    Public Property ShowParameters As Boolean
         Get
             Return Parametres1
         End Get
@@ -129,12 +216,12 @@ Public Class Window : Inherits Panel
     <Category("Propriétés CPCDOS")>
     <DisplayName("Shadow")>
     <Description("Opacité de l'ombre derrière la fenêtre d'une valeur personnalisable entre 0 → 255.")>
-    Public Overloads Property OMBRE() As String
+    Public Overloads Property OMBRE() As Integer
         Get
-            Return ombre1
+            Return Ombre1
         End Get
-        Set(value As String)
-            ombre1 = value
+        Set(value As Integer)
+            Ombre1 = value
 
         End Set
 
@@ -143,11 +230,12 @@ Public Class Window : Inherits Panel
     <Category("Propriétés CPCDOS")>
     <DisplayName("Opacity")>
     <Description("Opacité de la fenêtre (0 → 255 Opaque)")>
-    Public Overloads Property OPACITE() As String
+    <DefaultValue(255)>
+    Public Overloads Property OPACITE() As Integer
         Get
             Return Opacite1
         End Get
-        Set(value As String)
+        Set(value As Integer)
             Opacite1 = value
 
         End Set
@@ -169,8 +257,9 @@ Public Class Window : Inherits Panel
     <Category("Propriétés CPCDOS")>
     <DisplayName("Move")>
     <Description("Fenêtre déplaçable avec la souris.")>
-    Public Property MOVE As Boolean
+    Public Property MOVEE As Boolean
         Get
+
             Return Move1
         End Get
         Set(value As Boolean)
@@ -253,14 +342,44 @@ Public Class Window : Inherits Panel
 
     <Category("Propriétés CPCDOS")>
     <DisplayName("Events")>
-    <Description("→Fichier évènementiel des interactions graphiques.")>
-    Public Overloads Property EVENT_PATH() As String
+    <Description("Fichier évènementiel des interactions graphiques.")>
+    Public Overloads Property _EVENT() As String
 
         Get
             Return Evant1
         End Get
         Set(value As String)
             Evant1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("TitleImg")>
+    <Description("Image de la barre de titre.")>
+    Public Overloads Property TitleImg() As String
+
+        Get
+            Return TitleImg1
+        End Get
+        Set(value As String)
+            TitleImg1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Icon")>
+    <Description("Icône de la fenêtre.")>
+    Public Overloads Property Icon() As String
+
+        Get
+            Return Icon1
+        End Get
+        Set(value As String)
+            Icon1 = value
 
         End Set
 
@@ -275,6 +394,7 @@ Public Class Window : Inherits Panel
         End Get
         Set(ByVal Value As System.Drawing.Color)
             couleurtitre1 = Value
+
         End Set
     End Property
 
@@ -291,36 +411,43 @@ Public Class Window : Inherits Panel
     Sub New()
 
         Ctn1 = System.Boolean.FalseString
-        Imgauto1 = "0"
-        UPD1 = Boolean.TrueString
-        handle1 = "MonHandle"
-        EVENT_PATH = ""
+        Imgauto1 = System.Boolean.FalseString
+        UPD1 = System.Boolean.TrueString
+        handle1 = "MyHandle"
+        _EVENT = ""
         _Type1 = SummaryOptions.Normale
-        Bord1 = Boolean.TrueString
-        Move1 = Boolean.TrueString
+        Bord1 = System.Boolean.TrueString
+        Move1 = System.Boolean.TrueString
         Parametres1 = Boolean.FalseString
-        Siz1 = Boolean.TrueString
-        SizBtn1 = Boolean.TrueString
-        Reduct1 = Boolean.TrueString
-        Close1 = Boolean.TrueString
+        Siz1 = System.Boolean.TrueString
+        SizBtn1 = System.Boolean.TrueString
+        Reduct1 = System.Boolean.TrueString
+        Close1 = System.Boolean.TrueString
         TaskBar1 = System.Boolean.FalseString
-        Opacite1 = "255"
-        Ombre1 = "0"
+        Opacite1 = 255
+        Ombre1 = 0
+        TitleImg1 = ""
+        Icon1 = ""
+
     End Sub
 
 End Class
 Public Class TextBox : Inherits System.Windows.Forms.TextBox
 
     Private Col1 As Boolean
-    Private Move1 As Boolean
-    Private Imgauto1 As Integer
+    Private Imgauto1 As Boolean
     Private UPD1 As Boolean
     Private handle1 As String
     Private Evant1 As String
-    Private couleurfond1 As String
-    Private couleurtexte1 As String
-    Private Parametres1 As String
+    Private Parametres1 As Boolean
     Private Opacite1 As Integer
+    Private EDIT1 As Boolean
+    Private Param1 As String
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Opacity")>
+    <Description("Opacité du textbox")>
+    <DefaultValue(255)>
     Public Property OPACITE As Integer
         Get
             Return Opacite1
@@ -329,26 +456,91 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
             Opacite1 = value
         End Set
     End Property
-    Public Property Parameters As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Show Parameters")>
+    <Description("Activer les paramètres")>
+    Public Property TextBoxParameters As Boolean
         Get
             Return Parametres1
         End Get
-        Set(value As String)
+        Set(value As Boolean)
             Parametres1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Parameters")>
+    <Description("Modes et paramètres")>
+    Public Property Parameters() As String
+
+        Get
+            If Parametres1 = True Then
+                Dim multiline1 As Integer = 0
+                If Multiline = True Then
+                    multiline1 = 1
+                Else
+                    multiline1 = 0
+                End If
+                Dim _col As Integer = 0
+                If Col1 = True Then
+                    _col = 1
+                Else
+                    _col = 0
+                End If
+                Dim _edit As Integer = 0
+                If EDIT1 = True Then
+                    _edit = 1
+                Else
+                    _edit = 0
+                End If
+                Dim _multilines As Integer = 0
+                If multiline1 = True Then
+                    _multilines = 1
+                Else
+                    _multilines = 0
+                End If
+                Dim _imgauto As Integer = 0
+                If Imgauto1 = True Then
+                    _imgauto = 1
+                Else
+                    _imgauto = 0
+                End If
+                Dim _upd As Integer = 0
+                If UPD1 = True Then
+                    _upd = 1
+                Else
+                    _upd = 0
+                End If
+
+                Return "COL:" + _col.ToString + " " + "EDIT:" + _edit.ToString() + " " + "MULTILINES:" + _multilines.ToString() + " " + "IMGAUTO:" + _imgauto.ToString() + " " + "UPD:" + _upd.ToString()
+            Else
+                Return ""
+            End If
+        End Get
+        Set(value As String)
+
+            Param1 = value
+
+        End Set
+
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Handle")>
+    <Description("Handle du textbox")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
         End Get
         Set(value As String)
-            value = Handle
+
             handle1 = value
 
 
         End Set
 
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Col")>
+    <Description("Afficher la couleur de fond")>
     Public Property COL As Boolean
         Get
             Return Col1
@@ -358,14 +550,20 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
         End Set
     End Property
 
-    Public Property IMGAUTO As Integer
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("ImgAuto")>
+    <Description("Affichage adapté aux dimensions de l'imagebox")>
+    Public Property IMGAUTO As Boolean
         Get
             Return Imgauto1
         End Get
-        Set(value As Integer)
+        Set(value As Boolean)
             Imgauto1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Upd")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
     Public Property UPD As Boolean
         Get
             Return UPD1
@@ -374,7 +572,21 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
             UPD1 = value
         End Set
     End Property
-    Public Overloads Property EVENT_PATH() As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Edit")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
+    Public Property EDIT As Boolean
+        Get
+            Return EDIT1
+        End Get
+        Set(value As Boolean)
+            EDIT1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Event")>
+    <Description("Fichier évènementiel des interactions graphiques.")>
+    Public Overloads Property _EVENT() As String
 
         Get
             Return Evant1
@@ -385,48 +597,36 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
         End Set
 
     End Property
-    Public Property CouleurFond As String
-        Get
-            Return couleurfond1
-        End Get
-        Set(value As String)
-            couleurfond1 = value
-        End Set
-    End Property
-    Public Property CouleurTexte As String
-        Get
-            Return couleurtexte1
-        End Get
-        Set(value As String)
-            couleurtexte1 = value
-        End Set
-    End Property
-    Sub New()
-        Parameters = System.Boolean.FalseString
-        COL = System.Boolean.TrueString
-        IMGAUTO = 0
-        UPD1 = System.Boolean.TrueString
-        handle1 = Handle
-        EVENT_PATH = ""
-        CouleurFond = ""
-        CouleurTexte = ""
-        handle1 = "MonHandle"
 
+    Sub New()
+
+        TextBoxParameters = System.Boolean.FalseString
+        COL = System.Boolean.TrueString
+        IMGAUTO = System.Boolean.FalseString
+        UPD1 = System.Boolean.TrueString
+        EDIT1 = System.Boolean.TrueString
+        _EVENT = ""
+        handle1 = "MyHandle"
+
+        Opacite1 = 255
     End Sub
 End Class
 
 Public Class TextBlock : Inherits System.Windows.Forms.Label
 
     Private Col1 As Boolean
-    Private Imgauto1 As Integer
+    Private Imgauto1 As Boolean
     Private UPD1 As Boolean
     Private handle1 As String
     Private Evant1 As String
-    Private couleurfond1 As String
-    Private couleurtexte1 As String
     Private MULTILINES1 As Boolean
     Private Opacite1 As Integer
-    Private Parametres1 As String
+    Private Parametres1 As Boolean
+    Private Param1 As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Opacity")>
+    <Description("Opacité du textbox")>
+    <DefaultValue(255)>
     Public Property OPACITE As Integer
         Get
             Return Opacite1
@@ -435,24 +635,85 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
             Opacite1 = value
         End Set
     End Property
-    Public Property Parameters As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Show Parameters")>
+    <Description("Activer les paramètres")>
+    Public Property TextBlockParameters As Boolean
         Get
             Return Parametres1
         End Get
-        Set(value As String)
+        Set(value As Boolean)
             Parametres1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Parameters")>
+    <Description("Modes et paramètres")>
+    Public Property Parameters() As String
+
+        Get
+            If Parametres1 = True Then
+                Dim multiline1 As Integer = 0
+                If MULTILINES1 = True Then
+                    multiline1 = 1
+                Else
+                    multiline1 = 0
+                End If
+                Dim _col As Integer = 0
+                If Col1 = True Then
+                    _col = 1
+                Else
+                    _col = 0
+                End If
+                Dim _multilines As Integer = 0
+                If multiline1 = True Then
+                    _multilines = 1
+                Else
+                    _multilines = 0
+                End If
+                Dim _imgauto As Integer = 0
+                If Imgauto1 = True Then
+                    _imgauto = 1
+                Else
+                    _imgauto = 0
+                End If
+                Dim _upd As Integer = 0
+                If UPD1 = True Then
+                    _upd = 1
+                Else
+                    _upd = 0
+                End If
+
+                Return "COL:" + _col.ToString + " " + "MULTILINES:" + _multilines.ToString() + " " + "IMGAUTO:" + _imgauto.ToString() + " " + "UPD:" + _upd.ToString()
+            Else
+                Return ""
+            End If
+        End Get
+        Set(value As String)
+
+            Param1 = value
+
+        End Set
+
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Handle")>
+    <Description("Handle du textblock")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
         End Get
         Set(value As String)
+
             handle1 = value
+
 
         End Set
 
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Col")>
+    <Description("Afficher la couleur de fond")>
     Public Property COL As Boolean
         Get
             Return Col1
@@ -461,22 +722,21 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
             Col1 = value
         End Set
     End Property
-    Public Property MULTILINES As Boolean
-        Get
-            Return MULTILINES1
-        End Get
-        Set(value As Boolean)
-            MULTILINES1 = value
-        End Set
-    End Property
-    Public Property IMGAUTO As Integer
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("ImgAuto")>
+    <Description("Affichage adapté aux dimensions du texblock")>
+    Public Property IMGAUTO As Boolean
         Get
             Return Imgauto1
         End Get
-        Set(value As Integer)
+        Set(value As Boolean)
             Imgauto1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Upd")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
     Public Property UPD As Boolean
         Get
             Return UPD1
@@ -485,7 +745,12 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
             UPD1 = value
         End Set
     End Property
-    Public Overloads Property EVENT_PATH() As String
+
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Event")>
+    <Description("Fichier évènementiel des interactions graphiques.")>
+    Public Overloads Property _EVENT() As String
 
         Get
             Return Evant1
@@ -496,34 +761,18 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
         End Set
 
     End Property
-    Public Property CouleurFond As String
-        Get
-            Return couleurfond1
-        End Get
-        Set(value As String)
-            couleurfond1 = value
-        End Set
-    End Property
-    Public Property CouleurTexte As String
-        Get
-            Return couleurtexte1
-        End Get
-        Set(value As String)
-            couleurtexte1 = value
-        End Set
-    End Property
+
     Sub New()
 
-        Col1 = System.Boolean.TrueString
-        Imgauto1 = "0"
+        TextBlockParameters = System.Boolean.FalseString
+        COL = System.Boolean.TrueString
+        IMGAUTO = System.Boolean.FalseString
         UPD1 = System.Boolean.TrueString
-        Handle = "MonHandle"
-        EVENT_PATH = ""
-        CouleurFond = "200,255,240"
-        CouleurTexte = "250,100,100"
-        MULTILINES = System.Boolean.FalseString
-        Parameters = ""
+        MULTILINES1 = System.Boolean.FalseString
+        _EVENT = ""
+        handle1 = "MyHandle"
 
+        OPACITE = 255
     End Sub
 
 End Class
@@ -534,12 +783,14 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
     Private UPD1 As Boolean
     Private handle1 As String
     Private Evant1 As String
-    Private couleurfond1 As String
-    Private couleurtexte1 As String
     Private Opacite1 As Integer
+    Private Param1 As String
 
-
-    Private Parametres1 As String
+    Private Parametres1 As Boolean
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Opacity")>
+    <Description("Opacité de la checkbox")>
+    <DefaultValue(255)>
     Public Property OPACITE As Integer
         Get
             Return Opacite1
@@ -548,14 +799,52 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
             Opacite1 = value
         End Set
     End Property
-    Public Property Parameters As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Show Parameters")>
+    <Description("Activer les paramètres")>
+    Public Property CheckBoxParameters As Boolean
         Get
             Return Parametres1
         End Get
-        Set(value As String)
+        Set(value As Boolean)
             Parametres1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Parameters")>
+    <Description("Modes et paramètres")>
+    Public Property Parameters() As String
+
+        Get
+            If Parametres1 = True Then
+                Dim _col As Integer = 0
+                If Col1 = True Then
+                    _col = 1
+                Else
+                    _col = 0
+                End If
+                Dim _upd As Integer = 0
+                If UPD1 = True Then
+                    _upd = 1
+                Else
+                    _upd = 0
+                End If
+
+                Return "COL:" + _col.ToString + " " + "UPD:" + _upd.ToString() + " " + "IMGAUTO:" + Imgauto1.ToString()
+            Else
+                Return ""
+            End If
+        End Get
+        Set(value As String)
+
+            Param1 = value
+
+        End Set
+
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Handle")>
+    <Description("Numéro de handle parent. (Fenêtre)")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
@@ -566,6 +855,9 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
         End Set
 
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Col")>
+    <Description("Affiche la couleur de fond")>
     Public Property COL As Boolean
         Get
             Return Col1
@@ -574,7 +866,9 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
             Col1 = value
         End Set
     End Property
-
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("ImgAuto")>
+    <Description("Objet adapté aux dimensions du texte")>
     Public Property IMGAUTO As Integer
         Get
             Return Imgauto1
@@ -583,6 +877,9 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
             Imgauto1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Upd")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
     Public Property UPD As Boolean
         Get
             Return UPD1
@@ -593,7 +890,10 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
         End Set
 
     End Property
-    Public Overloads Property EVENT_PATH() As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Event")>
+    <Description("Fichier évènementiel des interactions graphiques.")>
+    Public Overloads Property _EVENT() As String
 
         Get
             Return Evant1
@@ -604,33 +904,18 @@ Public Class CheckBox : Inherits System.Windows.Forms.CheckBox
         End Set
 
     End Property
-    Public Property CouleurFond As String
-        Get
-            Return couleurfond1
-        End Get
-        Set(value As String)
-            couleurfond1 = value
-        End Set
-    End Property
-    Public Property CouleurTexte As String
-        Get
-            Return couleurtexte1
-        End Get
-        Set(value As String)
-            couleurtexte1 = value
-        End Set
-    End Property
+
     Sub New()
 
         COL = System.Boolean.TrueString
-        IMGAUTO = "2"
+        IMGAUTO = 2
         UPD1 = System.Boolean.TrueString
-        Handle = "MonHandle"
-        EVENT_PATH = ""
-        CouleurFond = "255,255,240"
-        CouleurTexte = "000,000,000"
-        Parameters = ""
+        Handle = "MyHandle"
+        _EVENT = ""
+        CheckBoxParameters = System.Boolean.FalseString
         Me.FlatStyle = FlatStyle.Flat
+        Opacite1 = 255
+
     End Sub
 
 End Class
@@ -642,11 +927,15 @@ Public Class ProgressBar : Inherits System.Windows.Forms.ProgressBar
     Private UPD1 As Boolean
     Private handle1 As String
     Private Evant1 As String
-    Private couleurfond1 As String
-    Private couleurtexte1 As String
-    Private valeur1 As String
-    Private Parametres1 As String
+    Private image1 As String
     Private Opacite1 As Integer
+    Private Parametres1 As Boolean
+    Private Param1 As String
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Opacity")>
+    <Description("Opacité de la progressbar")>
+    <DefaultValue(255)>
     Public Property OPACITE As Integer
         Get
             Return Opacite1
@@ -655,15 +944,47 @@ Public Class ProgressBar : Inherits System.Windows.Forms.ProgressBar
             Opacite1 = value
         End Set
     End Property
-    Public Property Parameters As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Show Parameters")>
+    <Description("Activer les paramètres")>
+    Public Property ProgressBarParameters As Boolean
         Get
             Return Parametres1
         End Get
-        Set(value As String)
+        Set(value As Boolean)
             Parametres1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Parameters")>
+    <Description("Modes et paramètres")>
+    Public Overloads Property Parameters() As String
 
+        Get
+            If Parametres1 = True Then
+                Dim _upd As Integer = 0
+                If UPD1 = True Then
+                    _upd = 1
+                Else
+                    _upd = 0
+                End If
+
+
+                Return "UPD:" + _upd.ToString() + " " + "IMGAUTO:" + Imgauto1.ToString()
+            Else
+                Return ""
+            End If
+        End Get
+        Set(value As String)
+
+            Param1 = value
+
+        End Set
+
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Handle")>
+    <Description("Numéro de handle parent. (Fenêtre)")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
@@ -674,17 +995,23 @@ Public Class ProgressBar : Inherits System.Windows.Forms.ProgressBar
         End Set
 
     End Property
-
-    Public Overloads Property VALEUR() As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Image")>
+    <Description("Image")>
+    Public Overloads Property _IMAGE As String
         Get
-            Return valeur1
+            Return image1
         End Get
         Set(value As String)
-            valeur1 = value
+            image1 = value
 
         End Set
 
     End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("ImgAuto")>
+    <Description("Objet adapté aux dimensions du texte")>
     Public Property IMGAUTO As Integer
         Get
             Return Imgauto1
@@ -693,15 +1020,23 @@ Public Class ProgressBar : Inherits System.Windows.Forms.ProgressBar
             Imgauto1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Upd")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
     Public Property UPD As Boolean
         Get
             Return UPD1
         End Get
         Set(value As Boolean)
             UPD1 = value
+
         End Set
+
     End Property
-    Public Overloads Property EVENT_PATH() As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Event")>
+    <Description("Fichier évènementiel des interactions graphiques.")>
+    Public Overloads Property _EVENT() As String
 
         Get
             Return Evant1
@@ -712,35 +1047,19 @@ Public Class ProgressBar : Inherits System.Windows.Forms.ProgressBar
         End Set
 
     End Property
-    Public Property CouleurFond As String
-        Get
-            Return couleurfond1
-        End Get
-        Set(value As String)
-            couleurfond1 = value
-        End Set
-    End Property
-    Public Property CouleurTexte As String
-        Get
-            Return couleurtexte1
-        End Get
-        Set(value As String)
-            couleurtexte1 = value
-        End Set
-    End Property
+
 
 
     Sub New()
 
 
-        IMGAUTO = "2"
+        IMGAUTO = 2
         UPD1 = System.Boolean.TrueString
-        Handle = "MonHandle"
-        EVENT_PATH = ""
-        CouleurFond = "200,255,240"
-        CouleurTexte = "250,100,100"
-        VALEUR = "0"
-        Parameters = ""
+        Handle = "MyHandle"
+        _EVENT = ""
+        Opacite1 = 255
+        ProgressBarParameters = System.Boolean.FalseString
+        image1 = ""
     End Sub
 
 End Class
@@ -751,40 +1070,99 @@ Public Class PictureBox : Inherits System.Windows.Forms.PictureBox
     Private UPD1 As Boolean
     Private handle1 As String
     Private Evant1 As String
-    Private couleurfond1 As String
-    Private couleurtexte1 As String
     Private image1 As String
     Private Opacite1 As Integer
-    Private Parametres1 As String
+    Private Parametres1 As Boolean
+    Private Param1 As String
 
-    Public Property Parameters As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Opacity")>
+    <Description("Opacité du picturebox")>
+    Public Property OPACITE As String
+        Get
+            Return Opacite1
+        End Get
+        Set(value As String)
+            Opacite1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Show Parameters")>
+    <Description("Activer les paramètres")>
+    Public Property PictureBoxParameters As Boolean
         Get
             Return Parametres1
         End Get
-        Set(value As String)
+        Set(value As Boolean)
             Parametres1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Parameters")>
+    <Description("Modes et paramètres")>
+    Public Property Parameters() As String
+
+        Get
+            If Parametres1 = True Then
+                Dim _col As Integer = 0
+                If Col1 = True Then
+                    _col = 1
+                Else
+                    _col = 0
+                End If
+                Dim _upd As Integer = 0
+                If UPD1 = True Then
+                    _upd = 1
+                Else
+                    _upd = 0
+                End If
+
+                Return "COL:" + _col.ToString + " " + "UPD:" + _upd.ToString() + " " + "IMGAUTO:" + Imgauto1.ToString()
+            Else
+                Return ""
+            End If
+        End Get
+        Set(value As String)
+
+            Param1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Handle")>
+    <Description("Handle du picturebox")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
         End Get
         Set(value As String)
+
             handle1 = value
+
 
         End Set
 
     End Property
-    Public Overloads Property IMAGE() As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Image")>
+    <Description("Image")>
+    Public Overloads Property _IMAGE As String
         Get
             Return image1
         End Get
         Set(value As String)
+
             image1 = value
+
 
         End Set
 
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Col")>
+    <Description("Afficher la couleur de fond")>
     Public Property COL As Boolean
         Get
             Return Col1
@@ -794,6 +1172,9 @@ Public Class PictureBox : Inherits System.Windows.Forms.PictureBox
         End Set
     End Property
 
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("ImgAuto")>
+    <Description("Affichage adapté aux dimensions de l'imagebox")>
     Public Property IMGAUTO As Integer
         Get
             Return Imgauto1
@@ -802,6 +1183,9 @@ Public Class PictureBox : Inherits System.Windows.Forms.PictureBox
             Imgauto1 = value
         End Set
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Upd")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
     Public Property UPD As Boolean
         Get
             Return UPD1
@@ -810,7 +1194,12 @@ Public Class PictureBox : Inherits System.Windows.Forms.PictureBox
             UPD1 = value
         End Set
     End Property
-    Public Overloads Property EVENT_PATH() As String
+
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Event")>
+    <Description("Fichier évènementiel des interactions graphiques.")>
+    Public Overloads Property _EVENT() As String
 
         Get
             Return Evant1
@@ -821,42 +1210,16 @@ Public Class PictureBox : Inherits System.Windows.Forms.PictureBox
         End Set
 
     End Property
-    Public Property OPACITE As Integer
-        Get
-            Return Opacite1
-        End Get
-        Set(value As Integer)
-            Opacite1 = value
-        End Set
-    End Property
-    Public Property CouleurFond As String
-        Get
-            Return couleurfond1
-        End Get
-        Set(value As String)
-            couleurfond1 = value
-        End Set
-    End Property
-    Public Property CouleurTexte As String
-        Get
-            Return couleurtexte1
-        End Get
-        Set(value As String)
-            couleurtexte1 = value
-        End Set
-    End Property
     Sub New()
 
         COL = System.Boolean.TrueString
         IMGAUTO = 0
         UPD1 = System.Boolean.TrueString
-        Handle = "MonHandle"
-        EVENT_PATH = ""
-        CouleurFond = ""
-        CouleurTexte = ""
-        IMAGE = ""
-        OPACITE = 255
-        Parameters = ""
+        Handle = "MyHandle"
+        _EVENT = ""
+        _IMAGE = ""
+        Opacite1 = 255
+        PictureBoxParameters = System.Boolean.FalseString
     End Sub
 End Class
 Public Class Button : Inherits System.Windows.Forms.Button
@@ -866,41 +1229,79 @@ Public Class Button : Inherits System.Windows.Forms.Button
     Private UPD1 As Boolean
     Private handle1 As String
     Private Evant1 As String
-    Private couleurfond1 As String
-    Private couleurtexte1 As String
     Private opacite1 As Integer
     Private image1 As String
-    Private Parametres1 As String
+    Private Parametres1 As Boolean
+    Private bord1 As Boolean
+    Private Param1 As String
 
-    Public Property Parameters As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Opacity")>
+    <Description("Opacité du textbox")>
+    <DefaultValue(255)>
+    Public Property OPACITE As Integer
+        Get
+            Return opacite1
+        End Get
+        Set(value As Integer)
+            opacite1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Show Parameters")>
+    <Description("Activer les paramètres")>
+    Public Property ButtonParameters As Boolean
         Get
             Return Parametres1
         End Get
-        Set(value As String)
+        Set(value As Boolean)
             Parametres1 = value
         End Set
     End Property
-    Public Overloads Property HANDLE() As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Bord")>
+    <Description("Activer les paramètres")>
+    Public Property BORD As Boolean
+        Get
+            Return bord1
+        End Get
+        Set(value As Boolean)
+            bord1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Handle")>
+    <Description("Handle du textblock")>
+    Public Overloads Property HANDLE As String
         Get
             Return handle1
         End Get
         Set(value As String)
+
             handle1 = value
+
 
         End Set
 
     End Property
-
-    Public Overloads Property IMAGE() As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Image")>
+    <Description("Image de fond")>
+    Public Overloads Property _IMAGE As String
         Get
             Return image1
         End Get
         Set(value As String)
+
             image1 = value
+
 
         End Set
 
     End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Col")>
+    <Description("Afficher la couleur de fond")>
     Public Property COL As Boolean
         Get
             Return Col1
@@ -910,6 +1311,9 @@ Public Class Button : Inherits System.Windows.Forms.Button
         End Set
     End Property
 
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("ImgAuto")>
+    <Description("Affichage adapté aux dimensions de l'imagebox")>
     Public Property IMGAUTO As Integer
         Get
             Return Imgauto1
@@ -918,7 +1322,9 @@ Public Class Button : Inherits System.Windows.Forms.Button
             Imgauto1 = value
         End Set
     End Property
-
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Upd")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
     Public Property UPD As Boolean
         Get
             Return UPD1
@@ -927,58 +1333,74 @@ Public Class Button : Inherits System.Windows.Forms.Button
             UPD1 = value
         End Set
     End Property
-    Public Overloads Property EVENT_PATH() As String
+
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Event")>
+    <Description("Fichier évènementiel des interactions graphiques.")>
+    Public Overloads Property _EVENT() As String
 
         Get
             Return Evant1
         End Get
         Set(value As String)
+
             Evant1 = value
 
         End Set
 
     End Property
-    Public Property OPACITE As Integer
-        Get
-            Return opacite1
-        End Get
-        Set(value As Integer)
-            opacite1 = value
-        End Set
-    End Property
-    Public Property CouleurFond As String
-        Get
-            Return couleurfond1
-        End Get
-        Set(value As String)
-            couleurfond1 = value
-        End Set
-    End Property
-    Public Property CouleurTexte As String
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Parameters")>
+    <Description("Modes et paramètres")>
+    Public Overloads Property Parameters() As String
 
         Get
-            Return couleurtexte1
+            If Parametres1 = True Then
+                Dim _col As Integer = 0
+                If Col1 = True Then
+                    _col = 1
+                Else
+                    _col = 0
+                End If
+                Dim _upd As Integer = 0
+                If UPD1 = True Then
+                    _upd = 1
+                Else
+                    _upd = 0
+                End If
+                Dim _bord As Integer = 0
+                If bord1 = True Then
+                    _bord = 1
+                Else
+                    _bord = 0
+                End If
+
+                Return "COL:" + _col.ToString + " " + "UPD:" + _upd.ToString() + " " + "IMGAUTO:" + Imgauto1.ToString() + " " + "BORD:" + _bord.ToString()
+            Else
+                Return ""
+            End If
         End Get
         Set(value As String)
-            Dim rgb = BackColor.ToString
-            value = rgb
-            couleurtexte1 = value
+
+            Param1 = value
 
         End Set
+
     End Property
     Sub New()
 
-        COL = System.Boolean.TrueString
-        IMGAUTO = 0
+        Col1 = System.Boolean.TrueString
+        Imgauto1 = 0
         UPD1 = System.Boolean.TrueString
-        HANDLE = "MonHandle"
-        EVENT_PATH = ""
-        CouleurFond = ""
-        CouleurTexte = ""
-        OPACITE = 255
-        IMAGE = ""
-        Parameters = ""
+        HANDLE = "MyHandle"
+        _EVENT = ""
+        opacite1 = 255
+        _IMAGE = ""
+        ButtonParameters = System.Boolean.FalseString
+        bord1 = System.Boolean.TrueString
         Me.FlatStyle = FlatStyle.Flat
+
     End Sub
 End Class
 

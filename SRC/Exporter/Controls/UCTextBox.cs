@@ -130,8 +130,8 @@ namespace Exporter.Controls
             t1.ForeColor = Color.FromArgb(int.Parse(redT), int.Parse(greenT), int.Parse(blueT));
             t1.Name = Nom;
             t1.Text = Btext;
-            t1.EVENT_PATH = Bevent;
-            t1.Parameters = Bparameters;
+            t1._EVENT = Bevent;
+            t1.TextBoxParameters = bool.Parse(Bparameters);
             t1.Multiline = true;
             try { t1.OPACITE = int.Parse(Bopacite); }
             catch (System.ArgumentNullException f)

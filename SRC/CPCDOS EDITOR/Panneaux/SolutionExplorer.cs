@@ -789,6 +789,50 @@ namespace OSMaker.Panneaux
         public static string pathXml;
         public static string pathCPC = "";
         public static string pathOSM = "";
+
+        public void New_CPC(string osmpath, string cpcpath, string name)
+        {
+
+            var node = _tv.SelectedNode;
+            string oldPathDir = node.Text;
+
+
+            if (_tv.SelectedNode is null)
+                return;
+            // string pathDir = Conversions.ToString(_tv.SelectedNode.Tag);
+            //var di = new DirectoryInfo(pathDir);
+
+            // add file to  di
+        
+
+            string newCpcFileName = name + ".cpc";
+            // Adds new node as a child node of the currently selected node.
+           
+            var newCpcNode = new TreeNode(newCpcFileName);
+            
+            ///
+            newCpcNode.Tag = cpcpath;
+            //  Home.CPCPATH = newNode.Tag.ToString().Replace(".osm",".cpc");
+
+            newCpcNode.ImageKey = "NewFile";
+            newCpcNode.StateImageIndex = 1;
+            _tv.SelectedNode.Nodes.Add(newCpcNode);
+
+            _tv.SelectedNode = newCpcNode;
+
+            // Create new document and add it to existing bar
+
+
+            // Add control to it
+
+
+
+            // PanelDockContainer will be used to host any controls. It provides automatic focus management so focused
+            // document tab appears bold
+
+
+
+        }
         public void New_IUG(string osmpath,string cpcpath, string name)
         {
 
@@ -857,27 +901,31 @@ namespace OSMaker.Panneaux
                 nouveau.pathosm = di.ToString();
                 nouveau.nameccplustextBox.Text = newFileName.Replace(".osm", "");
                 nouveau.pathosmtextBox.Text = di.ToString() + newFileName;
-                nouveau.pathcpctextBox.Text = di.ToString() + newFileName.Replace(".osm", ".cpc");
+                nouveau.pathcpctextBox.Text = di.ToString() + "\\" + newFileName.Replace(".osm", ".cpc");
                 nouveau.nameosmtextbox.Text = nouveau.nameccplustextBox.Text;
              
 
             }
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        public void Actualiser()
         {
             try
             {
-                   
-                    _tv.Nodes.Clear();
-                    LoadDirectory(txtDirectory.Text);
-                    txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
-                
+
+                _tv.Nodes.Clear();
+                LoadDirectory(txtDirectory.Text);
+                txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
+
             }
             catch
             {
                 MessageBox.Show("Veuillez renseigner un chemin de dossier valide");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Actualiser();
         }
 
         private void renommerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1004,7 +1052,30 @@ namespace OSMaker.Panneaux
 
         private void nouveauToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (_tv.SelectedNode.Text.ToLower().Contains(".txt") || _tv.SelectedNode.Text.ToLower().Contains(".osm") || _tv.SelectedNode.Text.ToLower().Contains(".cpc"))
+            {
+                MessageBox.Show("Veuillez sélectionner un dossier et non un fichier");
+            }
+            else
+            {
+                Nouveau nouveau = new Nouveau();
+                nouveau.Show();
 
+                Home.fileName = null;
+                string pathDir = Conversions.ToString(_tv.SelectedNode.Tag);
+                var di = new DirectoryInfo(pathDir);
+                nouveau.pathdirectory = di.ToString();
+                // add file to  di
+                string newFileName = GetNewFileNameXML(di);
+                nouveau.pathcpc = di.ToString();
+                nouveau.pathosm = di.ToString();
+                nouveau.nameccplustextBox.Text = newFileName.Replace(".osm", "");
+                nouveau.pathosmtextBox.Text = di.ToString() + newFileName;
+                nouveau.pathcpctextBox.Text = di.ToString() + "\\" + newFileName.Replace(".osm", ".cpc");
+                nouveau.nameosmtextbox.Text = nouveau.nameccplustextBox.Text;
+
+
+            }
         }
 
         private void SolutionExplorer_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -1020,7 +1091,7 @@ namespace OSMaker.Panneaux
                 var dlg = new FileFolderDialog();
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                   txtDirectory.Text = dlg.SelectedPath + "\\";
+                   txtDirectory.Text = dlg.SelectedPath;
                    _tv.Nodes.Clear();
                    LoadDirectory(txtDirectory.Text);
                    txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
@@ -1049,6 +1120,44 @@ namespace OSMaker.Panneaux
             else
             {
                 nouveauToolStripMenuItem.Visible = true;
+            }
+        }
+
+        private void nouveauDossierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var node = _tv.SelectedNode;
+                string oldPathDir = node.Text;
+                if (oldPathDir.ToLower().Contains(".txt") || oldPathDir.ToLower().Contains(".osm") || oldPathDir.ToLower().Contains(".cpc"))
+                {
+                    MessageBox.Show("Veuillez sélectionner un dossier et non un fichier");
+                }
+                else
+                {
+                    if (_tv.SelectedNode is null)
+                        return;
+                    var selNode = _tv.SelectedNode;
+                    string pathDir = Conversions.ToString(selNode.Tag);
+                    var di = new DirectoryInfo(pathDir);
+
+                    // add subdirectory to  di
+                    string newDirectoryName = GetNewFolderName(di);
+                   
+                    // Adds new node as a child node of the currently selected node.
+                    var newNode = new TreeNode(newDirectoryName);
+                    newNode.Tag = di.FullName + @"" + newDirectoryName;
+                    newNode.ImageKey = "NewFolder";
+                    newNode.StateImageIndex = 0;
+                    selNode.Nodes.Add(newNode);
+                    Actualiser();
+                    _tv.ExpandAll();
+                }
+            }
+            catch
+            {
+
+
             }
         }
     }

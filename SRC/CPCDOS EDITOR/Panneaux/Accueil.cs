@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using OSMaker.Formulaires;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 namespace OSMaker.Panneaux
 {
     public partial class Accueil : DocumentC
@@ -52,7 +54,7 @@ namespace OSMaker.Panneaux
         //    }
         //    foreach (string item in MRUlist)
         //    {
-                
+
         //       ComboBox.ObjectCollection fileRecent = new MetroComboBoxItem(item, null, RecentFile_click);  //create new menu for each item in list
         //        metroComboBox1.Items.Add(fileRecent); //add the menu to "recent" menu
         //    }
@@ -65,7 +67,21 @@ namespace OSMaker.Panneaux
         //    stringToWrite.Flush(); //write stream to file
         //    stringToWrite.Close(); //close the stream and reclaim memory
         //}
+        private void OpenUrl(string url)
+        {
+            try
+            {
+                Process.Start(url);
+            }
+            catch
+            {
 
+                {
+                    url = url.Replace("&", "^&");
+                    Process.Start(new ProcessStartInfo("cmd", $"/c start {url}") { CreateNoWindow = true });
+                }
+            }
+        }
         private void metroLink1_Click(object sender, EventArgs e)
         {
 
@@ -74,7 +90,8 @@ namespace OSMaker.Panneaux
                 var dlg = new   FileFolderDialog();
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    Home.m_solutionExplorer.txtDirectory.Text = dlg.SelectedPath + "\\";
+                    Home.m_solutionExplorer.txtDirectory.Text = dlg.SelectedPath;
+                    listBox1.Items.Add(Home.m_solutionExplorer.txtDirectory.Text);
                     Home.m_solutionExplorer._tv.Nodes.Clear();
                     Home.m_solutionExplorer.LoadDirectory(Home.m_solutionExplorer.txtDirectory.Text);
                     Home.m_solutionExplorer.txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
@@ -93,6 +110,43 @@ namespace OSMaker.Panneaux
             New_OS new_OS = new New_OS();
             new_OS.Show();
            
+        }
+
+        private void Accueil_Load(object sender, EventArgs e)
+        {
+          //  string FileName = @"C:\recent.json";
+         //   File.WriteAllText(FileName, JsonConverter.FromClass(listBox1.Items.OfType<Person>()));
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            Home.m_solutionExplorer.txtDirectory.Text = listBox1.SelectedItem.ToString();
+            Home.m_solutionExplorer.Actualiser();
+        }
+
+        private void metroLink3_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://discord.gg/AbSsAK89KS");
+        }
+
+        private void metroLink4_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://cpcdos.net");
+        }
+
+        private void metroLink5_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://github.com/MaximLeroy/OSMaker");
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

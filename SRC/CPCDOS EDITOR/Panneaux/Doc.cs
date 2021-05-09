@@ -89,13 +89,13 @@ namespace OSMaker.Panneaux
             e.ChangedRange.SetStyle(VertLightStyle, "%.+?%");
             // number highlighting
             e.ChangedRange.SetStyle(MagentaStyle, @"\b\d+[\.]?\d*([eE]\-?\d+)?[lLdDfF]?\b|\b0x[a-fA-F\d]+\b");
-            e.ChangedRange.SetStyle(RoseStyle, @"(TYPE:|CTN:|BORD:|OMBRE:|IMGAUTO:|EDIT:|MULTILINE:|SHADOW:|MOVE:|SIZ:|SIZBTN:|REDUCT:|CLOSE:|TASKBAR:|\,|fonction\/|function\/|End\/ Function|Fin\/ Fonction|Si\/|If\/|Fin\/ si|End\/ If|alors\:|Txt\/|Fin\/ Fonction|then:|sinon:|else:)", RegexOptions.IgnoreCase);
+            e.ChangedRange.SetStyle(RoseStyle, @"(TYPE:|UPD:|COL:|CTN:|BORD:|OMBRE:|IMGAUTO:|EDIT:|MULTILINES:|SHADOW:|MOVE:|SIZ:|SIZEBTN:|REDUCT:|CLOSE:|TASKBAR:|\,|fonction\/|function\/|End\/ Function|Fin\/ Fonction|Si\/|If\/|Fin\/ si|End\/ If|alors\:|Txt\/|Fin\/ Fonction|then:|sinon:|else:)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(EqualStyle, @"\=");
-            e.ChangedRange.SetStyle(OrangeStyle, @"(\.Parametres|\.titlecolor|\.PX|\.PY|\.SX|\.SY|\.Valeur|\.BackColor|\.CouleurText|\.Icone|\.ImgTitre|\.Opacite|\.titre|\.CouleurFenetre|\.CouleurTitre|\.px|\.py|\.tx|\.ty|\.opacite|\.Text|\.Image|\.evenement|\.texte|\.Handle|\.pid|\.nom|\.name|\.title|\.parameters|\.opacity|\.image|\.evenement|\.couleurfenetre|\.windowcolor|\.couleurtitre|\.couleurtexte|\.textcolor|\.handle|\.icone|\.icon|\.imgtitre|\.titleimg|fenetre\/|fin\/ fenetre|\.event|\.couleurfond)", RegexOptions.IgnoreCase);
+            e.ChangedRange.SetStyle(OrangeStyle, @"(\.Parametres|\.titlecolor|\.PX|\.PY|\.SX|\.SY|\.Value|\.BackColor|\.CouleurText|\.Icone|\.ImgTitre|\.Opacite|\.titre|\.CouleurFenetre|\.CouleurTitre|\.px|\.py|\.tx|\.ty|\.opacite|\.Image|\.evenement|\.texte|\.Handle|\.pid|\.nom|\.name|\.parameters|\.opacity|\.image|\.evenement|\.couleurfenetre|\.windowcolor|\.couleurtitre|\.couleurtexte|\.textcolor|\.handle|\.icone|\.icon|\.imgtitre|\.titleimg|\.TitleImg|fenetre\/|fin\/ fenetre|\.event|\.couleurfond|\.title|\.Text)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(BlueStyle, @"(End\/ window|window\/|End\/ button|button\/|End\/ textbox|textbox\/|End\/ textblock|textblock\/|End\/ progressbar|progressbar\/|End\/ picturebox|picturebox\/|End\/ checkbox|checkbox\/|sys\/|\/processus|exe\/|\/pid\:|ccp\/|\/SET.LEVEL)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(BlueStyle, @"(debut_section_critique|begin_critical_section|fin_section_critique|end_critical_section|\/INIT|\/menu|\/touche|\/key|\/INIT|\/atouche|\/wkey|\/pause|\/tcp|\/udp|\/attendre|\/wait|\/recevoir|\/receive|\/envoyer|\/send|\/mode|\/stop|\/temp|\/tempr|\/debug|\/cpinticore|\/thread|\/thread[MIN]|\/thread[STD]|\/thread[MAX]|\/optimisation|\/optimization|\/lang|\/change|\/pause|\/bin|\/app|\/mem|\/lang|\/ecran|\/screen|\/ccp)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(YellowStyle, "@#.*$", RegexOptions.Multiline);
-            e.ChangedRange.SetStyle(RoseStyle, @"fix\/|declare\/|declarer\/|set\/|txt\/|goto\/|aller\/|Client\/|serveur\/|server\/|pos\/|stop\/|cls\/|aide\/|help\/|ouvrir\/|open\/|ecrire\/|write\/|return\/|ping\/|telecharger\/|download\/|iug\/|demarrer\/|start\/|close\/|fermer\/|creer\/|create\/", RegexOptions.IgnoreCase);
+            e.ChangedRange.SetStyle(RoseStyle, @"fix\/|declare\/|declarer\/|set\/|txt\/|goto\/|aller\/|Client\/|serveur\/|server\/|pos\/|stop\/|cls\/|aide\/|help\/|ouvrir\/|open\/|ecrire\/|write\/|return\/|ping\/|telecharger\/|download\/|iug\/|demarrer\/|start\/|close\/|fermer\/|creer\/|create\/|set\/", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(YellowStyle, "/.*$", RegexOptions.Multiline);
             e.ChangedRange.SetStyle(RedStyle, "\".*?\"|'.+?'");
 
@@ -128,7 +128,7 @@ namespace OSMaker.Panneaux
             e.ChangedRange.SetFoldingMarkers(@"Imagebox\/", @"End\/ Imagebox", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"Textbox\/", @"End\/ Textbox", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"Checkbox\/", @"End\/ Checkbox", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetFoldingMarkers(@"Progressbar\/", @"End\/ Progressbar", RegexOptions.IgnoreCase);
+            e.ChangedRange.SetFoldingMarkers(@"ProgressBar\/", @"End\/ ProgressBar", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"Function\/", @"End\/ Function", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"Fonction\/", @"Fin\/ Fonction", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"fenetre\/", @"fin\/ fenetre", RegexOptions.IgnoreCase);
@@ -153,6 +153,7 @@ namespace OSMaker.Panneaux
             Comment,
             Textbox,
             Textbloc,
+            ProgressBar,
             Checkbox,
             Fin,
             Creer,
@@ -484,7 +485,7 @@ namespace OSMaker.Panneaux
                 // LISTE GENERALE//////////////////////////////////////////////////////////////////////////////////////////////////////
                 var list = new List<ExplorerItem>();
                 int lastClassIndex = -1;
-                var regex = new Regex(@"^(?<range>[\w\s]+\b(struct|enum|interface)\s+[\w<>,\s]+)|^\s*(public|private|internal|protected|window\/|Texteblock\/|Button\/|Fix/|Checkbox\/|picturebox\/|Imagebox\/|Textbox\/|Checkbox\/|Textblock\/|rem\/|Rem\/|fonction\/|function\/|si\/|if\/)[^\n]+(\n?\s*{|;)?", RegexOptions.Multiline | RegexOptions.IgnoreCase);
+                var regex = new Regex(@"^(?<range>[\w\s]+\b(struct|enum|interface)\s+[\w<>,\s]+)|^\s*(public|private|internal|protected|window\/|Texteblock\/|Button\/|Fix/|Checkbox\/|picturebox\/|Imagebox\/|ProgressBar\/|Textbox\/|Checkbox\/|Textblock\/|rem\/|Rem\/|fonction\/|function\/|si\/|if\/|set/)[^\n]+(\n?\s*{|;)?", RegexOptions.Multiline | RegexOptions.IgnoreCase);
                 foreach (Match r in regex.Matches(text))
                 {
                     try
@@ -508,6 +509,12 @@ namespace OSMaker.Panneaux
                         // VARIABLE////////////////////////////////////////////////////////////
                         // SYNTAXE FRANCAISE
                         else if (item.title.ToLower().Contains("fix")) // si contient
+                        {
+                            int ii = item.title.LastIndexOf(" ");
+                            item.title = item.title.Substring(ii).Trim();
+                            item.type = ExplorerItemType.Event; // image
+                        }
+                        else if (item.title.ToLower().Contains("set")) // si contient
                         {
                             int ii = item.title.LastIndexOf(" ");
                             item.title = item.title.Substring(ii).Trim();
@@ -550,6 +557,14 @@ namespace OSMaker.Panneaux
                             int ii = item.title.LastIndexOf(" ");
                             item.title = item.title.Substring(ii).Trim();
                             item.type = ExplorerItemType.Textbox; // TYPE
+                        }
+
+                        else if (item.title.ToLower().Contains("progressbar")) // SYNTAXE ANGLAISE
+                                                                           // si contient
+                        {
+                            int ii = item.title.LastIndexOf(" ");
+                            item.title = item.title.Substring(ii).Trim();
+                            item.type = ExplorerItemType.ProgressBar; // TYPE
                         }
 
                         // TEXTEBLOC//////////////////////////////////////////
@@ -743,6 +758,11 @@ namespace OSMaker.Panneaux
                                 e.Value = My.Resources.Resources.fonction16;
                                 break;
                             }
+                        case ExplorerItemType.ProgressBar:
+                            {
+                                e.Value = My.Resources.Resources.ProgressBar_16xBlack;
+                                break;
+                            }
                     }
                 }
             }
@@ -874,13 +894,13 @@ namespace OSMaker.Panneaux
         {
             try
             {
-                File.WriteAllText(filepath, _tb.Text);
+                File.WriteAllText(metroTextBox1.Text, _tb.Text);
                 _tb.IsChanged = false;
             }
             catch (Exception ex)
             {
                 if (MessageBox.Show(ex.Message, "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Retry)
-                    File.WriteAllText(filepath, _tb.Text);
+                    File.WriteAllText(metroTextBox1.Text, _tb.Text);
                   
                 else
                 {

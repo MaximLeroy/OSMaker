@@ -606,7 +606,28 @@ namespace OSMaker
          ToolBox.TextBlock b1 = (ToolBox.TextBlock)HostC.CreateControl(typeof(ToolBox.TextBlock), new Size(200, 40), new Point(10, 10));
             
         }
+         private DocumentC FindDocument(string text)
+        {
+            if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+            {
+                foreach (Form form in MdiChildren)
+                    if (form.Text == text)
+                        return form as DocumentC;
 
+                return null;
+            }
+            else
+            {
+                foreach (DocumentC content in Home.dockPanel.Documents)
+                    if (content.DockHandler.TabText == text)
+                    {
+                        content.DockHandler.Show(Home.dockPanel);
+                        return content;
+                    }
+
+                return null;
+            }
+        }
       public void Save()
         {
             var currentHostControl = HostC;
@@ -616,6 +637,11 @@ namespace OSMaker
             string code = ((Loader.BasicHostLoader)currentHostControl.HostSurface.Loader).GetCode();
             //FastColoredTextBox1.Text = code;
             //tb.Text = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
+            if (metroFichierCCPlus.Text == "")
+            {
+                metroFichierCCPlus.Text = metroFichierXml.Text.Replace(".osm", ".cpc");
+            }
+
             string fileName = metroFichierXml.Text;
             string codeccplus = WinToCpcDosCplus.ModuleCpcDosCplus.tbS;
             string fileNameC = metroFichierCCPlus.Text;

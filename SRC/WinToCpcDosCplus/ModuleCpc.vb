@@ -177,6 +177,7 @@ Public Module ModuleCpcDosCplus
             tbS = code
         End Sub
     Private Lesparametres As String = ""
+    'num window
     Public CTNnum As String = "1"
     Public TYPEnum As String = "0"
     Public BORDnum As String = "1"
@@ -187,12 +188,19 @@ Public Module ModuleCpcDosCplus
     Public REDUCTnum As String = "1"
     Public CLOSEnum As String = "1"
     Public TASKBARnum As String = "0"
-
+    'num button
+    ' Public UPDnum As String = "1"
+    'Public IMGAUTOnum As Integer = 0
+    'Public _BORDnum As String = "1"
+    ' Public COLnum As String = "1"
     Private Sub WriteNodeProperty(currentNode As XmlNode, sbuilder As StringBuilder)
             Dim name As String
             Dim propertyValues() As String
             Dim propertyValues2 As String
-
+        Dim UPDnum As String = "1"
+        Dim IMGAUTOnum As Integer = 0
+        Dim _BORDnum As String = "1"
+        Dim COLnum As String = "1"
 
         propertyValues = currentNode.InnerText.Split(New Char() {","})
         propertyValues2 = currentNode.InnerText
@@ -251,6 +259,7 @@ Public Module ModuleCpcDosCplus
                 SHADOWnum = "128"
             End If
         ElseIf name = "MOVE" Then
+
             If (propertyValues2 = "True") Then
                 MOVEnum = "1"
 
@@ -304,24 +313,18 @@ Public Module ModuleCpcDosCplus
             ElseIf (propertyValues2 = Nothing) Then
                 TASKBARnum = "0"
             End If
+            'Parameters de la fenêtre
         ElseIf name = "Parameters" Then
-            If propertyValues2 = Nothing Then
-            ElseIf (propertyValues2 = "True") Then
+            If propertyValues2 = "" Then
+            ElseIf propertyValues2 = Nothing Then
+            Else
 
-                sbuilder.Append("   .Parameters" + "   " + " = """)
-                sbuilder.Append("CTN:" + CTNnum)
-                sbuilder.Append(" TYPE:" + TYPEnum)
-                sbuilder.Append(" BORD:" + BORDnum)
-                sbuilder.Append(" SHADOW:" + SHADOWnum)
-                sbuilder.Append(" MOVE:" + MOVEnum)
-                sbuilder.Append(" SIZ:" + SIZnum)
-                sbuilder.Append(" SIZBTN:" + SIZBTNnum)
-                sbuilder.Append(" REDUCT:" + REDUCTnum)
-                sbuilder.Append(" CLOSE:" + CLOSEnum)
-                sbuilder.Append(" TASKBAR:" + TASKBARnum)
-                sbuilder.Append("""")
-                sbuilder.AppendLine()
+                sbuilder.AppendLine("   .Parameters" + "   " + " = """ + propertyValues2 + """")
+
+
             End If
+
+
 
 
 
@@ -379,6 +382,85 @@ Public Module ModuleCpcDosCplus
 
             End If
 
+
+        ElseIf name = "TitleColor" Then
+            Dim r As String = "0"
+            Dim g As String = "0"
+            Dim b As String = "0"
+            Dim colorname As Color
+            Dim rgb As String()
+            Try
+                colorname = Color.FromName(propertyValues2)
+
+                r = colorname.R.ToString
+                g = colorname.G.ToString
+                b = colorname.B.ToString
+
+
+            Catch
+            End Try
+
+            If r = "0" Then
+                Try
+                    rgb = propertyValues2.Trim.Replace(" ", String.Empty).Split(",")
+                    r = Integer.Parse(rgb(0))
+                    g = Integer.Parse(rgb(1))
+                    b = Integer.Parse(rgb(2))
+                Catch
+                End Try
+            End If
+
+            Dim red As Integer = String.Format("{0:D3}", r)
+            Dim green As Integer = String.Format("{0:D3}", g)
+            Dim blue As Integer = String.Format("{0:D3}", b)
+
+
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .TitleColor" + "   " + " = """ + String.Format("{0:D3}", red) + "," + String.Format("{0:D3}", green) + "," + String.Format("{0:D3}", blue) + """")
+                sbuilder.AppendLine()
+
+            End If
+
+        ElseIf name = "WindowColor" Then
+            Dim r As String = "0"
+            Dim g As String = "0"
+            Dim b As String = "0"
+            Dim colorname As Color
+            Dim rgb As String()
+            Try
+                colorname = Color.FromName(propertyValues2)
+
+                r = colorname.R.ToString
+                g = colorname.G.ToString
+                b = colorname.B.ToString
+
+
+            Catch
+            End Try
+
+            If r = "0" Then
+                Try
+                    rgb = propertyValues2.Trim.Replace(" ", String.Empty).Split(",")
+                    r = Integer.Parse(rgb(0))
+                    g = Integer.Parse(rgb(1))
+                    b = Integer.Parse(rgb(2))
+                Catch
+                End Try
+            End If
+
+            Dim red As Integer = String.Format("{0:D3}", r)
+            Dim green As Integer = String.Format("{0:D3}", g)
+            Dim blue As Integer = String.Format("{0:D3}", b)
+
+
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .WindowColor" + "  " + " = """ + String.Format("{0:D3}", red) + "," + String.Format("{0:D3}", green) + "," + String.Format("{0:D3}", blue) + """")
+                sbuilder.AppendLine()
+
+            End If
+
         ElseIf name = "ForeColor" Then
             Dim r As String = ""
             Dim g As String = ""
@@ -419,10 +501,22 @@ Public Module ModuleCpcDosCplus
         ElseIf name = "Checked" Then
             Dim valeur As String = If(propertyValues(0) = "True", "1", "0")
             sbuilder.AppendLine("   .Value" + "        " + " = """ + valeur + """")
-        ElseIf name = "EVENT_PATH" Then
+        ElseIf name = "_EVENT" Then
             If propertyValues2 = Nothing Then
             Else
                 sbuilder.Append("   .Event" + "        " + " = """ + propertyValues2.Trim + """")
+                sbuilder.AppendLine()
+            End If
+        ElseIf name = "TitleImg" Then
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .TitleImg" + "     " + " = """ + propertyValues2.Trim + """")
+                sbuilder.AppendLine()
+            End If
+        ElseIf name = "Icon" Then
+            If propertyValues2 = Nothing Then
+            Else
+                sbuilder.Append("   .Icon" + "         " + " = """ + propertyValues2.Trim + """")
                 sbuilder.AppendLine()
             End If
         ElseIf name = "IMGAUTO" Then
@@ -442,7 +536,7 @@ Public Module ModuleCpcDosCplus
             End If
 
 
-        ElseIf name = "Image" Then
+        ElseIf name = "_IMAGE" Then
             If propertyValues2 = Nothing Then
             Else
                 sbuilder.Append("   .Image" + "        " + " = """ + propertyValues2 + """")
@@ -452,6 +546,14 @@ Public Module ModuleCpcDosCplus
             If propertyValues2 = Nothing Then
             Else
                 sbuilder.Append("   .Value" + "        " + " = """ + propertyValues2 + """")
+                sbuilder.AppendLine()
+            End If
+        ElseIf name = "OPACITE" Then
+            If propertyValues(0).Trim = Nothing Then
+            ElseIf propertyValues(0).Trim = 255 Then
+            Else
+
+                sbuilder.Append("   .Opacity" + "      " + " = """ + propertyValues(0).Trim + """")
                 sbuilder.AppendLine()
             End If
 
