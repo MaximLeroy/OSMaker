@@ -52,7 +52,7 @@ If you are successful in C #, you are welcome!
 Read [Contributors](https://github.com/MaximLeroy/OSMaker/graphs/contributors)
 
 ## Versions
-**Last version :** beta 1.0
+**Last version :** beta 1.1
 Versions list : [Click to show](https://github.com/MaximLeroy/OSMaker/tags)
 
 ## Authors
