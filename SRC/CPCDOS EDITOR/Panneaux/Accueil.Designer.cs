@@ -42,14 +42,13 @@
             this.metroLink6 = new MetroFramework.Controls.MetroLink();
             this.metroLink5 = new MetroFramework.Controls.MetroLink();
             this.metroLink4 = new MetroFramework.Controls.MetroLink();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroLink3 = new MetroFramework.Controls.MetroLink();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroLink2 = new MetroFramework.Controls.MetroLink();
             this.metroLink1 = new MetroFramework.Controls.MetroLink();
             this.metroLink7 = new MetroFramework.Controls.MetroLink();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.metroLink8 = new MetroFramework.Controls.MetroLink();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -149,7 +148,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(758, 19);
             this.label6.TabIndex = 33;
-            this.label6.Text = "OSMaker pre-release beta 1.1 | 2015 - 2021 | GNU General Public License v3.0 | ht" +
+            this.label6.Text = "OSMaker pre-release beta 1.2 | 2015 - 2021 | GNU General Public License v3.0 | ht" +
     "tps://github.com/MaximLeroy/OSMaker";
             // 
             // label9
@@ -206,6 +205,7 @@
             this.metroLink6.UseCustomBackColor = true;
             this.metroLink6.UseSelectable = true;
             this.metroLink6.UseStyleColors = true;
+            this.metroLink6.Click += new System.EventHandler(this.metroLink6_Click);
             // 
             // metroLink5
             // 
@@ -242,17 +242,6 @@
             this.metroLink4.UseSelectable = true;
             this.metroLink4.UseStyleColors = true;
             this.metroLink4.Click += new System.EventHandler(this.metroLink4_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Image = global::OSMaker.My.Resources.Resources.OSM_LOGO;
-            this.pictureBox3.Location = new System.Drawing.Point(277, 68);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 28);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 34;
-            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -344,6 +333,24 @@
             this.metroLink7.UseCustomBackColor = true;
             this.metroLink7.UseSelectable = true;
             this.metroLink7.UseStyleColors = true;
+            this.metroLink7.Click += new System.EventHandler(this.metroLink7_Click);
+            // 
+            // metroLink8
+            // 
+            this.metroLink8.Image = global::OSMaker.My.Resources.Resources.VideoCamera_16x;
+            this.metroLink8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroLink8.Location = new System.Drawing.Point(48, 436);
+            this.metroLink8.Name = "metroLink8";
+            this.metroLink8.Size = new System.Drawing.Size(490, 23);
+            this.metroLink8.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroLink8.TabIndex = 41;
+            this.metroLink8.Text = "     Use parameters";
+            this.metroLink8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroLink8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLink8.UseCustomBackColor = true;
+            this.metroLink8.UseSelectable = true;
+            this.metroLink8.UseStyleColors = true;
+            this.metroLink8.Click += new System.EventHandler(this.metroLink8_Click);
             // 
             // Accueil
             // 
@@ -351,13 +358,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 579);
+            this.Controls.Add(this.metroLink8);
             this.Controls.Add(this.metroLink7);
             this.Controls.Add(this.metroLink6);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLink5);
             this.Controls.Add(this.metroLink4);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
@@ -375,7 +382,6 @@
             this.Name = "Accueil";
             this.Text = "Welcome";
             this.Load += new System.EventHandler(this.Accueil_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -398,12 +404,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         internal System.Windows.Forms.Label label6;
         internal System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ListBox listBox1;
         private MetroFramework.Controls.MetroLink metroLink4;
         private MetroFramework.Controls.MetroLink metroLink5;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLink metroLink6;
         private MetroFramework.Controls.MetroLink metroLink7;
+        private MetroFramework.Controls.MetroLink metroLink8;
     }
 }

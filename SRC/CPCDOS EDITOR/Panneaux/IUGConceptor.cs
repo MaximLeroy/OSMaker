@@ -906,5 +906,10 @@ namespace OSMaker
         {
 
         }
+
+        private void _Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

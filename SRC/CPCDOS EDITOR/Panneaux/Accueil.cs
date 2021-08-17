@@ -87,7 +87,7 @@ namespace OSMaker.Panneaux
 
             try
             {
-                var dlg = new   FileFolderDialog();
+                var dlg = new   FolderBrowserDialog();
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     Home.m_solutionExplorer.txtDirectory.Text = dlg.SelectedPath;
@@ -147,6 +147,21 @@ namespace OSMaker.Panneaux
         private void metroLabel3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroLink6_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://www.youtube.com/watch?v=z_fCpJ8JAaE");
+        }
+
+        private void metroLink7_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://www.youtube.com/watch?v=j0E6Cw01oMQ");
+        }
+
+        private void metroLink8_Click(object sender, EventArgs e)
+        {
+            OpenUrl("https://www.youtube.com/watch?v=j0E6Cw01oMQ");
         }
     }
 }

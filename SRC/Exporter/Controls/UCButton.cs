@@ -165,7 +165,7 @@ namespace Exporter.Controls
             {
 
             }
-            Exporter.formulaire.Form1.listBox2.Items.Add("Button " + Nom);
+            //Exporter.formulaire.Form1.listBox2.Items.Add("Button " + Nom);
         }
 
       

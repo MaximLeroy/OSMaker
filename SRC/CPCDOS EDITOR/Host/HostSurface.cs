@@ -119,7 +119,7 @@ namespace OSMaker.Host
                 // Set SelectionService - SelectionChanged event handler
                 _selectionService = (ISelectionService)ServiceContainer.GetService(typeof(ISelectionService));
                 _selectionService.SelectionChanged += new EventHandler(selectionService_SelectionChanged);
-               
+                control.DoubleClick += new EventHandler(doublbcli);
             }
             catch (Exception ex)
             {

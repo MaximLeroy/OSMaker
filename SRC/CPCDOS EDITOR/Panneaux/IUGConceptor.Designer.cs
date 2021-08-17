@@ -113,6 +113,7 @@ namespace OSMaker
             this.testToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.annulerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rétablirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this._Panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -135,6 +136,7 @@ namespace OSMaker
             this._Panel1.Name = "_Panel1";
             this._Panel1.Size = new System.Drawing.Size(1053, 609);
             this._Panel1.TabIndex = 13;
+            this._Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this._Panel1_Paint);
             // 
             // panel3
             // 
@@ -331,6 +333,7 @@ namespace OSMaker
             this.metroButton17.Size = new System.Drawing.Size(35, 23);
             this.metroButton17.TabIndex = 93;
             this.metroButton17.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton17, "Add event");
             this.metroButton17.UseSelectable = true;
             this.metroButton17.Click += new System.EventHandler(this.metroButton17_Click);
             // 
@@ -343,6 +346,7 @@ namespace OSMaker
             this.metroButton18.Size = new System.Drawing.Size(35, 23);
             this.metroButton18.TabIndex = 92;
             this.metroButton18.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton18, "Show code");
             this.metroButton18.UseSelectable = true;
             this.metroButton18.Click += new System.EventHandler(this.metroButton18_Click);
             // 
@@ -355,6 +359,7 @@ namespace OSMaker
             this.metroButton11.Size = new System.Drawing.Size(35, 23);
             this.metroButton11.TabIndex = 91;
             this.metroButton11.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton11, "Select all");
             this.metroButton11.UseSelectable = true;
             this.metroButton11.Click += new System.EventHandler(this.metroButton11_Click);
             // 
@@ -367,6 +372,7 @@ namespace OSMaker
             this.metroButton12.Size = new System.Drawing.Size(35, 23);
             this.metroButton12.TabIndex = 90;
             this.metroButton12.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton12, "Center vertically");
             this.metroButton12.UseSelectable = true;
             this.metroButton12.Click += new System.EventHandler(this.metroButton12_Click);
             // 
@@ -379,6 +385,7 @@ namespace OSMaker
             this.metroButton13.Size = new System.Drawing.Size(35, 23);
             this.metroButton13.TabIndex = 89;
             this.metroButton13.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton13, "Center Horizontally");
             this.metroButton13.UseSelectable = true;
             this.metroButton13.Click += new System.EventHandler(this.metroButton13_Click);
             // 
@@ -391,6 +398,7 @@ namespace OSMaker
             this.metroButton14.Size = new System.Drawing.Size(35, 23);
             this.metroButton14.TabIndex = 88;
             this.metroButton14.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton14, "Lock controls");
             this.metroButton14.UseSelectable = true;
             this.metroButton14.Click += new System.EventHandler(this.metroButton14_Click);
             // 
@@ -403,6 +411,7 @@ namespace OSMaker
             this.metroButton7.Size = new System.Drawing.Size(35, 23);
             this.metroButton7.TabIndex = 87;
             this.metroButton7.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton7, "Bring forward");
             this.metroButton7.UseSelectable = true;
             this.metroButton7.Click += new System.EventHandler(this.metroButton7_Click);
             // 
@@ -415,6 +424,7 @@ namespace OSMaker
             this.metroButton8.Size = new System.Drawing.Size(35, 23);
             this.metroButton8.TabIndex = 86;
             this.metroButton8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton8, "Bring to front");
             this.metroButton8.UseSelectable = true;
             this.metroButton8.Click += new System.EventHandler(this.metroButton8_Click);
             // 
@@ -427,6 +437,7 @@ namespace OSMaker
             this.metroButton9.Size = new System.Drawing.Size(35, 23);
             this.metroButton9.TabIndex = 85;
             this.metroButton9.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton9, "Delete");
             this.metroButton9.UseSelectable = true;
             this.metroButton9.Click += new System.EventHandler(this.metroButton9_Click);
             // 
@@ -439,6 +450,7 @@ namespace OSMaker
             this.metroButton10.Size = new System.Drawing.Size(35, 23);
             this.metroButton10.TabIndex = 84;
             this.metroButton10.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton10, "Paste");
             this.metroButton10.UseSelectable = true;
             this.metroButton10.Click += new System.EventHandler(this.metroButton10_Click);
             // 
@@ -451,6 +463,7 @@ namespace OSMaker
             this.metroButton5.Size = new System.Drawing.Size(35, 23);
             this.metroButton5.TabIndex = 83;
             this.metroButton5.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton5, "Copy");
             this.metroButton5.UseSelectable = true;
             this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
             // 
@@ -463,6 +476,7 @@ namespace OSMaker
             this.metroButton6.Size = new System.Drawing.Size(35, 23);
             this.metroButton6.TabIndex = 82;
             this.metroButton6.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton6, "Cut");
             this.metroButton6.UseSelectable = true;
             this.metroButton6.Click += new System.EventHandler(this.metroButton6_Click);
             // 
@@ -475,6 +489,7 @@ namespace OSMaker
             this.metroButton4.Size = new System.Drawing.Size(35, 23);
             this.metroButton4.TabIndex = 81;
             this.metroButton4.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton4, "Redo");
             this.metroButton4.UseSelectable = true;
             this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click);
             // 
@@ -487,6 +502,7 @@ namespace OSMaker
             this.metroButton3.Size = new System.Drawing.Size(35, 23);
             this.metroButton3.TabIndex = 80;
             this.metroButton3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton3, "Undo");
             this.metroButton3.UseSelectable = true;
             this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click_1);
             // 
@@ -499,6 +515,7 @@ namespace OSMaker
             this.metroButton2.Size = new System.Drawing.Size(35, 23);
             this.metroButton2.TabIndex = 79;
             this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton2, "Select paths");
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click_1);
             // 
@@ -511,6 +528,7 @@ namespace OSMaker
             this.metroButton1.Size = new System.Drawing.Size(35, 23);
             this.metroButton1.TabIndex = 78;
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip1.SetToolTip(this.metroButton1, "Save");
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
@@ -924,5 +942,6 @@ namespace OSMaker
         private MetroFramework.Controls.MetroButton metroButton16;
         private Panel panel3;
         private MetroFramework.Controls.MetroButton metroButton20;
+        private ToolTip toolTip1;
     }
 }

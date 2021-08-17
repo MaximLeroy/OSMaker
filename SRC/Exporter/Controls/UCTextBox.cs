@@ -138,7 +138,7 @@ namespace Exporter.Controls
             {
 
             }
-            Exporter.formulaire.Form1.listBox2.Items.Add("TextBox " + Nom);
+            //Exporter.formulaire.Form1.listBox2.Items.Add("TextBox " + Nom);
         }
     }
 }

@@ -1088,7 +1088,7 @@ namespace OSMaker.Panneaux
 
             try
             {
-                var dlg = new FileFolderDialog();
+                var dlg = new FolderBrowserDialog();
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                    txtDirectory.Text = dlg.SelectedPath;

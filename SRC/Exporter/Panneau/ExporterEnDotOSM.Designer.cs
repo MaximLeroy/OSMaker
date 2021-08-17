@@ -42,7 +42,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
@@ -62,7 +62,7 @@
             this.outilsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1069, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1069, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -72,7 +72,7 @@
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ouvrirToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(66, 26);
             this.fichierToolStripMenuItem.Text = "Fichier";
             // 
             // ouvrirToolStripMenuItem
@@ -100,13 +100,13 @@
             // editionToolStripMenuItem
             // 
             this.editionToolStripMenuItem.Name = "editionToolStripMenuItem";
-            this.editionToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.editionToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
             this.editionToolStripMenuItem.Text = "Edition";
             // 
             // affichageToolStripMenuItem
             // 
             this.affichageToolStripMenuItem.Name = "affichageToolStripMenuItem";
-            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.affichageToolStripMenuItem.Size = new System.Drawing.Size(87, 26);
             this.affichageToolStripMenuItem.Text = "Affichage";
             // 
             // outilsToolStripMenuItem
@@ -114,7 +114,7 @@
             this.outilsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.paramètresToolStripMenuItem});
             this.outilsToolStripMenuItem.Name = "outilsToolStripMenuItem";
-            this.outilsToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.outilsToolStripMenuItem.Size = new System.Drawing.Size(61, 26);
             this.outilsToolStripMenuItem.Text = "Outils";
             // 
             // paramètresToolStripMenuItem
@@ -131,10 +131,10 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage4);
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabControl1.Location = new System.Drawing.Point(0, 28);
+            this.metroTabControl1.Location = new System.Drawing.Point(0, 30);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 1;
-            this.metroTabControl1.Size = new System.Drawing.Size(1069, 425);
+            this.metroTabControl1.Size = new System.Drawing.Size(1069, 423);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroTabControl1.UseSelectable = true;
@@ -185,7 +185,7 @@
             // metroTabPage2
             // 
             this.metroTabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.metroTabPage2.Controls.Add(listBox2);
+            this.metroTabPage2.Controls.Add(this.listBox2);
             this.metroTabPage2.Controls.Add(this.panel4);
             this.metroTabPage2.ForeColor = System.Drawing.SystemColors.Control;
             this.metroTabPage2.HorizontalScrollbar = true;
@@ -194,7 +194,7 @@
             this.metroTabPage2.HorizontalScrollbarSize = 10;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 41);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(1061, 380);
+            this.metroTabPage2.Size = new System.Drawing.Size(1061, 378);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Preview fenêtre";
             this.metroTabPage2.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -205,25 +205,25 @@
             // 
             // listBox2
             // 
-            listBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            listBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            listBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            listBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            listBox2.ForeColor = System.Drawing.SystemColors.Control;
-          listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 20;
-           listBox2.Location = new System.Drawing.Point(752, 0);
-           listBox2.Margin = new System.Windows.Forms.Padding(4);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new System.Drawing.Size(309, 380);
-            listBox2.TabIndex = 9;
+            this.listBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.listBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2.ForeColor = System.Drawing.SystemColors.Control;
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 20;
+            this.listBox2.Location = new System.Drawing.Point(752, 0);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(309, 378);
+            this.listBox2.TabIndex = 9;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(745, 380);
+            this.panel4.Size = new System.Drawing.Size(745, 378);
             this.panel4.TabIndex = 2;
             // 
             // metroTabPage3
@@ -298,9 +298,9 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage3;
         private MetroFramework.Controls.MetroTabPage metroTabPage4;
         public System.Windows.Forms.Panel panel4;
-        public static System.Windows.Forms.ListBox listBox2;
         public MetroFramework.Controls.MetroTabControl metroTabControl1;
         public MetroFramework.Controls.MetroTabPage metroTabPage2;
+        public System.Windows.Forms.ListBox listBox2;
     }
 }
 
