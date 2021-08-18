@@ -77,6 +77,7 @@ Public Class Window : Inherits Panel
     Private _Type1 As SummaryOptions
     Private Opacite1 As Integer
     Private Param1 As String
+    Private collision1 As Boolean
 
     Public Enum SummaryOptions
       
@@ -131,6 +132,12 @@ Public Class Window : Inherits Panel
                 Else
                     _ctn = 0
                 End If
+                Dim _collision As Integer = 0
+                If collision1 = True Then
+                    _collision = 1
+                Else
+                    _collision = 0
+                End If
                 Dim _bord As Integer = 0
                 If Bord1 = True Then
                     _bord = 1
@@ -174,7 +181,7 @@ Public Class Window : Inherits Panel
                     _taskbar = 0
                 End If
 
-                Return "TYPE:" + _type.ToString() + " " + "CTN:" + _ctn.ToString() + " " + "BORD:" + _bord.ToString() + " " + "MOVE:" + _move.ToString() + " " + "SIZ:" + _siz.ToString() + " " + "SHADOW:" + OMBRE.ToString() + " " + "TASKBAR:" + _taskbar.ToString() + " " + "CLOSE:" + _close.ToString() + " " + "REDUCT:" + _reduct.ToString() + " " + "SIZEBTN:" + _sizbtn.ToString()
+                Return "TYPE:" + _type.ToString() + " " + "CTN:" + _ctn.ToString() + " " + "BORD:" + _bord.ToString() + " " + "MOVE:" + _move.ToString() + " " + "SIZ:" + _siz.ToString() + " " + "SHADOW:" + OMBRE.ToString() + " " + "TASKBAR:" + _taskbar.ToString() + " " + "CLOSE:" + _close.ToString() + " " + "REDUCT:" + _reduct.ToString() + " " + "SIZEBTN:" + _sizbtn.ToString() + "COLLISION:" + _collision.ToString()
             Else
                 Return ""
             End If
@@ -264,6 +271,19 @@ Public Class Window : Inherits Panel
         End Get
         Set(value As Boolean)
             Move1 = value
+        End Set
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Collision")>
+    <Description("Soumettre la fenêtre à une nouvelle bordure d’écran (personnalisable).")>
+    Public Property COLLISION As Boolean
+        Get
+
+            Return collision1
+        End Get
+        Set(value As Boolean)
+            collision1 = value
         End Set
     End Property
 
@@ -428,7 +448,7 @@ Public Class Window : Inherits Panel
         Ombre1 = 0
         TitleImg1 = ""
         Icon1 = ""
-
+        collision1 = System.Boolean.TrueString
     End Sub
 
 End Class

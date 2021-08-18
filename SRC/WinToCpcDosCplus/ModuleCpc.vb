@@ -60,9 +60,9 @@ Public Module ModuleCpcDosCplus
                     sbuilder.Append(WinToCpcControls.Values(0))
                         sbuilder.Append(" " + names(0))
                         sbuilder.AppendLine()
-                        'XPATH  un autre operateut  XML fait des miracles 
-                        'lit tou les nodes "Property" sous le currentNode
-                        Dim childrops As XmlNodeList = currentNode.SelectNodes("Property")
+                    'XPATH  un autre operateur  XML fait des miracles 
+                    'lire tous les nodes "Property" sous le currentNode
+                    Dim childrops As XmlNodeList = currentNode.SelectNodes("Property")
                         For Each item As XmlNode In childrops
                             WriteNodeProperty(item, sbuilder)
                         Next

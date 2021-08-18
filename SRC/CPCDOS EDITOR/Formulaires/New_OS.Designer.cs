@@ -42,16 +42,16 @@
             this.metroCheckBox2 = new MetroFramework.Controls.MetroCheckBox();
             this.metroCheckBox3 = new MetroFramework.Controls.MetroCheckBox();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
+            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,7 +94,7 @@
             // metroButton1
             // 
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(590, 519);
+            this.metroButton1.Location = new System.Drawing.Point(601, 441);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(83, 34);
             this.metroButton1.Style = MetroFramework.MetroColorStyle.Green;
@@ -139,7 +139,7 @@
             // metroButton2
             // 
             this.metroButton2.Highlight = true;
-            this.metroButton2.Location = new System.Drawing.Point(501, 519);
+            this.metroButton2.Location = new System.Drawing.Point(512, 441);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(83, 34);
             this.metroButton2.Style = MetroFramework.MetroColorStyle.Red;
@@ -220,14 +220,54 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(3, 205);
+            this.metroPanel1.Location = new System.Drawing.Point(49, 200);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(757, 216);
+            this.metroPanel1.Size = new System.Drawing.Size(580, 216);
             this.metroPanel1.TabIndex = 87;
             this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // metroDateTime2
+            // 
+            this.metroDateTime2.Location = new System.Drawing.Point(165, 154);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTime2.Name = "metroDateTime2";
+            this.metroDateTime2.Size = new System.Drawing.Size(392, 30);
+            this.metroDateTime2.TabIndex = 35;
+            this.metroDateTime2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // metroDateTime1
+            // 
+            this.metroDateTime1.Location = new System.Drawing.Point(165, 109);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTime1.Name = "metroDateTime1";
+            this.metroDateTime1.Size = new System.Drawing.Size(392, 30);
+            this.metroDateTime1.TabIndex = 34;
+            this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.Location = new System.Drawing.Point(64, 109);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(65, 20);
+            this.metroLabel7.TabIndex = 33;
+            this.metroLabel7.Text = "Created :";
+            this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel7.UseCustomBackColor = true;
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.Location = new System.Drawing.Point(60, 154);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(69, 20);
+            this.metroLabel8.TabIndex = 31;
+            this.metroLabel8.Text = "Updated :";
+            this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel8.UseCustomBackColor = true;
             // 
             // textBox4
             // 
@@ -243,11 +283,11 @@
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(79, 47);
+            this.metroLabel4.Location = new System.Drawing.Point(71, 47);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(50, 20);
+            this.metroLabel4.Size = new System.Drawing.Size(58, 20);
             this.metroLabel4.TabIndex = 29;
-            this.metroLabel4.Text = "Autor :";
+            this.metroLabel4.Text = "Author :";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel4.UseCustomBackColor = true;
             // 
@@ -287,7 +327,7 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(4, 16);
+            this.metroLabel6.Location = new System.Drawing.Point(-3, 16);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(132, 20);
             this.metroLabel6.TabIndex = 25;
@@ -295,51 +335,11 @@
             this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel6.UseCustomBackColor = true;
             // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(64, 109);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(65, 20);
-            this.metroLabel7.TabIndex = 33;
-            this.metroLabel7.Text = "Created :";
-            this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroLabel7.UseCustomBackColor = true;
-            // 
-            // metroLabel8
-            // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(60, 154);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(69, 20);
-            this.metroLabel8.TabIndex = 31;
-            this.metroLabel8.Text = "Updated :";
-            this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroLabel8.UseCustomBackColor = true;
-            // 
-            // metroDateTime1
-            // 
-            this.metroDateTime1.Location = new System.Drawing.Point(165, 109);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 30);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(392, 30);
-            this.metroDateTime1.TabIndex = 34;
-            this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // metroDateTime2
-            // 
-            this.metroDateTime2.Location = new System.Drawing.Point(165, 154);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 30);
-            this.metroDateTime2.Name = "metroDateTime2";
-            this.metroDateTime2.Size = new System.Drawing.Size(392, 30);
-            this.metroDateTime2.TabIndex = 35;
-            this.metroDateTime2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
             // New_OS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 576);
+            this.ClientSize = new System.Drawing.Size(696, 506);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroCheckBox3);
             this.Controls.Add(this.metroCheckBox2);

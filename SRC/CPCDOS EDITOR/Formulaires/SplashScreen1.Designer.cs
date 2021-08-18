@@ -123,7 +123,7 @@ namespace OSMaker
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(154, 51);
             this.label5.TabIndex = 14;
-            this.label5.Text = "beta 1.1";
+            this.label5.Text = "beta 1.2";
             // 
             // pictureBox2
             // 
