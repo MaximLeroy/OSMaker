@@ -13,3 +13,10 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Loader\obj\Debug\Loader.dll
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Loader\obj\Debug\Loader.pdb
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Loader\obj\Debug\Loader.csprojAssemblyReference.cache
+C:\CPCDOS\OSMaker\SRC\Loader\bin\Debug\Loader.dll
+C:\CPCDOS\OSMaker\SRC\Loader\bin\Debug\Loader.pdb
+C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.csprojAssemblyReference.cache
+C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.csproj.CoreCompileInputs.cache
+C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.csproj.CopyComplete
+C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.dll
+C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.pdb

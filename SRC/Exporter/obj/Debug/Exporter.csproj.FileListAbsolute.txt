@@ -215,3 +215,34 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.csproj.CopyComplete
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.exe
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Exporter\obj\Debug\Exporter.pdb
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\fichier1.cpc
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\Exporter.exe.config
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\Exporter.exe
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\Exporter.pdb
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\Host.dll
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\Loader.dll
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\ToolBox.dll
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\GraphLibrary.dll
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\Host.pdb
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\Loader.pdb
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\ToolBox.pdb
+C:\CPCDOS\OSMaker\SRC\Exporter\bin\Debug\ToolBox.dll.config
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.csprojAssemblyReference.cache
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCButton.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCCheckBox.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCFenetre.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCFonction.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCPictureBox.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCProgressBar.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCTextBlock.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCTextBox.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.formulaire.Form1.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.DocumentC.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Parametres.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Preview.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.Properties.Resources.resources
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.csproj.GenerateResource.cache
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.csproj.CoreCompileInputs.cache
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.csproj.CopyComplete
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.exe
+C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.pdb

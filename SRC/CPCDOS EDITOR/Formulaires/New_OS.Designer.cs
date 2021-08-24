@@ -61,9 +61,10 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Location = new System.Drawing.Point(93, 68);
+            this.textBox2.Location = new System.Drawing.Point(70, 55);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(550, 25);
+            this.textBox2.Size = new System.Drawing.Size(413, 21);
             this.textBox2.TabIndex = 22;
             this.textBox2.Text = "MyOS";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -74,18 +75,20 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(93, 128);
+            this.textBox1.Location = new System.Drawing.Point(70, 104);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(550, 25);
+            this.textBox1.Size = new System.Drawing.Size(413, 21);
             this.textBox1.TabIndex = 21;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(3, 133);
+            this.metroLabel2.Location = new System.Drawing.Point(2, 108);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(73, 20);
+            this.metroLabel2.Size = new System.Drawing.Size(71, 19);
             this.metroLabel2.TabIndex = 20;
             this.metroLabel2.Text = "OS\'s path :";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -94,21 +97,24 @@
             // metroButton1
             // 
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(601, 441);
+            this.metroButton1.Location = new System.Drawing.Point(451, 358);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(83, 34);
+            this.metroButton1.Size = new System.Drawing.Size(62, 28);
             this.metroButton1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroButton1.TabIndex = 19;
             this.metroButton1.Text = "Create";
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(22, 68);
+            this.metroLabel1.Location = new System.Drawing.Point(16, 55);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(54, 20);
+            this.metroLabel1.Size = new System.Drawing.Size(52, 19);
             this.metroLabel1.TabIndex = 18;
             this.metroLabel1.Text = "Name :";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -120,17 +126,19 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Location = new System.Drawing.Point(93, 99);
+            this.textBox3.Location = new System.Drawing.Point(70, 80);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(550, 25);
+            this.textBox3.Size = new System.Drawing.Size(413, 21);
             this.textBox3.TabIndex = 24;
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(17, 99);
+            this.metroLabel3.Location = new System.Drawing.Point(13, 80);
+            this.metroLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(59, 20);
+            this.metroLabel3.Size = new System.Drawing.Size(57, 19);
             this.metroLabel3.TabIndex = 23;
             this.metroLabel3.Text = "VM file :";
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -139,9 +147,10 @@
             // metroButton2
             // 
             this.metroButton2.Highlight = true;
-            this.metroButton2.Location = new System.Drawing.Point(512, 441);
+            this.metroButton2.Location = new System.Drawing.Point(384, 358);
+            this.metroButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(83, 34);
+            this.metroButton2.Size = new System.Drawing.Size(62, 28);
             this.metroButton2.Style = MetroFramework.MetroColorStyle.Red;
             this.metroButton2.TabIndex = 25;
             this.metroButton2.Text = "Undo";
@@ -152,9 +161,10 @@
             // 
             this.metroButton16.BackgroundImage = global::OSMaker.My.Resources.Resources.OpenFolder_16x;
             this.metroButton16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton16.Location = new System.Drawing.Point(649, 128);
+            this.metroButton16.Location = new System.Drawing.Point(487, 104);
+            this.metroButton16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroButton16.Name = "metroButton16";
-            this.metroButton16.Size = new System.Drawing.Size(35, 23);
+            this.metroButton16.Size = new System.Drawing.Size(26, 19);
             this.metroButton16.TabIndex = 83;
             this.metroButton16.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroButton16.UseSelectable = true;
@@ -164,9 +174,10 @@
             // 
             this.metroButton15.BackgroundImage = global::OSMaker.My.Resources.Resources.OpenFolder_16x;
             this.metroButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton15.Location = new System.Drawing.Point(649, 99);
+            this.metroButton15.Location = new System.Drawing.Point(487, 80);
+            this.metroButton15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroButton15.Name = "metroButton15";
-            this.metroButton15.Size = new System.Drawing.Size(35, 23);
+            this.metroButton15.Size = new System.Drawing.Size(26, 19);
             this.metroButton15.TabIndex = 82;
             this.metroButton15.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroButton15.UseSelectable = true;
@@ -175,9 +186,10 @@
             // metroCheckBox1
             // 
             this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.Location = new System.Drawing.Point(82, 161);
+            this.metroCheckBox1.Location = new System.Drawing.Point(62, 131);
+            this.metroCheckBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroCheckBox1.Name = "metroCheckBox1";
-            this.metroCheckBox1.Size = new System.Drawing.Size(100, 17);
+            this.metroCheckBox1.Size = new System.Drawing.Size(90, 15);
             this.metroCheckBox1.TabIndex = 84;
             this.metroCheckBox1.Text = "Media folder";
             this.metroCheckBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -186,9 +198,10 @@
             // metroCheckBox2
             // 
             this.metroCheckBox2.AutoSize = true;
-            this.metroCheckBox2.Location = new System.Drawing.Point(219, 161);
+            this.metroCheckBox2.Location = new System.Drawing.Point(164, 131);
+            this.metroCheckBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroCheckBox2.Name = "metroCheckBox2";
-            this.metroCheckBox2.Size = new System.Drawing.Size(90, 17);
+            this.metroCheckBox2.Size = new System.Drawing.Size(82, 15);
             this.metroCheckBox2.TabIndex = 85;
             this.metroCheckBox2.Text = "Boot folder";
             this.metroCheckBox2.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -197,9 +210,10 @@
             // metroCheckBox3
             // 
             this.metroCheckBox3.AutoSize = true;
-            this.metroCheckBox3.Location = new System.Drawing.Point(333, 161);
+            this.metroCheckBox3.Location = new System.Drawing.Point(250, 131);
+            this.metroCheckBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroCheckBox3.Name = "metroCheckBox3";
-            this.metroCheckBox3.Size = new System.Drawing.Size(64, 17);
+            this.metroCheckBox3.Size = new System.Drawing.Size(60, 15);
             this.metroCheckBox3.TabIndex = 86;
             this.metroCheckBox3.Text = "OS.cpc";
             this.metroCheckBox3.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -219,40 +233,44 @@
             this.metroPanel1.Controls.Add(this.metroLabel6);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(49, 200);
+            this.metroPanel1.HorizontalScrollbarSize = 8;
+            this.metroPanel1.Location = new System.Drawing.Point(37, 162);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(580, 216);
+            this.metroPanel1.Size = new System.Drawing.Size(435, 176);
             this.metroPanel1.TabIndex = 87;
             this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VerticalScrollbarSize = 8;
             // 
             // metroDateTime2
             // 
-            this.metroDateTime2.Location = new System.Drawing.Point(165, 154);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTime2.Location = new System.Drawing.Point(124, 125);
+            this.metroDateTime2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime2.Name = "metroDateTime2";
-            this.metroDateTime2.Size = new System.Drawing.Size(392, 30);
+            this.metroDateTime2.Size = new System.Drawing.Size(295, 30);
             this.metroDateTime2.TabIndex = 35;
             this.metroDateTime2.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroDateTime1
             // 
-            this.metroDateTime1.Location = new System.Drawing.Point(165, 109);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTime1.Location = new System.Drawing.Point(124, 89);
+            this.metroDateTime1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(392, 30);
+            this.metroDateTime1.Size = new System.Drawing.Size(295, 30);
             this.metroDateTime1.TabIndex = 34;
             this.metroDateTime1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(64, 109);
+            this.metroLabel7.Location = new System.Drawing.Point(48, 89);
+            this.metroLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(65, 20);
+            this.metroLabel7.Size = new System.Drawing.Size(63, 19);
             this.metroLabel7.TabIndex = 33;
             this.metroLabel7.Text = "Created :";
             this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -261,9 +279,10 @@
             // metroLabel8
             // 
             this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(60, 154);
+            this.metroLabel8.Location = new System.Drawing.Point(45, 125);
+            this.metroLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(69, 20);
+            this.metroLabel8.Size = new System.Drawing.Size(67, 19);
             this.metroLabel8.TabIndex = 31;
             this.metroLabel8.Text = "Updated :";
             this.metroLabel8.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -275,17 +294,19 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Location = new System.Drawing.Point(165, 47);
+            this.textBox4.Location = new System.Drawing.Point(124, 38);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(392, 25);
+            this.textBox4.Size = new System.Drawing.Size(294, 21);
             this.textBox4.TabIndex = 30;
             // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(71, 47);
+            this.metroLabel4.Location = new System.Drawing.Point(53, 38);
+            this.metroLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(58, 20);
+            this.metroLabel4.Size = new System.Drawing.Size(56, 19);
             this.metroLabel4.TabIndex = 29;
             this.metroLabel4.Text = "Author :";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -297,9 +318,10 @@
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox5.Location = new System.Drawing.Point(165, 16);
+            this.textBox5.Location = new System.Drawing.Point(124, 13);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(392, 25);
+            this.textBox5.Size = new System.Drawing.Size(294, 21);
             this.textBox5.TabIndex = 28;
             // 
             // textBox6
@@ -308,17 +330,19 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.SystemColors.Control;
-            this.textBox6.Location = new System.Drawing.Point(165, 78);
+            this.textBox6.Location = new System.Drawing.Point(124, 63);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(392, 25);
+            this.textBox6.Size = new System.Drawing.Size(294, 21);
             this.textBox6.TabIndex = 27;
             // 
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(54, 78);
+            this.metroLabel5.Location = new System.Drawing.Point(40, 63);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(75, 20);
+            this.metroLabel5.Size = new System.Drawing.Size(73, 19);
             this.metroLabel5.TabIndex = 26;
             this.metroLabel5.Text = "Company :";
             this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -327,9 +351,10 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(-3, 16);
+            this.metroLabel6.Location = new System.Drawing.Point(-2, 13);
+            this.metroLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(132, 20);
+            this.metroLabel6.Size = new System.Drawing.Size(127, 19);
             this.metroLabel6.TabIndex = 25;
             this.metroLabel6.Text = "Background image :";
             this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -337,9 +362,9 @@
             // 
             // New_OS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 506);
+            this.ClientSize = new System.Drawing.Size(522, 411);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroCheckBox3);
             this.Controls.Add(this.metroCheckBox2);
@@ -354,9 +379,11 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "New_OS";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.Resizable = false;
             this.Text = "New OS";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;

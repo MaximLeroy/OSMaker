@@ -23,3 +23,15 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Host\obj\Debug\Host.csproj.CopyComplete
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Host\obj\Debug\Host.dll
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\Host\obj\Debug\Host.pdb
+C:\CPCDOS\OSMaker\SRC\Host\bin\Debug\Host.dll
+C:\CPCDOS\OSMaker\SRC\Host\bin\Debug\Host.pdb
+C:\CPCDOS\OSMaker\SRC\Host\bin\Debug\Loader.dll
+C:\CPCDOS\OSMaker\SRC\Host\bin\Debug\Loader.pdb
+C:\CPCDOS\OSMaker\SRC\Host\obj\Debug\Host.csprojAssemblyReference.cache
+C:\CPCDOS\OSMaker\SRC\Host\obj\Debug\Host.HostControl.resources
+C:\CPCDOS\OSMaker\SRC\Host\obj\Debug\Host.MyTopLevelComponent.resources
+C:\CPCDOS\OSMaker\SRC\Host\obj\Debug\Host.csproj.GenerateResource.cache
+C:\CPCDOS\OSMaker\SRC\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\CPCDOS\OSMaker\SRC\Host\obj\Debug\Host.csproj.CopyComplete
+C:\CPCDOS\OSMaker\SRC\Host\obj\Debug\Host.dll
+C:\CPCDOS\OSMaker\SRC\Host\obj\Debug\Host.pdb

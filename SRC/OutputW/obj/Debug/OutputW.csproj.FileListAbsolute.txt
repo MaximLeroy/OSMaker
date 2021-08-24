@@ -21,3 +21,26 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OutputW\obj\Debug\OutputW.exe
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OutputW\obj\Debug\OutputW.pdb
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\OutputW\obj\Debug\OutputW.csprojAssemblyReference.cache
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\OutputW.exe.config
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\OutputW.exe
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\OutputW.pdb
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\FastColoredTextBox.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\MetroFramework.Design.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\MetroFramework.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\MetroFramework.Fonts.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2003.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2012.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2013.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\bin\Debug\WinFormsUI.dll
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.csprojAssemblyReference.cache
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.Form1.resources
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.Properties.Resources.resources
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.ToolWindow.resources
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.csproj.GenerateResource.cache
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.csproj.CoreCompileInputs.cache
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.csproj.CopyComplete
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.exe
+C:\CPCDOS\OSMaker\SRC\OutputW\obj\Debug\OutputW.pdb

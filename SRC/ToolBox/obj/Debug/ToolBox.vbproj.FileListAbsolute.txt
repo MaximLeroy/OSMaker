@@ -48,3 +48,16 @@ C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.dll
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.pdb
 C:\Users\btaco\Documents\bonccplus\OSMaker_master - Copy\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\ToolBox\obj\Debug\ToolBox.vbprojAssemblyReference.cache
+C:\CPCDOS\OSMaker\SRC\ToolBox\bin\Debug\ToolBox.dll.config
+C:\CPCDOS\OSMaker\SRC\ToolBox\bin\Debug\ToolBox.dll
+C:\CPCDOS\OSMaker\SRC\ToolBox\bin\Debug\ToolBox.pdb
+C:\CPCDOS\OSMaker\SRC\ToolBox\bin\Debug\DevComponents.DotNetBar2.dll
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbprojAssemblyReference.cache
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.CpcForm.resources
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.Fenetre.resources
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.ToolboxLibrary.Toolbox.resources
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbproj.GenerateResource.cache
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbproj.CoreCompileInputs.cache
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbproj.CopyComplete
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.dll
+C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.pdb
