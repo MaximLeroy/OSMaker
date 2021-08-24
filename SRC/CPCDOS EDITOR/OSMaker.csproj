@@ -232,6 +232,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\JsonHelper.cs" />
+    <Compile Include="Classes\standbox.cs" />
     <Compile Include="FolderPicker.cs" />
     <Compile Include="Formulaires\Events.cs">
       <SubType>Form</SubType>

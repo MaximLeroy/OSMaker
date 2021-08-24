@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
+using OSMaker.Classes;
 
 namespace OSMaker.Formulaires
 {
@@ -18,21 +20,67 @@ namespace OSMaker.Formulaires
             InitializeComponent();
         }
 
-        private void New_OS_Load(object sender, EventArgs e)
-        {
+    
 
+        public string path = "";
+
+
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            txtb_pathVM.Text = "";
+            txtb_osPath.Text = "";
+
+            txtb_osName.Text = "";
+            txtb_osSystemName.Text = "";
+            
+            txtb_mediaFolder.Text = "";
+
+            txtb_compagny.Text = "";
+            txtb_authors.Text = "";
+            DateTime_creation.ResetText();
+            
         }
 
-        private void metroButton15_Click(object sender, EventArgs e)
+        private void btn_create_Click(object sender, EventArgs e)
         {
+            if ((txtb_osPath.Text.Length > 1) && (txtb_osSystemName.Text.Length > 1) && (txtb_mediaFolder.Text.Length > 1))
+            {
+                // Create OS folder
+                Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_osSystemName.Text);
 
+                // Create Media folder
+                Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_mediaFolder.Text);
+
+                // Create boot folder
+                Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\BOOT");
+
+                // Create OS.CPC content
+                string OSCPC_content = standbox.Generate_OS_CPC_contentfile(txtb_osName.Text, txtb_osSystemName.Text, txtb_mediaFolder.Text, txtb_authors.Text, txtb_compagny.Text, DateTime_creation.Text);
+
+                // Create OS.CPC file
+
+                // Open folder project into OSmaker window
+
+
+                // Close this form
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show(this, "Please enter the information correctly.", "Unable to create OS folders", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_vmFolder_Click(object sender, EventArgs e)
+        {
             try
             {
                 var dlg = new OpenFileDialog();
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    textBox3.Text = dlg.FileName;
-                   
+                    txtb_pathVM.Text = dlg.FileName;
+
                 }
             }
             catch
@@ -41,7 +89,7 @@ namespace OSMaker.Formulaires
             }
         }
 
-        private void metroButton16_Click(object sender, EventArgs e)
+        private void btn_osFolder_Click(object sender, EventArgs e)
         {
             try
             {
@@ -49,7 +97,7 @@ namespace OSMaker.Formulaires
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     path = dlg.SelectedPath;
-                    textBox1.Text = dlg.SelectedPath + "\\" + textBox2.Text;
+                    txtb_osPath.Text = dlg.SelectedPath + "\\" + txtb_osName.Text;
 
                 }
             }
@@ -58,21 +106,10 @@ namespace OSMaker.Formulaires
 
             }
         }
-        public string path = "";
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            textBox1.Text = "";
-            textBox1.Text = path + "\\" + textBox2.Text;
-        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtb_osSystemName_TextChanged(object sender, EventArgs e)
         {
-            
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-
+            txtb_mediaFolder.Text = txtb_osSystemName.Text + "\\media";
         }
     }
 }
