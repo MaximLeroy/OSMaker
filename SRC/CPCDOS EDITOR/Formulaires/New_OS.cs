@@ -59,6 +59,10 @@ namespace OSMaker.Formulaires
                 string OSCPC_content = standbox.Generate_OS_CPC_contentfile(txtb_osName.Text, txtb_osSystemName.Text, txtb_mediaFolder.Text, txtb_authors.Text, txtb_compagny.Text, DateTime_creation.Text);
 
                 // Create OS.CPC file
+                using (StreamWriter sw = File.AppendText(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\OS.CPC"))
+                {
+                    sw.WriteLine(OSCPC_content);
+                }
 
                 // Open folder project into OSmaker window
 
