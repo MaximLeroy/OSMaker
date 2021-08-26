@@ -108,7 +108,19 @@ namespace OSMaker.Panneaux
         private void metroLink2_Click(object sender, EventArgs e)
         {
             New_OS new_OS = new New_OS();
-            new_OS.Show();
+            new_OS.ShowDialog();
+
+            // Recuperer le path de OS si crée
+            if(New_OS.new_os_path != "")
+            {
+                Home.m_solutionExplorer.txtDirectory.Text = New_OS.new_os_path;
+                listBox1.Items.Add(Home.m_solutionExplorer.txtDirectory.Text);
+                Home.m_solutionExplorer._tv.Nodes.Clear();
+                Home.m_solutionExplorer.LoadDirectory(Home.m_solutionExplorer.txtDirectory.Text);
+                Home.m_solutionExplorer.txtDirectory.Style = MetroFramework.MetroColorStyle.Green;
+                Home.m_solutionExplorer.metroButton1.Visible = false;
+                Home.m_solutionExplorer._tv.Visible = true;
+            }
            
         }
 

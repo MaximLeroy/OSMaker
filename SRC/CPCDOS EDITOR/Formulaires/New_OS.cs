@@ -15,6 +15,7 @@ namespace OSMaker.Formulaires
 {
     public partial class New_OS : MetroFramework.Forms.MetroForm
     {
+        public static string new_os_path = "";
         public New_OS()
         {
             InitializeComponent();
@@ -65,7 +66,7 @@ namespace OSMaker.Formulaires
                 }
 
                 // Open folder project into OSmaker window
-
+                new_os_path = txtb_osPath.Text + "\\" + txtb_osSystemName.Text;
 
                 // Close this form
                 this.Close();
