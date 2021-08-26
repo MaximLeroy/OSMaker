@@ -150,4 +150,3 @@ C:\CPCDOS\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.application
 C:\CPCDOS\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.csproj.CopyComplete
 C:\CPCDOS\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.exe
 C:\CPCDOS\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.pdb
-C:\CPCDOS\OSMaker\SRC\CPCDOS EDITOR\obj\Debug\OSMaker.Formulaires.OS_param.resources

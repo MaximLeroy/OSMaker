@@ -127,16 +127,13 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\OSMaker_master\CpcDosCPlus\MaximLeroy\OSMakerCSharp\SRC\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="AIMS.Docking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -239,12 +236,6 @@
     </Compile>
     <Compile Include="Formulaires\Events.Designer.cs">
       <DependentUpon>Events.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formulaires\OS_param.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formulaires\OS_param.Designer.cs">
-      <DependentUpon>OS_param.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulaires\New_OS.cs">
       <SubType>Form</SubType>
@@ -436,9 +427,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Formulaires\Events.resx">
       <DependentUpon>Events.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formulaires\OS_param.resx">
-      <DependentUpon>OS_param.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaires\New_OS.resx">
       <DependentUpon>New_OS.cs</DependentUpon>

@@ -199,14 +199,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="14820352">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="14829056">
       <assemblyIdentity name="OSMaker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CG/F0yAR3Va+g8OPQiuni2ds2aYevxnYiT9Y9rcGEAg=</dsig:DigestValue>
+        <dsig:DigestValue>Yz0wdaZZuLDagnsZ27fIOzzGk0CetSewuCs9+VOfOIg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -369,13 +369,13 @@
       <dsig:DigestValue>dFX1HVtzEtlR75kocCRK9yrpZkLqTDeYLq6Fl4EJT+E=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="OSMaker.exe.config" size="2247">
+  <file name="OSMaker.exe.config" size="2256">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>z0i2AiJyovNv037NobGJxdr7W10Ogpwe5EBV3fJqMC4=</dsig:DigestValue>
+      <dsig:DigestValue>0J89mBxpAhFHrgMPNTmqt3u35sulHlmuBlOHrnJE9Wk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\DockPanel.xml" size="9216" writeableType="applicationData">
