@@ -199,14 +199,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="14815232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OSMaker.exe" size="14820352">
       <assemblyIdentity name="OSMaker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Xl9zSUTfKYCcfsE8j8GoVhMdfu82snqa6+2Qsx1gKEk=</dsig:DigestValue>
+        <dsig:DigestValue>CG/F0yAR3Va+g8OPQiuni2ds2aYevxnYiT9Y9rcGEAg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

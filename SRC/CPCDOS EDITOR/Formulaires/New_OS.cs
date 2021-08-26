@@ -21,7 +21,7 @@ namespace OSMaker.Formulaires
             InitializeComponent();
         }
 
-    
+
 
         public string path = "";
 
@@ -34,13 +34,13 @@ namespace OSMaker.Formulaires
 
             txtb_osName.Text = "";
             txtb_osSystemName.Text = "";
-            
+
             txtb_mediaFolder.Text = "";
 
             txtb_compagny.Text = "";
             txtb_authors.Text = "";
             DateTime_creation.ResetText();
-            
+
         }
 
         private void btn_create_Click(object sender, EventArgs e)
