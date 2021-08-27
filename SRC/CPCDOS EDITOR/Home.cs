@@ -19,6 +19,7 @@ using MetroFramework;
 using OutputW;
 using OSMaker.VM_Viewer;
 using static cwc.LauchTool;
+using OSMaker.Formulaires;
 
 namespace OSMaker
 {
@@ -939,6 +940,30 @@ namespace OSMaker
         {
             Nouveau nouveau = new Nouveau();
             nouveau.Show();
+        }
+
+        private void operatingSystemInformationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditOS instance_editos = new EditOS(0);
+            instance_editos.ShowDialog();
+        }
+
+        private void bootScreenConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditOS instance_editos = new EditOS(1);
+            instance_editos.ShowDialog();
+        }
+
+        private void desktopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditOS instance_editos = new EditOS(2);
+            instance_editos.ShowDialog();
+        }
+
+        private void cursorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditOS instance_editos = new EditOS(3);
+            instance_editos.ShowDialog();
         }
     }
 

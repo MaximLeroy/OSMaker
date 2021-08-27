@@ -31,26 +31,15 @@ namespace OSMaker.Formulaires
 
 
 
-        private void btn_reset_Click(object sender, EventArgs e)
-        {
-            txtb_pathVM.Text = "";
-            txtb_osPath.Text = "";
-
-            txtb_osName.Text = "";
-            txtb_osSystemName.Text = "";
-
-            txtb_mediaFolder.Text = "";
-
-            txtb_compagny.Text = "";
-            txtb_authors.Text = "";
-            DateTime_creation.ResetText();
-
-        }
-
         private void btn_create_Click(object sender, EventArgs e)
         {
             if ((txtb_osPath.Text.Length > 1) && (txtb_osSystemName.Text.Length > 1) && (txtb_mediaFolder.Text.Length > 1))
             {
+
+                /****************************************************************************************/
+
+
+
                 // Create OS folder
                 Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_osSystemName.Text);
 
@@ -58,10 +47,15 @@ namespace OSMaker.Formulaires
                 Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_mediaFolder.Text);
 
                 // Create boot folder
-                Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\BOOT");
+                Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\boot");
 
-                string OSCPC_content = "";
-                {
+
+
+                /****************************************************************************************/
+
+
+
+                { /**** Generate os.cpc file for operating system ****/
                     oscpc OSCPC = new oscpc();
 
                     // OS informations
@@ -89,29 +83,40 @@ namespace OSMaker.Formulaires
 
                     OSCPC.DesktopIcons = chk_desktop.Checked;
 
-                    // Create OS.CPC content
-                    OSCPC_content = standbox.Generate_OS_CPC_contentfile(OSCPC);
+                    // Generate code
+                    string OSCPC_content = standbox.Generate_OS_CPC_contentfile(OSCPC);
+
+                    // Create OS.CPC file
+                    using (StreamWriter sw = File.CreateText(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\os.cpc"))
+                    {
+                        sw.WriteLine(OSCPC_content);
+                    }
                 }
 
-                // Create OS.CPC file
-                using (StreamWriter sw = File.CreateText(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\OS.CPC"))
-                {
-                    sw.WriteLine(OSCPC_content);
+
+                /****************************************************************************************/
+
+
+
+                { /**** Open folder project into OSmaker window ****/
+
+                    new_os_path = txtb_osPath.Text + "\\" + txtb_osSystemName.Text;
+
+                    // Copy media dir to your OS
+                    try
+                    {
+                        standbox.DirectoryCopy(txtb_osPath.Text + "\\media", new_os_path + "\\media", true);
+                    }
+                    catch
+                    {
+                        MessageBox.Show(this, "Unable to copy original media dir to your OS. Please check if your OS dir is in CPCDOS dir", "Error during OS generation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                 }
 
-                // Open folder project into OSmaker window
-                new_os_path = txtb_osPath.Text + "\\" + txtb_osSystemName.Text;
+                /****************************************************************************************/
 
-                // Copy media dir to your OS
-                try
-                {
-                    standbox.DirectoryCopy(txtb_osPath.Text + "\\MEDIA", new_os_path, true);
-                }
-                catch
-                {
-                    MessageBox.Show(this, "Unable to copy original media dir to your OS. Please check if your OS dir is in CPCDOS dir", "Error during OS generation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+
                 // Close this form
                 this.Close();
             }
@@ -153,7 +158,7 @@ namespace OSMaker.Formulaires
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     path = dlg.SelectedPath;
-                    if (System.IO.Directory.Exists(path + "\\MEDIA") && ((System.IO.Directory.Exists(path + "\\..\\CPCDOS") || (System.IO.Directory.Exists(path + "\\..\\..\\BIN")))))
+                    if (System.IO.Directory.Exists(path + "\\MEDIA") && ((System.IO.Directory.Exists(path + "\\..\\..\\CPCDOS") || (System.IO.Directory.Exists(path + "\\..\\..\\BIN")))))
                         txtb_osPath.Text = dlg.SelectedPath + "\\" + txtb_osName.Text;
                     else
                     {
@@ -194,7 +199,9 @@ namespace OSMaker.Formulaires
 
             picture_background.BackColor = Background_color;
             colorDialog.Color = Background_color;
+
         }
+
 
         private void tab_BootScreen_Click(object sender, EventArgs e)
         {
@@ -285,39 +292,21 @@ namespace OSMaker.Formulaires
             }
         }
 
-        private void btn_BOOT_previous_Click(object sender, EventArgs e)
+
+        private void btn_SCREEN_previous_Click(object sender, EventArgs e)
         {
             metroTabControl1.SelectTab(0);
         }
 
-        private void btn_BOOT_next_Click(object sender, EventArgs e)
+        private void btn_SCREEN_next_Click(object sender, EventArgs e)
         {
             metroTabControl1.SelectTab(2);
         }
 
-        private void btn_SCREEN_previous_Click(object sender, EventArgs e)
-        {
-            metroTabControl1.SelectTab(1);
-        }
-
-        private void btn_SCREEN_next_Click(object sender, EventArgs e)
-        {
-            metroTabControl1.SelectTab(3);
-        }
-
-        private void metroButton1_Click_1(object sender, EventArgs e)
-        {
-            metroTabControl1.SelectTab(3);
-        }
-
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-            metroTabControl1.SelectTab(4);
-        }
 
         private void btn_Finish_Previous_Click(object sender, EventArgs e)
         {
-            metroTabControl1.SelectTab(3);
+            metroTabControl1.SelectTab(1);
         }
     }
 }

@@ -237,6 +237,12 @@
     <Compile Include="Formulaires\Events.Designer.cs">
       <DependentUpon>Events.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulaires\EditOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\EditOS.Designer.cs">
+      <DependentUpon>EditOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulaires\New_OS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -427,6 +433,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Formulaires\Events.resx">
       <DependentUpon>Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\EditOS.resx">
+      <DependentUpon>EditOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaires\New_OS.resx">
       <DependentUpon>New_OS.cs</DependentUpon>
@@ -869,6 +878,7 @@
     <None Include="Resources\CopyItem_16x.png" />
     <None Include="Resources\Button_16xBlack.png" />
     <None Include="Resources\CheckBoxChecked_16xBlack.png" />
+    <None Include="Resources\CURSOR.PNG" />
     <Content Include="Resources\DockPanel.xml" />
     <None Include="Resources\logocpcdos.png" />
     <None Include="Resources\LockCyan_16x.png" />

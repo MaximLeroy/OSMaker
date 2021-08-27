@@ -32,8 +32,68 @@ namespace OSMaker.Classes
             public int Background_Color_B;
 
             public bool DesktopIcons;
+        }
 
+        public class bootanimation
+        {
+            public string EnableBootScreen;
+            public string BootScreenResolution;
+            public string Images_PerSec;
+            public string Images_Number;
+            public string Image_First;
+            public string Image_Loop;
+            public string Image_Opacity;
+            public string BootScreenDarkening;
+        }
 
+        public static string Generate_boot_config_contentfile(bootanimation BOOTANIMATION)
+        {
+            // this allow to create config.cpc content file
+            return
+            @"// [FR] Ce fichier va permettre d'afficher le boot screen de l'OS" + "\r\n" +
+            @"// [EN] This file will able to display OS boot screen" + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"CCP/ /SET.LEVEL = 5" + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"// [FR] 0:Desactive / 1:Active  le screen boot" + "\r\n" +
+            @"// [EN] 0:Disable   / 1:Enable  screen boot" + "\r\n" +
+            @"set/ cpc_sys.boot.bootscreen.gui = " + BOOTANIMATION.EnableBootScreen + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"// [FR] Resolution d'ecran" + "\r\n" +
+            @"// [EN] Screen resolution" + "\r\n" +
+            @"set/ cpc_sys.boot.bootscreen.scr_res = " + BOOTANIMATION.BootScreenResolution + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"// [FR] Nombre d'images par secondes (IPS)" + "\r\n" +
+            @"// [EN] Number frames per seconds (FPS)" + "\r\n" +
+            @"set/ cpc_sys.boot.bootscreen.fps = " + BOOTANIMATION.Images_PerSec + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"// [FR] Nombre d'images max" + "\r\n" +
+            @"// [EN] Max number frames" + "\r\n" +
+            @"set/ cpc_sys.boot.bootscreen.size = " + BOOTANIMATION.Images_Number + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"// [FR] Numero d'image de commencement" + "\r\n" +
+            @"// [EN] Starting image number" + "\r\n" +
+            @"set/ cpc_sys.boot.bootscreen.begin = " + BOOTANIMATION.Image_First + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"// [FR] Numero d'image de bouclage" + "\r\n" +
+            @"// [EN] Looping image number" + "\r\n" +
+            @"set/ cpc_sys.boot.bootscreen.loop = " + BOOTANIMATION.Image_Loop + "\r\n" +
+            @"" + "\r\n" +
+            @"// [FR] Degrade sombre d'entre et sortie (0:Desactive, 1:Debut, 2:Fin, 3:Les deux)" + "\r\n" +
+            @"// [EN] Dark entry and exit (0:Disable, 1:Begin, 2:End, 3:Both)" + "\r\n" +
+            @"set/ cpc_sys.boot.bootscreen.darkening = " + BOOTANIMATION.BootScreenDarkening + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"// [FR] Opacite des transitions (128 a 255)" + "\r\n" +
+            @"// [EN] Frames opacity (128 to 255)" + "\r\n" +
+            @"set/ cpc_sys.boot.bootscreen.frames_opacity = " + BOOTANIMATION.Image_Opacity + "\r\n";
         }
         public static string Generate_OS_CPC_contentfile(oscpc OSCPC)
         {

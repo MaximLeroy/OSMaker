@@ -763,6 +763,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CURSOR {
+            get {
+                object obj = ResourceManager.GetObject("CURSOR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cut_16x {
             get {
                 object obj = ResourceManager.GetObject("Cut_16x", resourceCulture);
