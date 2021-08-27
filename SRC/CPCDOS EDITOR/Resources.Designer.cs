@@ -2233,6 +2233,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap warning {
+            get {
+                object obj = ResourceManager.GetObject("warning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap where_to_vote_117295__Copier_ {
             get {
                 object obj = ResourceManager.GetObject("where_to_vote_117295__Copier_", resourceCulture);

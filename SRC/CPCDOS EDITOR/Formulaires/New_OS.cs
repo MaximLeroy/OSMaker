@@ -102,12 +102,23 @@ namespace OSMaker.Formulaires
                 // Open folder project into OSmaker window
                 new_os_path = txtb_osPath.Text + "\\" + txtb_osSystemName.Text;
 
+                // Copy media dir to your OS
+                try
+                {
+                    standbox.DirectoryCopy(txtb_osPath.Text + "\\MEDIA", new_os_path, true);
+                }
+                catch
+                {
+                    MessageBox.Show(this, "Unable to copy original media dir to your OS. Please check if your OS dir is in CPCDOS dir", "Error during OS generation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 // Close this form
                 this.Close();
             }
             else
             {
                 MessageBox.Show(this, "Please enter the information correctly.", "Unable to create OS folders", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 
@@ -115,16 +126,21 @@ namespace OSMaker.Formulaires
         {
             try
             {
+                warn_VM.Visible = false;
                 var dlg = new OpenFileDialog();
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     txtb_pathVM.Text = dlg.FileName;
-
+                    if (!txtb_pathVM.Text.ToUpper().Contains(".OVA"))
+                    {
+                        warn_VM.Visible = true;
+                        MessageBox.Show(this, "WARNING : This file may not work.", "OVA virtual file format", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
             catch
             {
-
+                warn_VM.Visible = true;
             }
         }
 
@@ -132,23 +148,37 @@ namespace OSMaker.Formulaires
         {
             try
             {
+                warn_OSPath.Visible = false;
                 var dlg = new FolderBrowserDialog();
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
                     path = dlg.SelectedPath;
-                    txtb_osPath.Text = dlg.SelectedPath + "\\" + txtb_osName.Text;
-
+                    if (System.IO.Directory.Exists(path + "\\MEDIA") && ((System.IO.Directory.Exists(path + "\\..\\CPCDOS") || (System.IO.Directory.Exists(path + "\\..\\..\\BIN")))))
+                        txtb_osPath.Text = dlg.SelectedPath + "\\" + txtb_osName.Text;
+                    else
+                    {
+                        warn_OSPath.Visible = true;
+                        MessageBox.Show(this, "Please select OS dir locate on CPCDOS folder system", "Wrong OS directory", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                 }
             }
             catch
             {
-
+                warn_OSPath.Visible = true;
             }
         }
 
         private void txtb_osSystemName_TextChanged(object sender, EventArgs e)
         {
+            warn_OSNameSystem.Visible = false;
+
             txtb_mediaFolder.Text = txtb_osSystemName.Text + "\\media";
+            
+            if (txtb_osSystemName.Text == "")
+                warn_OSNameSystem.Visible = true;
+            else
+                warn_OSNameSystem.Visible = false;
         }
 
 
@@ -208,7 +238,86 @@ namespace OSMaker.Formulaires
 
         private void txtb_osName_TextChanged(object sender, EventArgs e)
         {
+            warn_OSName.Visible = false;
             txtb_osSystemName.Text = txtb_osName.Text;
+            if(txtb_osName.Text == "")
+            {
+                warn_OSName.Visible = true;
+            }
+
+        }
+
+        private void btn_Next_Click(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectTab(1);
+        }
+
+        private void btn_Next_MouseEnter(object sender, EventArgs e)
+        {
+
+            if (txtb_osName.Text.Length < 2)
+                warn_OSName.Visible = true;
+            if (txtb_osSystemName.Text.Length < 2)
+                warn_OSNameSystem.Visible = true;
+            if (txtb_mediaFolder.Text.Length < 2)
+                warn_MediaPath.Visible = true;
+            if (txtb_authors.Text.Length < 2)
+                warn_Author.Visible = true;
+            if (txtb_compagny.Text.Length < 2)
+                warn_Compagny.Visible = true;
+            if (DateTime_creation.Text.Length < 2)
+                warn_Date.Visible = true;
+        }
+
+        private void txtb_mediaFolder_TextChanged(object sender, EventArgs e)
+        {
+            warn_MediaPath.Visible = false;
+            if (txtb_mediaFolder.Text == "")
+            {
+                warn_MediaPath.Visible = true;
+            }
+            else
+            {
+                if (!standbox.IsValidPath(txtb_mediaFolder.Text))
+                {
+                    warn_OSNameSystem.Visible = true;
+                }
+            }
+        }
+
+        private void btn_BOOT_previous_Click(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectTab(0);
+        }
+
+        private void btn_BOOT_next_Click(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectTab(2);
+        }
+
+        private void btn_SCREEN_previous_Click(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectTab(1);
+        }
+
+        private void btn_SCREEN_next_Click(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectTab(3);
+        }
+
+        private void metroButton1_Click_1(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectTab(3);
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectTab(4);
+        }
+
+        private void btn_Finish_Previous_Click(object sender, EventArgs e)
+        {
+            metroTabControl1.SelectTab(3);
         }
     }
 }

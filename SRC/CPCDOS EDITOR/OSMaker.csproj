@@ -820,6 +820,7 @@
     <Content Include="AIMS.Docking.dll" />
     <Content Include="Classes\OSMAKERR.xml" />
     <Content Include="OSM_LOGO.ico" />
+    <None Include="Resources\warning.png" />
     <None Include="Resources\VideoCamera_16x.png" />
     <None Include="Resources\TextFile_white_16x.png" />
     <None Include="Resources\Question_16x.png" />
