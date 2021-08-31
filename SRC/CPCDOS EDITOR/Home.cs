@@ -944,25 +944,25 @@ namespace OSMaker
 
         private void operatingSystemInformationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EditOS instance_editos = new EditOS(0);
+            EditOS instance_editos = new EditOS(0, Home.m_solutionExplorer.txtDirectory.Text);
             instance_editos.ShowDialog();
         }
 
         private void bootScreenConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EditOS instance_editos = new EditOS(1);
+            EditOS instance_editos = new EditOS(1, Home.m_solutionExplorer.txtDirectory.Text);
             instance_editos.ShowDialog();
         }
 
         private void desktopToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EditOS instance_editos = new EditOS(2);
+            EditOS instance_editos = new EditOS(2, Home.m_solutionExplorer.txtDirectory.Text);
             instance_editos.ShowDialog();
         }
 
         private void cursorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EditOS instance_editos = new EditOS(3);
+            EditOS instance_editos = new EditOS(3, Home.m_solutionExplorer.txtDirectory.Text);
             instance_editos.ShowDialog();
         }
 

@@ -107,8 +107,8 @@ namespace OSMaker.Classes
 
                 @"" + "\r\n" +
                 @"// Screen informations" + "\r\n" +
-                @"set/ SCR_Auto = " + OSCPC.Resolution_auto.ToString().ToLower() +"\r\n" +
-                "if/ \"%SCR_Auto%\" == \"true\" then:" +"\r\n" +
+                @"set/ SCR_Auto = " + OSCPC.Resolution_auto.ToString().ToLower() + "\r\n" +
+                "if/ \"%SCR_Auto%\" == \"true\" then:" + "\r\n" +
                     "\t// set/ SCR_RES = /f:cpc.check_best_resolution()" + "\r\n" +
                     "\t// set/ SCR_BIT = /f:cpc.check_best_resolution_color()" + "\r\n" +
                 @"else:" + "\r\n" +
@@ -117,7 +117,10 @@ namespace OSMaker.Classes
                 @"end/ if" + "\r\n" +
                 @"" + "\r\n" +
                 @"// Default background color" + "\r\n" +
-                @"SET / SCR_COLOR = " + OSCPC.Background_Color_R.ToString("D3") + "," + OSCPC.Background_Color_G.ToString("D3") + "," + OSCPC.Background_Color_B.ToString("D3") + "\r\n" +
+                @"SET/ SCR_COLOR = " + OSCPC.Background_Color_R.ToString("D3") + "," + OSCPC.Background_Color_G.ToString("D3") + "," + OSCPC.Background_Color_B.ToString("D3") + "\r\n" +
+                @"" + "\r\n" +
+                @"// Default background screen" + "\r\n" +
+                @"SET/ SCR_IMG = " + OSCPC.Background_image + "\r\n" +
                 @"" + "\r\n" +
                 @"ccp/ /set.level = 4" + "\r\n" +
                 @"" + "\r\n" +
@@ -156,7 +159,78 @@ namespace OSMaker.Classes
                 @"gui/ " + "\r\n" +
                 @"" + "\r\n" +
                 @"// Load icon on GUI" + "\r\n" +
-                @"sys/ /fileformat-gui-load" + "\r\n";
+                @"sys/ /fileformat-gui-load" + "\r\n" +
+                @"" + "\r\n" +
+                @"// Desktop icons" + "\r\n" +
+                @"set/ Desktop_Icons = " + OSCPC.DesktopIcons + "\r\n" +
+                @"" + "\r\n" +
+                "if/ \"%desktop_Icons%\" == \"true\" then:" + "\r\n" +
+                    "\tset/ pos_x = 0" + "\r\n" +
+                    "\tset/ pos_y = 30" + "\r\n" +
+                    "\tset/ size_x = %CPC.SCR.X%" + "\r\n" +
+                    "\tset/ size_y = %CPC.SCR.Y%" + "\r\n" +
+                    "\t" + "\r\n" +
+                    "\t// Execute desktop function" + "\r\n" +
+                    "\tset/ handle_desktop = /F:Init_Desktop(MyDesktop, ./, %pos_x%, %pos_y%, %size_X%, %size_Y%)" + "\r\n" +
+                @"end/ if" + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n" +
+            @"" + "\r\n";
+        }
+
+        public static string getVariableFromCPCFile(string cpcfile, string variable_name)
+        {
+            // This function allow to getting raw variable content
+
+            variable_name = variable_name.ToUpper();
+            using (StreamReader ReaderObject = new StreamReader(cpcfile))
+            {
+                string Line;
+                // ReaderObject reads a single line, stores it in Line string variable and then displays it on console
+                while ((Line = ReaderObject.ReadLine()) != null)
+                {
+                    Line = Line.Replace("\t", "");
+                    Line = Line.Replace("  ", " ");
+                    String Line_tmp = Line.ToUpper();
+
+                    int Position_Variable = Line_tmp.IndexOf(variable_name);
+
+                    // If variable is in line
+                    if (Position_Variable > 0)
+                    {
+                        // And there are comments
+                        if((Line_tmp.IndexOf("// ") == 0) || (Line_tmp.IndexOf("REM/ ") == 0))
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            // If "set/" command is in begin
+                            int PositionSET = Line_tmp.IndexOf("SET/ ");
+                            if(PositionSET == 0)
+                            {
+                                // If set/ command is before variable name
+                                if(PositionSET < Position_Variable)
+                                {
+                                    int PositionEgale = Line_tmp.IndexOf(" = ");
+                                    if(Position_Variable < PositionEgale)
+                                    {
+                                        // FOUND ! :-)
+                                        string VariableContent = Line.Substring(PositionEgale + 3);
+                                        return VariableContent;
+
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return "";
+            
+
         }
 
 
@@ -208,7 +282,7 @@ namespace OSMaker.Classes
             foreach (FileInfo file in files)
             {
                 string tempPath = Path.Combine(destDirName, file.Name);
-                file.CopyTo(tempPath, false);
+                file.CopyTo(tempPath, true);
             }
 
             // If copying subdirectories, copy them and their contents to new location.

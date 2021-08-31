@@ -16,15 +16,122 @@ namespace OSMaker.Formulaires
 {
     public partial class EditOS : MetroFramework.Forms.MetroForm
     {
-        public static string new_os_path = "";
 
         Color Background_color = Color.FromArgb(50, 150, 250);
 
-        public EditOS(int tab)
+        public EditOS(int tab, string current_os_path)
         {
             InitializeComponent();
 
+
+            string current_os_path_BOOTCONFIG = current_os_path + "\\BOOT\\CONFIG.CPC";
+            string current_os_path_FILE = current_os_path + "\\OS.CPC";
+
             metroTabControl1.SelectTab(tab);
+
+
+            if (System.IO.File.Exists(current_os_path_FILE) == true)
+            {
+                // Display OS information from CPC files
+
+                txtb_osPath.Text = current_os_path;
+                txtb_osName.Text = standbox.getVariableFromCPCFile(current_os_path_FILE, "OS_NAME");
+                txtb_osSystemName.Text = current_os_path.Substring(current_os_path.LastIndexOf(@"\") + 1);
+                txtb_mediaFolder.Text = standbox.getVariableFromCPCFile(current_os_path_FILE, "GUI_OS");
+                txtb_authors.Text = standbox.getVariableFromCPCFile(current_os_path_FILE, "OS_Author");
+                txtb_compagny.Text = standbox.getVariableFromCPCFile(current_os_path_FILE, "OS_Compagny");
+
+                string dateupdate = standbox.getVariableFromCPCFile(current_os_path_FILE, "OS_Updated");
+                DateTime dt;
+                DateTime.TryParse(dateupdate, out dt);
+                DateTime_creation.Value = dt;
+
+                // Screen desktop auto
+                if (standbox.getVariableFromCPCFile(current_os_path_FILE, "SCR_AUTO").ToUpper() == "TRUE")
+                    chk_SCREEN_autosize.Checked = true;
+
+                // Screen resolution
+                txtb_SCREEN_manualresolution.Text = standbox.getVariableFromCPCFile(current_os_path_FILE, "SCR_RES");
+
+                // Screen bit color
+                string bit_res = standbox.getVariableFromCPCFile(current_os_path_FILE, "SCR_BIT");
+                if (bit_res == "16")
+                    rad_screen_16bits.Checked = true;
+                else if (bit_res == "24")
+                    rad_screen_24bits.Checked = true;
+                else if (bit_res == "32")
+                    rad_screen_32bits.Checked = true;
+
+                // Background screen
+                txtb_background_image.Text = standbox.getVariableFromCPCFile(current_os_path_FILE, "SCR_IMG");
+
+                // Load image to picturebox
+                picture_background.Load(txtb_background_image.Text);
+
+                // Background coloration
+                int Red, Green, Blue;
+                string scr_color = standbox.getVariableFromCPCFile(current_os_path_FILE, "SCR_COLOR");
+
+                int.TryParse(scr_color.Substring(0, 3), out Red);
+                int.TryParse(scr_color.Substring(4, 3), out Green);
+                int.TryParse(scr_color.Substring(8, 3), out Blue);
+
+                Color coloration = Color.FromArgb(Red, Green, Blue);
+
+                Background_color = coloration;
+
+                // Icons on desktop
+                if (standbox.getVariableFromCPCFile(current_os_path_FILE, "DESKTOP_ICONS").ToUpper() == "TRUE")
+                    chk_desktop.Checked = true;
+                else
+                    chk_desktop.Checked = false;
+            }
+            else
+            {
+                MessageBox.Show(this, "OS.CPC is not avaiable, please check OS folder", "Error during reading", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            //***********************************************************************************//
+
+            
+            if (System.IO.File.Exists(current_os_path_BOOTCONFIG) == true)
+            {
+                btn_BOOT_save.Text = "Save";
+
+                // Bootscreen config file
+                if (standbox.getVariableFromCPCFile(current_os_path_BOOTCONFIG, "OS_NAME") == "1")
+                    chk_BootScreen_Enable.Checked = true;
+                else
+                    chk_BootScreen_Enable.Checked = false;
+
+
+                txtb_BootScreenResolution.Text = standbox.getVariableFromCPCFile(current_os_path_BOOTCONFIG, "cpc_sys.boot.bootscreen.scr_res");
+
+                // Images parameters
+                txtb_Bootscreen_FPS.Text = standbox.getVariableFromCPCFile(current_os_path_BOOTCONFIG, "cpc_sys.boot.bootscreen.fps");
+                txtb_Bootscreen_NumberImages.Text = standbox.getVariableFromCPCFile(current_os_path_BOOTCONFIG, "cpc_sys.boot.bootscreen.size");
+                txtb_Bootscreen_NumberImages.Text = standbox.getVariableFromCPCFile(current_os_path_BOOTCONFIG, "cpc_sys.boot.bootscreen.begin");
+                txtb_Bootscreen_LoopImage.Text = standbox.getVariableFromCPCFile(current_os_path_BOOTCONFIG, "cpc_sys.boot.bootscreen.loop");
+                txtb_Bootscreen_OpacityImage.Text = standbox.getVariableFromCPCFile(current_os_path_BOOTCONFIG, "cpc_sys.boot.bootscreen.frames_opacity");
+
+
+                // Darkening
+                string dakrning_ = standbox.getVariableFromCPCFile(current_os_path_BOOTCONFIG, "cpc_sys.boot.bootscreen.darkening");
+
+                if (dakrning_ == "1")
+                    rad_Bootscreen_DARKENING_Begin.Checked = true;
+                else if (dakrning_ == "2")
+                    rad_Bootscreen_DARKENING_End.Checked = true;
+                else if (dakrning_ == "3")
+                    rad_Bootscreen_DARKENING_Both.Checked = true;
+                else
+                    rad_Bootscreen_DARKENING_disable.Checked = true;
+            }
+            else
+            {
+                btn_BOOT_save.Text = "Generate";
+            }
+
         }
 
 
@@ -33,161 +140,6 @@ namespace OSMaker.Formulaires
         public string path = "";
 
 
-
-        private void btn_reset_Click(object sender, EventArgs e)
-        {
-            txtb_pathVM.Text = "";
-            txtb_osPath.Text = "";
-
-            txtb_osName.Text = "";
-            txtb_osSystemName.Text = "";
-
-            txtb_mediaFolder.Text = "";
-
-            txtb_compagny.Text = "";
-            txtb_authors.Text = "";
-            DateTime_creation.ResetText();
-
-        }
-
-        private void btn_create_Click(object sender, EventArgs e)
-        {
-            if ((txtb_osPath.Text.Length > 1) && (txtb_osSystemName.Text.Length > 1) && (txtb_mediaFolder.Text.Length > 1))
-            {
-
-                /****************************************************************************************/
-
-
-
-                // Create OS folder
-                Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_osSystemName.Text);
-
-                // Create Media folder
-                Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_mediaFolder.Text);
-
-                // Create boot folder
-                Directory.CreateDirectory(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\boot");
-
-
-
-                /****************************************************************************************/
-
-
-
-                { /**** Generate os.cpc file for operating system ****/
-                    oscpc OSCPC = new oscpc();
-
-                    // OS informations
-                    OSCPC.os_name = txtb_osName.Text;
-                    OSCPC.os_SystemName = txtb_osSystemName.Text;
-                    OSCPC.MediaPath = txtb_mediaFolder.Text;
-                    OSCPC.AutorsNames = txtb_authors.Text;
-                    OSCPC.CompagnyName = txtb_compagny.Text;
-                    OSCPC.CreationDate = DateTime_creation.Text;
-
-                    // Screen desktop
-                    OSCPC.Resolution_auto = chk_SCREEN_autosize.Checked;
-                    OSCPC.Resolution = txtb_SCREEN_manualresolution.Text;
-                    if (rad_screen_16bits.Checked == true)
-                        OSCPC.Resolution_bit = "16";
-                    else if (rad_screen_24bits.Checked == true)
-                        OSCPC.Resolution_bit = "24";
-                    else if (rad_screen_32bits.Checked == true)
-                        OSCPC.Resolution_bit = "32";
-
-                    OSCPC.Background_image = txtb_background_image.Text;
-                    OSCPC.Background_Color_R = Background_color.R;
-                    OSCPC.Background_Color_G = Background_color.G;
-                    OSCPC.Background_Color_B = Background_color.B;
-
-                    OSCPC.DesktopIcons = chk_desktop.Checked;
-
-                    // Generate code
-                    string OSCPC_content = standbox.Generate_OS_CPC_contentfile(OSCPC);
-
-                    // Create OS.CPC file
-                    using (StreamWriter sw = File.CreateText(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\os.cpc"))
-                    {
-                        sw.WriteLine(OSCPC_content);
-                    }
-                }
-
-
-                /****************************************************************************************/
-
-
-
-                { /**** Generate config.cpc file for bootscreen ****/
-
-                    bootanimation BOOTSCREEN = new bootanimation();
-                    if (chk_BootScreen_Enable.Checked == true)
-                        BOOTSCREEN.EnableBootScreen = "1";
-                    else
-                        BOOTSCREEN.EnableBootScreen = "0";
-
-                    BOOTSCREEN.BootScreenResolution = txtb_BootScreenResolution.Text;
-
-                    // Images parameters
-                    BOOTSCREEN.Images_PerSec = txtb_Bootscreen_FPS.Text;
-                    BOOTSCREEN.Images_Number = txtb_Bootscreen_NumberImages.Text;
-                    BOOTSCREEN.Image_First = txtb_Bootscreen_NumberImages.Text;
-                    BOOTSCREEN.Image_Loop = txtb_Bootscreen_LoopImage.Text;
-                    BOOTSCREEN.Image_Opacity = txtb_Bootscreen_OpacityImage.Text;
-
-                    // Darkening
-                    if (rad_Bootscreen_DARKENING_disable.Checked == true)
-                        BOOTSCREEN.BootScreenDarkening = "0";
-                    else if (rad_Bootscreen_DARKENING_Begin.Checked == true)
-                        BOOTSCREEN.BootScreenDarkening = "1";
-                    else if (rad_Bootscreen_DARKENING_End.Checked == true)
-                        BOOTSCREEN.BootScreenDarkening = "2";
-                    else if (rad_Bootscreen_DARKENING_Both.Checked == true)
-                        BOOTSCREEN.BootScreenDarkening = "3";
-
-                    // Generate code
-                    string CONFIGCPC_content = standbox.Generate_boot_config_contentfile(BOOTSCREEN);
-
-                    // Create CONFIG.CPC file
-                    using (StreamWriter sw = File.CreateText(txtb_osPath.Text + "\\" + txtb_osSystemName.Text + "\\boot\\config.CPC"))
-                    {
-                        sw.WriteLine(CONFIGCPC_content);
-                    }
-
-                }
-
-
-                /****************************************************************************************/
-
-
-
-                { /**** Open folder project into OSmaker window ****/
-
-                    new_os_path = txtb_osPath.Text + "\\" + txtb_osSystemName.Text;
-
-                    // Copy media dir to your OS
-                    try
-                    {
-                        standbox.DirectoryCopy(txtb_osPath.Text + "\\media", new_os_path + "\\media", true);
-                    }
-                    catch
-                    {
-                        MessageBox.Show(this, "Unable to copy original media dir to your OS. Please check if your OS dir is in CPCDOS dir", "Error during OS generation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
-                }
-
-                /****************************************************************************************/
-
-
-                // Close this form
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show(this, "Please enter the information correctly.", "Unable to create OS folders", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-        }
 
         private void btn_vmFolder_Click(object sender, EventArgs e)
         {
@@ -261,6 +213,8 @@ namespace OSMaker.Formulaires
 
             picture_background.BackColor = Background_color;
             colorDialog.Color = Background_color;
+
+            
 
         }
 
@@ -387,6 +341,16 @@ namespace OSMaker.Formulaires
 
 
         private void btn_Save_OSCFG_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chk_SCREEN_autosize_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_BOOT_save_Click(object sender, EventArgs e)
         {
 
         }
