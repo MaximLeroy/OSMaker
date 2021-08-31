@@ -651,7 +651,15 @@ namespace OSMaker.Panneaux
         {
             string text = (sender as FastColoredTextBox).Text;
             ThreadPool.QueueUserWorkItem((o) => ReBuildObjectExplorer(text));
-            CPCDOSSyntaxHighlight(e);
+            if (metroComboBox1.Text == "CC+")
+            {
+                CPCDOSSyntaxHighlight(e);
+            }
+            else
+            {
+                e.ChangedRange.ClearStyle(BlueStyle, BoldStyle, GrayStyle, MagentaStyle, GreenStyle, BrownStyle, RedStyle);
+            }
+            
          //   _tb.AutoScroll = true;
             _tb.ShowScrollBars = true;
             _tb.Font = new Font("Source Code Pro", 9.75f);
@@ -1045,6 +1053,32 @@ namespace OSMaker.Panneaux
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void _tb_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroComboBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (metroComboBox1.Text == "Text")
+            {
+                metroButton2.Enabled = false;
+                
+            }
+
+            else
+            {
+                metroButton2.Enabled = true;
+                
+            }
+            
+        }
+
+        private void Doc_Leave(object sender, EventArgs e)
         {
 
         }

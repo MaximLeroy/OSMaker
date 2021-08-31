@@ -632,6 +632,176 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
     End Sub
 End Class
 
+Public Class ListBox : Inherits System.Windows.Forms.ListBox
+
+    Private Col1 As Boolean
+    Private Imgauto1 As Boolean
+    Private UPD1 As Boolean
+    Private handle1 As String
+    Private Evant1 As String
+    Private Parametres1 As Boolean
+    Private Opacite1 As Integer
+    Private EDIT1 As Boolean
+    Private Param1 As String
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Opacity")>
+    <Description("Opacité du textbox")>
+    <DefaultValue(255)>
+    Public Property OPACITE As Integer
+        Get
+            Return Opacite1
+        End Get
+        Set(value As Integer)
+            Opacite1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Show Parameters")>
+    <Description("Activer les paramètres")>
+    Public Property TextBoxParameters As Boolean
+        Get
+            Return Parametres1
+        End Get
+        Set(value As Boolean)
+            Parametres1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Parameters")>
+    <Description("Modes et paramètres")>
+    Public Property Parameters() As String
+
+        Get
+            If Parametres1 = True Then
+
+                Dim _col As Integer = 0
+                If Col1 = True Then
+                    _col = 1
+                Else
+                    _col = 0
+                End If
+                Dim _edit As Integer = 0
+                If EDIT1 = True Then
+                    _edit = 1
+                Else
+                    _edit = 0
+                End If
+
+                Dim _imgauto As Integer = 0
+                If Imgauto1 = True Then
+                    _imgauto = 1
+                Else
+                    _imgauto = 0
+                End If
+                Dim _upd As Integer = 0
+                If UPD1 = True Then
+                    _upd = 1
+                Else
+                    _upd = 0
+                End If
+
+                Return "COL:" + _col.ToString + " " + "EDIT:" + _edit.ToString() + " " + "IMGAUTO:" + _imgauto.ToString() + " " + "UPD:" + _upd.ToString()
+            Else
+                Return ""
+            End If
+        End Get
+        Set(value As String)
+
+            Param1 = value
+
+        End Set
+
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Handle")>
+    <Description("Handle du textbox")>
+    Public Overloads Property Handle() As String
+        Get
+            Return handle1
+        End Get
+        Set(value As String)
+
+            handle1 = value
+
+
+        End Set
+
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Col")>
+    <Description("Afficher la couleur de fond")>
+    Public Property COL As Boolean
+        Get
+            Return Col1
+        End Get
+        Set(value As Boolean)
+            Col1 = value
+        End Set
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("ImgAuto")>
+    <Description("Affichage adapté aux dimensions de l'imagebox")>
+    Public Property IMGAUTO As Boolean
+        Get
+            Return Imgauto1
+        End Get
+        Set(value As Boolean)
+            Imgauto1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Upd")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
+    Public Property UPD As Boolean
+        Get
+            Return UPD1
+        End Get
+        Set(value As Boolean)
+            UPD1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Edit")>
+    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
+    Public Property EDIT As Boolean
+        Get
+            Return EDIT1
+        End Get
+        Set(value As Boolean)
+            EDIT1 = value
+        End Set
+    End Property
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Event")>
+    <Description("Fichier évènementiel des interactions graphiques.")>
+    Public Overloads Property _EVENT() As String
+
+        Get
+            Return Evant1
+        End Get
+        Set(value As String)
+            Evant1 = value
+
+        End Set
+
+    End Property
+
+    Sub New()
+
+        TextBoxParameters = System.Boolean.FalseString
+        COL = System.Boolean.TrueString
+        IMGAUTO = System.Boolean.FalseString
+        UPD1 = System.Boolean.TrueString
+        EDIT1 = System.Boolean.TrueString
+        _EVENT = ""
+        handle1 = "MyHandle"
+
+        Opacite1 = 255
+    End Sub
+End Class
+
 Public Class TextBlock : Inherits System.Windows.Forms.Label
 
     Private Col1 As Boolean

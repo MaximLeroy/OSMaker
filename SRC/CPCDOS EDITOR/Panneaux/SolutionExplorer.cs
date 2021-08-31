@@ -637,6 +637,7 @@ namespace OSMaker.Panneaux
 
                         Doc dummyDoc = new Doc();
                         dummyDoc.Text = fileName;
+                        dummyDoc.metroComboBox1.Text = "CC+";
                         if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
                         {
                             dummyDoc.MdiParent = this;
@@ -662,8 +663,54 @@ namespace OSMaker.Panneaux
                }
                
             }
+            if (selNode.Text.EndsWith("txt") || selNode.Text.EndsWith("TXT"))
+            {
+                if (FindDocument(_tv.SelectedNode.Text) == null)
+                {
 
-            if (selNode.Text.EndsWith("osm") || selNode.Text.EndsWith("OSM"))
+
+                    string pathDir = Conversions.ToString(selNode.Tag);
+                    var fi = new FileInfo(pathDir);
+
+                    // edit file
+
+                    {
+
+                        string fullName = fi.FullName;
+                        string fileName = Path.GetFileName(fullName);
+
+
+
+                        Doc dummyDoc = new Doc();
+                        dummyDoc.Text = fileName;
+                        dummyDoc.metroComboBox1.Text = "Text";
+                        if (Home.dockPanel.DocumentStyle == DocumentStyle.SystemMdi)
+                        {
+                            dummyDoc.MdiParent = this;
+                            dummyDoc.filepath = fullName;
+                            dummyDoc.Show();
+                        }
+                        else
+                            dummyDoc.filepath = fullName;
+                        dummyDoc.Show(Home.dockPanel);
+                        try
+                        {
+                            dummyDoc.FileName = fullName;
+                            dummyDoc.filepath = fullName;
+                        }
+                        catch (Exception exception)
+                        {
+                            dummyDoc.Close();
+                            MessageBox.Show(exception.Message);
+                        }
+
+
+                    }
+                }
+                }
+
+
+                if (selNode.Text.EndsWith("osm") || selNode.Text.EndsWith("OSM"))
             {
                 if (FindDocument(_tv.SelectedNode.Text + " [Design]") == null)
                 {

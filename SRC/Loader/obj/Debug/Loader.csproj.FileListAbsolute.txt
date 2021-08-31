@@ -20,3 +20,10 @@ C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.csproj.CoreCompileInputs.cache
 C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.csproj.CopyComplete
 C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.dll
 C:\CPCDOS\OSMaker\SRC\Loader\obj\Debug\Loader.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Loader\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Loader\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Loader\obj\Debug\Loader.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Loader\obj\Debug\Loader.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Loader\obj\Debug\Loader.csproj.CopyComplete
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Loader\obj\Debug\Loader.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Loader\obj\Debug\Loader.pdb

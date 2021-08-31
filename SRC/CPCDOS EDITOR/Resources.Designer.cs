@@ -1623,6 +1623,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OSMAKERPNG {
+            get {
+                object obj = ResourceManager.GetObject("OSMAKERPNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ousuisje {
             get {
                 object obj = ResourceManager.GetObject("ousuisje", resourceCulture);
@@ -2236,6 +2246,16 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap VideoCamera_16x {
             get {
                 object obj = ResourceManager.GetObject("VideoCamera_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VM {
+            get {
+                object obj = ResourceManager.GetObject("VM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

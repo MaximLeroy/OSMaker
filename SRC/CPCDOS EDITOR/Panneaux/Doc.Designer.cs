@@ -34,6 +34,21 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.metroButton17 = new MetroFramework.Controls.MetroButton();
+            this.selectAllButton = new MetroFramework.Controls.MetroButton();
+            this.replaceButton = new MetroFramework.Controls.MetroButton();
+            this.findButton = new MetroFramework.Controls.MetroButton();
+            this.cloneButton = new MetroFramework.Controls.MetroButton();
+            this.uncommentButton = new MetroFramework.Controls.MetroButton();
+            this.commentButton = new MetroFramework.Controls.MetroButton();
+            this.deleteButton = new MetroFramework.Controls.MetroButton();
+            this.pasteButton = new MetroFramework.Controls.MetroButton();
+            this.copyButton = new MetroFramework.Controls.MetroButton();
+            this.cutButton = new MetroFramework.Controls.MetroButton();
+            this.redoButton = new MetroFramework.Controls.MetroButton();
+            this.undoButton = new MetroFramework.Controls.MetroButton();
+            this.metroButton15 = new MetroFramework.Controls.MetroButton();
+            this.saveButton = new MetroFramework.Controls.MetroButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
@@ -64,24 +79,10 @@
             this.ilAutocomplete = new System.Windows.Forms.ImageList(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton17 = new MetroFramework.Controls.MetroButton();
-            this.selectAllButton = new MetroFramework.Controls.MetroButton();
-            this.replaceButton = new MetroFramework.Controls.MetroButton();
-            this.findButton = new MetroFramework.Controls.MetroButton();
-            this.cloneButton = new MetroFramework.Controls.MetroButton();
-            this.uncommentButton = new MetroFramework.Controls.MetroButton();
-            this.commentButton = new MetroFramework.Controls.MetroButton();
-            this.deleteButton = new MetroFramework.Controls.MetroButton();
-            this.pasteButton = new MetroFramework.Controls.MetroButton();
-            this.copyButton = new MetroFramework.Controls.MetroButton();
-            this.cutButton = new MetroFramework.Controls.MetroButton();
-            this.redoButton = new MetroFramework.Controls.MetroButton();
-            this.undoButton = new MetroFramework.Controls.MetroButton();
-            this.metroButton15 = new MetroFramework.Controls.MetroButton();
-            this.saveButton = new MetroFramework.Controls.MetroButton();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -107,6 +108,203 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // metroButton17
+            // 
+            this.metroButton17.BackgroundImage = global::OSMaker.My.Resources.Resources.EventAdded_16x;
+            this.metroButton17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton17.Location = new System.Drawing.Point(578, 3);
+            this.metroButton17.Name = "metroButton17";
+            this.metroButton17.Size = new System.Drawing.Size(35, 23);
+            this.metroButton17.TabIndex = 93;
+            this.metroButton17.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.metroButton17, "Add event");
+            this.metroButton17.UseSelectable = true;
+            this.metroButton17.Click += new System.EventHandler(this.metroButton17_Click);
+            // 
+            // selectAllButton
+            // 
+            this.selectAllButton.BackgroundImage = global::OSMaker.My.Resources.Resources.SelectAll_16x;
+            this.selectAllButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.selectAllButton.Location = new System.Drawing.Point(537, 3);
+            this.selectAllButton.Name = "selectAllButton";
+            this.selectAllButton.Size = new System.Drawing.Size(35, 23);
+            this.selectAllButton.TabIndex = 91;
+            this.selectAllButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.selectAllButton, "Select all");
+            this.selectAllButton.UseSelectable = true;
+            this.selectAllButton.Click += new System.EventHandler(this.metroButton11_Click);
+            // 
+            // replaceButton
+            // 
+            this.replaceButton.BackgroundImage = global::OSMaker.My.Resources.Resources.ReplaceAll_16x;
+            this.replaceButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.replaceButton.Location = new System.Drawing.Point(494, 3);
+            this.replaceButton.Name = "replaceButton";
+            this.replaceButton.Size = new System.Drawing.Size(35, 23);
+            this.replaceButton.TabIndex = 90;
+            this.replaceButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.replaceButton, "Replace");
+            this.replaceButton.UseSelectable = true;
+            this.replaceButton.Click += new System.EventHandler(this.replaceButton_Click);
+            // 
+            // findButton
+            // 
+            this.findButton.BackgroundImage = global::OSMaker.My.Resources.Resources.FindInFile_16x;
+            this.findButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.findButton.Location = new System.Drawing.Point(455, 3);
+            this.findButton.Name = "findButton";
+            this.findButton.Size = new System.Drawing.Size(35, 23);
+            this.findButton.TabIndex = 89;
+            this.findButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.findButton, "Search");
+            this.findButton.UseSelectable = true;
+            this.findButton.Click += new System.EventHandler(this.findButton_Click);
+            // 
+            // cloneButton
+            // 
+            this.cloneButton.BackgroundImage = global::OSMaker.My.Resources.Resources.CopyItem_16x;
+            this.cloneButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.cloneButton.Location = new System.Drawing.Point(410, 3);
+            this.cloneButton.Name = "cloneButton";
+            this.cloneButton.Size = new System.Drawing.Size(35, 23);
+            this.cloneButton.TabIndex = 88;
+            this.cloneButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.cloneButton, "Clone line(s)");
+            this.cloneButton.UseSelectable = true;
+            this.cloneButton.Click += new System.EventHandler(this.cloneButton_Click);
+            // 
+            // uncommentButton
+            // 
+            this.uncommentButton.BackgroundImage = global::OSMaker.My.Resources.Resources.UncommentCode_16x;
+            this.uncommentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.uncommentButton.Location = new System.Drawing.Point(366, 3);
+            this.uncommentButton.Name = "uncommentButton";
+            this.uncommentButton.Size = new System.Drawing.Size(35, 23);
+            this.uncommentButton.TabIndex = 87;
+            this.uncommentButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.uncommentButton, "Uncomment selected");
+            this.uncommentButton.UseSelectable = true;
+            this.uncommentButton.Click += new System.EventHandler(this.uncommentButton_Click);
+            // 
+            // commentButton
+            // 
+            this.commentButton.BackgroundImage = global::OSMaker.My.Resources.Resources.CommentCode_16x;
+            this.commentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.commentButton.Location = new System.Drawing.Point(328, 3);
+            this.commentButton.Name = "commentButton";
+            this.commentButton.Size = new System.Drawing.Size(35, 23);
+            this.commentButton.TabIndex = 86;
+            this.commentButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.commentButton, "Comment selected");
+            this.commentButton.UseSelectable = true;
+            this.commentButton.Click += new System.EventHandler(this.commentButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.BackgroundImage = global::OSMaker.My.Resources.Resources.DeleteAzureResource_16x;
+            this.deleteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.deleteButton.Location = new System.Drawing.Point(285, 3);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(35, 23);
+            this.deleteButton.TabIndex = 85;
+            this.deleteButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.deleteButton, "Delete");
+            this.deleteButton.UseSelectable = true;
+            this.deleteButton.Click += new System.EventHandler(this.metroButton9_Click);
+            // 
+            // pasteButton
+            // 
+            this.pasteButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Paste_16x;
+            this.pasteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pasteButton.Location = new System.Drawing.Point(243, 3);
+            this.pasteButton.Name = "pasteButton";
+            this.pasteButton.Size = new System.Drawing.Size(35, 23);
+            this.pasteButton.TabIndex = 84;
+            this.pasteButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.pasteButton, "Paste");
+            this.pasteButton.UseSelectable = true;
+            this.pasteButton.Click += new System.EventHandler(this.metroButton10_Click);
+            // 
+            // copyButton
+            // 
+            this.copyButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Copy_16x;
+            this.copyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.copyButton.Location = new System.Drawing.Point(205, 3);
+            this.copyButton.Name = "copyButton";
+            this.copyButton.Size = new System.Drawing.Size(35, 23);
+            this.copyButton.TabIndex = 83;
+            this.copyButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.copyButton, "Copy");
+            this.copyButton.UseSelectable = true;
+            this.copyButton.Click += new System.EventHandler(this.metroButton5_Click);
+            // 
+            // cutButton
+            // 
+            this.cutButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Cut_16x;
+            this.cutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.cutButton.Location = new System.Drawing.Point(167, 3);
+            this.cutButton.Name = "cutButton";
+            this.cutButton.Size = new System.Drawing.Size(35, 23);
+            this.cutButton.TabIndex = 82;
+            this.cutButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.cutButton, "Cut");
+            this.cutButton.UseSelectable = true;
+            this.cutButton.Click += new System.EventHandler(this.metroButton6_Click);
+            // 
+            // redoButton
+            // 
+            this.redoButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Redo_16x;
+            this.redoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.redoButton.Enabled = false;
+            this.redoButton.Location = new System.Drawing.Point(123, 3);
+            this.redoButton.Name = "redoButton";
+            this.redoButton.Size = new System.Drawing.Size(35, 23);
+            this.redoButton.TabIndex = 81;
+            this.redoButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.redoButton, "Redo");
+            this.redoButton.UseSelectable = true;
+            this.redoButton.Click += new System.EventHandler(this.metroButton4_Click);
+            // 
+            // undoButton
+            // 
+            this.undoButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Undo_16x;
+            this.undoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.undoButton.Enabled = false;
+            this.undoButton.Location = new System.Drawing.Point(85, 3);
+            this.undoButton.Name = "undoButton";
+            this.undoButton.Size = new System.Drawing.Size(35, 23);
+            this.undoButton.TabIndex = 80;
+            this.undoButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.undoButton, "Undo");
+            this.undoButton.UseSelectable = true;
+            this.undoButton.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
+            // metroButton15
+            // 
+            this.metroButton15.BackgroundImage = global::OSMaker.My.Resources.Resources.FolderInformation_16x;
+            this.metroButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton15.Location = new System.Drawing.Point(42, 3);
+            this.metroButton15.Name = "metroButton15";
+            this.metroButton15.Size = new System.Drawing.Size(35, 23);
+            this.metroButton15.TabIndex = 79;
+            this.metroButton15.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.metroButton15, "Select Path");
+            this.metroButton15.UseSelectable = true;
+            this.metroButton15.Click += new System.EventHandler(this.metroButton15_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Save_37110__Copier_;
+            this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.saveButton.Location = new System.Drawing.Point(4, 3);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(35, 23);
+            this.saveButton.TabIndex = 78;
+            this.saveButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.toolTip.SetToolTip(this.saveButton, "Save");
+            this.saveButton.UseSelectable = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // richTextBox1
             // 
@@ -389,6 +587,7 @@
             this._tb.Zoom = 100;
             this._tb.TextChanging += new System.EventHandler<FastColoredTextBoxNS.TextChangingEventArgs>(this._tb_TextChanging);
             this._tb.TextChangedDelayed += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this._tb_TextChangedDelayed);
+            this._tb.Load += new System.EventHandler(this._tb_Load);
             // 
             // tmUpdateInterface2
             // 
@@ -415,6 +614,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panel2.Controls.Add(this.metroComboBox1);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.metroButton17);
             this.panel2.Controls.Add(this.selectAllButton);
@@ -436,6 +636,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1106, 31);
             this.panel2.TabIndex = 80;
+            // 
+            // metroComboBox1
+            // 
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 24;
+            this.metroComboBox1.Items.AddRange(new object[] {
+            "CC+",
+            "Text"});
+            this.metroComboBox1.Location = new System.Drawing.Point(619, 0);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.Size = new System.Drawing.Size(121, 30);
+            this.metroComboBox1.TabIndex = 95;
+            this.metroComboBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroComboBox1.UseSelectable = true;
+            this.metroComboBox1.TextChanged += new System.EventHandler(this.metroComboBox1_TextChanged);
             // 
             // panel6
             // 
@@ -469,203 +684,6 @@
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // metroButton17
-            // 
-            this.metroButton17.BackgroundImage = global::OSMaker.My.Resources.Resources.EventAdded_16x;
-            this.metroButton17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton17.Location = new System.Drawing.Point(578, 3);
-            this.metroButton17.Name = "metroButton17";
-            this.metroButton17.Size = new System.Drawing.Size(35, 23);
-            this.metroButton17.TabIndex = 93;
-            this.metroButton17.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.metroButton17, "Add event");
-            this.metroButton17.UseSelectable = true;
-            this.metroButton17.Click += new System.EventHandler(this.metroButton17_Click);
-            // 
-            // selectAllButton
-            // 
-            this.selectAllButton.BackgroundImage = global::OSMaker.My.Resources.Resources.SelectAll_16x;
-            this.selectAllButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.selectAllButton.Location = new System.Drawing.Point(537, 3);
-            this.selectAllButton.Name = "selectAllButton";
-            this.selectAllButton.Size = new System.Drawing.Size(35, 23);
-            this.selectAllButton.TabIndex = 91;
-            this.selectAllButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.selectAllButton, "Select all");
-            this.selectAllButton.UseSelectable = true;
-            this.selectAllButton.Click += new System.EventHandler(this.metroButton11_Click);
-            // 
-            // replaceButton
-            // 
-            this.replaceButton.BackgroundImage = global::OSMaker.My.Resources.Resources.ReplaceAll_16x;
-            this.replaceButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.replaceButton.Location = new System.Drawing.Point(494, 3);
-            this.replaceButton.Name = "replaceButton";
-            this.replaceButton.Size = new System.Drawing.Size(35, 23);
-            this.replaceButton.TabIndex = 90;
-            this.replaceButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.replaceButton, "Replace");
-            this.replaceButton.UseSelectable = true;
-            this.replaceButton.Click += new System.EventHandler(this.replaceButton_Click);
-            // 
-            // findButton
-            // 
-            this.findButton.BackgroundImage = global::OSMaker.My.Resources.Resources.FindInFile_16x;
-            this.findButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.findButton.Location = new System.Drawing.Point(455, 3);
-            this.findButton.Name = "findButton";
-            this.findButton.Size = new System.Drawing.Size(35, 23);
-            this.findButton.TabIndex = 89;
-            this.findButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.findButton, "Search");
-            this.findButton.UseSelectable = true;
-            this.findButton.Click += new System.EventHandler(this.findButton_Click);
-            // 
-            // cloneButton
-            // 
-            this.cloneButton.BackgroundImage = global::OSMaker.My.Resources.Resources.CopyItem_16x;
-            this.cloneButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.cloneButton.Location = new System.Drawing.Point(410, 3);
-            this.cloneButton.Name = "cloneButton";
-            this.cloneButton.Size = new System.Drawing.Size(35, 23);
-            this.cloneButton.TabIndex = 88;
-            this.cloneButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.cloneButton, "Clone line(s)");
-            this.cloneButton.UseSelectable = true;
-            this.cloneButton.Click += new System.EventHandler(this.cloneButton_Click);
-            // 
-            // uncommentButton
-            // 
-            this.uncommentButton.BackgroundImage = global::OSMaker.My.Resources.Resources.UncommentCode_16x;
-            this.uncommentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.uncommentButton.Location = new System.Drawing.Point(366, 3);
-            this.uncommentButton.Name = "uncommentButton";
-            this.uncommentButton.Size = new System.Drawing.Size(35, 23);
-            this.uncommentButton.TabIndex = 87;
-            this.uncommentButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.uncommentButton, "Uncomment selected");
-            this.uncommentButton.UseSelectable = true;
-            this.uncommentButton.Click += new System.EventHandler(this.uncommentButton_Click);
-            // 
-            // commentButton
-            // 
-            this.commentButton.BackgroundImage = global::OSMaker.My.Resources.Resources.CommentCode_16x;
-            this.commentButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.commentButton.Location = new System.Drawing.Point(328, 3);
-            this.commentButton.Name = "commentButton";
-            this.commentButton.Size = new System.Drawing.Size(35, 23);
-            this.commentButton.TabIndex = 86;
-            this.commentButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.commentButton, "Comment selected");
-            this.commentButton.UseSelectable = true;
-            this.commentButton.Click += new System.EventHandler(this.commentButton_Click);
-            // 
-            // deleteButton
-            // 
-            this.deleteButton.BackgroundImage = global::OSMaker.My.Resources.Resources.DeleteAzureResource_16x;
-            this.deleteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.deleteButton.Location = new System.Drawing.Point(285, 3);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(35, 23);
-            this.deleteButton.TabIndex = 85;
-            this.deleteButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.deleteButton, "Delete");
-            this.deleteButton.UseSelectable = true;
-            this.deleteButton.Click += new System.EventHandler(this.metroButton9_Click);
-            // 
-            // pasteButton
-            // 
-            this.pasteButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Paste_16x;
-            this.pasteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pasteButton.Location = new System.Drawing.Point(243, 3);
-            this.pasteButton.Name = "pasteButton";
-            this.pasteButton.Size = new System.Drawing.Size(35, 23);
-            this.pasteButton.TabIndex = 84;
-            this.pasteButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.pasteButton, "Paste");
-            this.pasteButton.UseSelectable = true;
-            this.pasteButton.Click += new System.EventHandler(this.metroButton10_Click);
-            // 
-            // copyButton
-            // 
-            this.copyButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Copy_16x;
-            this.copyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.copyButton.Location = new System.Drawing.Point(205, 3);
-            this.copyButton.Name = "copyButton";
-            this.copyButton.Size = new System.Drawing.Size(35, 23);
-            this.copyButton.TabIndex = 83;
-            this.copyButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.copyButton, "Copy");
-            this.copyButton.UseSelectable = true;
-            this.copyButton.Click += new System.EventHandler(this.metroButton5_Click);
-            // 
-            // cutButton
-            // 
-            this.cutButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Cut_16x;
-            this.cutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.cutButton.Location = new System.Drawing.Point(167, 3);
-            this.cutButton.Name = "cutButton";
-            this.cutButton.Size = new System.Drawing.Size(35, 23);
-            this.cutButton.TabIndex = 82;
-            this.cutButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.cutButton, "Cut");
-            this.cutButton.UseSelectable = true;
-            this.cutButton.Click += new System.EventHandler(this.metroButton6_Click);
-            // 
-            // redoButton
-            // 
-            this.redoButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Redo_16x;
-            this.redoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.redoButton.Enabled = false;
-            this.redoButton.Location = new System.Drawing.Point(123, 3);
-            this.redoButton.Name = "redoButton";
-            this.redoButton.Size = new System.Drawing.Size(35, 23);
-            this.redoButton.TabIndex = 81;
-            this.redoButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.redoButton, "Redo");
-            this.redoButton.UseSelectable = true;
-            this.redoButton.Click += new System.EventHandler(this.metroButton4_Click);
-            // 
-            // undoButton
-            // 
-            this.undoButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Undo_16x;
-            this.undoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.undoButton.Enabled = false;
-            this.undoButton.Location = new System.Drawing.Point(85, 3);
-            this.undoButton.Name = "undoButton";
-            this.undoButton.Size = new System.Drawing.Size(35, 23);
-            this.undoButton.TabIndex = 80;
-            this.undoButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.undoButton, "Undo");
-            this.undoButton.UseSelectable = true;
-            this.undoButton.Click += new System.EventHandler(this.metroButton3_Click);
-            // 
-            // metroButton15
-            // 
-            this.metroButton15.BackgroundImage = global::OSMaker.My.Resources.Resources.FolderInformation_16x;
-            this.metroButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton15.Location = new System.Drawing.Point(42, 3);
-            this.metroButton15.Name = "metroButton15";
-            this.metroButton15.Size = new System.Drawing.Size(35, 23);
-            this.metroButton15.TabIndex = 79;
-            this.metroButton15.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.metroButton15, "Select Path");
-            this.metroButton15.UseSelectable = true;
-            this.metroButton15.Click += new System.EventHandler(this.metroButton15_Click);
-            // 
-            // saveButton
-            // 
-            this.saveButton.BackgroundImage = global::OSMaker.My.Resources.Resources.Save_37110__Copier_;
-            this.saveButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.saveButton.Location = new System.Drawing.Point(4, 3);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(35, 23);
-            this.saveButton.TabIndex = 78;
-            this.saveButton.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.toolTip.SetToolTip(this.saveButton, "Save");
-            this.saveButton.UseSelectable = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // metroStyleManager1
             // 
@@ -849,6 +867,7 @@
             this.Name = "Doc";
             this.Text = "Doc";
             this.Load += new System.EventHandler(this.Doc_Load);
+            this.Leave += new System.EventHandler(this.Doc_Leave);
             this.metroContextMenu1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -928,5 +947,6 @@
         private System.Windows.Forms.Panel panel6;
         private FastColoredTextBoxNS.FastColoredTextBox _tb;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        public MetroFramework.Controls.MetroComboBox metroComboBox1;
     }
 }

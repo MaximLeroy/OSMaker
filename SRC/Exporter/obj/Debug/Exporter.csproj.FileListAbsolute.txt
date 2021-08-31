@@ -246,3 +246,34 @@ C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.csproj.CoreCompileInputs.cache
 C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.csproj.CopyComplete
 C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.exe
 C:\CPCDOS\OSMaker\SRC\Exporter\obj\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\fichier1.cpc
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\Exporter.exe.config
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\Exporter.exe
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\Exporter.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\Host.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\Loader.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\ToolBox.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\GraphLibrary.dll
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\Host.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\Loader.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\ToolBox.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\bin\Debug\ToolBox.dll.config
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.csprojAssemblyReference.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCButton.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCCheckBox.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCFenetre.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCFonction.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCPictureBox.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCProgressBar.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCTextBlock.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Controls.UCTextBox.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.formulaire.Form1.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.DocumentC.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Parametres.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Preview.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.Properties.Resources.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.csproj.GenerateResource.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.csproj.CoreCompileInputs.cache
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.csproj.CopyComplete
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.exe
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\Exporter\obj\Debug\Exporter.pdb

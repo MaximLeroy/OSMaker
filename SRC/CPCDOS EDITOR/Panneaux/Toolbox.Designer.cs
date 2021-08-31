@@ -52,7 +52,7 @@
             this.toolbox1.Location = new System.Drawing.Point(0, -39);
             this.toolbox1.Name = "toolbox1";
             this.toolbox1.SelectedCategory = null;
-            this.toolbox1.Size = new System.Drawing.Size(228, 187);
+            this.toolbox1.Size = new System.Drawing.Size(228, 205);
             this.toolbox1.TabIndex = 0;
             // 
             // Toolbox

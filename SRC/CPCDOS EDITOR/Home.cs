@@ -965,6 +965,11 @@ namespace OSMaker
             EditOS instance_editos = new EditOS(3);
             instance_editos.ShowDialog();
         }
+
+        private void menuItemCloseAll_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
