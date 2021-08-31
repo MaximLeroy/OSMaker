@@ -62,7 +62,7 @@
             this.Label4.Location = new System.Drawing.Point(395, 266);
             this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(0, 24);
+            this.Label4.Size = new System.Drawing.Size(0, 29);
             this.Label4.TabIndex = 11;
             // 
             // label1
@@ -72,7 +72,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(95, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 35);
+            this.label1.Size = new System.Drawing.Size(165, 43);
             this.label1.TabIndex = 19;
             this.label1.Text = "OSMaker";
             // 
@@ -83,7 +83,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(122, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 21);
+            this.label2.Size = new System.Drawing.Size(113, 27);
             this.label2.TabIndex = 20;
             this.label2.Text = "Welcome !";
             // 
@@ -94,7 +94,7 @@
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel1.Location = new System.Drawing.Point(22, 117);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(80, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(84, 25);
             this.metroLabel1.TabIndex = 22;
             this.metroLabel1.Text = "To begin";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -107,7 +107,7 @@
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel2.Location = new System.Drawing.Point(366, 117);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(64, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(68, 25);
             this.metroLabel2.TabIndex = 23;
             this.metroLabel2.Text = "Recent";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -120,7 +120,7 @@
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel3.Location = new System.Drawing.Point(22, 222);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(49, 25);
+            this.metroLabel3.Size = new System.Drawing.Size(51, 25);
             this.metroLabel3.TabIndex = 24;
             this.metroLabel3.Text = "Help";
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -132,7 +132,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(430, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(12, 13);
+            this.label3.Size = new System.Drawing.Size(12, 17);
             this.label3.TabIndex = 26;
             this.label3.Text = "\\";
             this.label3.Visible = false;
@@ -143,10 +143,10 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label6.Location = new System.Drawing.Point(0, 566);
+            this.label6.Location = new System.Drawing.Point(0, 560);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(619, 13);
+            this.label6.Size = new System.Drawing.Size(758, 19);
             this.label6.TabIndex = 33;
             this.label6.Text = "OSMaker pre-release beta 1.2 | 2015 - 2021 | GNU General Public License v3.0 | ht" +
     "tps://github.com/MaximLeroy/OSMaker";
@@ -160,7 +160,7 @@
             this.label9.Location = new System.Drawing.Point(432, 275);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 24);
+            this.label9.Size = new System.Drawing.Size(0, 29);
             this.label9.TabIndex = 28;
             // 
             // listBox1
@@ -169,9 +169,10 @@
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.ForeColor = System.Drawing.Color.Silver;
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(366, 155);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(337, 247);
+            this.listBox1.Size = new System.Drawing.Size(337, 240);
             this.listBox1.TabIndex = 35;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
@@ -183,7 +184,7 @@
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel4.Location = new System.Drawing.Point(37, 350);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(66, 25);
+            this.metroLabel4.Size = new System.Drawing.Size(69, 25);
             this.metroLabel4.TabIndex = 38;
             this.metroLabel4.Text = "Videos";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -353,7 +354,7 @@
             // 
             // Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(800, 579);
