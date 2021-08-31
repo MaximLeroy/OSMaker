@@ -63,6 +63,7 @@ Namespace ToolboxLibrary
             Me.ImageList1.Images.SetKeyName(5, "Image_16xBlack.png")
             Me.ImageList1.Images.SetKeyName(6, "ProgressBar_16xBlack.png")
             Me.ImageList1.Images.SetKeyName(7, "WindowsFormBlue_16x.png")
+            Me.ImageList1.Images.SetKeyName(8, "ListBox_16x_dark_blue.png")
             '
             'Toolbox
             '
