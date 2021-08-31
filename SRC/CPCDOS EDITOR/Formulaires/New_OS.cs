@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -64,7 +65,7 @@ namespace OSMaker.Formulaires
                     OSCPC.MediaPath = txtb_mediaFolder.Text;
                     OSCPC.AutorsNames = txtb_authors.Text;
                     OSCPC.CompagnyName = txtb_compagny.Text;
-                    OSCPC.CreationDate = DateTime_creation.Text;
+                    OSCPC.CreationDate = DateTime_creation.Value.ToString("yyyy-MM-dd", DateTimeFormatInfo.InvariantInfo);
 
                     // Screen desktop
                     OSCPC.Resolution_auto = chk_SCREEN_autosize.Checked;

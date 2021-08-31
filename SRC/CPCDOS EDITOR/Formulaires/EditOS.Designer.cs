@@ -94,9 +94,11 @@
             this.metroPanel6 = new MetroFramework.Controls.MetroPanel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.metroLabel20 = new MetroFramework.Controls.MetroLabel();
-            this.btn_BOOT_next = new MetroFramework.Controls.MetroButton();
+            this.btn_BOOT_save = new MetroFramework.Controls.MetroButton();
             this.tab_Screen = new MetroFramework.Controls.MetroTabPage();
             this.metroPanel8 = new MetroFramework.Controls.MetroPanel();
+            this.metroCheckBox2 = new MetroFramework.Controls.MetroCheckBox();
+            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
             this.chk_blabla = new MetroFramework.Controls.MetroCheckBox();
             this.chk_desktop = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel22 = new MetroFramework.Controls.MetroLabel();
@@ -153,7 +155,7 @@
             this.metroTabControl1.Location = new System.Drawing.Point(15, 60);
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(576, 449);
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -716,7 +718,7 @@
             this.tab_BootScreen.Controls.Add(this.metroPanel3);
             this.tab_BootScreen.Controls.Add(this.metroPanel4);
             this.tab_BootScreen.Controls.Add(this.metroPanel6);
-            this.tab_BootScreen.Controls.Add(this.btn_BOOT_next);
+            this.tab_BootScreen.Controls.Add(this.btn_BOOT_save);
             this.tab_BootScreen.Location = new System.Drawing.Point(4, 38);
             this.tab_BootScreen.Name = "tab_BootScreen";
             this.tab_BootScreen.Size = new System.Drawing.Size(568, 407);
@@ -1249,19 +1251,19 @@
             this.metroLabel20.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel20.UseCustomBackColor = true;
             // 
-            // btn_BOOT_next
+            // btn_BOOT_save
             // 
-            this.btn_BOOT_next.Highlight = true;
-            this.btn_BOOT_next.Location = new System.Drawing.Point(486, 363);
-            this.btn_BOOT_next.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_BOOT_next.Name = "btn_BOOT_next";
-            this.btn_BOOT_next.Size = new System.Drawing.Size(69, 31);
-            this.btn_BOOT_next.Style = MetroFramework.MetroColorStyle.Green;
-            this.btn_BOOT_next.TabIndex = 160;
-            this.btn_BOOT_next.Text = "Save";
-            this.btn_BOOT_next.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btn_BOOT_next.UseSelectable = true;
-            this.btn_BOOT_next.Click += new System.EventHandler(this.btn_BOOT_next_Click);
+            this.btn_BOOT_save.Highlight = true;
+            this.btn_BOOT_save.Location = new System.Drawing.Point(486, 363);
+            this.btn_BOOT_save.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_BOOT_save.Name = "btn_BOOT_save";
+            this.btn_BOOT_save.Size = new System.Drawing.Size(69, 31);
+            this.btn_BOOT_save.Style = MetroFramework.MetroColorStyle.Green;
+            this.btn_BOOT_save.TabIndex = 160;
+            this.btn_BOOT_save.Text = "Save";
+            this.btn_BOOT_save.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btn_BOOT_save.UseSelectable = true;
+            this.btn_BOOT_save.Click += new System.EventHandler(this.btn_BOOT_save_Click);
             // 
             // tab_Screen
             // 
@@ -1286,6 +1288,8 @@
             // 
             // metroPanel8
             // 
+            this.metroPanel8.Controls.Add(this.metroCheckBox2);
+            this.metroPanel8.Controls.Add(this.metroCheckBox1);
             this.metroPanel8.Controls.Add(this.chk_blabla);
             this.metroPanel8.Controls.Add(this.chk_desktop);
             this.metroPanel8.Controls.Add(this.metroLabel22);
@@ -1301,15 +1305,39 @@
             this.metroPanel8.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel8.VerticalScrollbarSize = 10;
             // 
+            // metroCheckBox2
+            // 
+            this.metroCheckBox2.AutoSize = true;
+            this.metroCheckBox2.Location = new System.Drawing.Point(60, 100);
+            this.metroCheckBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.metroCheckBox2.Name = "metroCheckBox2";
+            this.metroCheckBox2.Size = new System.Drawing.Size(80, 15);
+            this.metroCheckBox2.TabIndex = 166;
+            this.metroCheckBox2.Text = "checkbox3";
+            this.metroCheckBox2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroCheckBox2.UseSelectable = true;
+            // 
+            // metroCheckBox1
+            // 
+            this.metroCheckBox1.AutoSize = true;
+            this.metroCheckBox1.Location = new System.Drawing.Point(60, 81);
+            this.metroCheckBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.metroCheckBox1.Name = "metroCheckBox1";
+            this.metroCheckBox1.Size = new System.Drawing.Size(80, 15);
+            this.metroCheckBox1.TabIndex = 165;
+            this.metroCheckBox1.Text = "checkbox2";
+            this.metroCheckBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroCheckBox1.UseSelectable = true;
+            // 
             // chk_blabla
             // 
             this.chk_blabla.AutoSize = true;
             this.chk_blabla.Location = new System.Drawing.Point(60, 62);
             this.chk_blabla.Margin = new System.Windows.Forms.Padding(2);
             this.chk_blabla.Name = "chk_blabla";
-            this.chk_blabla.Size = new System.Drawing.Size(86, 15);
+            this.chk_blabla.Size = new System.Drawing.Size(80, 15);
             this.chk_blabla.TabIndex = 164;
-            this.chk_blabla.Text = "radioButton";
+            this.chk_blabla.Text = "checkbox1";
             this.chk_blabla.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.chk_blabla.UseSelectable = true;
             // 
@@ -1527,7 +1555,6 @@
             // 
             this.txtb_SCREEN_manualresolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.txtb_SCREEN_manualresolution.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtb_SCREEN_manualresolution.Enabled = false;
             this.txtb_SCREEN_manualresolution.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtb_SCREEN_manualresolution.ForeColor = System.Drawing.SystemColors.Control;
             this.txtb_SCREEN_manualresolution.Location = new System.Drawing.Point(46, 70);
@@ -1550,6 +1577,7 @@
             this.chk_SCREEN_autosize.Text = "Auto";
             this.chk_SCREEN_autosize.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.chk_SCREEN_autosize.UseSelectable = true;
+            this.chk_SCREEN_autosize.CheckedChanged += new System.EventHandler(this.chk_SCREEN_autosize_CheckedChanged);
             // 
             // btn_save_Desktop
             // 
@@ -1674,7 +1702,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel15;
         private System.Windows.Forms.TextBox txtb_SCREEN_manualresolution;
         private MetroFramework.Controls.MetroCheckBox chk_SCREEN_autosize;
-        private MetroFramework.Controls.MetroButton btn_BOOT_next;
+        private MetroFramework.Controls.MetroButton btn_BOOT_save;
         private MetroFramework.Controls.MetroPanel metroPanel6;
         private MetroFramework.Controls.MetroLabel metroLabel20;
         private MetroFramework.Controls.MetroPanel metroPanel8;
@@ -1729,5 +1757,7 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.TabPage tab_Pointer;
         private MetroFramework.Controls.MetroButton btn_save_pointer;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox2;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
     }
 }

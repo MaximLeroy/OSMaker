@@ -66,7 +66,6 @@
             this.txtb_osName = new System.Windows.Forms.TextBox();
             this.tab_Screen = new MetroFramework.Controls.MetroTabPage();
             this.metroPanel8 = new MetroFramework.Controls.MetroPanel();
-            this.chk_blabla = new MetroFramework.Controls.MetroCheckBox();
             this.chk_desktop = new MetroFramework.Controls.MetroCheckBox();
             this.metroLabel22 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
@@ -91,6 +90,9 @@
             this.btn_create = new MetroFramework.Controls.MetroButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.colorDialog = new System.Windows.Forms.ColorDialog();
+            this.metroCheckBox2 = new MetroFramework.Controls.MetroCheckBox();
+            this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
+            this.chk_blabla = new MetroFramework.Controls.MetroCheckBox();
             this.metroTabControl1.SuspendLayout();
             this.tab_OS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.warn_MediaPath)).BeginInit();
@@ -119,7 +121,7 @@
             this.metroTabControl1.Location = new System.Drawing.Point(15, 60);
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(576, 449);
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -700,6 +702,8 @@
             // 
             // metroPanel8
             // 
+            this.metroPanel8.Controls.Add(this.metroCheckBox2);
+            this.metroPanel8.Controls.Add(this.metroCheckBox1);
             this.metroPanel8.Controls.Add(this.chk_blabla);
             this.metroPanel8.Controls.Add(this.chk_desktop);
             this.metroPanel8.Controls.Add(this.metroLabel22);
@@ -714,18 +718,6 @@
             this.metroPanel8.VerticalScrollbarBarColor = true;
             this.metroPanel8.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel8.VerticalScrollbarSize = 10;
-            // 
-            // chk_blabla
-            // 
-            this.chk_blabla.AutoSize = true;
-            this.chk_blabla.Location = new System.Drawing.Point(60, 62);
-            this.chk_blabla.Margin = new System.Windows.Forms.Padding(2);
-            this.chk_blabla.Name = "chk_blabla";
-            this.chk_blabla.Size = new System.Drawing.Size(86, 15);
-            this.chk_blabla.TabIndex = 164;
-            this.chk_blabla.Text = "radioButton";
-            this.chk_blabla.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.chk_blabla.UseSelectable = true;
             // 
             // chk_desktop
             // 
@@ -1032,6 +1024,42 @@
             this.btn_create.UseSelectable = true;
             this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
+            // metroCheckBox2
+            // 
+            this.metroCheckBox2.AutoSize = true;
+            this.metroCheckBox2.Location = new System.Drawing.Point(60, 100);
+            this.metroCheckBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.metroCheckBox2.Name = "metroCheckBox2";
+            this.metroCheckBox2.Size = new System.Drawing.Size(80, 15);
+            this.metroCheckBox2.TabIndex = 169;
+            this.metroCheckBox2.Text = "checkbox3";
+            this.metroCheckBox2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroCheckBox2.UseSelectable = true;
+            // 
+            // metroCheckBox1
+            // 
+            this.metroCheckBox1.AutoSize = true;
+            this.metroCheckBox1.Location = new System.Drawing.Point(60, 81);
+            this.metroCheckBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.metroCheckBox1.Name = "metroCheckBox1";
+            this.metroCheckBox1.Size = new System.Drawing.Size(80, 15);
+            this.metroCheckBox1.TabIndex = 168;
+            this.metroCheckBox1.Text = "checkbox2";
+            this.metroCheckBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroCheckBox1.UseSelectable = true;
+            // 
+            // chk_blabla
+            // 
+            this.chk_blabla.AutoSize = true;
+            this.chk_blabla.Location = new System.Drawing.Point(60, 62);
+            this.chk_blabla.Margin = new System.Windows.Forms.Padding(2);
+            this.chk_blabla.Name = "chk_blabla";
+            this.chk_blabla.Size = new System.Drawing.Size(80, 15);
+            this.chk_blabla.TabIndex = 167;
+            this.chk_blabla.Text = "checkbox1";
+            this.chk_blabla.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.chk_blabla.UseSelectable = true;
+            // 
             // New_OS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1128,7 +1156,6 @@
         private MetroFramework.Controls.MetroRadioButton rad_screen_32bits;
         private MetroFramework.Controls.MetroRadioButton rad_screen_24bits;
         private MetroFramework.Controls.MetroRadioButton rad_screen_16bits;
-        private MetroFramework.Controls.MetroCheckBox chk_blabla;
         private ToolBox.PictureBox warn_VM;
         private ToolBox.PictureBox warn_MediaPath;
         private ToolBox.PictureBox warn_OSNameSystem;
@@ -1138,5 +1165,8 @@
         private ToolBox.PictureBox warn_Compagny;
         private ToolBox.PictureBox warn_Author;
         private MetroFramework.Controls.MetroButton btn_Finish_Previous;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox2;
+        private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
+        private MetroFramework.Controls.MetroCheckBox chk_blabla;
     }
 }
