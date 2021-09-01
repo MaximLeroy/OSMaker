@@ -1,5 +1,6 @@
 
 Window/ Window1
+   .Parameters    = "TYPE:0 CTN:0 BORD:1 MOVE:1 SIZ:1 SHADOW:0 TASKBAR:0 CLOSE:1 REDUCT:1 SIZEBTN:1 COLLISION:1 MINSIZ_X:50P MINSIZ_Y:25P MAXSIZ_X:78P MAXSIZ_Y:89P TASKBARHIDE:1 BLURRY:0 CTX:0"
    .PX            = "0"
    .PY            = "0"
    .SX            = "758"
@@ -66,16 +67,20 @@ Create/
 End/ PictureBox
 
 Explorer/ Explorer1
+   .Parameters    = "EXPLOREMODE:1 DESKTOPMODE:1"
    .Handle        = "%MyHandle%"
    .PX            = "11"
    .PY            = "11"
    .SX            = "286"
-   .SY            = "324"
+   .SY            = "259"
 Create/
 End/ Explorer
 
 ListBox/ ListBox1
+   .Parameters    = "EXPLOREMODE:1"
    .Handle        = "%MyHandle%"
+   .Image         = "vvvvvvvvv"
+   .Event         = "cccc"
    .PX            = "499"
    .PY            = "58"
    .SX            = "120"

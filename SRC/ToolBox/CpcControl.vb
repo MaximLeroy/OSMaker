@@ -78,7 +78,13 @@ Public Class Window : Inherits Panel
     Private Opacite1 As Integer
     Private Param1 As String
     Private collision1 As Boolean
-
+    Private minsizx1 As Integer
+    Private minsizy1 As Integer
+    Private maxsizx1 As Integer
+    Private maxsizy1 As Integer
+    Private taskbarhide1 As Boolean
+    Private blurry1 As Integer
+    Private ctx1 As Integer
     Public Enum SummaryOptions
       
         Normale
@@ -180,8 +186,14 @@ Public Class Window : Inherits Panel
                 Else
                     _taskbar = 0
                 End If
+                Dim _taskbarhide As Integer = 0
+                If taskbarhide1 = True Then
+                    _taskbarhide = 1
+                Else
+                    _taskbarhide = 0
+                End If
 
-                Return "TYPE:" + _type.ToString() + " " + "CTN:" + _ctn.ToString() + " " + "BORD:" + _bord.ToString() + " " + "MOVE:" + _move.ToString() + " " + "SIZ:" + _siz.ToString() + " " + "SHADOW:" + OMBRE.ToString() + " " + "TASKBAR:" + _taskbar.ToString() + " " + "CLOSE:" + _close.ToString() + " " + "REDUCT:" + _reduct.ToString() + " " + "SIZEBTN:" + _sizbtn.ToString() + "COLLISION:" + _collision.ToString()
+                Return "TYPE:" + _type.ToString() + " " + "CTN:" + _ctn.ToString() + " " + "BORD:" + _bord.ToString() + " " + "MOVE:" + _move.ToString() + " " + "SIZ:" + _siz.ToString() + " " + "SHADOW:" + OMBRE.ToString() + " " + "TASKBAR:" + _taskbar.ToString() + " " + "CLOSE:" + _close.ToString() + " " + "REDUCT:" + _reduct.ToString() + " " + "SIZEBTN:" + _sizbtn.ToString() + " " + "COLLISION:" + _collision.ToString() + " " + "MINSIZ_X:" + minsizx1.ToString() + "P" + " " + "MINSIZ_Y:" + minsizy1.ToString() + "P" + " " + "MAXSIZ_X:" + maxsizx1.ToString() + "P" + " " + "MAXSIZ_Y:" + maxsizy1.ToString() + "P" + " " + "TASKBARHIDE:" + _taskbarhide.ToString() + " " + "BLURRY:" + blurry1.ToString() + " " + "CTX:" + ctx1.ToString()
             Else
                 Return ""
             End If
@@ -203,6 +215,18 @@ Public Class Window : Inherits Panel
         End Get
         Set(value As Boolean)
             Parametres1 = value
+        End Set
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Taskbar hide")>
+    <Description("Masquer de la barre des tâches")>
+    Public Property TaskBarHide As Boolean
+        Get
+            Return taskbarhide1
+        End Get
+        Set(value As Boolean)
+            taskbarhide1 = value
         End Set
     End Property
 
@@ -229,6 +253,90 @@ Public Class Window : Inherits Panel
         End Get
         Set(value As Integer)
             Ombre1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Blurry")>
+    <Description("Effet de flou 0 (aucun) à 5 (max)")>
+    Public Overloads Property BLURRY() As Integer
+        Get
+            Return blurry1
+        End Get
+        Set(value As Integer)
+            blurry1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("ContextMenu")>
+    <Description("0 (aucun) 1 (défaut) 2 (personnalisé)")>
+    Public Overloads Property CTX() As Integer
+        Get
+            Return ctx1
+        End Get
+        Set(value As Integer)
+            ctx1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Min size X")>
+    <Description("Taille minimale en X d’une fenêtre")>
+    Public Overloads Property minsizx() As Integer
+        Get
+            Return minsizx1
+        End Get
+        Set(value As Integer)
+            minsizx1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Min size Y")>
+    <Description("Taille minimale en Y d’une fenêtre")>
+    Public Overloads Property minsizy() As Integer
+        Get
+            Return minsizy1
+        End Get
+        Set(value As Integer)
+            minsizy1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Max size X")>
+    <Description("Taille maximale en X d’une fenêtre")>
+    Public Overloads Property maxsizx() As Integer
+        Get
+            Return maxsizx1
+        End Get
+        Set(value As Integer)
+            maxsizx1 = value
+
+        End Set
+
+    End Property
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Max size Y")>
+    <Description("Taille maximale en Y d’une fenêtre")>
+    Public Overloads Property maxsizy() As Integer
+        Get
+            Return maxsizy1
+        End Get
+        Set(value As Integer)
+            maxsizy1 = value
 
         End Set
 
@@ -634,15 +742,26 @@ End Class
 
 Public Class ListBox : Inherits System.Windows.Forms.ListBox
 
-    Private Col1 As Boolean
-    Private Imgauto1 As Boolean
-    Private UPD1 As Boolean
     Private handle1 As String
     Private Evant1 As String
     Private Parametres1 As Boolean
     Private Opacite1 As Integer
-    Private EDIT1 As Boolean
+
     Private Param1 As String
+    Private image1 As String
+    Private ExploreMode As Boolean
+
+    <Category("Propriétés CPCDOS")>
+    <DisplayName("Explore mode")>
+    <Description("True : icones | False : liste")>
+    Public Property _EXPLOREMODE As Boolean
+        Get
+            Return ExploreMode
+        End Get
+        Set(value As Boolean)
+            ExploreMode = value
+        End Set
+    End Property
 
     <Category("Propriétés CPCDOS")>
     <DisplayName("Opacity")>
@@ -674,34 +793,15 @@ Public Class ListBox : Inherits System.Windows.Forms.ListBox
 
         Get
             If Parametres1 = True Then
-
-                Dim _col As Integer = 0
-                If Col1 = True Then
-                    _col = 1
+                Dim explore1 As Integer = 0
+                If ExploreMode = True Then
+                    explore1 = 1
                 Else
-                    _col = 0
-                End If
-                Dim _edit As Integer = 0
-                If EDIT1 = True Then
-                    _edit = 1
-                Else
-                    _edit = 0
+                    explore1 = 0
                 End If
 
-                Dim _imgauto As Integer = 0
-                If Imgauto1 = True Then
-                    _imgauto = 1
-                Else
-                    _imgauto = 0
-                End If
-                Dim _upd As Integer = 0
-                If UPD1 = True Then
-                    _upd = 1
-                Else
-                    _upd = 0
-                End If
 
-                Return "COL:" + _col.ToString + " " + "EDIT:" + _edit.ToString() + " " + "IMGAUTO:" + _imgauto.ToString() + " " + "UPD:" + _upd.ToString()
+                Return "EXPLOREMODE:" + explore1.ToString
             Else
                 Return ""
             End If
@@ -728,51 +828,24 @@ Public Class ListBox : Inherits System.Windows.Forms.ListBox
         End Set
 
     End Property
-    <Category("Propriétés CPCDOS")>
-    <DisplayName("Col")>
-    <Description("Afficher la couleur de fond")>
-    Public Property COL As Boolean
-        Get
-            Return Col1
-        End Get
-        Set(value As Boolean)
-            Col1 = value
-        End Set
-    End Property
 
     <Category("Propriétés CPCDOS")>
-    <DisplayName("ImgAuto")>
-    <Description("Affichage adapté aux dimensions de l'imagebox")>
-    Public Property IMGAUTO As Boolean
+    <DisplayName("Image(s)")>
+    <Description("Path des icônes séparés par un « ; »")>
+    Public Overloads Property _IMAGE() As String
         Get
-            Return Imgauto1
+            Return image1
         End Get
-        Set(value As Boolean)
-            Imgauto1 = value
+        Set(value As String)
+
+            image1 = value
+
+
         End Set
+
     End Property
-    <Category("Propriétés CPCDOS")>
-    <DisplayName("Upd")>
-    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
-    Public Property UPD As Boolean
-        Get
-            Return UPD1
-        End Get
-        Set(value As Boolean)
-            UPD1 = value
-        End Set
-    End Property
-    <Category("Propriétés CPCDOS")>
-    <DisplayName("Edit")>
-    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
-    Public Property EDIT As Boolean
-        Get
-            Return EDIT1
-        End Get
-        Set(value As Boolean)
-            EDIT1 = value
-        End Set
-    End Property
+
+
     <Category("Propriétés CPCDOS")>
     <DisplayName("Event")>
     <Description("Fichier évènementiel des interactions graphiques.")>
@@ -791,10 +864,9 @@ Public Class ListBox : Inherits System.Windows.Forms.ListBox
     Sub New()
 
         TextBoxParameters = System.Boolean.FalseString
-        COL = System.Boolean.TrueString
-        IMGAUTO = System.Boolean.FalseString
-        UPD1 = System.Boolean.TrueString
-        EDIT1 = System.Boolean.TrueString
+
+        ExploreMode = System.Boolean.FalseString
+
         _EVENT = ""
         handle1 = "MyHandle"
 
@@ -1596,27 +1668,15 @@ End Class
 
 Public Class Explorer : Inherits _Explorer
 
-    Private Col1 As Boolean
-    Private Imgauto1 As Boolean
-    Private UPD1 As Boolean
+
     Private handle1 As String
     Private Evant1 As String
-    Private MULTILINES1 As Boolean
-    Private Opacite1 As Integer
+    Private DeskMode As Boolean
+    Private ExploreMode As Boolean
+
     Private Parametres1 As Boolean
     Private Param1 As String
-    <Category("Propriétés CPCDOS")>
-    <DisplayName("Opacity")>
-    <Description("Opacité du textbox")>
-    <DefaultValue(255)>
-    Public Property OPACITE As Integer
-        Get
-            Return Opacite1
-        End Get
-        Set(value As Integer)
-            Opacite1 = value
-        End Set
-    End Property
+
     <Category("Propriétés CPCDOS")>
     <DisplayName("Show Parameters")>
     <Description("Activer les paramètres")>
@@ -1635,38 +1695,23 @@ Public Class Explorer : Inherits _Explorer
 
         Get
             If Parametres1 = True Then
-                Dim multiline1 As Integer = 0
-                If MULTILINES1 = True Then
-                    multiline1 = 1
+                Dim explore1 As Integer = 0
+                If ExploreMode = True Then
+                    explore1 = 1
                 Else
-                    multiline1 = 0
+                    explore1 = 0
                 End If
-                Dim _col As Integer = 0
-                If Col1 = True Then
-                    _col = 1
+                Dim desk1 As Integer = 0
+                If DeskMode = True Then
+                    desk1 = 1
                 Else
-                    _col = 0
-                End If
-                Dim _multilines As Integer = 0
-                If multiline1 = True Then
-                    _multilines = 1
-                Else
-                    _multilines = 0
-                End If
-                Dim _imgauto As Integer = 0
-                If Imgauto1 = True Then
-                    _imgauto = 1
-                Else
-                    _imgauto = 0
-                End If
-                Dim _upd As Integer = 0
-                If UPD1 = True Then
-                    _upd = 1
-                Else
-                    _upd = 0
+                    desk1 = 0
                 End If
 
-                Return "COL:" + _col.ToString + " " + "MULTILINES:" + _multilines.ToString() + " " + "IMGAUTO:" + _imgauto.ToString() + " " + "UPD:" + _upd.ToString()
+
+
+
+                Return "EXPLOREMODE:" + explore1.ToString + " " + "DESKTOPMODE:" + desk1.ToString()
             Else
                 Return ""
             End If
@@ -1694,39 +1739,29 @@ Public Class Explorer : Inherits _Explorer
 
     End Property
     <Category("Propriétés CPCDOS")>
-    <DisplayName("Col")>
-    <Description("Afficher la couleur de fond")>
-    Public Property COL As Boolean
+    <DisplayName("Explore mode")>
+    <Description("True : icones | False : liste")>
+    Public Property _EXPLOREMODE As Boolean
         Get
-            Return Col1
+            Return ExploreMode
         End Get
         Set(value As Boolean)
-            Col1 = value
+            ExploreMode = value
         End Set
     End Property
 
     <Category("Propriétés CPCDOS")>
-    <DisplayName("ImgAuto")>
-    <Description("Affichage adapté aux dimensions du texblock")>
-    Public Property IMGAUTO As Boolean
+    <DisplayName("Desk mode")>
+    <Description("True : arrière plan | False : simple")>
+    Public Property _DESKMODE As Boolean
         Get
-            Return Imgauto1
+            Return DeskMode
         End Get
         Set(value As Boolean)
-            Imgauto1 = value
+            DeskMode = value
         End Set
     End Property
-    <Category("Propriétés CPCDOS")>
-    <DisplayName("Upd")>
-    <Description("Utiliser un thread d’actualisation graphique de la propriété .Text")>
-    Public Property UPD As Boolean
-        Get
-            Return UPD1
-        End Get
-        Set(value As Boolean)
-            UPD1 = value
-        End Set
-    End Property
+
 
 
     <Category("Propriétés CPCDOS")>
@@ -1747,14 +1782,13 @@ Public Class Explorer : Inherits _Explorer
     Sub New()
 
         TextBlockParameters = System.Boolean.FalseString
-        COL = System.Boolean.TrueString
-        IMGAUTO = System.Boolean.FalseString
-        UPD1 = System.Boolean.TrueString
-        MULTILINES1 = System.Boolean.FalseString
-        _EVENT = ""
+        DeskMode = System.Boolean.FalseString
+        ExploreMode = System.Boolean.FalseString
+
+        _EVENT = "%_exe_path_%"
         handle1 = "MyHandle"
 
-        OPACITE = 255
+
     End Sub
 
 End Class

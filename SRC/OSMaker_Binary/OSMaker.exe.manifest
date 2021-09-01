@@ -206,7 +206,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Rtfabu5IgbhOH0+MWaItKaJjQnGYdRi7WSKtiSBqojA=</dsig:DigestValue>
+        <dsig:DigestValue>HcJbRnpNtX+rVDMDc4923cJ291MIxgfzgSMWeSTLQPA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -223,14 +223,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToolBox.dll" size="56320">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToolBox.dll" size="57344">
       <assemblyIdentity name="ToolBox" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>B7pHy4PK7815aJPUuRjjvKseXGj8lG8xISPEZaM0Coo=</dsig:DigestValue>
+        <dsig:DigestValue>vQoO6lnGCHt8C1KPGem3LZ4JPsi09zDMdvhHGFg6Oyc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

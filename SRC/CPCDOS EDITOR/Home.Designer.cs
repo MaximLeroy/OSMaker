@@ -216,7 +216,7 @@
             this.dossierToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.dossierToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Control;
             this.dossierToolStripMenuItem1.Name = "dossierToolStripMenuItem1";
-            this.dossierToolStripMenuItem1.Size = new System.Drawing.Size(206, 26);
+            this.dossierToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.dossierToolStripMenuItem1.Text = "Folder";
             this.dossierToolStripMenuItem1.Visible = false;
             // 
@@ -229,7 +229,7 @@
             this.fenêtreToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fenêtreToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.IUG;
             this.fenêtreToolStripMenuItem.Name = "fenêtreToolStripMenuItem";
-            this.fenêtreToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.fenêtreToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fenêtreToolStripMenuItem.Text = "Window";
             this.fenêtreToolStripMenuItem.Visible = false;
             // 
@@ -256,7 +256,7 @@
             this.fichierCpcdosCToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierCpcdosCToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.code_cpc_file;
             this.fichierCpcdosCToolStripMenuItem.Name = "fichierCpcdosCToolStripMenuItem";
-            this.fichierCpcdosCToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.fichierCpcdosCToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierCpcdosCToolStripMenuItem.Text = "CpcdosC+ file";
             this.fichierCpcdosCToolStripMenuItem.Visible = false;
             // 
@@ -265,7 +265,7 @@
             this.fichierTexteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierTexteToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierTexteToolStripMenuItem.Name = "fichierTexteToolStripMenuItem";
-            this.fichierTexteToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.fichierTexteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierTexteToolStripMenuItem.Text = "Text file";
             this.fichierTexteToolStripMenuItem.Visible = false;
             // 
@@ -279,7 +279,7 @@
             this.fichierXMLToolStripMenuItem});
             this.autresLanguagesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.autresLanguagesToolStripMenuItem.Name = "autresLanguagesToolStripMenuItem";
-            this.autresLanguagesToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.autresLanguagesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.autresLanguagesToolStripMenuItem.Text = "Autres languages";
             this.autresLanguagesToolStripMenuItem.Visible = false;
             // 
@@ -288,7 +288,7 @@
             this.fichierCToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierCToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierCToolStripMenuItem.Name = "fichierCToolStripMenuItem";
-            this.fichierCToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.fichierCToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierCToolStripMenuItem.Text = "Fichier C";
             // 
             // fichierCToolStripMenuItem1
@@ -296,7 +296,7 @@
             this.fichierCToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierCToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierCToolStripMenuItem1.Name = "fichierCToolStripMenuItem1";
-            this.fichierCToolStripMenuItem1.Size = new System.Drawing.Size(171, 26);
+            this.fichierCToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.fichierCToolStripMenuItem1.Text = "Fichier C++";
             // 
             // fichierJAVAToolStripMenuItem
@@ -304,7 +304,7 @@
             this.fichierJAVAToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierJAVAToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierJAVAToolStripMenuItem.Name = "fichierJAVAToolStripMenuItem";
-            this.fichierJAVAToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.fichierJAVAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierJAVAToolStripMenuItem.Text = "Fichier JAVA";
             // 
             // fichierXMLToolStripMenuItem
@@ -312,7 +312,7 @@
             this.fichierXMLToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierXMLToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierXMLToolStripMenuItem.Name = "fichierXMLToolStripMenuItem";
-            this.fichierXMLToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.fichierXMLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierXMLToolStripMenuItem.Text = "Fichier XML";
             // 
             // menuItemOpen
@@ -333,7 +333,7 @@
             this.dossierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.dossierToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.folder;
             this.dossierToolStripMenuItem.Name = "dossierToolStripMenuItem";
-            this.dossierToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
+            this.dossierToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dossierToolStripMenuItem.Text = "Folder";
             this.dossierToolStripMenuItem.Click += new System.EventHandler(this.dossierToolStripMenuItem_Click);
             // 
@@ -342,7 +342,7 @@
             this.fichierToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.fichierToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
-            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
+            this.fichierToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierToolStripMenuItem.Text = "File";
             this.fichierToolStripMenuItem.Click += new System.EventHandler(this.fichierToolStripMenuItem_Click);
             // 
@@ -392,7 +392,7 @@
             this.fichierCCToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.fichierCCToolStripMenuItem.Image = global::OSMaker.My.Resources.Resources.code_cpc_file;
             this.fichierCCToolStripMenuItem.Name = "fichierCCToolStripMenuItem";
-            this.fichierCCToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
+            this.fichierCCToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fichierCCToolStripMenuItem.Text = "Fichier CC+ (IUG)";
             this.fichierCCToolStripMenuItem.Click += new System.EventHandler(this.fichierCCToolStripMenuItem_Click);
             // 
