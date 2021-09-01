@@ -7,9 +7,67 @@ Window/ Window1
 @#MyHandle Create/ 
 End/ Window
 
+ProgressBar/ ProgressBar1
+   .Handle        = "%MyHandle%"
+   .PX            = "580"
+   .PY            = "247"
+   .SX            = "100"
+   .SY            = "23"
+Create/
+End/ ProgressBar
+
+Button/ Button1
+   .Handle        = "%MyHandle%"
+   .Text          = "Button1"
+   .PX            = "436"
+   .PY            = "400"
+   .SX            = "75"
+   .SY            = "23"
+Create/
+End/ Button
+
+CheckBox/ CheckBox1
+   .Handle        = "%MyHandle%"
+   .Text          = "CheckBox1"
+   .PX            = "329"
+   .PY            = "80"
+   .SX            = "104"
+   .SY            = "24"
+Create/
+End/ CheckBox
+
+TextBlock/ TextBlock1
+   .Handle        = "%MyHandle%"
+   .Text          = "TextBlock1"
+   .PX            = "363"
+   .PY            = "161"
+   .SX            = "100"
+   .SY            = "23"
+Create/
+End/ TextBlock
+
+TextBox/ TextBox1
+   .Handle        = "%MyHandle%"
+   .PX            = "411"
+   .PY            = "247"
+   .SX            = "100"
+   .SY            = "20"
+Create/
+End/ TextBox
+
+PictureBox/ PictureBox1
+
+   .Handle        = "%MyHandle%"
+   .PX            = "364"
+   .PY            = "138"
+   .SX            = "100"
+   .SY            = "50"
+Create/
+End/ PictureBox
+
 Explorer/ Explorer1
    .Handle        = "%MyHandle%"
-   .PX            = "106"
+   .PX            = "11"
    .PY            = "11"
    .SX            = "286"
    .SY            = "324"

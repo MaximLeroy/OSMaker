@@ -92,7 +92,7 @@ namespace OSMaker.Panneaux
             e.ChangedRange.SetStyle(RoseStyle, @"(TYPE:|UPD:|COL:|CTN:|BORD:|OMBRE:|IMGAUTO:|EDIT:|MULTILINES:|SHADOW:|MOVE:|SIZ:|SIZEBTN:|REDUCT:|CLOSE:|TASKBAR:|\,|fonction\/|function\/|End\/ Function|Fin\/ Fonction|Si\/|If\/|Fin\/ si|End\/ If|alors\:|Txt\/|Fin\/ Fonction|then:|sinon:|else:|MINSIZ_X:|MINSIZ_Y:|MAXSIZ_X:|MINSIZ_Y:|COLLISION:|BLURRY:|TASKBARHIDE:|CTX:)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(EqualStyle, @"\=");
             e.ChangedRange.SetStyle(OrangeStyle, @"(\.Parametres|\.titlecolor|\.PX|\.PY|\.SX|\.SY|\.Value|\.BackColor|\.CouleurText|\.Icone|\.ImgTitre|\.Opacite|\.titre|\.CouleurFenetre|\.CouleurTitre|\.px|\.py|\.tx|\.ty|\.opacite|\.Image|\.evenement|\.texte|\.Handle|\.pid|\.nom|\.name|\.parameters|\.opacity|\.image|\.evenement|\.couleurfenetre|\.windowcolor|\.couleurtitre|\.couleurtexte|\.textcolor|\.handle|\.icone|\.icon|\.imgtitre|\.titleimg|\.TitleImg|fenetre\/|fin\/ fenetre|\.event|\.couleurfond|\.title|\.Text)", RegexOptions.IgnoreCase);
-            e.ChangedRange.SetStyle(BlueStyle, @"(End\/ window|window\/|End\/ button|button\/|End\/ textbox|textbox\/|End\/ textblock|textblock\/|End\/ progressbar|progressbar\/|End\/ picturebox|picturebox\/|End\/ checkbox|checkbox\/|sys\/|\/processus|exe\/|\/pid\:|ccp\/|\/SET.LEVEL)", RegexOptions.IgnoreCase);
+            e.ChangedRange.SetStyle(BlueStyle, @"(End\/ window|window\/|End\/ button|button\/|End\/ textbox|textbox\/|End\/ textblock|textblock\/|End\/ progressbar|progressbar\/|End\/ picturebox|picturebox\/|End\/ checkbox|checkbox\/|sys\/|\/processus|exe\/|\/pid\:|ccp\/|\/SET.LEVEL|End\/ listbox|listbox\/|End\/ explorer|explorer\/)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(BlueStyle, @"(debut_section_critique|begin_critical_section|fin_section_critique|end_critical_section|\/INIT|\/menu|\/touche|\/key|\/INIT|\/atouche|\/wkey|\/pause|\/tcp|\/udp|\/attendre|\/wait|\/recevoir|\/receive|\/envoyer|\/send|\/mode|\/stop|\/temp|\/tempr|\/debug|\/cpinticore|\/thread|\/thread[MIN]|\/thread[STD]|\/thread[MAX]|\/optimisation|\/optimization|\/lang|\/change|\/pause|\/bin|\/app|\/mem|\/lang|\/ecran|\/screen|\/ccp)", RegexOptions.IgnoreCase);
             e.ChangedRange.SetStyle(YellowStyle, "@#.*$", RegexOptions.Multiline);
             e.ChangedRange.SetStyle(RoseStyle, @"fix\/|declare\/|declarer\/|set\/|txt\/|goto\/|aller\/|Client\/|serveur\/|server\/|pos\/|stop\/|cls\/|aide\/|help\/|ouvrir\/|open\/|ecrire\/|write\/|return\/|ping\/|telecharger\/|download\/|iug\/|demarrer\/|start\/|close\/|fermer\/|creer\/|create\/|set\/", RegexOptions.IgnoreCase);
@@ -129,6 +129,8 @@ namespace OSMaker.Panneaux
             e.ChangedRange.SetFoldingMarkers(@"Textbox\/", @"End\/ Textbox", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"Checkbox\/", @"End\/ Checkbox", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"ProgressBar\/", @"End\/ ProgressBar", RegexOptions.IgnoreCase);
+            e.ChangedRange.SetFoldingMarkers(@"Listbox\/", @"End\/ Listbox", RegexOptions.IgnoreCase);
+            e.ChangedRange.SetFoldingMarkers(@"Explorer\/", @"End\/ Explorer", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"Function\/", @"End\/ Function", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"Fonction\/", @"Fin\/ Fonction", RegexOptions.IgnoreCase);
             e.ChangedRange.SetFoldingMarkers(@"fenetre\/", @"fin\/ fenetre", RegexOptions.IgnoreCase);
