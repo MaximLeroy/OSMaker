@@ -26,3 +26,6 @@ C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMake
 C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.vbproj.CoreCompileInputs.cache
 C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.exe
 C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.Explorer.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.Resources.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\WinToCpcDosCplus\obj\Debug\WinToCpcDosCplus.vbproj.GenerateResource.cache

@@ -62,3 +62,7 @@ C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.vbproj.CopyComplete
 C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.dll
 C:\CPCDOS\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.pdb
 C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox.Fenetre.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\obj\Debug\ToolBox._Explorer.resources
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\bin\Debug\WinToCpcDosCplus.exe
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\bin\Debug\WinToCpcDosCplus.pdb
+C:\Users\btaco\Documents\bon ccplus\OSMaker-master\CpcDosCPlus\MaximLeroy\OSMaker\SRC\ToolBox\bin\Debug\WinToCpcDosCplus.exe.config

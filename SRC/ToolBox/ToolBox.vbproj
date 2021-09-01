@@ -65,6 +65,7 @@
     <Reference Include="DevComponents.DotNetBar2, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
@@ -73,6 +74,12 @@
     <Compile Include="CpcControl.vb" />
     <Compile Include="Cpcform.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Explorer.Designer.vb">
+      <DependentUpon>_Explorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_Explorer.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Fenetre.Designer.vb">
       <DependentUpon>Fenetre.vb</DependentUpon>
@@ -97,6 +104,9 @@
     <EmbeddedResource Include="Cpcform.resx">
       <DependentUpon>Cpcform.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="_Explorer.resx">
+      <DependentUpon>_Explorer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fenetre.resx">
       <DependentUpon>Fenetre.vb</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +119,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WinToCpcDosCplus\WinToCpcDosCplus.vbproj">
+      <Project>{bca0393d-06c8-4959-8bf5-bf066cad56a6}</Project>
+      <Name>WinToCpcDosCplus</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
