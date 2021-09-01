@@ -206,7 +206,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xtVLEc27itzFKNhM4b+RsdGC+qRrUl/aY8U2eFBxQAM=</dsig:DigestValue>
+        <dsig:DigestValue>q2vs6frGL6cqUw7DyKE9Wzfi4M91rMmAk7sxSM6tnqY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -331,14 +331,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinToCpcDosCplus.exe" size="25600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinToCpcDosCplus.exe" size="26112">
       <assemblyIdentity name="WinToCpcDosCplus" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z6VJJhNyPInXhevXq8+Ib1NoWlBEGi1hf2AaOZMBCuc=</dsig:DigestValue>
+        <dsig:DigestValue>/GVtMcI3YofDHI8h7mTLNbx9IbJZHF1qJLptmMP3DMM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -167,6 +167,26 @@ Public Module ModuleCpcDosCplus
                     Next
                     sbuilder.AppendLine("Create/")
                     sbuilder.AppendLine(CpcDebutToFins.Values(7))
+                Case WinToCpcControls.Keys(8)
+                    sbuilder.Append(WinToCpcControls.Values(8))
+                    sbuilder.Append(" " + names(0))
+                    sbuilder.AppendLine()
+                    Dim childrops As XmlNodeList = currentNode.SelectNodes("Property")
+                    For Each item As XmlNode In childrops
+                        WriteNodeProperty(item, sbuilder)
+                    Next
+                    sbuilder.AppendLine("Create/")
+                    sbuilder.AppendLine(CpcDebutToFins.Values(8))
+                Case WinToCpcControls.Keys(9)
+                    sbuilder.Append(WinToCpcControls.Values(9))
+                    sbuilder.Append(" " + names(0))
+                    sbuilder.AppendLine()
+                    Dim childrops As XmlNodeList = currentNode.SelectNodes("Property")
+                    For Each item As XmlNode In childrops
+                        WriteNodeProperty(item, sbuilder)
+                    Next
+                    sbuilder.AppendLine("Create/")
+                    sbuilder.AppendLine(CpcDebutToFins.Values(9))
             End Select
                 sbuilder.AppendLine()
                 For Each itemNode In currentNode.ChildNodes
@@ -576,16 +596,20 @@ Public Module ModuleCpcDosCplus
         WinToCpcControls.Add("ToolBox.TextBox", "TextBox/")
         WinToCpcControls.Add("ToolBox.TextBlock", "TextBlock/")
         WinToCpcControls.Add("ToolBox.ProgressBar", "ProgressBar/")
-
-            CpcDebutToFins = New Dictionary(Of String, String)
+        WinToCpcControls.Add("ToolBox.ListBox", "ListBox/")
+        WinToCpcControls.Add("ToolBox.Explorer", "Explorer/")
+        CpcDebutToFins = New Dictionary(Of String, String)
             CpcDebutToFins.Add("Window/", "End/ Window")
             CpcDebutToFins.Add("PictureBox/", "End/ PictureBox")
             CpcDebutToFins.Add("CheckBox/", "End/ CheckBox")
             CpcDebutToFins.Add("Button/", "End/ Button")
             CpcDebutToFins.Add("TextBox/", "End/ TextBox")
             CpcDebutToFins.Add("TextBlock/", "End/ TextBlock")
-            CpcDebutToFins.Add("ProgressBar/", "End/ ProgressBar")
-        End Sub
+        CpcDebutToFins.Add("ProgressBar/", "End/ ProgressBar")
+        CpcDebutToFins.Add("ListBox/", "End/ ListBox")
+        CpcDebutToFins.Add("Explorer/", "End/ Explorer")
+
+    End Sub
         Private Function GetFileNameToSave() As String
             Dim fileName As String = Nothing
             If NomFichierCpc = Nothing Then

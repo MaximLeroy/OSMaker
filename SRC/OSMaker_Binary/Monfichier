@@ -2,8 +2,26 @@
 Window/ Window1
    .PX            = "0"
    .PY            = "0"
-   .SX            = "284"
-   .SY            = "261"
+   .SX            = "758"
+   .SY            = "487"
 @#MyHandle Create/ 
 End/ Window
+
+Explorer/ Explorer1
+   .Handle        = "%MyHandle%"
+   .PX            = "106"
+   .PY            = "11"
+   .SX            = "286"
+   .SY            = "324"
+Create/
+End/ Explorer
+
+ListBox/ ListBox1
+   .Handle        = "%MyHandle%"
+   .PX            = "499"
+   .PY            = "58"
+   .SX            = "120"
+   .SY            = "88"
+Create/
+End/ ListBox
 
