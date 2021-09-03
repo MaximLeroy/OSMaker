@@ -653,7 +653,7 @@ Public Class TextBox : Inherits System.Windows.Forms.TextBox
     End Property
     <Category("Propriétés CPCDOS")>
     <DisplayName("Handle")>
-    <Description("Handle du textbox")>
+    <Description("Numéro de handle parent. (Fenêtre)")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
@@ -765,7 +765,7 @@ Public Class ListBox : Inherits System.Windows.Forms.ListBox
 
     <Category("Propriétés CPCDOS")>
     <DisplayName("Opacity")>
-    <Description("Opacité du textbox")>
+    <Description("Opacité du listbox")>
     <DefaultValue(255)>
     Public Property OPACITE As Integer
         Get
@@ -815,7 +815,7 @@ Public Class ListBox : Inherits System.Windows.Forms.ListBox
     End Property
     <Category("Propriétés CPCDOS")>
     <DisplayName("Handle")>
-    <Description("Handle du textbox")>
+    <Description("Numéro de handle parent. (Fenêtre)")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
@@ -887,7 +887,7 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
     Private Param1 As String
     <Category("Propriétés CPCDOS")>
     <DisplayName("Opacity")>
-    <Description("Opacité du textbox")>
+    <Description("Opacité du textblock")>
     <DefaultValue(255)>
     Public Property OPACITE As Integer
         Get
@@ -960,7 +960,7 @@ Public Class TextBlock : Inherits System.Windows.Forms.Label
     End Property
     <Category("Propriétés CPCDOS")>
     <DisplayName("Handle")>
-    <Description("Handle du textblock")>
+    <Description("Numéro de handle parent. (Fenêtre)")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
@@ -1394,7 +1394,7 @@ Public Class PictureBox : Inherits System.Windows.Forms.PictureBox
 
     <Category("Propriétés CPCDOS")>
     <DisplayName("Handle")>
-    <Description("Handle du picturebox")>
+    <Description("Numéro de handle parent. (Fenêtre)")>
     Public Overloads Property Handle() As String
         Get
             Return handle1
@@ -1499,7 +1499,7 @@ Public Class Button : Inherits System.Windows.Forms.Button
 
     <Category("Propriétés CPCDOS")>
     <DisplayName("Opacity")>
-    <Description("Opacité du textbox")>
+    <Description("Opacité du bouton")>
     <DefaultValue(255)>
     Public Property OPACITE As Integer
         Get
@@ -1533,7 +1533,7 @@ Public Class Button : Inherits System.Windows.Forms.Button
     End Property
     <Category("Propriétés CPCDOS")>
     <DisplayName("Handle")>
-    <Description("Handle du textblock")>
+    <Description("Numéro de handle parent. (Fenêtre)")>
     Public Overloads Property HANDLE As String
         Get
             Return handle1
@@ -1725,7 +1725,7 @@ Public Class Explorer : Inherits _Explorer
     End Property
     <Category("Propriétés CPCDOS")>
     <DisplayName("Handle")>
-    <Description("Handle du textblock")>
+    <Description("Numéro de handle parent. (Fenêtre)")>
     Public Overloads Property Handle() As String
         Get
             Return handle1

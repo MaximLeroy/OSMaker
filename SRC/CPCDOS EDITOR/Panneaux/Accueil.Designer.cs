@@ -287,7 +287,7 @@
             this.metroLink2.FontSize = MetroFramework.MetroLinkSize.Medium;
             this.metroLink2.Image = global::OSMaker.My.Resources.Resources.NewRelationshipMenu_16x;
             this.metroLink2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.metroLink2.Location = new System.Drawing.Point(22, 183);
+            this.metroLink2.Location = new System.Drawing.Point(22, 155);
             this.metroLink2.Name = "metroLink2";
             this.metroLink2.Size = new System.Drawing.Size(286, 23);
             this.metroLink2.Style = MetroFramework.MetroColorStyle.Blue;
@@ -305,7 +305,7 @@
             this.metroLink1.FontSize = MetroFramework.MetroLinkSize.Medium;
             this.metroLink1.Image = global::OSMaker.My.Resources.Resources.OpenFolder_16x;
             this.metroLink1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.metroLink1.Location = new System.Drawing.Point(22, 153);
+            this.metroLink1.Location = new System.Drawing.Point(22, 184);
             this.metroLink1.Name = "metroLink1";
             this.metroLink1.Size = new System.Drawing.Size(348, 23);
             this.metroLink1.Style = MetroFramework.MetroColorStyle.Blue;
