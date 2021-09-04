@@ -723,6 +723,16 @@ namespace OSMaker.My.Resources {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cpccode {
+            get {
+                object obj = ResourceManager.GetObject("cpccode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Create_16x {
             get {
                 object obj = ResourceManager.GetObject("Create_16x", resourceCulture);
@@ -1476,6 +1486,16 @@ namespace OSMaker.My.Resources {
         internal static System.Drawing.Bitmap NewRelationshipMenu_16x {
             get {
                 object obj = ResourceManager.GetObject("NewRelationshipMenu_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap newwindow {
+            get {
+                object obj = ResourceManager.GetObject("newwindow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

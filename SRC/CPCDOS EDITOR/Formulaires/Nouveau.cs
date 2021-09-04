@@ -129,11 +129,13 @@ namespace OSMaker
             if (metroRadioButton3.Checked == true) 
             {
                 metroLabel2.Visible = pathosmtextBox.Visible = metroButton3.Visible = nameosmtextbox.Visible = false;
+                pictureBoxfenetre.Visible = false;
+                pictureBoxCode.Visible = true;
             }
             else
             {
                 metroLabel2.Visible = pathosmtextBox.Visible = metroButton3.Visible = nameosmtextbox.Visible = true;
-                
+                pictureBoxCode.Visible = false;
             }
         }
 
@@ -161,10 +163,12 @@ namespace OSMaker
 
                 nameosmtextbox.Text = Home.m_solutionExplorer.GetNewFileNameXML(diosm).Replace(".osm","");
                 nameccplustextBox.Text = Home.m_solutionExplorer.GetNewFileNameXML(dicpc).Replace(".osm", "");
+                pictureBoxfenetre.Visible = true;
+                pictureBoxCode.Visible = false;
             }
             else
             {
-               
+                pictureBoxfenetre.Visible = false;
 
             }
         }

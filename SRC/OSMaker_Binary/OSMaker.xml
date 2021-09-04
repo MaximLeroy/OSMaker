@@ -568,6 +568,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:OSMaker.My.Resources.Resources.cpccode">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:OSMaker.My.Resources.Resources.Create_16x">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -944,6 +949,11 @@
             </summary>
         </member>
         <member name="P:OSMaker.My.Resources.Resources.NewRelationshipMenu_16x">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OSMaker.My.Resources.Resources.newwindow">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>

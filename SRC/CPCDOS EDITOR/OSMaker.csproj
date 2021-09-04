@@ -881,6 +881,7 @@
     <None Include="Resources\Button_16xBlack.png" />
     <None Include="Resources\CheckBoxChecked_16xBlack.png" />
     <None Include="Resources\CURSOR.PNG" />
+    <None Include="Resources\cpccode.PNG" />
     <Content Include="Resources\DockPanel.xml" />
     <None Include="Resources\logocpcdos.png" />
     <None Include="Resources\LockCyan_16x.png" />
@@ -902,6 +903,7 @@
     <None Include="Resources\Image_16xBlack.png" />
     <None Include="Resources\OpenFolder_16x.png" />
     <None Include="Resources\NewRelationshipMenu_16x.png" />
+    <None Include="Resources\newwindow.PNG" />
     <Content Include="Resources\OSMaker.xml" />
     <None Include="Resources\repair-tools.png" />
     <None Include="Resources\file-explorer.png" />

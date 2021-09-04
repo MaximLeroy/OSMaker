@@ -241,6 +241,9 @@
   <data name="text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FileDestination_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\FileDestination_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -264,9 +267,6 @@
   </data>
   <data name="Button_16xBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Button_16xBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Method_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Method_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="codingbrowser_102152" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\codingbrowser_102152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,6 +310,9 @@
   <data name="undo_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\undo_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="newwindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\newwindow.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Pause_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Pause_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -330,9 +333,6 @@
   </data>
   <data name="Reduire_Projet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Reduire_Projet1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coller" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Label" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Label.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -532,6 +532,9 @@
   <data name="butt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\butt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OSM_OS32321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OSM_OS32321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CURSOR" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\CURSOR.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -688,6 +691,9 @@
   <data name="Save_37110" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Save_37110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="document" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="line_dotted_icon_1252323" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\line_dotted_icon_1252323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -721,11 +727,11 @@
   <data name="prog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\prog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OSM_OS32321" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\OSM_OS32321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="document" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\document.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Method_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Method_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="creer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\creer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -736,8 +742,8 @@
   <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="VM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\VM.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\trash1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -784,7 +790,7 @@
   <data name="printer_text_10868" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\printer_text_10868.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="VM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\VM.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cpccode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cpccode.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
